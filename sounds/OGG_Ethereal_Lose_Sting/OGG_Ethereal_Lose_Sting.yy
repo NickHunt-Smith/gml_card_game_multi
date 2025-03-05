@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"OGG_Ethereal_Lose_Sting",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":6.46873,
+  "name":"OGG_Ethereal_Lose_Sting",
+  "parent":{
+    "name":"OGG",
+    "path":"folders/Sounds/Ethereal/OGG.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"OGG_Ethereal_Lose_Sting.ogg",
+  "type":0,
+  "volume":1.0,
+}

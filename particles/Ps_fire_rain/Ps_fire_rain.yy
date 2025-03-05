@@ -1,0 +1,25 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"Ps_fire_rain",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"Shooting_Stars_3","additiveBlend":true,"directionIncrease":0.0,"directionMax":220.0,"directionMin":220.0,"directionWiggle":0.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":10,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":5568255,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":80.0,"lifetimeMin":60.0,"linkedEmitter":null,"locked":false,"midColour":4278662399,"mode":0,"name":"Shooting_Stars_3","orientationIncrease":0.0,"orientationMax":300.0,"orientationMin":300.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":1000.626,"regionW":1177.54,"regionX":174.0,"regionY":-210.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":2.0,"scaleY":9.0,"shape":0,"sizeIncrease":0.0,"sizeMax":0.1,"sizeMin":0.06,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":9.0,"speedMin":4.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":2654139647,"texture":7,},
+  ],
+  "name":"Ps_fire_rain",
+  "parent":{
+    "name":"Weather",
+    "path":"folders/Particle Systems/Weather.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":false,
+  "xorigin":0,
+  "yorigin":0,
+}

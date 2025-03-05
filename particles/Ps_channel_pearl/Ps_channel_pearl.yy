@@ -1,0 +1,27 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"Ps_channel_pearl",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"Snowflakes","additiveBlend":true,"directionIncrease":0.1,"directionMax":270.0,"directionMin":270.0,"directionWiggle":0.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":-5,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":16745727,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":80.0,"lifetimeMin":70.0,"linkedEmitter":null,"locked":false,"midColour":4294967040,"mode":0,"name":"Snowflakes","orientationIncrease":0.0,"orientationMax":0.0,"orientationMin":270.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":182.82132,"regionW":68.55432,"regionX":3.0,"regionY":-27.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":4.0,"scaleY":4.0,"shape":0,"sizeIncrease":0.0,"sizeMax":0.25,"sizeMin":0.15,"sizeWiggle":0.02,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":1.0,"speedMin":0.5,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4294965971,"texture":13,},
+    {"$GMPSEmitter":"","%Name":"Smoke","additiveBlend":true,"directionIncrease":0.0,"directionMax":270.0,"directionMin":270.0,"directionWiggle":0.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":-1,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":8533769,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":22.0,"lifetimeMin":22.0,"linkedEmitter":null,"locked":false,"midColour":2030023168,"mode":0,"name":"Smoke","orientationIncrease":5.1,"orientationMax":270.0,"orientationMin":270.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":170.67249,"regionW":49.53476,"regionX":0.0,"regionY":-31.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.0,"scaleY":1.0,"shape":0,"sizeIncrease":0.0,"sizeMax":0.1,"sizeMin":0.2,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":1.0,"speedMin":1.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":16757248,"texture":7,},
+    {"$GMPSEmitter":"","%Name":"Beam__Glow_Jitter","additiveBlend":true,"directionIncrease":0.0,"directionMax":360.0,"directionMin":360.0,"directionWiggle":0.0,"distribution":2,"editorColour":16777215,"editorDrawShape":true,"emitCount":1,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":16730112,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":53.0,"lifetimeMin":40.0,"linkedEmitter":null,"locked":false,"midColour":402616832,"mode":0,"name":"Beam__Glow_Jitter","orientationIncrease":1.2,"orientationMax":350.0,"orientationMin":10.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":192.50598,"regionW":55.401855,"regionX":1.0,"regionY":-23.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.0,"scaleY":1.0,"shape":0,"sizeIncrease":0.0,"sizeMax":2.5,"sizeMin":1.5,"sizeWiggle":0.3,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.0,"speedMin":0.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":16772608,"texture":7,},
+  ],
+  "name":"Ps_channel_pearl",
+  "parent":{
+    "name":"Lasers",
+    "path":"folders/Particle Systems/Lasers.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":false,
+  "xorigin":0,
+  "yorigin":0,
+}

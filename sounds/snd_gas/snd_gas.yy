@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_gas",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":3.936,
+  "name":"snd_gas",
+  "parent":{
+    "name":"ruby",
+    "path":"folders/Sounds/ruby.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_gas.mp3",
+  "type":0,
+  "volume":1.0,
+}

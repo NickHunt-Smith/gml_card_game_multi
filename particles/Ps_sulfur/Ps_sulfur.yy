@@ -1,0 +1,27 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"Ps_sulfur",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"Smoke_right","additiveBlend":false,"directionIncrease":0.0,"directionMax":380.0,"directionMin":340.0,"directionWiggle":-9.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":4,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":1710618,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":300.0,"lifetimeMin":200.0,"linkedEmitter":null,"locked":false,"midColour":4279360511,"mode":0,"name":"Smoke_right","orientationIncrease":1.8,"orientationMax":180.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":250.7803,"regionW":11.249512,"regionX":-5.0,"regionY":-1.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":4.0,"scaleY":4.0,"shape":1,"sizeIncrease":0.0,"sizeMax":0.4,"sizeMin":0.05,"sizeWiggle":0.0,"spawnOnDeathCount":0,"spawnOnDeathGMPreset":null,"spawnOnDeathId":{"name":"Sparkle","path":"particlelib/Sparkle/Sparkle.yy",},"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":5.0,"speedMin":3.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":2437723,"texture":7,},
+    {"$GMPSEmitter":"","%Name":"Smoke_left","additiveBlend":false,"directionIncrease":0.0,"directionMax":200.0,"directionMin":160.0,"directionWiggle":-9.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":4,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":1710618,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":300.0,"lifetimeMin":200.0,"linkedEmitter":null,"locked":false,"midColour":4279360511,"mode":0,"name":"Smoke_left","orientationIncrease":1.8,"orientationMax":180.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":250.7803,"regionW":11.249512,"regionX":-5.0,"regionY":-1.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":4.0,"scaleY":4.0,"shape":1,"sizeIncrease":0.0,"sizeMax":0.4,"sizeMin":0.05,"sizeWiggle":0.0,"spawnOnDeathCount":0,"spawnOnDeathGMPreset":null,"spawnOnDeathId":{"name":"Sparkle","path":"particlelib/Sparkle/Sparkle.yy",},"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":5.0,"speedMin":3.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":2437723,"texture":7,},
+    {"$GMPSEmitter":"","%Name":"Smoke_centre","additiveBlend":false,"directionIncrease":0.0,"directionMax":360.0,"directionMin":0.0,"directionWiggle":-9.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":4,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":1710618,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":300.0,"lifetimeMin":200.0,"linkedEmitter":null,"locked":false,"midColour":4279360511,"mode":0,"name":"Smoke_centre","orientationIncrease":1.8,"orientationMax":180.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":150.7803,"regionW":11.249512,"regionX":-5.0,"regionY":-1.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":4.0,"scaleY":4.0,"shape":1,"sizeIncrease":0.0,"sizeMax":0.4,"sizeMin":0.05,"sizeWiggle":0.0,"spawnOnDeathCount":0,"spawnOnDeathGMPreset":null,"spawnOnDeathId":{"name":"Sparkle","path":"particlelib/Sparkle/Sparkle.yy",},"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":1.0,"speedMin":1.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":2437723,"texture":7,},
+  ],
+  "name":"Ps_sulfur",
+  "parent":{
+    "name":"Smoke",
+    "path":"folders/Particle Systems/Smoke.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":false,
+  "xorigin":-2,
+  "yorigin":11,
+}

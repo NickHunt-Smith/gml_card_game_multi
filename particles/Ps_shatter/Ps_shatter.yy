@@ -1,0 +1,26 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"Ps_shatter",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"Implosion_yellow","additiveBlend":true,"directionIncrease":0.0,"directionMax":360.0,"directionMin":0.0,"directionWiggle":0.0,"distribution":1,"editorColour":16777215,"editorDrawShape":true,"emitCount":20,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":263241,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":60.0,"lifetimeMin":40.0,"linkedEmitter":null,"locked":false,"midColour":4075552529,"mode":1,"name":"Implosion_yellow","orientationIncrease":0.0,"orientationMax":353.0,"orientationMin":29.0,"orientationRelative":false,"orientationWiggle":0.05,"regionH":79.30884,"regionW":81.49585,"regionX":0.0,"regionY":2.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.0,"scaleY":1.0,"shape":3,"sizeIncrease":-0.35,"sizeMax":4.0,"sizeMin":2.0,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":-0.4,"speedMax":9.0,"speedMin":7.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":false,"startColour":4294959421,"texture":11,},
+    {"$GMPSEmitter":"","%Name":"Emitter","additiveBlend":false,"directionIncrease":0.0,"directionMax":360.0,"directionMin":0.0,"directionWiggle":0.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":50,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":4294967295,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":20.0,"lifetimeMin":15.0,"linkedEmitter":null,"locked":false,"midColour":4294967295,"mode":1,"name":"Emitter","orientationIncrease":0.0,"orientationMax":360.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":64.0,"regionW":64.0,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.3,"scaleY":0.3,"shape":0,"sizeIncrease":0.0,"sizeMax":1.0,"sizeMin":1.0,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":25.0,"speedMin":20.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":{"name":"s_ice_shard","path":"sprites/s_ice_shard/s_ice_shard.yy",},"spriteRandom":false,"spriteStretch":true,"startColour":4294967295,"texture":-1,},
+  ],
+  "name":"Ps_shatter",
+  "parent":{
+    "name":"Explosions",
+    "path":"folders/Particle Systems/Explosions.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":false,
+  "xorigin":0,
+  "yorigin":0,
+}

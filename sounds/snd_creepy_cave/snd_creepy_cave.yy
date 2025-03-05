@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_creepy_cave",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":32.995556,
+  "name":"snd_creepy_cave",
+  "parent":{
+    "name":"onyx",
+    "path":"folders/Sounds/onyx.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_creepy_cave.wav",
+  "type":0,
+  "volume":1.0,
+}

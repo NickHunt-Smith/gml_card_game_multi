@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_creepy_marimba",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":9.816,
+  "name":"snd_creepy_marimba",
+  "parent":{
+    "name":"onyx",
+    "path":"folders/Sounds/onyx.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_creepy_marimba.mp3",
+  "type":0,
+  "volume":1.0,
+}
