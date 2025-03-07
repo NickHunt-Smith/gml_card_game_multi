@@ -7,6 +7,7 @@ if game_start = true {
 	global.player = instance_create_depth(0,0,0,obj_player);
 	game_start = false;
 	global.turn_count = 0;
+	global.drafting = true;
 	alarm[0] = 50;
 }
 

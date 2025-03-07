@@ -7,6 +7,7 @@ draft_count = 0;
 summon_cards = true;
 switch_priority = false;
 extra_opp_card = false;
+syncing = false;
 depth = -900
 
 sound_inst = audio_play_sound(snd_draft,10,false);

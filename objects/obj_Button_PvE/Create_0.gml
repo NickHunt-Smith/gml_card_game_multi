@@ -4,6 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-image_xscale = 10
-image_yscale = 5
-joined = false;
+selectAction = function() {
+	room_goto(PvP)
+}

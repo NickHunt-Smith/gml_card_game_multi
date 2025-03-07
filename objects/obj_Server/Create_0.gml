@@ -3,4 +3,4 @@
 
 inbuf = buffer_create(16,buffer_grow,1)
 
-already_spawned = true;
+already_spawned = false;

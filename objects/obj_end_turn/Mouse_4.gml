@@ -8,6 +8,7 @@ if (global.player_enabled = true) && global.stack_active = false {
 		global.wait_for_effect = false;
 		global.end_turn_active = true;
 		global.opponent.passed = false;
+		global.priority = "opp";
 	} else {
 		global.player.passed = true;
 		global.priority = "opp";

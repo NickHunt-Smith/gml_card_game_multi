@@ -5,5 +5,5 @@
 draft_inst = instance_create_depth(1510,400,-800,obj_draft_area);
 draft_inst.draft_count = 3;
 draft_inst.debug_test = false;
-draft_inst.extra_opp_card = true;
+draft_inst.extra_opp_card = false;
 	

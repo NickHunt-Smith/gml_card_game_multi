@@ -15,7 +15,8 @@ reverse = false;
 global.health_offset_x = 193;
 
 game_start = true;
-global.priority = "player";
+//global.priority = "player";
+//global.priority = "opp"
 global.no_pass_prio = false;
 global.opponent = noone;
 global.start_draft = true;
