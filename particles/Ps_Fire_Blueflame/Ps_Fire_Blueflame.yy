@@ -22,8 +22,8 @@
   ],
   "name":"Ps_Fire_Blueflame",
   "parent":{
-    "name":"Fire",
-    "path":"folders/Particle Systems/Fire.yy",
+    "name":"Pearl",
+    "path":"folders/Particle Systems/Pearl.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

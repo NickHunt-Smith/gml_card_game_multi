@@ -15,6 +15,7 @@ eff_done = false;
 
 wait = false;
 opp = false;
+has_effect = true;
 
 channel_seq = noone;
 seq_change_health =noone;

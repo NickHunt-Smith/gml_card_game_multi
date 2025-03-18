@@ -7,7 +7,7 @@ function scr_play_spell(opp,rarity,element,card_index,target_1,target_2,target_3
 	var effect_function = global.rarity_list[rarity][element][1][2][card_index];
 	var spell_sprite = global.rarity_list[rarity][element][1][1][card_index];
 	
-	inst_art_spell = instance_create_depth(1527,753,-801,obj_spell_played)
+	inst_art_spell = instance_create_depth(1527 - 140*(array_length(global.spell_stack)+1 - 1) +70*(array_length(global.spell_stack)),753,-801,obj_spell_played)
 	inst_art_spell.rarity = rarity;
 	inst_art_spell.element = element;
 	inst_art_spell.card_type = card_type;

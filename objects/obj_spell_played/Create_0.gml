@@ -9,6 +9,8 @@ moused = false;
 big_mode = false;
 opp = false;
 is_locale = false;
+just_played = true;
+play_seq = noone;
 
 rarity = 1;
 element = 1;

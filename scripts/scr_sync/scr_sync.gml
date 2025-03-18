@@ -16,6 +16,7 @@ function sync_draft() {
 			default:
 				show_debug_message("Unknown packet received")
 				break
+		}
 	}
 	
 	

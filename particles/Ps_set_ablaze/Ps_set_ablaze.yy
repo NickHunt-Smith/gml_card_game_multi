@@ -17,8 +17,8 @@
   ],
   "name":"Ps_set_ablaze",
   "parent":{
-    "name":"Fire",
-    "path":"folders/Particle Systems/Fire.yy",
+    "name":"Ruby",
+    "path":"folders/Particle Systems/Ruby.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

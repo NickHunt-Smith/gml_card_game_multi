@@ -13,8 +13,8 @@
   ],
   "name":"Ps_nullify_spell",
   "parent":{
-    "name":"Magic",
-    "path":"folders/Particle Systems/Magic.yy",
+    "name":"Pearl",
+    "path":"folders/Particle Systems/Pearl.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

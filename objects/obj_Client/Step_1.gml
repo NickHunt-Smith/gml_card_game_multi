@@ -11,8 +11,6 @@ while(steam_net_packet_receive()) {
 		case NETWORK_PACKETS.START_GAME:
 			global.my_id = steam_get_user_steam_id()
 			global.other_id = _sender
-			show_debug_message(global.my_id)
-			show_debug_message(global.other_id)
 			var _inString = buffer_read(inbuf,buffer_string)
 			if _inString = "opp" {
 				global.priority = "opp"
@@ -22,9 +20,6 @@ while(steam_net_packet_receive()) {
 			room_goto(PvP)
 			global.pvp_active = true
 			break
-			
-		case NETWORK_PACKETS.SYNC_DRAFT:
-			
 			
 		default: 
 			show_debug_message("Unknown packet received")

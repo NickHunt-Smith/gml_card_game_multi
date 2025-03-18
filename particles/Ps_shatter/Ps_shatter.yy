@@ -14,8 +14,8 @@
   ],
   "name":"Ps_shatter",
   "parent":{
-    "name":"Explosions",
-    "path":"folders/Particle Systems/Explosions.yy",
+    "name":"Pearl",
+    "path":"folders/Particle Systems/Pearl.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

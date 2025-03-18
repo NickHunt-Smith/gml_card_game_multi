@@ -9,6 +9,7 @@ eff_done = false;
 
 wait = false;
 opp = false;
+has_effect = true;
 
 clash = noone;
 skip_target = false;

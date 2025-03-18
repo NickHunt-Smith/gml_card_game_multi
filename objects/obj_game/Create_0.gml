@@ -1,5 +1,7 @@
 /// @description Database
 
+var _loaded = texturegroup_load("Default");
+
 //audio_play_sound(OGG_Ethereal_Main,10,true);
 
 //show_debug_message(window_get_width())
@@ -14,9 +16,20 @@ increment = 0;
 reverse = false;
 global.health_offset_x = 193;
 
+vertex_format_begin();
+vertex_format_add_colour();
+vertex_format_add_position();
+vertex_format_add_normal();
+global.format_perspective = vertex_format_end();
+
 game_start = true;
-//global.priority = "player";
-//global.priority = "opp"
+if global.pvp_active = false {
+	if random(100) < 50 {
+		global.priority = "player";
+	} else {
+		global.priority = "opp"
+	}
+}
 global.no_pass_prio = false;
 global.opponent = noone;
 global.start_draft = true;

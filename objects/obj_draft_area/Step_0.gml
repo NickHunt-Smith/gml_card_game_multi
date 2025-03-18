@@ -19,14 +19,14 @@ if (summon_cards = true) && debug_test = true {
 	
 	var rarity = 0;
 	var element = 0;
-	var card_type = 1;
-	var card_index = 0;
+	var card_type = 0;
+	var card_index = 1;
 	var order = 1;
 	card_inst_2 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
-	var rarity = 1;
-	var element = 1;
-	var card_type = 1;
+	var rarity = 0;
+	var element = 0;
+	var card_type = 0;
 	var card_index = 2;
 	var order = 2;
 	card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)

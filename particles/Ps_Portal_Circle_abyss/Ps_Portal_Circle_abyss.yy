@@ -19,8 +19,8 @@
   ],
   "name":"Ps_Portal_Circle_abyss",
   "parent":{
-    "name":"Portals",
-    "path":"folders/Particle Systems/Portals.yy",
+    "name":"Onyx",
+    "path":"folders/Particle Systems/Onyx.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

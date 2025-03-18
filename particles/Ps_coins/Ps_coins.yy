@@ -13,8 +13,8 @@
   ],
   "name":"Ps_coins",
   "parent":{
-    "name":"Celebrations",
-    "path":"folders/Particle Systems/Celebrations.yy",
+    "name":"Onyx",
+    "path":"folders/Particle Systems/Onyx.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

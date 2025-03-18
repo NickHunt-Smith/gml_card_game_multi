@@ -22,8 +22,8 @@
   ],
   "name":"Ps_Laser_Fire",
   "parent":{
-    "name":"Lasers",
-    "path":"folders/Particle Systems/Lasers.yy",
+    "name":"Ruby",
+    "path":"folders/Particle Systems/Ruby.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

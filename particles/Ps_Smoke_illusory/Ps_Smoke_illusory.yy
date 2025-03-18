@@ -16,8 +16,8 @@
   ],
   "name":"Ps_Smoke_illusory",
   "parent":{
-    "name":"Smoke",
-    "path":"folders/Particle Systems/Smoke.yy",
+    "name":"Onyx",
+    "path":"folders/Particle Systems/Onyx.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

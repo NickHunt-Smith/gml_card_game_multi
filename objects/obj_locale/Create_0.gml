@@ -18,8 +18,18 @@ x_hand = 1520;
 order_in_hand = 1;
 y_hand = 1590;
 
+yrotation = 0;
+xrotation = 0;
+max_angle = 15;
+
 lerp_amount = 0.65;
 overwriting = false;
+playing = false;
+play_element_seq = noone;
+sprite_gap = 0;
+play_scale = 1;
+play_scale_stats = 1;
+alpha = 0;
 
 // Set what PFX we need.
 pfx_border_top = Ps_Fire_Line_top;

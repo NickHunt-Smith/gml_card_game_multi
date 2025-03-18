@@ -102,20 +102,30 @@ if array_length(hand_rarity) = 0 or (global.stack_active = true && array_max(han
 						break
 					}
 				}
-				inst_art_spell = scr_play_spell(true,4,1,2,target_1,target_2,target_3);
-				array_delete(hand_rarity,hand_choice,1);
-				array_delete(hand_card_type,hand_choice,1);
+				alarm[3] = 65;
+				combo = true;
+				playing = true;
+				rarity = 4;
+				element = 1;
+				card_index = 2;
+				card_type = 1;
+				//inst_art_spell = scr_play_spell(true,4,1,2,target_1,target_2,target_3);
+				//array_delete(hand_rarity,hand_choice,1);
+				//array_delete(hand_card_type,hand_choice,1);
 		
 				for (var _j = 0; _j < array_length(hand_rarity); _j++) {
-					hand_choice = irandom(array_length(hand_rarity)-1);
+					hand_choice_combo = irandom(array_length(hand_rarity)-1);
 					if hand_rarity[_j] = 2 && hand_card_type[_j] = 1 {
-						hand_choice = _j;
+						hand_choice_combo = _j;
 						break
 					}
 				}
-				inst_art_spell = scr_play_spell(true,2,1,0,target_1,target_2,target_3);
-				array_delete(hand_rarity,hand_choice,1);
-				array_delete(hand_card_type,hand_choice,1);
+				rarity_combo = 1;
+				element_combo = 1;
+				card_index_combo = 1;
+				//inst_art_spell = scr_play_spell(true,2,1,0,target_1,target_2,target_3);
+				//array_delete(hand_rarity,hand_choice,1);
+				//array_delete(hand_card_type,hand_choice,1);
 			}
 		} else if uncommon_spells != 0 && legendary_spells != 0 && combo_prob < 70 {
 			var targets = scr_choose_targets("freeze_any");
@@ -134,20 +144,30 @@ if array_length(hand_rarity) = 0 or (global.stack_active = true && array_max(han
 						break
 					}
 				}
-				inst_art_spell = scr_play_spell(true,4,1,2,target_1,target_2,target_3);
-				array_delete(hand_rarity,hand_choice,1);
-				array_delete(hand_card_type,hand_choice,1);
+				alarm[3] = 65;
+				combo = true;
+				playing = true;
+				rarity = 4;
+				element = 1;
+				card_index = 2;
+				card_type = 1;
+				//inst_art_spell = scr_play_spell(true,4,1,2,target_1,target_2,target_3);
+				//array_delete(hand_rarity,hand_choice,1);
+				//array_delete(hand_card_type,hand_choice,1);
 		
 				for (var _j = 0; _j < array_length(hand_rarity); _j++) {
-					hand_choice = irandom(array_length(hand_rarity)-1);
-					if hand_rarity[_j] = 2 && hand_card_type[_j] = 1 {
-						hand_choice = _j;
+					hand_choice_combo = irandom(array_length(hand_rarity)-1);
+					if hand_rarity[_j] = 1 && hand_card_type[_j] = 1 {
+						hand_choice_combo = _j;
 						break
 					}
 				}
-				inst_art_spell = scr_play_spell(true,1,1,1,target_1,target_2,target_3);
-				array_delete(hand_rarity,hand_choice,1);
-				array_delete(hand_card_type,hand_choice,1);
+				rarity_combo = 1;
+				element_combo = 1;
+				card_index_combo = 1;
+				//inst_art_spell = scr_play_spell(true,1,1,1,target_1,target_2,target_3);
+				//array_delete(hand_rarity,hand_choice,1);
+				//array_delete(hand_card_type,hand_choice,1);
 			}
 		} else {
 			
@@ -240,9 +260,11 @@ if array_length(hand_rarity) = 0 or (global.stack_active = true && array_max(han
 					show_debug_message("pass 4")
 				} else {
 					if card_type = 1 {
-						inst_art_spell = scr_play_spell(true,rarity,element,card_index,target_1,target_2,target_3);
-						array_delete(hand_rarity,hand_choice,1);
-						array_delete(hand_card_type,hand_choice,1);
+						//inst_art_spell = scr_play_spell(true,rarity,element,card_index,target_1,target_2,target_3);
+						//array_delete(hand_rarity,hand_choice,1);
+						//array_delete(hand_card_type,hand_choice,1);
+						alarm[3] = 65;
+						playing = true;
 		
 						//// Target empty locale
 						//var target_empty = instance_create_depth(0,0,0,obj_target_empty);
@@ -377,15 +399,17 @@ if array_length(hand_rarity) = 0 or (global.stack_active = true && array_max(han
 						}
 				
 						if pass = false {
-							if overwriting = true {
-								alarm[3] = 90;
-							} else {
-								var effect_arr = scr_play_locale(true,chosen_position,rarity,element,card_index,target_1,target_2,target_3);
-								array_delete(hand_rarity,hand_choice,1);
-								array_delete(hand_card_type,hand_choice,1);
-								global.priority = "player";
-								global.player_enabled = true;
-							}
+							alarm[3] = 65;
+							playing = true;
+							//if overwriting = true {
+							//	alarm[3] = 90;
+							//} else {
+								//var effect_arr = scr_play_locale(true,chosen_position,rarity,element,card_index,target_1,target_2,target_3);
+								//array_delete(hand_rarity,hand_choice,1);
+								//array_delete(hand_card_type,hand_choice,1);
+								//global.priority = "player";
+								//global.player_enabled = true;
+							//}
 						}
 					}
 				}
@@ -420,17 +444,13 @@ if pass = true {
 			global.player_enabled = true;
 		}
 	}
+	deciding = false;
 } else {
-	if overwriting = false {
-		if global.stack_active = true {
-			global.priority = "player";
-			global.player_enabled = true;
-		} else {
-			global.player.passed = false;
-			global.priority = "player";
-			global.player_enabled = true;
-		}
-	}
+	if global.stack_active = true {
+		global.player.passed = false;
+		global.priority = "player";
+		global.player_enabled = true;
+		deciding = false;
+	} 
 }
 
-deciding = false;

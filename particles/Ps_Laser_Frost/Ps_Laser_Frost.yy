@@ -25,8 +25,8 @@
   ],
   "name":"Ps_Laser_Frost",
   "parent":{
-    "name":"Lasers",
-    "path":"folders/Particle Systems/Lasers.yy",
+    "name":"Pearl",
+    "path":"folders/Particle Systems/Pearl.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

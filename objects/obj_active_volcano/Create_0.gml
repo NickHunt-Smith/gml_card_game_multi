@@ -11,6 +11,7 @@ eff_done = false;
 
 wait = false;
 wait_target = false;
+has_effect = true;
 
 fire_on_card = noone;
 fireball = noone;

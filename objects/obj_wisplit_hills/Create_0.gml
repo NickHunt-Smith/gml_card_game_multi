@@ -11,6 +11,7 @@ card_state = noone;
 
 eff_done = false;
 opp = false;
+has_effect = true;
 
 wait = false;
 

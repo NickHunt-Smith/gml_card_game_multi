@@ -22,8 +22,8 @@
   ],
   "name":"Ps_firestorm",
   "parent":{
-    "name":"Portals",
-    "path":"folders/Particle Systems/Portals.yy",
+    "name":"Ruby",
+    "path":"folders/Particle Systems/Ruby.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

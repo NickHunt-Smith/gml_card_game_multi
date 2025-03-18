@@ -14,6 +14,7 @@ eff_type = "none";
 card_state = noone;
 
 eff_done = false;
+has_effect = true;
 
 wait = false;
 opp = false;

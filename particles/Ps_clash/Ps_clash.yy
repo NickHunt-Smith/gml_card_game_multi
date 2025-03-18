@@ -16,8 +16,8 @@
   ],
   "name":"Ps_clash",
   "parent":{
-    "name":"Muzzle Flashes",
-    "path":"folders/Particle Systems/Muzzle Flashes.yy",
+    "name":"Pearl",
+    "path":"folders/Particle Systems/Pearl.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

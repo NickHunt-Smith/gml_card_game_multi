@@ -1,6 +1,49 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if just_played = true {
+	if rarity = 0 {
+		play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_common);
+	} else if rarity = 1 {
+		if element = 0 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_uncommon_ruby);
+		} else if element = 1 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_uncommon_pearl);
+		} else if element = 2 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_uncommon_onyx);
+		}
+	} else if rarity = 2 {
+		if element = 0 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_rare_ruby);
+		} else if element = 1 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_rare_pearl);
+		} else if element = 2 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_rare_onyx);
+		}
+	} else if rarity = 3 {
+		if element = 0 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_mythic_ruby);
+		} else if element = 1 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_mythic_pearl);
+		} else if element = 2 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_mythic_onyx);
+		}
+	} else if rarity = 4 {
+		if element = 0 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_legendary_ruby);
+		} else if element = 1 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_legendary_pearl);
+		} else if element = 2 {
+			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_legendary_onyx);
+		}
+	}
+	//var copy_struct = layer_sequence_get_instance(play_seq);
+	//play_seq.sequence.tracks[1].tracks[2].keyframes[0].channels[0].value = 0.5 + 0.01*random_range(0,100);
+	//show_debug_message(copy_struct.sequence.tracks[1].tracks[2].keyframes[0].channels[0].value)
+	just_played = false;
+	alarm[5] = 90;
+}
+
 //if channel < 1 && channelling = true {
 //	part_system_destroy(channelled_sys);
 //	channelling = false;
@@ -152,10 +195,10 @@ if (health_locale <= 0) && (destroy_dust = false) {
 			destroyed = true;
 			array_push(global.being_destroyed,0);
 			instance_destroy(self.effect_function_inst);
-			if global.end_turn_active = true {
-				global.end_turn_active = false;
-				enable_end_turn_later = true;
-			}
+			//if global.end_turn_active = true {
+			//	global.end_turn_active = false;
+			//	enable_end_turn_later = true;
+			//}
 			if tooltip_inst != noone {
 				instance_destroy(tooltip_inst);
 			}
@@ -167,4 +210,13 @@ if (health_locale <= 0) && (destroy_dust = false) {
 			destroyed_eff.opp = opp;
 		}
 	}
+}
+
+if frozen_memory = false && frozen = true {
+	frozen_memory = true;
+}
+if frozen_memory = true && frozen = false {
+	frozen_memory = false;
+	unfreeze = layer_sequence_create("effect_layer",x+112,y+184,seq_unfreeze);
+	alarm[4] = 45;
 }

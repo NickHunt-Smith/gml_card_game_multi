@@ -14,8 +14,8 @@
   ],
   "name":"Ps_channel_ruby",
   "parent":{
-    "name":"Lasers",
-    "path":"folders/Particle Systems/Lasers.yy",
+    "name":"Ruby",
+    "path":"folders/Particle Systems/Ruby.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

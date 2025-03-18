@@ -18,6 +18,17 @@ x_hand = 1520;
 order_in_hand = 1;
 y_hand = 1590;
 
+yrotation = 0;
+xrotation = 0;
+max_angle = 15;
+
+playing = false;
+play_scale = 1;
+sprite_gap = 0;
+alpha = 0;
+play_element_seq = noone;
+y_stack = 748;
+
 lerp_amount = 0.65;
 
 // Set what PFX we need.

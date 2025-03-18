@@ -14,8 +14,8 @@
   ],
   "name":"Ps_avalanche",
   "parent":{
-    "name":"Weather",
-    "path":"folders/Particle Systems/Weather.yy",
+    "name":"Pearl",
+    "path":"folders/Particle Systems/Pearl.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

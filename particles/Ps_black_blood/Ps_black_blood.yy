@@ -14,8 +14,8 @@
   ],
   "name":"Ps_black_blood",
   "parent":{
-    "name":"Water",
-    "path":"folders/Particle Systems/Water.yy",
+    "name":"Onyx",
+    "path":"folders/Particle Systems/Onyx.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

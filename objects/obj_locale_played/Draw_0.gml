@@ -13,23 +13,24 @@ if big_mode = false {
 		//draw_text_colour(x+111,y + 328,health_locale,c_maroon,c_maroon,c_maroon,c_maroon,1)
 		//draw_sprite_ext(global.rarity_gem_list[rarity],0,x+159,y+299,0.18,0.18,0,c_white,1)
 		
-		draw_sprite_ext(s_locale_stats,0,x,y+293,0.68,0.68,0,c_white,1)
-		draw_sprite_ext(global.element_sprite_list[element],0,x-5,y+308,0.08,0.08,0,c_white,1)
+		//alpha = lerp(alpha,1,0.1);
+		draw_sprite_ext(s_locale_stats,0,x,y+293,0.68,0.68,0,c_white,alpha)
+		draw_sprite_ext(global.element_sprite_list[element],0,x-5,y+308,0.08,0.08,0,c_white,alpha)
 		if channel > 9 {
-			draw_text_ext_transformed_color(x+55,y + 309,channel,20,200,0.7,1,0,c_maroon,c_maroon,c_maroon,c_maroon,1)
+			draw_text_ext_transformed_color(x+55,y + 309,channel,20,200,0.7,1,0,c_maroon,c_maroon,c_maroon,c_maroon,alpha)
 		} else {
-			draw_text_colour(x+55,y + 328,channel,c_maroon,c_maroon,c_maroon,c_maroon,1);
+			draw_text_colour(x+55,y + 328,channel,c_maroon,c_maroon,c_maroon,c_maroon,alpha);
 		}
 		draw_set_font(Empower_font)
 		if health_locale > 9 {
-			draw_text_ext_transformed_color(x+203,y + 309,health_locale,20,200,0.7,1,0,c_maroon,c_maroon,c_maroon,c_maroon,1)
+			draw_text_ext_transformed_color(x+203,y + 309,health_locale,20,200,0.7,1,0,c_maroon,c_maroon,c_maroon,c_maroon,alpha)
 		} else {
-			draw_text_colour(x+203,y + 328,health_locale,c_maroon,c_maroon,c_maroon,c_maroon,1)
+			draw_text_colour(x+203,y + 328,health_locale,c_maroon,c_maroon,c_maroon,c_maroon,alpha)
 		}
-		draw_sprite_ext(s_strength_logo,0,x+168,y+328,0.17,0.17,0,c_white,1)
-		draw_sprite_ext(global.rarity_gem_list[rarity],0,x+84,y+299,0.18,0.18,0,c_white,1)
+		draw_sprite_ext(s_strength_logo,0,x+168,y+328,0.17,0.17,0,c_white,alpha)
+		draw_sprite_ext(global.rarity_gem_list[rarity],0,x+84,y+299,0.18,0.18,0,c_white,alpha)
 	
-		if (moused) && (tooltip_created = false) {
+		if (moused) && (tooltip_created = false) && effect_function.has_effect != false {
 			alarm[2] = 100;
 			tooltip_created = true;
 		}

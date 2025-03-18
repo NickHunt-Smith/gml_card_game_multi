@@ -15,8 +15,8 @@
   ],
   "name":"Ps_sulfur",
   "parent":{
-    "name":"Smoke",
-    "path":"folders/Particle Systems/Smoke.yy",
+    "name":"Ruby",
+    "path":"folders/Particle Systems/Ruby.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

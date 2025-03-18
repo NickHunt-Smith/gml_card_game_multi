@@ -48,7 +48,7 @@ if (big_mode = false) {
 		image_yscale = lerp(image_yscale,0.5,0.3);
 	}
 	
-	if (obj_mouse_manager.grabbed_card = noone) && (draft_mode = false) && overwriting = false {
+	if (obj_mouse_manager.grabbed_card = noone) && (draft_mode = false) && overwriting = false && playing = false  {
 		x = lerp(x, 1520 + 180*(order_in_hand) -90*(array_length(global.cards_in_hand) - 1), lerp_amount);
 		y = lerp(y, y_hand, lerp_amount);
 	}

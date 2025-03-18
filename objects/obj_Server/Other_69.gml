@@ -9,8 +9,6 @@ switch(async_load[?"event_type"]) {
 			if already_spawned = false {
 				global.my_id = steam_get_user_steam_id()
 				global.other_id = _fromID
-				show_debug_message(global.my_id)
-				show_debug_message(global.other_id)
 				already_spawned = true;
 				show_debug_message("Player Joined: " + _fromName)
 				var _b = buffer_create(1,buffer_grow,1)

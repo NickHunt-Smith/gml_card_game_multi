@@ -16,8 +16,8 @@
   ],
   "name":"Ps_Explosion_black",
   "parent":{
-    "name":"Explosions",
-    "path":"folders/Particle Systems/Explosions.yy",
+    "name":"Onyx",
+    "path":"folders/Particle Systems/Onyx.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

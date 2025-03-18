@@ -1,6 +1,7 @@
 /// @description 
 
 deciding = false;
+playing = false;
 passed = false;
 pass = false;
 inst_art_locale = noone;
@@ -11,7 +12,23 @@ effect_inst_opp_spell = noone;
 spell_playing = false;
 tooltip_string_1 = 0;
 tooltip_string_2 = 0;
-depth = -800;
+depth = -1000;
+
+play_scale = 1;
+play_element_seq = noone;
+sprite_gap = 0;
+initial_draw=true;
+locale_lane_y = 301;
+locale_lane_x = 1018;
+x_accel = 0;
+y_accel = 0;
+play_scale_stats = 1;
+alpha = 0;
+y_stack = 748;
+combo = false;
+rarity_combo = 0;
+element_combo = 0;
+card_index_combo = 0;
 
 drained = 0;
 destroyed_locales_rarity = [];
@@ -35,6 +52,7 @@ target_2 = 0;
 target_3 = 0;
 chosen_position = "left_opp";
 hand_choice = 0;
+hand_choice_combo = 0;
 overwriting = false;
 
 hand_rarity = [];

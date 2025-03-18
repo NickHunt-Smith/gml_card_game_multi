@@ -22,8 +22,8 @@
   ],
   "name":"Ps_laser_onyx",
   "parent":{
-    "name":"Lasers",
-    "path":"folders/Particle Systems/Lasers.yy",
+    "name":"Onyx",
+    "path":"folders/Particle Systems/Onyx.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",
