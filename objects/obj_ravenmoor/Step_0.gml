@@ -29,7 +29,7 @@ if eff_type = "lingering" {
 	if opp = false {
 		if global.player.drained >= channel_threshold && channel_2 = false {
 			channel_up_seq = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_channel_up);
-			var seq_change_health = scr_change_numbers(boosted_channel,card_state.x+26,card_state.y + 328);
+			var seq_change_health = scr_change_numbers(bonus_channel_1,card_state.x+26,card_state.y + 328);
 			alarm[1] = 100;
 			if card_state.frozen = true {
 				card_state.memory_channel += bonus_channel_1;
@@ -41,7 +41,7 @@ if eff_type = "lingering" {
 	} else {
 		if global.opponent.drained >= channel_1_threshold && channel_2 = false {
 			channel_up_seq = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_channel_up);
-			var seq_change_health = scr_change_numbers(boosted_channel,card_state.x+26,card_state.y + 328);
+			var seq_change_health = scr_change_numbers(bonus_channel_1,card_state.x+26,card_state.y + 328);
 			alarm[1] = 100;
 			if card_state.frozen = true {
 				card_state.memory_channel += bonus_channel_1;

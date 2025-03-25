@@ -1,6 +1,13 @@
 /// @description Fill circle with element, if channelling
 // You can write your code in this editor
 
+if global.end_game_trigger = true {
+	if power_swirling != noone {
+		part_system_depth(power_swirling,-1050);
+	}
+	depth = -1050;
+}
+
 global.channelled_right_player = [global.channelled_right_player_ruby,global.channelled_right_player_pearl,global.channelled_right_player_onyx];
 max_channel = 0;
 var max_channel_ind = 0;
@@ -23,8 +30,9 @@ var channel_print = max_channel;
 if max_channel > 20 {
 	channel_print = 20;
 }
-draw_text_colour(global.channelled_right_player_loc_x,global.channelled_right_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)
-
+if global.end_game_trigger = false {
+	draw_text_colour(global.channelled_right_player_loc_x,global.channelled_right_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)
+}
 
 
 if tied = false

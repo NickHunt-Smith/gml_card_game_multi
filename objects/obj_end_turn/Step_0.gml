@@ -18,7 +18,7 @@ if global.player_enabled = true {
 
 // Conduct end of turn effects if not waiting for animations
 
-if global.end_turn_active = true && array_length(global.being_destroyed) = 0 {
+if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && global.end_game_trigger = false {
 	
 	if combat_ended = false {
 		if combat_started = false {
@@ -85,7 +85,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 {
 		} else if (global.wait_for_effect = false) {
 			//global.player_enabled = true;
 			if locked_boosting = false {
-				if array_max(global.channelled_left_opp) = 20  {
+				if array_max(global.channelled_left_opp) >= 20  {
 					var max_channel = 0;
 					var max_channel_ind = 0;
 					for (var _i = 0; _i < array_length(global.channelled_right_opp); _i++) {
@@ -111,7 +111,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 {
 					var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
 					alarm[8] = 100;
 					locked_boosting = true;
-				} else if array_max(global.channelled_right_opp) = 20  {
+				} else if array_max(global.channelled_right_opp) >= 20  {
 					var max_channel = 0;
 					var max_channel_ind = 0;
 					for (var _i = 0; _i < array_length(global.channelled_left_opp); _i++) {
@@ -137,7 +137,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 {
 					var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
 					alarm[8] = 100;
 					locked_boosting = true;
-				} else if array_max(global.channelled_right_player) = 20  {
+				} else if array_max(global.channelled_right_player) >= 20  {
 					var max_channel = 0;
 					var max_channel_ind = 0;
 					for (var _i = 0; _i < array_length(global.channelled_left_player); _i++) {
@@ -163,7 +163,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 {
 					var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
 					alarm[8] = 100;
 					locked_boosting = true;
-				} else if array_max(global.channelled_left_player) = 20  {
+				} else if array_max(global.channelled_left_player) >= 20  {
 					var max_channel = 0;
 					var max_channel_ind = 0;
 					for (var _i = 0; _i < array_length(global.channelled_right_player); _i++) {

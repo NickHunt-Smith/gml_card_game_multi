@@ -7,6 +7,7 @@ var _loaded = texturegroup_load("Default");
 //show_debug_message(window_get_width())
 //show_debug_message(window_get_height())
 window_set_size(1920, 992);
+//window_set_fullscreen(true)
 global.card_offset_x = 112;
 global.card_offset_y = 184;
 draw_set_halign(fa_center);
@@ -41,6 +42,7 @@ global.targeting_empty = false;
 global.targeting_spell = false;
 global.drafting = false;
 global.big_mode = false;
+global.end_game_trigger = false;
 global.source_target = noone;
 global.end_turn = instance_create_layer(2144,736,"On_Board",obj_end_turn);
 draft_inst = noone;

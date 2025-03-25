@@ -140,7 +140,7 @@ if (eff_type = "end_turn") && (wait = false) {
 		//		}
 		//	}
 		//}
-		//wait = true;
+		wait = true;
 		//alarm[2] = 100;
 		alarm[0] = 100;
 	}

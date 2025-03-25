@@ -22,6 +22,12 @@ play_seq = noone;
 just_played = true;
 alpha = 1;
 
+x_memory = 0;
+y_memory = 0;
+yrotation = 0;
+xrotation = 0;
+max_angle = 15;
+
 tooltip_inst = noone;
 tooltip_created = false;
 tooltip_extra = false;

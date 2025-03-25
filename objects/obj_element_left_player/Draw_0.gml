@@ -1,6 +1,23 @@
 /// @description Fill circle with element, if channelling
 // You can write your code in this editor
 
+if global.end_game_trigger = true && array_max(global.channelled_left_player) >= 20 && fade_out = false {
+	part_system_depth(power_swirling,-1050);
+	depth = -1050;
+	draw_sprite_ext(s_spell_background,0,1520,720,5,5,0,c_black,alpha);
+	alpha = clamp(alpha + 0.005,0,0.5);
+}
+
+if fade_out = true {
+	depth = -1050;
+	draw_sprite_ext(s_spell_background,0,1520,720,5,5,0,c_black,alpha);
+	alpha = clamp(alpha + 0.005,0.5,1);
+}
+
+if alpha = 1 {
+	draw_text_color(1520,745,"Victory!",c_white,c_white,c_white,c_white,1);
+}
+
 global.channelled_left_player = [global.channelled_left_player_ruby,global.channelled_left_player_pearl,global.channelled_left_player_onyx];
 max_channel = 0;
 var max_channel_ind = 0;
@@ -23,8 +40,9 @@ var channel_print = max_channel;
 if max_channel > 20 {
 	channel_print = 20;
 }
-draw_text_colour(global.channelled_left_player_loc_x,global.channelled_left_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)
-
+if global.end_game_trigger = false {
+	draw_text_colour(global.channelled_left_player_loc_x,global.channelled_left_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)
+}
 
 
 if tied = false

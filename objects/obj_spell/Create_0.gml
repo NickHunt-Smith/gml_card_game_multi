@@ -16,7 +16,7 @@ x_start = 1520;
 y_start = 1490;
 x_hand = 1520;
 order_in_hand = 1;
-y_hand = 1590;
+y_hand = 1630;
 
 yrotation = 0;
 xrotation = 0;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.resolve_stack = true && global.drafting = false {
+if global.resolve_stack = true && global.drafting = false && global.end_game_trigger = false {
 	if eff_first = true {
 		eff_function_inst_stack = global.spell_stack[array_length(global.spell_stack)-1].effect_function_inst;
 		global.spell_stack[array_length(global.spell_stack)-1].effect_function_inst.wait_stack = true;

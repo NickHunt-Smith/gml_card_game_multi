@@ -12,6 +12,12 @@ is_locale = false;
 just_played = true;
 play_seq = noone;
 
+x_memory = 0;
+y_memory = 0;
+yrotation = 0;
+xrotation = 0;
+max_angle = 15;
+
 rarity = 1;
 element = 1;
 card_type = 1;

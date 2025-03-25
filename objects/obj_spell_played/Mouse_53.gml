@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 if big_mode = true {
+	x = x_memory;
+	y = y_memory;
 	global.big_mode = false;
 	big_mode = false;
 	global.player_enabled = true;

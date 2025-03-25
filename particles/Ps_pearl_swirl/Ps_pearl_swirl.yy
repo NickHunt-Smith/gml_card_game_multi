@@ -1,0 +1,27 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"Ps_pearl_swirl",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"swirl_1","additiveBlend":true,"directionIncrease":4.5,"directionMax":360.0,"directionMin":0.0,"directionWiggle":0.0,"distribution":2,"editorColour":1090519039,"editorDrawShape":true,"emitCount":1,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":4294966245,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":80.0,"lifetimeMin":80.0,"linkedEmitter":null,"locked":false,"midColour":4294965923,"mode":0,"name":"swirl_1","orientationIncrease":0.0,"orientationMax":360.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":0.1,"regionW":0.1,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.5,"scaleY":0.5,"shape":1,"sizeIncrease":0.0,"sizeMax":1.0,"sizeMin":0.5,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.1,"speedMax":4.0,"speedMin":4.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4294115138,"texture":9,},
+    {"$GMPSEmitter":"","%Name":"swirl_2","additiveBlend":true,"directionIncrease":5.0,"directionMax":360.0,"directionMin":0.0,"directionWiggle":0.0,"distribution":2,"editorColour":1090519039,"editorDrawShape":true,"emitCount":-3,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":4294964932,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":80.0,"lifetimeMin":80.0,"linkedEmitter":null,"locked":false,"midColour":4294967090,"mode":0,"name":"swirl_2","orientationIncrease":0.0,"orientationMax":360.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":0.1,"regionW":0.1,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.0,"scaleY":1.0,"shape":1,"sizeIncrease":0.0,"sizeMax":1.0,"sizeMin":0.5,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.1,"speedMax":4.0,"speedMin":4.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4294963714,"texture":10,},
+    {"$GMPSEmitter":"","%Name":"element","additiveBlend":false,"directionIncrease":0.0,"directionMax":100.0,"directionMin":80.0,"directionWiggle":0.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":1,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":false,"endColour":4294967295,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":800.0,"lifetimeMin":800.0,"linkedEmitter":null,"locked":false,"midColour":4294967295,"mode":1,"name":"element","orientationIncrease":0.0,"orientationMax":0.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":0.1,"regionW":0.1,"regionX":-110.0,"regionY":-90.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.362,"scaleY":0.35,"shape":0,"sizeIncrease":0.0,"sizeMax":1.0,"sizeMin":1.0,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.0,"speedMin":0.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":{"name":"s_ruby","path":"sprites/s_ruby/s_ruby.yy",},"spriteRandom":false,"spriteStretch":true,"startColour":4294967295,"texture":-1,},
+  ],
+  "name":"Ps_pearl_swirl",
+  "parent":{
+    "name":"Pearl",
+    "path":"folders/Particle Systems/Pearl.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":false,
+  "xorigin":0,
+  "yorigin":0,
+}

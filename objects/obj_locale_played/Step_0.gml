@@ -28,6 +28,7 @@ if just_played = true {
 		} else if element = 2 {
 			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_mythic_onyx);
 		}
+		screenshake(10, 4, 0.4);
 	} else if rarity = 4 {
 		if element = 0 {
 			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_legendary_ruby);
@@ -36,6 +37,7 @@ if just_played = true {
 		} else if element = 2 {
 			play_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_play_legendary_onyx);
 		}
+		screenshake(10, 4, 0.4);
 	}
 	//var copy_struct = layer_sequence_get_instance(play_seq);
 	//play_seq.sequence.tracks[1].tracks[2].keyframes[0].channels[0].value = 0.5 + 0.01*random_range(0,100);

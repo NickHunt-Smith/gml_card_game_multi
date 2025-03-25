@@ -28,6 +28,7 @@ if just_played = true {
 		} else if element = 2 {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_mythic_onyx_spell);
 		}
+		screenshake(10, 4, 0.4);
 	} else if rarity = 4 {
 		if element = 0 {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_legendary_ruby_spell);
@@ -36,6 +37,7 @@ if just_played = true {
 		} else if element = 2 {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_legendary_onyx_spell);
 		}
+		screenshake(10, 4, 0.4);
 	}
 	just_played = false;
 	alarm[5] = 90;
