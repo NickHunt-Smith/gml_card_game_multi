@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function sync_draft() {
 	var opp_done = false
+	var inbuf = buffer_create(16,buffer_grow,1)
 	// Check if opp is done. If they are, then we're both done and we can move on
 	if steam_net_packet_receive() {
 		var _sender = steam_net_packet_get_sender_id()
