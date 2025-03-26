@@ -260,6 +260,7 @@
     {"id":{"name":"obj_mist_swept_highlands","path":"objects/obj_mist_swept_highlands/obj_mist_swept_highlands.yy",},},
     {"id":{"name":"obj_mouse_manager","path":"objects/obj_mouse_manager/obj_mouse_manager.yy",},},
     {"id":{"name":"obj_mt_kushana","path":"objects/obj_mt_kushana/obj_mt_kushana.yy",},},
+    {"id":{"name":"obj_opponent_pvp","path":"objects/obj_opponent_pvp/obj_opponent_pvp.yy",},},
     {"id":{"name":"obj_opponent","path":"objects/obj_opponent/obj_opponent.yy",},},
     {"id":{"name":"obj_outmaneuvered","path":"objects/obj_outmaneuvered/obj_outmaneuvered.yy",},},
     {"id":{"name":"obj_path_to_the_spiral","path":"objects/obj_path_to_the_spiral/obj_path_to_the_spiral.yy",},},

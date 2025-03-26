@@ -14,4 +14,8 @@ has_effect = false;
 channel_seq = noone;
 seq_change_health =noone;
 
+target_1 = noone;
+target_2 = noone;
+target_3 = noone;
+
 depth = -900;

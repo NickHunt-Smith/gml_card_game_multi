@@ -9,10 +9,10 @@ if (summon_cards = true) && debug_test = true {
 	
 	var card_inst = noone;
 	
-	var rarity = 1;
-	var element = 2;
+	var rarity = 0;
+	var element = 0;
 	var card_type = 0;
-	var card_index = 2;
+	var card_index = 0;
 	var order = 0;
 	
 	card_inst_1 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)

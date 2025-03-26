@@ -98,6 +98,13 @@ if global.pvp_active = false {
 		global.player_enabled = true;
 	}
 } else {
+	if emit_destroy = true {
+		part_emitter_destroy_all(summon_whirlpool_1);
+		part_emitter_destroy_all(summon_whirlpool_2);
+		part_emitter_destroy_all(summon_whirlpool_3);
+		part_emitter_destroy_all(sparkle_rain);
+		emit_destroy = false;
+	}
 	if sync_draft() = false {
 		alarm[1] = 1;
 	} else {
@@ -185,11 +192,6 @@ if global.pvp_active = false {
 			//array_push(global.opponent.hand_card_type,1);
 		}
 		global.drafting = false;
-		part_emitter_destroy_all(summon_whirlpool_1);
-		part_emitter_destroy_all(summon_whirlpool_2);
-		part_emitter_destroy_all(summon_whirlpool_3);
-		part_emitter_destroy_all(sparkle_rain);
-		emit_destroy = false;
 		alarm[0] = 100;
 		if switch_priority = true {
 			global.priority = "opp";

@@ -3,7 +3,11 @@
 
 if game_start = true {
 	randomise();
-	global.opponent = instance_create_depth(0,0,0,obj_opponent);
+	if global.pvp_active = true {
+		global.opponent = instance_create_depth(0,0,0,obj_opponent_pvp);
+	} else {
+		global.opponent = instance_create_depth(0,0,0,obj_opponent);
+	}
 	global.player = instance_create_depth(0,0,0,obj_player);
 	game_start = false;
 	global.turn_count = 0;

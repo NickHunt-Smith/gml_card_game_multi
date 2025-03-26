@@ -5,6 +5,14 @@ if eff_type = "play" {
 	if global.priority = "player" && opp = false && global.resolve_stack = false {
 		global.priority = "opp";
 	} 
+	if playing = true && global.pvp_active = true {
+		var _b = buffer_create(1,buffer_grow,1)
+		buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PLAYED_CARD)
+		var card_details = string(card_state.position) + "," + string(card_state.card_type) + "," + string(card_state.rarity) + "," + string(card_state.element) + "," + string(card_state.card_index) + "," + string(card_state.target_1) + "," + string(card_state.target_2) + "," + string(card_state.target_2);
+		buffer_write(_b,buffer_string,card_details)
+		steam_net_packet_send(global.other_id,_b)
+		buffer_delete(_b)
+	}
 	instance_destroy();
 }
 

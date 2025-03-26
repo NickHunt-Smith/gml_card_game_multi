@@ -211,6 +211,7 @@
     {"name":"obj_mist_swept_highlands","order":1,"path":"objects/obj_mist_swept_highlands/obj_mist_swept_highlands.yy",},
     {"name":"obj_mouse_manager","order":19,"path":"objects/obj_mouse_manager/obj_mouse_manager.yy",},
     {"name":"obj_mt_kushana","order":1,"path":"objects/obj_mt_kushana/obj_mt_kushana.yy",},
+    {"name":"obj_opponent_pvp","order":31,"path":"objects/obj_opponent_pvp/obj_opponent_pvp.yy",},
     {"name":"obj_opponent","order":20,"path":"objects/obj_opponent/obj_opponent.yy",},
     {"name":"obj_path_to_the_spiral","order":2,"path":"objects/obj_path_to_the_spiral/obj_path_to_the_spiral.yy",},
     {"name":"obj_player","order":21,"path":"objects/obj_player/obj_player.yy",},
