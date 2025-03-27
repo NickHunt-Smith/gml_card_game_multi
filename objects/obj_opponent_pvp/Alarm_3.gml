@@ -39,6 +39,7 @@ if card_type = 1 {
 	play_scale = 1;
 	play_scale_stats = 1;
 	sprite_gap = 0;
+	wait_for_opp = true;
 
 	global.player.passed = false;
 	global.priority = "player";

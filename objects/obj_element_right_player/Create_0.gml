@@ -5,7 +5,7 @@ global.channelled_right_player = [0,0,0];
 max_channel = 0;
 global.channelled_right_player_ruby = 0;
 global.channelled_right_player_pearl = 0;
-global.channelled_right_player_onyx = 20;
+global.channelled_right_player_onyx = 0;
 element_sprites = [s_ruby,s_pearl,s_onyx];
 gauge_element_sprites = [s_channel_gauge_ruby,s_channel_gauge_pearl,s_channel_gauge_onyx];
 

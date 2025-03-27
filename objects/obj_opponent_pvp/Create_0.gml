@@ -14,7 +14,7 @@ tooltip_string_1 = 0;
 tooltip_string_2 = 0;
 depth = -1000;
 
-wait_for_opp = false;
+wait_for_opp = true;
 
 play_scale = 1;
 play_element_seq = noone;
