@@ -8,8 +8,8 @@
   "name":"obj_background_stars",
   "overriddenProperties":[],
   "parent":{
-    "name":"game_room",
-    "path":"folders/Objects/game_room.yy",
+    "name":"obj_board_managers",
+    "path":"folders/Objects/game_room/obj_board_managers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

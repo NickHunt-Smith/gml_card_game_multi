@@ -31,8 +31,8 @@ if card_type = 1 {
 	}
 } else {
 	var effect_arr = scr_play_locale(true,chosen_position,rarity,element,card_index,target_1,target_2,target_3);
-	array_delete(hand_rarity,hand_choice,1);
-	array_delete(hand_card_type,hand_choice,1);
+	//array_delete(hand_rarity,hand_choice,1);
+	//array_delete(hand_card_type,hand_choice,1);
 	playing = false;
 	initial_draw = true;
 	deciding = false;

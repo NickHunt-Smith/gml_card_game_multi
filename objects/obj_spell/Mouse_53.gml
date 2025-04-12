@@ -1,6 +1,6 @@
 
 if playing = false {
-	if (draft_mode = true) && (big_mode = false) {
+	if (draft_mode = true) && (big_mode = false) && global.big_mode = false {
 		if (moused = true) {
 			draft_mode = false;
 			array_push(global.cards_in_hand,self);
@@ -29,7 +29,7 @@ if playing = false {
 			}
 		}
 		x = lerp(x, 1520 + 180*(order_in_hand) -90*(array_length(global.cards_in_hand) - 1), lerp_amount);
-		y = y_hand;
+		y = y_hand_unhover;
 		image_xscale = 0.5;
 		image_yscale = 0.5;
 		depth = -1000;

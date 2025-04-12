@@ -1,0 +1,26 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"Ps_portal_onyx",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"sparks","additiveBlend":true,"directionIncrease":0.0,"directionMax":360.0,"directionMin":0.0,"directionWiggle":100.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":200,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":8421504,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":900.0,"lifetimeMin":900.0,"linkedEmitter":null,"locked":false,"midColour":4279900698,"mode":1,"name":"sparks","orientationIncrease":0.0,"orientationMax":360.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":0.1,"regionW":0.1,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.5,"scaleY":0.5,"shape":0,"sizeIncrease":0.0,"sizeMax":1.0,"sizeMin":1.0,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":1.5,"speedMin":1.5,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4281611316,"texture":9,},
+    {"$GMPSEmitter":"","%Name":"ring","additiveBlend":false,"directionIncrease":0.0,"directionMax":100.0,"directionMin":80.0,"directionWiggle":0.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":1,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":5066061,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":900.0,"lifetimeMin":900.0,"linkedEmitter":null,"locked":false,"midColour":4283256141,"mode":1,"name":"ring","orientationIncrease":-7.0,"orientationMax":0.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":0.1,"regionW":0.1,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.0,"scaleY":1.0,"shape":0,"sizeIncrease":0.0047,"sizeMax":0.045,"sizeMin":0.045,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.0,"speedMin":0.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":{"name":"s_mask_7","path":"sprites/s_mask_7/s_mask_7.yy",},"spriteRandom":false,"spriteStretch":true,"startColour":4279900698,"texture":-1,},
+  ],
+  "name":"Ps_portal_onyx",
+  "parent":{
+    "name":"Onyx",
+    "path":"folders/Particle Systems/Onyx.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":false,
+  "xorigin":0,
+  "yorigin":0,
+}

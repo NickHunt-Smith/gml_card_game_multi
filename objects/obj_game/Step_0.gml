@@ -9,6 +9,7 @@ if game_start = true {
 		global.opponent = instance_create_depth(0,0,0,obj_opponent);
 	}
 	global.player = instance_create_depth(0,0,0,obj_player);
+	var opp_hand_manager = instance_create_depth(0,0,0,obj_opp_hand_manager);
 	game_start = false;
 	global.turn_count = 0;
 	global.drafting = true;

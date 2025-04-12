@@ -17,5 +17,5 @@ if array_max(global.channelled_left_opp) >= 20 && power_swirling = noone {
 		power_swirling = part_system_create(Ps_onyx_swirl);
 	}
 	part_system_position(power_swirling,x + 110,y + 90);
-	part_system_depth(power_swirling,-950);
+	part_system_depth(power_swirling,-850);
 }

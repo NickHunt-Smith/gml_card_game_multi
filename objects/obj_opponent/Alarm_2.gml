@@ -109,6 +109,8 @@ if array_length(hand_rarity) = 0 or (global.stack_active = true && array_max(han
 				element = 1;
 				card_index = 2;
 				card_type = 1;
+				array_delete(hand_rarity,hand_choice,1);
+				array_delete(hand_card_type,hand_choice,1);
 				//inst_art_spell = scr_play_spell(true,4,1,2,target_1,target_2,target_3);
 				//array_delete(hand_rarity,hand_choice,1);
 				//array_delete(hand_card_type,hand_choice,1);
@@ -151,6 +153,8 @@ if array_length(hand_rarity) = 0 or (global.stack_active = true && array_max(han
 				element = 1;
 				card_index = 2;
 				card_type = 1;
+				array_delete(hand_rarity,hand_choice,1);
+				array_delete(hand_card_type,hand_choice,1);
 				//inst_art_spell = scr_play_spell(true,4,1,2,target_1,target_2,target_3);
 				//array_delete(hand_rarity,hand_choice,1);
 				//array_delete(hand_card_type,hand_choice,1);
@@ -264,6 +268,8 @@ if array_length(hand_rarity) = 0 or (global.stack_active = true && array_max(han
 						//array_delete(hand_rarity,hand_choice,1);
 						//array_delete(hand_card_type,hand_choice,1);
 						alarm[3] = 65;
+						array_delete(hand_rarity,hand_choice,1);
+						array_delete(hand_card_type,hand_choice,1);
 						playing = true;
 		
 						//// Target empty locale
@@ -400,6 +406,8 @@ if array_length(hand_rarity) = 0 or (global.stack_active = true && array_max(han
 				
 						if pass = false {
 							alarm[3] = 65;
+							array_delete(hand_rarity,hand_choice,1);
+							array_delete(hand_card_type,hand_choice,1);
 							playing = true;
 							//if overwriting = true {
 							//	alarm[3] = 90;

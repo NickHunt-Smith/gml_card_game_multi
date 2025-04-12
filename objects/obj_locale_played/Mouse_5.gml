@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.big_mode = false && moused = true {
+if global.big_mode = false && moused = true && (global.draft_area_visible = false or opp = false) {
 	x_memory = x;
 	y_memory = y;
 	x = 1513;

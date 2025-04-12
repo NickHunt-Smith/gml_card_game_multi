@@ -41,6 +41,7 @@ global.targeting = false;
 global.targeting_empty = false;
 global.targeting_spell = false;
 global.drafting = false;
+global.draft_area_visible = false;
 global.big_mode = false;
 global.end_game_trigger = false;
 global.source_target = noone;

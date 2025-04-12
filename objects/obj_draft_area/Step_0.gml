@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-image_alpha = lerp(image_alpha, 1, 0.06);
+image_alpha = lerp(image_alpha, 1, 0.09);
 
 if (summon_cards = true) && debug_test = true {
 	global.drafting = true;
@@ -9,10 +9,10 @@ if (summon_cards = true) && debug_test = true {
 	
 	var card_inst = noone;
 	
-	var rarity = 0;
-	var element = 0;
-	var card_type = 0;
-	var card_index = 0;
+	var rarity = 1;
+	var element = 2;
+	var card_type = 1;
+	var card_index = 1;
 	var order = 0;
 	
 	card_inst_1 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
@@ -20,14 +20,14 @@ if (summon_cards = true) && debug_test = true {
 	var rarity = 4;
 	var element = 0;
 	var card_type = 1;
-	var card_index = 1;
+	var card_index = 0;
 	var order = 1;
 	card_inst_2 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
 	var rarity = 0;
-	var element = 1;
-	var card_type = 0;
-	var card_index = 2;
+	var element = 0;
+	var card_type = 1;
+	var card_index = 0;
 	var order = 2;
 	card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
@@ -356,6 +356,8 @@ if (emit_destroy = true) && syncing = false {
 		} 
 		
 		if (draft_count = 0) {
+			button_draw = false;
+			global.draft_area_visible = false;
 			alarm[1] = 1;
 			syncing = true;
 		} else {
@@ -363,5 +365,5 @@ if (emit_destroy = true) && syncing = false {
 		}
 	}
 } else if (emit_destroy = false) {
-	image_alpha = clamp(image_alpha-0.06,0,1);
+	image_alpha = clamp(image_alpha-0.09,0,1);
 }

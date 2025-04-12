@@ -65,9 +65,21 @@ function scr_play_locale(opp,position,rarity,element,card_index,target_1,target_
 	effect_inst_opp.card_state = inst_art_locale;
 	inst_art_locale.effect_function_inst = effect_inst_opp;
 	effect_inst_opp.opp = opp;
-	effect_inst_opp.target_1 = target_1;
-	effect_inst_opp.target_2 = target_2;
-	effect_inst_opp.target_3 = target_3;
+	if target_1 = "self" {
+		effect_inst_opp.target_1 = inst_art_locale
+	} else {
+		effect_inst_opp.target_1 = target_1;
+	}
+	if target_2 = "self" {
+		effect_inst_opp.target_2 = inst_art_locale
+	} else {
+		effect_inst_opp.target_2 = target_2;
+	}
+	if target_3 = "self" {
+		effect_inst_opp.target_3 = inst_art_locale
+	} else {
+		effect_inst_opp.target_3 = target_3;
+	}
 			
 	lingering_effect_inst_opp = instance_create_depth(inst_art_locale.x,inst_art_locale.y,-800,inst_art_locale.effect_function);
 	lingering_effect_inst_opp.eff_type = "lingering";

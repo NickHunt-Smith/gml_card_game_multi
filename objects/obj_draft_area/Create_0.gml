@@ -8,7 +8,13 @@ summon_cards = true;
 switch_priority = false;
 extra_opp_card = false;
 syncing = false;
-depth = -900
+depth = -900;
+view_opp = false;
+button_draw = true;
+x_memory_1 = 0;
+x_memory_2 = 0;
+x_memory_3 = 0;
+global.draft_area_visible = true;
 
 sound_inst = audio_play_sound(snd_draft,10,false);
 
@@ -25,7 +31,7 @@ part_system_position(summon_whirlpool_3, 1890, 290);
 part_system_depth(summon_whirlpool_3,-900);
 
 sparkle_rain = part_system_create(Ps_Magic_Sparkle_Rain_Long);
-part_system_position(sparkle_rain, 1520, 20);
+part_system_position(sparkle_rain, 1520, 5);
 part_system_depth(sparkle_rain,-900);
 
 card_inst_1 = noone;

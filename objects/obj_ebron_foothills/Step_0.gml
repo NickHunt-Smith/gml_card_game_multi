@@ -1,7 +1,29 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if eff_type = "created" && instance_exists(card_state) {
+//if eff_type = "created" && instance_exists(card_state) {
+//	if opp = true {
+//		ruby_spells_start = global.opponent.ruby_spells_played;
+//		ruby_spells_seen = global.opponent.ruby_spells_played - ruby_spells_start;
+//		card_state.tooltip_counter = ruby_spells_seen;
+//	} else {
+//		ruby_spells_start = global.player.ruby_spells_played;
+//		ruby_spells_seen = global.player.ruby_spells_played - ruby_spells_start;
+//		card_state.tooltip_counter = ruby_spells_seen;
+//	}
+	
+//	card_state.tooltip_extra = true;
+//	card_state.tooltip_text = "Ruby spell";
+//	card_state.tooltip_text_plural = true;
+	
+
+//}
+
+if eff_type = "play" {
+	if global.priority = "player" && opp = false && global.resolve_stack = false {
+		global.priority = "opp";
+	} 
+	
 	if opp = true {
 		ruby_spells_start = global.opponent.ruby_spells_played;
 		ruby_spells_seen = global.opponent.ruby_spells_played - ruby_spells_start;
@@ -11,18 +33,6 @@ if eff_type = "created" && instance_exists(card_state) {
 		ruby_spells_seen = global.player.ruby_spells_played - ruby_spells_start;
 		card_state.tooltip_counter = ruby_spells_seen;
 	}
-	
-	card_state.tooltip_extra = true;
-	card_state.tooltip_text = "Ruby spell";
-	card_state.tooltip_text_plural = true;
-	
-
-}
-
-if eff_type = "play" {
-	if global.priority = "player" && opp = false && global.resolve_stack = false {
-		global.priority = "opp";
-	} 
 	
 	card_state.tooltip_extra = true;
 	card_state.tooltip_text = "Ruby spell";
