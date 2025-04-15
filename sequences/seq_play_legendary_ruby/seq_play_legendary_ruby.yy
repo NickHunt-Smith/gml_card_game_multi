@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_play_legendary_ruby",
   "autoRecord":true,
   "backdropHeight":768,

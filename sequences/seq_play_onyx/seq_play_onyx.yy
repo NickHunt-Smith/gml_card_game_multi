@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_play_onyx",
   "autoRecord":true,
   "backdropHeight":768,

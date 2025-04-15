@@ -26,7 +26,7 @@ if (summon_cards = true) && debug_test = true {
 	
 	var rarity = 0;
 	var element = 0;
-	var card_type = 1;
+	var card_type = 0;
 	var card_index = 0;
 	var order = 2;
 	card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)

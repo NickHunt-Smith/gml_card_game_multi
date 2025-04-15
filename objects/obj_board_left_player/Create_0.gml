@@ -15,3 +15,8 @@ portal_in_progress = false;
 portal_done_1 = false;
 portal_done_2 = false;
 portal_done_3 = false;
+
+rock_click = noone;
+summit_flare = noone;
+summit_emitter = true;
+summit_clicks = 0;

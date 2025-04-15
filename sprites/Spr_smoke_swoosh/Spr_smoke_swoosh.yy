@@ -61,7 +61,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_smoke_swoosh",
     "autoRecord":true,
     "backdropHeight":768,

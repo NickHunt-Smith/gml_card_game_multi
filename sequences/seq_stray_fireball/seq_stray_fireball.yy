@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_stray_fireball",
   "autoRecord":true,
   "backdropHeight":768,

@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_portal_ruby",
   "autoRecord":true,
   "backdropHeight":768,

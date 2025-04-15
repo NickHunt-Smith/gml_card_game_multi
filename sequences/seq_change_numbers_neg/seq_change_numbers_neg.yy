@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_change_numbers_neg",
   "autoRecord":true,
   "backdropHeight":768,

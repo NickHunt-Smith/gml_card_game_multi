@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_channel_pearl_extra",
   "autoRecord":true,
   "backdropHeight":768,

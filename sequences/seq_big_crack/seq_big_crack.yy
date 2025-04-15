@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_big_crack",
   "autoRecord":true,
   "backdropHeight":768,

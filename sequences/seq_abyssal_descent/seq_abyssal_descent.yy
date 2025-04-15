@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_abyssal_descent",
   "autoRecord":true,
   "backdropHeight":768,

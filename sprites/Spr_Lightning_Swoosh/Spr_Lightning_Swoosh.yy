@@ -62,7 +62,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"Spr_Lightning_Swoosh",
     "autoRecord":true,
     "backdropHeight":768,

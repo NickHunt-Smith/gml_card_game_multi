@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_spark",
   "autoRecord":true,
   "backdropHeight":768,

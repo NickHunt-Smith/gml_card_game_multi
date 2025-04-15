@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.592,
+  "duration":2.5493197,
   "name":"snd_combat",
   "parent":{
     "name":"Sounds",

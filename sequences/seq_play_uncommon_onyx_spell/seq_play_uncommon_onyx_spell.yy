@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_play_uncommon_onyx_spell",
   "autoRecord":true,
   "backdropHeight":768,

@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_portal_onyx",
   "autoRecord":true,
   "backdropHeight":768,

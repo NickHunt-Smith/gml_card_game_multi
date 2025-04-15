@@ -1,5 +1,5 @@
 {
-  "$GMSequence":"",
+  "$GMSequence":"v1",
   "%Name":"seq_wisplit_hills",
   "autoRecord":true,
   "backdropHeight":768,
