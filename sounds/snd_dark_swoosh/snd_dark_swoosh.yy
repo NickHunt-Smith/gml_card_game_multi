@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.424,
+  "duration":2.3832426,
   "name":"snd_dark_swoosh",
   "parent":{
     "name":"onyx",

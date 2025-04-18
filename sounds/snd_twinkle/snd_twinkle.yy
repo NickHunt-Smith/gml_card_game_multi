@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":34.56,
+  "duration":34.527958,
   "name":"snd_twinkle",
   "parent":{
     "name":"Sounds",

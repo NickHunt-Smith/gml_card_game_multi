@@ -9,6 +9,7 @@
 //}
 	
 if global.priority = "opp" {
+	show_debug_message(wait_for_opp)
 	if wait_for_opp = true {
 		var inbuf = buffer_create(16,buffer_grow,1)
 		// Check if opp is done. If they are, then we're both done and we can move on

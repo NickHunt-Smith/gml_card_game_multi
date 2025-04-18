@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":66.216,
+  "duration":66.17007,
   "name":"snd_blizzard",
   "parent":{
     "name":"pearl",

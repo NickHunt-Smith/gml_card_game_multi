@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.544,
+  "duration":2.5,
   "name":"snd_flame_swoosh",
   "parent":{
     "name":"ruby",

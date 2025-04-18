@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.648,
+  "duration":0.60650796,
   "name":"snd_big_stab",
   "parent":{
     "name":"Sounds",

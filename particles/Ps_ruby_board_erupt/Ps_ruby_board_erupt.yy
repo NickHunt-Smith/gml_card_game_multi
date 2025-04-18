@@ -1,0 +1,27 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"Ps_ruby_board_erupt",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"Emitter1","additiveBlend":true,"directionIncrease":0.0,"directionMax":100.0,"directionMin":80.0,"directionWiggle":0.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":1,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":100.0,"emitIntervalMin":100.0,"emitIntervalUnits":1,"enabled":true,"endColour":2048489983,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":100.0,"lifetimeMin":100.0,"linkedEmitter":null,"locked":false,"midColour":4278999551,"mode":0,"name":"Emitter1","orientationIncrease":0.0,"orientationMax":0.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":0.1,"regionW":0.1,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.4,"scaleY":0.3,"shape":0,"sizeIncrease":0.0,"sizeMax":1.0,"sizeMin":1.0,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.0,"speedMin":0.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":3779029503,"texture":7,},
+    {"$GMPSEmitter":"","%Name":"Emitter","additiveBlend":true,"directionIncrease":0.0,"directionMax":90.0,"directionMin":60.0,"directionWiggle":0.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":-5,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":392397260,"GMPresetName":null,"gravityDirection":0.0,"gravityForce":0.001,"headPosition":0.0,"lifetimeMax":400.0,"lifetimeMin":400.0,"linkedEmitter":null,"locked":false,"midColour":2318627532,"mode":0,"name":"Emitter","orientationIncrease":0.0,"orientationMax":360.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":0.1,"regionW":20.0,"regionX":0.0,"regionY":-15.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.0,"scaleY":1.0,"shape":0,"sizeIncrease":0.0,"sizeMax":1.0,"sizeMin":1.0,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.5,"speedMin":0.5,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":2315793100,"texture":11,},
+    {"$GMPSEmitter":"","%Name":"Emitter_1","additiveBlend":false,"directionIncrease":0.0,"directionMax":90.0,"directionMin":60.0,"directionWiggle":0.0,"distribution":0,"editorColour":1090519039,"editorDrawShape":true,"emitCount":-5,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":83886080,"GMPresetName":null,"gravityDirection":0.0,"gravityForce":0.001,"headPosition":0.0,"lifetimeMax":500.0,"lifetimeMin":500.0,"linkedEmitter":null,"locked":false,"midColour":4279900698,"mode":0,"name":"Emitter_1","orientationIncrease":0.0,"orientationMax":360.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":0.1,"regionW":20.0,"regionX":0.0,"regionY":-15.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.0,"scaleY":1.0,"shape":0,"sizeIncrease":0.0,"sizeMax":1.0,"sizeMin":1.0,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.5,"speedMin":0.5,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":1281845095,"texture":11,},
+  ],
+  "name":"Ps_ruby_board_erupt",
+  "parent":{
+    "name":"click_effects",
+    "path":"folders/Particle Systems/click_effects.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":false,
+  "xorigin":0,
+  "yorigin":0,
+}

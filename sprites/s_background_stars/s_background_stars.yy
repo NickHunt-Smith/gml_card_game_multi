@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"game_room",
-    "path":"folders/Sprites/game_room.yy",
+    "name":"board_areas",
+    "path":"folders/Sprites/game_room/board_areas.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

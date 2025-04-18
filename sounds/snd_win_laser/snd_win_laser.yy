@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":3.769104,
+  "duration":3.7691157,
   "name":"snd_win_laser",
   "parent":{
     "name":"Sounds",

@@ -14,8 +14,8 @@ if global.priority = "player" {
 	}
 	increment_2 = 0;
 	increment_1 = clamp(increment_1+20,0,512);
-	draw_sprite_part_ext(s_blue_priority_arrow,0,0,0,392,increment_1,712,1020,1,1,c_white,1);
-	draw_sprite_part_ext(s_blue_priority_arrow,0,0,0,392,increment_1,1937,1020,1,1,c_white,1);
+	//draw_sprite_part_ext(s_blue_priority_arrow,0,0,0,392,increment_1,712,1020,1,1,c_white,1);
+	//draw_sprite_part_ext(s_blue_priority_arrow,0,0,0,392,increment_1,1937,1020,1,1,c_white,1);
 	if player_banner_1 = noone {
 		player_banner_1 = part_system_create(Ps_prio_player);
 		part_system_position(player_banner_1, 912, 858);
@@ -39,8 +39,8 @@ if global.priority = "player" {
 	if increment_2 <= 512 {
 		increment_2 = clamp(increment_2+20,0,512);
 	}
-	draw_sprite_part_ext(s_red_priority_arrow,0,0,512-increment_2,392,increment_2,720,582-increment_2,1,1,c_white,1);
-	draw_sprite_part_ext(s_red_priority_arrow,0,0,512-increment_2,392,increment_2,1944,582-increment_2,1,1,c_white,1);
+	//draw_sprite_part_ext(s_red_priority_arrow,0,0,512-increment_2,392,increment_2,720,582-increment_2,1,1,c_white,1);
+	//draw_sprite_part_ext(s_red_priority_arrow,0,0,512-increment_2,392,increment_2,1944,582-increment_2,1,1,c_white,1);
 	if opp_banner_1 = noone {
 		opp_banner_1 = part_system_create(Ps_prio_opp);
 		part_system_position(opp_banner_1, 912, 654);

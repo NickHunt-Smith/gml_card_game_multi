@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.733333,
+  "duration":1.7333333,
   "name":"snd_freeze",
   "parent":{
     "name":"pearl",

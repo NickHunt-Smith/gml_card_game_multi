@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.84,
+  "duration":0.8072336,
   "name":"snd_quick_stab",
   "parent":{
     "name":"onyx",

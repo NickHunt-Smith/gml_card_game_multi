@@ -14,8 +14,8 @@
   ],
   "name":"Ps_ruby_board_flare",
   "parent":{
-    "name":"Ruby",
-    "path":"folders/Particle Systems/Ruby.yy",
+    "name":"click_effects",
+    "path":"folders/Particle Systems/click_effects.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",
