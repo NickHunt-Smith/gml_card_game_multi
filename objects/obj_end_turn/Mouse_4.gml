@@ -14,6 +14,15 @@ if (global.player_enabled = true) && global.stack_active = false {
 		global.priority = "opp";
 	}
 	
+	if global.pvp_active = true {
+		var _b = buffer_create(1,buffer_grow,1)
+		buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PASSED)
+		var arbitrary_message = "hello"
+		buffer_write(_b,buffer_string,arbitrary_message)
+		steam_net_packet_send(global.other_id,_b)
+		buffer_delete(_b)
+	}
+	
 }
 	
 if global.targeting = true && global.big_mode = false {

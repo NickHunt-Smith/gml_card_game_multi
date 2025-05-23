@@ -9,7 +9,6 @@
 //}
 	
 if global.priority = "opp" {
-	show_debug_message(wait_for_opp)
 	if wait_for_opp = true {
 		var inbuf = buffer_create(16,buffer_grow,1)
 		// Check if opp is done. If they are, then we're both done and we can move on
@@ -20,10 +19,26 @@ if global.priority = "opp" {
 			var _type = buffer_read(inbuf,buffer_u8)
 		
 			switch _type {
+				case NETWORK_PACKETS.OPP_PASSED:
+					if global.stack_active = true {
+						global.resolve_stack = true;
+					} else {
+						if global.player.passed = true {
+							global.priority = "player";
+							global.player_enabled = false;
+							global.wait_for_effect = false;
+							global.end_turn_active = true;
+							global.player.passed = false;
+						} else {
+							global.opponent.passed = true;
+							global.priority = "player";
+							global.player_enabled = true;
+						}
+					}
+					break
 				case NETWORK_PACKETS.OPP_PLAYED_LOCALE:
 					var _inString = buffer_read(inbuf,buffer_string);
 					_inString = string_split(_inString,",");
-					show_debug_message(_inString)
 					var chosen_position_temp = _inString[0];
 					card_type = int64(_inString[1]);
 					rarity = int64(_inString[2]);

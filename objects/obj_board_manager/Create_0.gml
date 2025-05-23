@@ -1,19 +1,19 @@
 
-sideboard_background_1 = part_system_create(Ps_sideboard_background);
-part_system_position(sideboard_background_1,800/2,700/2);
-part_system_depth(sideboard_background_1,layer_get_depth("Under_background")-1);
+//sideboard_background_1 = part_system_create(Ps_sideboard_background);
+//part_system_position(sideboard_background_1,800/2,700/2);
+//part_system_depth(sideboard_background_1,layer_get_depth("Under_background")-1);
 
-sideboard_background_2 = part_system_create(Ps_sideboard_background);
-part_system_position(sideboard_background_2,800/2,1200);
-part_system_depth(sideboard_background_2,layer_get_depth("Under_background")-1);
+//sideboard_background_2 = part_system_create(Ps_sideboard_background);
+//part_system_position(sideboard_background_2,800/2,1200);
+//part_system_depth(sideboard_background_2,layer_get_depth("Under_background")-1);
 
-sideboard_background_3 = part_system_create(Ps_sideboard_background);
-part_system_position(sideboard_background_3,2620,700/2);
-part_system_depth(sideboard_background_3,layer_get_depth("Under_background")-1);
+//sideboard_background_3 = part_system_create(Ps_sideboard_background);
+//part_system_position(sideboard_background_3,2620,700/2);
+//part_system_depth(sideboard_background_3,layer_get_depth("Under_background")-1);
 
-sideboard_background_4 = part_system_create(Ps_sideboard_background);
-part_system_position(sideboard_background_4,2620,1200);
-part_system_depth(sideboard_background_4,layer_get_depth("Under_background")-1);
+//sideboard_background_4 = part_system_create(Ps_sideboard_background);
+//part_system_position(sideboard_background_4,2620,1200);
+//part_system_depth(sideboard_background_4,layer_get_depth("Under_background")-1);
 
 board_left_player = instance_create_depth(0,1206-390,layer_get_depth("Background_stars"),obj_board_instance);
 board_left_player.x_surface = 0;
