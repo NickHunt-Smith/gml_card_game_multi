@@ -90,6 +90,7 @@ if global.pvp_active = false {
 	part_emitter_destroy_all(summon_whirlpool_2);
 	part_emitter_destroy_all(summon_whirlpool_3);
 	part_emitter_destroy_all(sparkle_rain);
+	part_emitter_destroy_all(shooting_stars);
 	emit_destroy = false;
 	alarm[0] = 100;
 	if switch_priority = true {
@@ -103,6 +104,7 @@ if global.pvp_active = false {
 		part_emitter_destroy_all(summon_whirlpool_2);
 		part_emitter_destroy_all(summon_whirlpool_3);
 		part_emitter_destroy_all(sparkle_rain);
+		part_emitter_destroy_all(shooting_stars);
 		emit_destroy = false;
 	}
 	if sync_draft() = false {

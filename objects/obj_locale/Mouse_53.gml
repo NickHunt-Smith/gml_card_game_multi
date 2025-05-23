@@ -26,9 +26,9 @@ if playing = false {
 			}
 		}
 		x = lerp(x, 1520 + 180*(order_in_hand) -90*(array_length(global.cards_in_hand) - 1), lerp_amount);
-		y = y_hand_unhover;
-		image_xscale = 0.5;
-		image_yscale = 0.5;
+		//y = y_hand_unhover;
+		//image_xscale = 0.5;
+		//image_yscale = 0.5;
 		depth = -1000;
 	}
 }

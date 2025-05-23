@@ -2,7 +2,7 @@
 
 var _loaded = texturegroup_load("Default");
 
-//audio_play_sound(OGG_Ethereal_Main,10,true);
+//audio_play_sound(snd_volcano,10,true);
 
 //show_debug_message(window_get_width())
 //show_debug_message(window_get_height())

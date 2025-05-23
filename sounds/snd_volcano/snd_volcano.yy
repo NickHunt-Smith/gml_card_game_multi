@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_volcano",
+  "audioGroupId":{
+    "name":"music_group",
+    "path":"audiogroups/music_group",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":269.25,
+  "name":"snd_volcano",
+  "parent":{
+    "name":"themes",
+    "path":"folders/Sounds/themes.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_volcano.wav",
+  "type":0,
+  "volume":1.0,
+}

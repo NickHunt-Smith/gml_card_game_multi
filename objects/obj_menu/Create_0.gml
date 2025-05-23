@@ -10,3 +10,5 @@ for (var _i = 0; _i < 5; _i++){
 	var _inst = instance_find(obj_Button,_i)
 	if _inst != noone then array_push(menuItems, _inst) else break;
 }
+
+var _loaded = audio_group_load(music_group);

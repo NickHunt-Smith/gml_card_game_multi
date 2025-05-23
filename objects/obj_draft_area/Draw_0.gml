@@ -1,6 +1,6 @@
 
 if view_opp = false {
-	draw_self();
+	draw_sprite_ext(sprite_index,0,x+15,y-115,1.685,1.8,0,c_white,image_alpha);
 }
 
 if button_draw = true {

@@ -34,6 +34,10 @@ sparkle_rain = part_system_create(Ps_Magic_Sparkle_Rain_Long);
 part_system_position(sparkle_rain, 1520, 5);
 part_system_depth(sparkle_rain,-900);
 
+shooting_stars = part_system_create(Ps_Shooting_Stars);
+part_system_position(shooting_stars, 1520, 250);
+part_system_depth(shooting_stars,-900);
+
 card_inst_1 = noone;
 card_inst_2 = noone;
 card_inst_3 = noone;

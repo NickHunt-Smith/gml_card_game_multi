@@ -76,8 +76,6 @@ if portal_seq_1 != noone or (max_channel_ind = 0 && tied = false && portal_done_
 	draw_sprite_ext(s_ruby_board,0,410,375,1.02,1.02,0,c_white,1);
 	gpu_set_blendmode( bm_normal );
 	surface_reset_target();
-	show_debug_message(x_surface)
-	show_debug_message(y_surface)
 	draw_surface( surface, x_surface, y_surface );
 
 }

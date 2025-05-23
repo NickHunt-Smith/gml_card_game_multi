@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_background_stars",
-    "path":"sprites/s_background_stars/s_background_stars.yy",
+    "name":"s_sideboard_background",
+    "path":"sprites/s_sideboard_background/s_sideboard_background.yy",
   },
   "spriteMaskId":null,
   "visible":true,

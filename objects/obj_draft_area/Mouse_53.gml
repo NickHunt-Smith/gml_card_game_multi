@@ -6,6 +6,7 @@ if button_draw = true {
 		part_system_depth(summon_whirlpool_2,-10);
 		part_system_depth(summon_whirlpool_3,-10);
 		part_system_depth(sparkle_rain,-10);
+		part_system_depth(shooting_stars,-10);
 		x_memory_1 = card_inst_1.x
 		x_memory_2 = card_inst_2.x
 		x_memory_3 = card_inst_3.x
@@ -19,6 +20,7 @@ if button_draw = true {
 		part_system_depth(summon_whirlpool_2,-900);
 		part_system_depth(summon_whirlpool_3,-900);
 		part_system_depth(sparkle_rain,-900);
+		part_system_depth(shooting_stars,-900);
 		card_inst_1.x = x_memory_1;
 		card_inst_2.x = x_memory_2;
 		card_inst_3.x = x_memory_3;
