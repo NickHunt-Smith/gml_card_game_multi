@@ -116,6 +116,7 @@ if rarities_types_chosen = false {
 						array_push(random_card_types,int64(_inString[_i+draft_count]))
 					}
 					rarities_types_chosen = true;
+					show_debug_message(random_rarities)
 					break
 				default:
 					show_debug_message("Unknown packet received")
@@ -204,7 +205,7 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		if card_type_locked = true {
 			card_type = card_type_locked_i;
 		} else {
-			rarity = random_card_types[0];
+			card_type = random_card_types[0];
 			array_delete(random_card_types,0,1);
 			//if (scr_check_if_targets("opp") = false && scr_check_if_targets("player") = false) && (global.opponent.common_locales + global.opponent.uncommon_locales + global.opponent.rare_locales + global.opponent.mythic_locales + global.opponent.legendary_locales = 0) {
 			////if (scr_check_if_targets("opp") = false && scr_check_if_targets("player") = false) {
