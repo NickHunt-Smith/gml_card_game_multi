@@ -88,10 +88,10 @@ if rarities_types_chosen = false {
 			buffer_write(_b,buffer_u8,NETWORK_PACKETS.DRAFTING) 
 			var rarities_types = "";
 			for (var _i = 0; _i < draft_count; _i++) {
-				rarities_types = rarities_types + string(random_rarities) + ","
+				rarities_types = rarities_types + string(random_rarities[_i]) + ","
 			}
 			for (var _i = 0; _i < draft_count; _i++) {
-				rarities_types = rarities_types + string(random_card_types) + ","
+				rarities_types = rarities_types + string(random_card_types[_i]) + ","
 			}
 			buffer_write(_b,buffer_string,rarities_types)
 			steam_net_packet_send(global.other_id,_b)
@@ -110,10 +110,10 @@ if rarities_types_chosen = false {
 					var _inString = buffer_read(inbuf,buffer_string);
 					_inString = string_split(_inString,",");
 					for (var _i = 0; _i < draft_count; _i++) {
-						array_push(random_rarities,_inString[_i])
+						array_push(random_rarities,int64(_inString[_i]))
 					}
 					for (var _i = 0; _i < draft_count; _i++) {
-						array_push(random_card_types,_inString[_i+draft_count])
+						array_push(random_card_types,int64(_inString[_i+draft_count]))
 					}
 					rarities_types_chosen = true;
 					break
