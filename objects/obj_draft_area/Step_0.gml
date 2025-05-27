@@ -99,6 +99,7 @@ if rarities_types_chosen = false {
 		}
 	} else if (global.pvp_active = true && global.is_server = false) {
 		if steam_net_packet_receive() {
+			var inbuf = buffer_create(16,buffer_grow,1)
 			var _sender = steam_net_packet_get_sender_id()
 			steam_net_packet_get_data(inbuf)
 			buffer_seek(inbuf,buffer_seek_start,0)

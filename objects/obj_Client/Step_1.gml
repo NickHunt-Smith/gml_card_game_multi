@@ -22,7 +22,7 @@ while(steam_net_packet_receive()) {
 			break
 			
 		default: 
-			show_debug_message("Unknown packet received")
+			show_debug_message("Unknown packet received start game")
 			break
 			
 	}

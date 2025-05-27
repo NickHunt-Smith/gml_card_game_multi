@@ -14,6 +14,7 @@ if game_start = true {
 	game_start = false;
 	global.turn_count = 0;
 	global.drafting = true;
+	
 	alarm[0] = 10;
 }
 
