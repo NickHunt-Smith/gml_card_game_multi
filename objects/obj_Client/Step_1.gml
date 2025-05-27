@@ -17,7 +17,7 @@ while(steam_net_packet_receive()) {
 			} else {
 				global.priority = "player"
 			}
-			room_goto(PvP)
+			alarm[0] = 1;
 			global.pvp_active = true
 			break
 			
