@@ -23,6 +23,7 @@ switch(async_load[?"event_type"]) {
 				steam_net_packet_send(_fromID,_b)
 				buffer_delete(_b)
 				global.pvp_active = true
+				global.is_server = true
 				room_goto(PvP)
 			}
 		}

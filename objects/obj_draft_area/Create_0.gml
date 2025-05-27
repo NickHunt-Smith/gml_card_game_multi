@@ -50,3 +50,7 @@ element_locked = false;
 element_locked_i = 0;
 card_type_locked = false;
 card_type_locked_i = 0;
+
+random_rarities = [];
+random_card_types = [];
+rarities_types_chosen = false;

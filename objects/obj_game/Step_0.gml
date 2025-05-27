@@ -2,7 +2,8 @@
 // You can write your code in this editor
 
 if game_start = true {
-	randomise();
+	//randomise();
+	random_set_seed(10);
 	if global.pvp_active = true {
 		global.opponent = instance_create_depth(0,0,0,obj_opponent_pvp);
 	} else {
