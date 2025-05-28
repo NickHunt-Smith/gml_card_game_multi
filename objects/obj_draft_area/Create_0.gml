@@ -16,27 +16,11 @@ x_memory_2 = 0;
 x_memory_3 = 0;
 global.draft_area_visible = true;
 
-sound_inst = audio_play_sound(snd_draft,10,false);
-
-summon_whirlpool_1 = part_system_create(Ps_Portal_Spiral_Blue);
-part_system_position(summon_whirlpool_1, 1150, 290);
-part_system_depth(summon_whirlpool_1,-900);
-
-summon_whirlpool_2 = part_system_create(Ps_Portal_Spiral_Blue);
-part_system_position(summon_whirlpool_2, 1520, 290);
-part_system_depth(summon_whirlpool_2,-900);
-
-summon_whirlpool_3 = part_system_create(Ps_Portal_Spiral_Blue);
-part_system_position(summon_whirlpool_3, 1890, 290);
-part_system_depth(summon_whirlpool_3,-900);
-
-sparkle_rain = part_system_create(Ps_Magic_Sparkle_Rain_Long);
-part_system_position(sparkle_rain, 1520, 5);
-part_system_depth(sparkle_rain,-900);
-
-shooting_stars = part_system_create(Ps_Shooting_Stars);
-part_system_position(shooting_stars, 1520, 250);
-part_system_depth(shooting_stars,-900);
+summon_whirlpool_1 = noone;
+summon_whirlpool_2 = noone;
+summon_whirlpool_3 = noone;
+sparkle_rain = noone;
+shooting_stars = noone;
 
 card_inst_1 = noone;
 card_inst_2 = noone;

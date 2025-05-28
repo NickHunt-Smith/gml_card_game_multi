@@ -159,6 +159,7 @@ if (eff_type = "end_turn") && (wait = false) {
 				target_1 = global.player_locale_4;
 			}
 		}
+		
 		wait = true;
 		alarm[2] = 100;
 	}
