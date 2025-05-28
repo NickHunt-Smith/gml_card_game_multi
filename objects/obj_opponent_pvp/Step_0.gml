@@ -244,7 +244,8 @@ if global.priority = "opp" {
 					array_delete(hand_card_type,hand_choice,1);
 					break
 				default:
-					show_debug_message("Unknown packet received")
+					show_debug_message("Unknown packet received opp")
+					show_debug_message(string(_type))
 					break
 			}
 		}
