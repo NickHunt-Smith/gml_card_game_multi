@@ -22,8 +22,7 @@ function sync_draft() {
 	}
 	
 	
-	// Either way, send message saying I'm done
-	if global.syncing = false {
+	if global.syncing = false && opp_done = false {
 		var _b = buffer_create(1,buffer_grow,1)
 		buffer_write(_b,buffer_u8,NETWORK_PACKETS.SYNC_DRAFT)
 		buffer_write(_b,buffer_string,"draft_done")
