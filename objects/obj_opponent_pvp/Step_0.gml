@@ -50,12 +50,28 @@ if global.priority = "opp" {
 					
 					if chosen_position_temp = "left_player" {
 						chosen_position = "left_opp"
+						if global.opp_locale_1 != noone {
+							global.opp_locale_1.overwritten = true;
+							global.opp_locale_1.health_locale = 0;
+						}
 					} else if chosen_position_temp = "left_middle_player" {
 						chosen_position = "left_middle_opp"
+						if global.opp_locale_2 != noone {
+							global.opp_locale_2.overwritten = true;
+							global.opp_locale_2.health_locale = 0;
+						}
 					} else if chosen_position_temp = "right_middle_player" {
 						chosen_position = "right_middle_opp"
+						if global.opp_locale_3 != noone {
+							global.opp_locale_3.overwritten = true;
+							global.opp_locale_3.health_locale = 0;
+						}
 					} else if chosen_position_temp = "right_player" {
 						chosen_position = "right_opp"
+						if global.opp_locale_4 != noone {
+							global.opp_locale_4.overwritten = true;
+							global.opp_locale_4.health_locale = 0;
+						}
 					}
 					
 					if target_1_position = "noone" {
