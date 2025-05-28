@@ -24,7 +24,6 @@ vertex_format_add_normal();
 global.format_perspective = vertex_format_end();
 
 game_start = true;
-global.syncing = false;
 if global.pvp_active = false {
 	if random(100) < 50 {
 		global.priority = "player";
