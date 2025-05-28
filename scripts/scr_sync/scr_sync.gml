@@ -23,13 +23,17 @@ function sync_draft() {
 	
 	
 	// Either way, send message saying I'm done
-	var _b = buffer_create(1,buffer_grow,1)
-	buffer_write(_b,buffer_u8,NETWORK_PACKETS.SYNC_DRAFT)
-	buffer_write(_b,buffer_string,"draft_done")
-	steam_net_packet_send(global.other_id,_b)
-	buffer_delete(_b)
+	if global.syncing = false {
+		var _b = buffer_create(1,buffer_grow,1)
+		buffer_write(_b,buffer_u8,NETWORK_PACKETS.SYNC_DRAFT)
+		buffer_write(_b,buffer_string,"draft_done")
+		steam_net_packet_send(global.other_id,_b)
+		buffer_delete(_b)
+		global.syncing = true
+	}
 	
 	if opp_done = true {
+		global.syncing = false
 		return true
 	} else {
 		return false
