@@ -217,6 +217,13 @@ if global.priority = "opp" {
 					wait_for_opp = false;
 					playing = true;
 					alarm[3] = 65;
+					var valid_choice = false;
+					while valid_choice = false {
+						hand_choice = irandom(array_length(hand_rarity)-1);
+						if hand_rarity[hand_choice] = rarity && hand_card_type[hand_choice] = card_type {
+							valid_choice = true;
+						}
+					}
 					array_delete(hand_rarity,hand_choice,1);
 					array_delete(hand_card_type,hand_choice,1);
 					break
