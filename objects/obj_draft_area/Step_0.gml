@@ -97,6 +97,28 @@ if rarities_types_chosen = false {
 			steam_net_packet_send(global.other_id,_b)
 			buffer_delete(_b)
 		}
+		
+		var sound_inst = audio_play_sound(snd_draft,10,false);
+
+		summon_whirlpool_1 = part_system_create(Ps_Portal_Spiral_Blue);
+		part_system_position(summon_whirlpool_1, 1150, 290);
+		part_system_depth(summon_whirlpool_1,-900);
+
+		summon_whirlpool_2 = part_system_create(Ps_Portal_Spiral_Blue);
+		part_system_position(summon_whirlpool_2, 1520, 290);
+		part_system_depth(summon_whirlpool_2,-900);
+
+		summon_whirlpool_3 = part_system_create(Ps_Portal_Spiral_Blue);
+		part_system_position(summon_whirlpool_3, 1890, 290);
+		part_system_depth(summon_whirlpool_3,-900);
+
+		sparkle_rain = part_system_create(Ps_Magic_Sparkle_Rain_Long);
+		part_system_position(sparkle_rain, 1520, 5);
+		part_system_depth(sparkle_rain,-900);
+
+		shooting_stars = part_system_create(Ps_Shooting_Stars);
+		part_system_position(shooting_stars, 1520, 250);
+		part_system_depth(shooting_stars,-900);
 	} else if (global.pvp_active = true && global.is_server = false) {
 		if steam_net_packet_receive() {
 			var inbuf = buffer_create(16,buffer_grow,1)
@@ -116,6 +138,28 @@ if rarities_types_chosen = false {
 						array_push(random_card_types,int64(_inString[_i+draft_count]))
 					}
 					rarities_types_chosen = true;
+					
+					var sound_inst = audio_play_sound(snd_draft,10,false);
+
+					summon_whirlpool_1 = part_system_create(Ps_Portal_Spiral_Blue);
+					part_system_position(summon_whirlpool_1, 1150, 290);
+					part_system_depth(summon_whirlpool_1,-900);
+
+					summon_whirlpool_2 = part_system_create(Ps_Portal_Spiral_Blue);
+					part_system_position(summon_whirlpool_2, 1520, 290);
+					part_system_depth(summon_whirlpool_2,-900);
+
+					summon_whirlpool_3 = part_system_create(Ps_Portal_Spiral_Blue);
+					part_system_position(summon_whirlpool_3, 1890, 290);
+					part_system_depth(summon_whirlpool_3,-900);
+
+					sparkle_rain = part_system_create(Ps_Magic_Sparkle_Rain_Long);
+					part_system_position(sparkle_rain, 1520, 5);
+					part_system_depth(sparkle_rain,-900);
+
+					shooting_stars = part_system_create(Ps_Shooting_Stars);
+					part_system_position(shooting_stars, 1520, 250);
+					part_system_depth(shooting_stars,-900);
 					break
 				default:
 					show_debug_message("Unknown packet received")
@@ -126,27 +170,6 @@ if rarities_types_chosen = false {
 }
 	
 if global.pvp_active = false or rarities_types_chosen = true {
-	var sound_inst = audio_play_sound(snd_draft,10,false);
-
-	summon_whirlpool_1 = part_system_create(Ps_Portal_Spiral_Blue);
-	part_system_position(summon_whirlpool_1, 1150, 290);
-	part_system_depth(summon_whirlpool_1,-900);
-
-	summon_whirlpool_2 = part_system_create(Ps_Portal_Spiral_Blue);
-	part_system_position(summon_whirlpool_2, 1520, 290);
-	part_system_depth(summon_whirlpool_2,-900);
-
-	summon_whirlpool_3 = part_system_create(Ps_Portal_Spiral_Blue);
-	part_system_position(summon_whirlpool_3, 1890, 290);
-	part_system_depth(summon_whirlpool_3,-900);
-
-	sparkle_rain = part_system_create(Ps_Magic_Sparkle_Rain_Long);
-	part_system_position(sparkle_rain, 1520, 5);
-	part_system_depth(sparkle_rain,-900);
-
-	shooting_stars = part_system_create(Ps_Shooting_Stars);
-	part_system_position(shooting_stars, 1520, 250);
-	part_system_depth(shooting_stars,-900);
 	
 	image_alpha = lerp(image_alpha, 1, 0.09);
 
