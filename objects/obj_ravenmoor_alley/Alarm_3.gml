@@ -1,21 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-if channel_seq != noone {
-	layer_sequence_destroy(channel_seq);
-	channel_seq = noone;
-}
-
-if seq_change != noone {
-	layer_sequence_destroy(seq_change);
-	seq_change = noone;
-}
 
 if global.pvp_active = false  {
-	alarm[1] = 10;
-	fire_on_card = part_system_create(Ps_Fire);
-	part_system_position(fire_on_card, x, y);
-	part_system_depth(fire_on_card,-1100);
+	backstab_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_backstab);
+	scr_sequence_target(backstab_seq,target_1,opp,card_state);
+	alarm[2] = 55;
 } else if global.pvp_active = true && global.is_server = true {
 	var _b = buffer_create(1,buffer_grow,1)
 	buffer_write(_b,buffer_u8,NETWORK_PACKETS.RANDOM_TARGET) 
@@ -23,10 +10,9 @@ if global.pvp_active = false  {
 	buffer_write(_b,buffer_string,random_target)
 	steam_net_packet_send(global.other_id,_b)
 	buffer_delete(_b)
-	alarm[1] = 10;
-	fire_on_card = part_system_create(Ps_Fire);
-	part_system_position(fire_on_card, x, y);
-	part_system_depth(fire_on_card,-1100);
+	backstab_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_backstab);
+	scr_sequence_target(backstab_seq,target_1,opp,card_state);
+	alarm[2] = 55;
 } else if global.pvp_active = true && global.is_server = false {	
 	
 	if steam_net_packet_receive() {
@@ -91,18 +77,19 @@ if global.pvp_active = false  {
 						target_1 = global.player_locale_4;
 					}
 				}
-				alarm[1] = 10;
-				fire_on_card = part_system_create(Ps_Fire);
-				part_system_position(fire_on_card, x, y);
-				part_system_depth(fire_on_card,-1100);
+				backstab_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_backstab);
+				scr_sequence_target(backstab_seq,target_1,opp,card_state);
+				alarm[2] = 55;
 				break
 			default:
-				alarm[2] = 1;
-				show_debug_message("Unknown packet spiral")
+				alarm[3] = 1;
+				show_debug_message("Unknown packet alley")
 				show_debug_message(string(_type))
 				break
 		}
 	} else {
-		alarm[2] = 1;
+		alarm[3] = 1;
 	}
 }
+
+

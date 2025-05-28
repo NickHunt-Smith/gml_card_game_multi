@@ -162,7 +162,8 @@ if rarities_types_chosen = false {
 					part_system_depth(shooting_stars,-900);
 					break
 				default:
-					show_debug_message("Unknown packet received")
+					show_debug_message("Unknown packet received draft")
+					show_debug_message(string(_type))
 					break
 			}
 		}
@@ -179,8 +180,8 @@ if global.pvp_active = false or rarities_types_chosen = true {
 	
 		var card_inst = noone;
 	
-		var rarity = 0;
-		var element = 0;
+		var rarity = 2;
+		var element = 2;
 		var card_type = 0;
 		var card_index = 0;
 		var order = 0;
@@ -188,16 +189,16 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		card_inst_1 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
 		var rarity = 2;
-		var element = 1;
+		var element = 2;
 		var card_type = 0;
 		var card_index = 1;
 		var order = 1;
 		card_inst_2 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
-		var rarity = 0;
+		var rarity = 2;
 		var element = 2;
 		var card_type = 0;
-		var card_index = 0;
+		var card_index = 2;
 		var order = 2;
 		card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	

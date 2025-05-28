@@ -15,7 +15,8 @@ function sync_draft() {
 				opp_done = true
 				break
 			default:
-				show_debug_message("Unknown packet received")
+				show_debug_message("Unknown packet sync")
+				show_debug_message(string(_type))
 				break
 		}
 	}

@@ -25,6 +25,7 @@ if waiting_to_start = true {
 			
 			default: 
 				show_debug_message("Unknown packet received start game")
+				show_debug_message(string(_type))
 				break
 			
 		}

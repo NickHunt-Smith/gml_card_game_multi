@@ -89,7 +89,8 @@ if global.pvp_active = false  {
 				break
 			default:
 				alarm[2] = 1;
-				show_debug_message("Unknown packet received")
+				show_debug_message("Unknown packet volcano")
+				show_debug_message(string(_type))
 				break
 		}
 	} else {

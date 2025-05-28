@@ -53,9 +53,7 @@ if eff_type = "lingering" {
 						target_1 = global.opp_locale_4;
 					}
 				}
-				backstab_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_backstab);
-				scr_sequence_target(backstab_seq,target_1,opp,card_state);
-				alarm[2] = 55;
+				alarm[3] = 10;
 			}
 		} else {
 			
@@ -75,9 +73,7 @@ if eff_type = "lingering" {
 						target_1 = global.player_locale_4;
 					}
 				}
-				backstab_seq = layer_sequence_create("effect_layer",x+112,y+184,seq_backstab);
-				scr_sequence_target(backstab_seq,target_1,opp,card_state);
-				alarm[2] = 55;
+				alarm[3] = 10;
 			}
 		}
 	}
