@@ -241,6 +241,7 @@ if global.priority = "opp" && global.drafting = false {
 					}
 					array_delete(hand_rarity,hand_choice,1);
 					array_delete(hand_card_type,hand_choice,1);
+					playing = true;
 					break
 				case NETWORK_PACKETS.OPP_PLAYED_SPELL:
 					var _inString = buffer_read(inbuf,buffer_string);
@@ -420,6 +421,7 @@ if global.priority = "opp" && global.drafting = false {
 					}
 					array_delete(hand_rarity,hand_choice,1);
 					array_delete(hand_card_type,hand_choice,1);
+					playing = false;
 					break
 				default:
 					show_debug_message("Unknown packet received opp")

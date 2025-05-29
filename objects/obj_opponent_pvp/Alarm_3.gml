@@ -11,12 +11,14 @@ if card_type = 1 {
 	initial_draw = true;
 	play_scale = 1;
 	sprite_gap = 0;
+	playing = false;
 } else {
 	var effect_arr = scr_play_locale(true,chosen_position,rarity,element,card_index,target_1,target_2,target_3);
 	//array_delete(hand_rarity,hand_choice,1);
 	//array_delete(hand_card_type,hand_choice,1);
 	initial_draw = true;
 	play_scale = 1;
+	playing = false;
 	play_scale_stats = 1;
 	sprite_gap = 0;
 	wait_for_opp = true;
