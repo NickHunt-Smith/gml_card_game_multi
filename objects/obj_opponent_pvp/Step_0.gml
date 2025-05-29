@@ -421,7 +421,7 @@ if global.priority = "opp" && global.drafting = false {
 					}
 					array_delete(hand_rarity,hand_choice,1);
 					array_delete(hand_card_type,hand_choice,1);
-					playing = false;
+					playing = true;
 					break
 				default:
 					show_debug_message("Unknown packet received opp")
