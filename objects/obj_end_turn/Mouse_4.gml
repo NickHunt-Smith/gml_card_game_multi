@@ -31,6 +31,16 @@ if global.targeting = true && global.big_mode = false {
 }
 
 if global.stack_active = true && global.resolve_stack = false && global.targeting = false && global.priority = "player" {
+	
+	if global.pvp_active = true {
+		var _b = buffer_create(1,buffer_grow,1)
+		buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PASSED)
+		var arbitrary_message = "hello"
+		buffer_write(_b,buffer_string,arbitrary_message)
+		steam_net_packet_send(global.other_id,_b)
+		buffer_delete(_b)
+	}
+	
 	global.player_enabled = false;
 	if global.spell_stack[array_length(global.spell_stack)-1].opp = false {
 		global.priority = "opp";
