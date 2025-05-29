@@ -12,6 +12,7 @@ if (global.player_enabled = true) && global.stack_active = false {
 	} else {
 		global.player.passed = true;
 		global.priority = "opp";
+		global.player_enabled = false;
 	}
 	
 	if global.pvp_active = true {
