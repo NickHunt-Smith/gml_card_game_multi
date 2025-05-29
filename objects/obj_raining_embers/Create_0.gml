@@ -39,4 +39,8 @@ seq_change_8 = noone;
 
 opp = false;
 
+target_1 = noone;
+target_2 = noone;
+target_3 = noone;
+
 depth = -1200;

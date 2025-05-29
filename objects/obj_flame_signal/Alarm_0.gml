@@ -34,6 +34,9 @@ if global.drafting = false {
 		draft_inst.card_type_locked_i = card_type_scry;
 		
 		global.player_enabled = false;
+	} else if opp = true {
+		array_push(global.opponent.hand_rarity,rarity_scry);
+		array_push(global.opponent.hand_card_type,card_type_scry);
 	}
 } else {
 	alarm[0] = 50;

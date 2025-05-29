@@ -44,6 +44,9 @@ if eff_type = "destroyed" && destroyed_eff_done = false {
 		draft_inst.card_type_locked = true;
 		draft_inst.card_type_locked_i = card_type_scry;
 		global.player_enabled = false;
+	} else {
+		array_push(global.opponent.hand_rarity,rarity_scry);
+		array_push(global.opponent.hand_card_type,card_type_scry);
 	}
 	destroyed_eff_done = true;
 	instance_destroy();

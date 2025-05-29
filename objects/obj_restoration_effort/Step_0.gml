@@ -28,19 +28,24 @@ if wait_stack = true {
 		wait = false;
 		eff_done = true;
 	} else {
-		var draft_inst = instance_create_depth(1510,400,-800,obj_draft_area);
-		draft_inst.draft_count = 1;
-		draft_inst.switch_priority = false;
-		draft_inst.rarity_locked = true;
-		draft_inst.rarity_locked_i = rarity_scry;
-		draft_inst.element_locked = true;
-		draft_inst.element_locked_i = element_scry;
-		draft_inst.card_type_locked = true;
-		draft_inst.card_type_locked_i = card_type_scry;
-		global.player_enabled = false;
+		if opp = false {
+			var draft_inst = instance_create_depth(1510,400,-800,obj_draft_area);
+			draft_inst.draft_count = 1;
+			draft_inst.switch_priority = false;
+			draft_inst.rarity_locked = true;
+			draft_inst.rarity_locked_i = rarity_scry;
+			draft_inst.element_locked = true;
+			draft_inst.element_locked_i = element_scry;
+			draft_inst.card_type_locked = true;
+			draft_inst.card_type_locked_i = card_type_scry;
+			global.player_enabled = false;
+		} else {
+			array_push(global.opponent.hand_rarity,rarity_scry);
+			array_push(global.opponent.hand_card_type,card_type_scry);
+		}
 		wait = false;
 		eff_done = true;
-	}
+	} 
 	wait_stack = false;
 }
 
@@ -51,6 +56,31 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 		target = noone;
 	}	
 	if target_1 != noone {	
+		
+		if global.pvp_active = true && opp=false {
+			var _b = buffer_create(1,buffer_grow,1)
+			buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PLAYED_SPELL)
+			var card_details = string(card_state.card_type) + "," + string(card_state.rarity) + "," + string(card_state.element) + "," + string(card_state.card_index) 
+			if target_1 = noone {
+				card_details = card_details + ",noone";
+			} else {
+				card_details = card_details + "," + string(target_1.position);
+			}
+			if target_2 = noone {
+				card_details = card_details + ",noone";
+			} else {
+				card_details = card_details + "," + string(target_2.position);
+			}
+			if target_3 = noone {
+				card_details = card_details + ",noone";
+			} else {
+				card_details = card_details + "," + string(target_3.position);
+			}
+			buffer_write(_b,buffer_string,card_details)
+			steam_net_packet_send(global.other_id,_b)
+			buffer_delete(_b)
+		}
+		
 		draw_instructions_1 = false;
 			
 		if sys_eff_instructions != noone {

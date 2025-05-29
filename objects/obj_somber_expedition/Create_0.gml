@@ -38,5 +38,6 @@ depth = -1200;
 target = noone;
 target_1 = noone;
 target_2 = noone;
+target_3 = noone;
 first_targeted = false;
 sys_eff_instructions = noone;

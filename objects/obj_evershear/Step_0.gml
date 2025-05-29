@@ -44,6 +44,8 @@ if (eff_type = "play") && (wait = false) {
 				global.player_enabled = false;
 				wait = true;
 			} else {
+				array_push(global.opponent.hand_rarity,rarity_scry);
+				array_push(global.opponent.hand_card_type,card_type_scry);
 				instance_destroy();
 			}
 			wait = true;

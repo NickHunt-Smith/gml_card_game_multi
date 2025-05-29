@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+position = "stack" + string(order_in_stack);
+
 if just_played = true {
 	if rarity = 0 {
 		play_seq = layer_sequence_create("effect_layer",x,y,seq_play_common_spell);

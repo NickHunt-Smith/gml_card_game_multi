@@ -25,4 +25,7 @@ opp = false;
 depth = -1200;
 
 targets = noone;
+target_1 = noone;
+target_2 = noone;
+target_3 = noone;
 sys_eff_instructions = noone;

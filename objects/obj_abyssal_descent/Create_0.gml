@@ -20,6 +20,10 @@ seq_change = noone;
 seq_no_target = noone;
 shield_seq = noone;
 
+target_1 = noone;
+target_2 = noone;
+target_3 = noone;
+
 opp = false;
 
 depth = -1200;

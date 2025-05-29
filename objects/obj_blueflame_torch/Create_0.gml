@@ -34,3 +34,7 @@ fortify_seq_3 = noone;
 seq_restore_change_3 = noone;
 fortify_seq_4 = noone;
 seq_restore_change_4 = noone;
+
+target_1 = noone;
+target_2 = noone;
+target_3 = noone;
