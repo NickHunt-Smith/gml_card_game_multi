@@ -21,7 +21,11 @@ if global.priority = "opp" && global.drafting = false {
 			switch _type {
 				case NETWORK_PACKETS.OPP_PASSED:
 					if global.stack_active = true {
-						global.resolve_stack = true;
+						if global.spell_stack[array_length(global.spell_stack)-1].opp = true {
+							global.priority = "player";
+						} else {
+							global.resolve_stack = true;
+						}
 					} else {
 						if global.player.passed = true {
 							global.priority = "player";
