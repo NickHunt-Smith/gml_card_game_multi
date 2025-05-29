@@ -107,7 +107,7 @@ if global.pvp_active = false {
 		part_emitter_destroy_all(shooting_stars);
 		emit_destroy = false;
 	}
-	if sync_draft() = false {
+	if sync_draft() = false && rarity_locked = false {
 		alarm[1] = 1;
 	} else {
 		if extra_opp_card = true {

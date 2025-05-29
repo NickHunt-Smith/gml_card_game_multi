@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if rarities_types_chosen = false {
-	if (global.pvp_active = true && global.is_server = true) or global.pvp_active = false {
+	if (global.pvp_active = true && global.is_server = true) or global.pvp_active = false or rarity_locked = true {
 		for (var _i = 0; _i < draft_count; _i++) {
 			var rarity = 0;
 			if global.turn_count < 1 {
@@ -83,7 +83,7 @@ if rarities_types_chosen = false {
 			rarities_types_chosen = true;
 		}
 		
-		if global.pvp_active = true && global.is_server = true {
+		if global.pvp_active = true && global.is_server = true && rarity_locked = true {
 			var _b = buffer_create(1,buffer_grow,1)
 			buffer_write(_b,buffer_u8,NETWORK_PACKETS.DRAFTING) 
 			var rarities_types = "";
