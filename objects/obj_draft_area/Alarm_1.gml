@@ -195,8 +195,8 @@ if global.pvp_active = false {
 		}
 		global.drafting = false;
 		alarm[0] = 100;
-		if switch_priority = true {
-			global.priority = "opp";
+		if global.priority = "opp" {
+			global.player_enabled = false;
 		} else {
 			global.player_enabled = true;
 		}

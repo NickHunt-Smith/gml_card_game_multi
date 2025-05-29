@@ -13,6 +13,7 @@ switch(async_load[?"event_type"]) {
 				show_debug_message("Player Joined: " + _fromName)
 				var _b = buffer_create(1,buffer_grow,1)
 				buffer_write(_b,buffer_u8,NETWORK_PACKETS.START_GAME)
+				randomise()
 				if random(100) < 50 {
 					buffer_write(_b,buffer_string,"opp")
 					global.priority = "player"
