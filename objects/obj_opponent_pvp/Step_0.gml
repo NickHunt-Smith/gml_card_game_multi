@@ -231,7 +231,185 @@ if global.priority = "opp" && global.drafting = false {
 					}
 					
 					wait_for_opp = false;
-					playing = true;
+					alarm[3] = 65;
+					var valid_choice = false;
+					while valid_choice = false {
+						hand_choice = irandom(array_length(hand_rarity)-1);
+						if hand_rarity[hand_choice] = rarity && hand_card_type[hand_choice] = card_type {
+							valid_choice = true;
+						}
+					}
+					array_delete(hand_rarity,hand_choice,1);
+					array_delete(hand_card_type,hand_choice,1);
+					break
+				case NETWORK_PACKETS.OPP_PLAYED_SPELL:
+					var _inString = buffer_read(inbuf,buffer_string);
+					_inString = string_split(_inString,",");
+					card_type = int64(_inString[0]);
+					rarity = int64(_inString[1]);
+					element = int64(_inString[2]);
+					card_index = int64(_inString[3]);
+					var target_1_position = _inString[4];
+					var target_2_position = _inString[5];
+					var target_3_position = _inString[6];
+					
+					if target_1_position = "noone" {
+						target_1 = noone;
+					} else if target_1_position = "left_player" {
+						if global.opp_locale_1 = noone {
+							target_1 = "self"
+						} else {
+							target_1 = global.opp_locale_1;
+						}
+					} else if target_1_position = "left_middle_player" {
+						if global.opp_locale_2 = noone {
+							target_1 = "self"
+						} else {
+							target_1 = global.opp_locale_2;
+						}
+					} else if target_1_position = "right_middle_player" {
+						if global.opp_locale_3 = noone {
+							target_1 = "self"
+						} else {
+							target_1 = global.opp_locale_3;
+						}
+					} else if target_1_position = "right_player" {
+						if global.opp_locale_4 = noone {
+							target_1 = "self"
+						} else {
+							target_1 = global.opp_locale_4;
+						}
+					} else if target_1_position = "left_opp" {
+						if global.player_locale_1 = noone {
+							target_1 = "self"
+						} else {
+							target_1 = global.player_locale_1;
+						}
+					} else if target_1_position = "left_middle_opp" {
+						if global.player_locale_2 = noone {
+							target_1 = "self"
+						} else {
+							target_1 = global.player_locale_2;
+						}
+					} else if target_1_position = "right_middle_opp" {
+						if global.player_locale_3 = noone {
+							target_1 = "self"
+						} else {
+							target_1 = global.player_locale_3;
+						}
+					} else if target_1_position = "right_opp" {
+						if global.player_locale_4 = noone {
+							target_1 = "self"
+						} else {
+							target_1 = global.player_locale_4;
+						}
+					}
+					
+					if target_2_position = "noone" {
+						target_2 = noone;
+					} else if target_2_position = "left_player" {
+						if global.opp_locale_1 = noone {
+							target_2 = "self"
+						} else {
+							target_2 = global.opp_locale_1;
+						}
+					} else if target_2_position = "left_middle_player" {
+						if global.opp_locale_2 = noone {
+							target_2 = "self"
+						} else {
+							target_2 = global.opp_locale_2;
+						}
+					} else if target_2_position = "right_middle_player" {
+						if global.opp_locale_3 = noone {
+							target_2 = "self"
+						} else {
+							target_2 = global.opp_locale_3;
+						}
+					} else if target_2_position = "right_player" {
+						if global.opp_locale_4 = noone {
+							target_2 = "self"
+						} else {
+							target_2 = global.opp_locale_4;
+						}
+					} else if target_2_position = "left_opp" {
+						if global.player_locale_1 = noone {
+							target_2 = "self"
+						} else {
+							target_2 = global.player_locale_1;
+						}
+					} else if target_2_position = "left_middle_opp" {
+						if global.player_locale_2 = noone {
+							target_2 = "self"
+						} else {
+							target_2 = global.player_locale_2;
+						}
+					} else if target_2_position = "right_middle_opp" {
+						if global.player_locale_3 = noone {
+							target_2 = "self"
+						} else {
+							target_2 = global.player_locale_3;
+						}
+					} else if target_2_position = "right_opp" {
+						if global.player_locale_4 = noone {
+							target_2 = "self"
+						} else {
+							target_2 = global.player_locale_4;
+						}
+					}
+					
+					if target_3_position = "noone" {
+						target_3 = noone;
+					} else if target_3_position = "left_player" {
+						if global.opp_locale_1 = noone {
+							target_3 = "self"
+						} else {
+							target_3 = global.opp_locale_1;
+						}
+					} else if target_3_position = "left_middle_player" {
+						if global.opp_locale_2 = noone {
+							target_3 = "self"
+						} else {
+							target_3 = global.opp_locale_2;
+						}
+					} else if target_3_position = "right_middle_player" {
+						if global.opp_locale_3 = noone {
+							target_3 = "self"
+						} else {
+							target_3 = global.opp_locale_3;
+						}
+					} else if target_3_position = "right_player" {
+						if global.opp_locale_4 = noone {
+							target_3 = "self"
+						} else {
+							target_3 = global.opp_locale_4;
+						}
+					} else if target_3_position = "left_opp" {
+						if global.player_locale_1 = noone {
+							target_3 = "self"
+						} else {
+							target_3 = global.player_locale_1;
+						}
+					} else if target_3_position = "left_middle_opp" {
+						if global.player_locale_2 = noone {
+							target_3 = "self"
+						} else {
+							target_3 = global.player_locale_2;
+						}
+					} else if target_3_position = "right_middle_opp" {
+						if global.player_locale_3 = noone {
+							target_3 = "self"
+						} else {
+							target_3 = global.player_locale_3;
+						}
+					} else if target_3_position = "right_opp" {
+						if global.player_locale_4 = noone {
+							target_3 = "self"
+						} else {
+							target_3 = global.player_locale_4;
+						}
+					}
+					
+					wait_for_opp = false;
 					alarm[3] = 65;
 					var valid_choice = false;
 					while valid_choice = false {
