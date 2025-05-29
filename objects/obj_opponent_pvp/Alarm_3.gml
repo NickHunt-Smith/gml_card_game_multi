@@ -12,6 +12,7 @@ if card_type = 1 {
 	play_scale = 1;
 	sprite_gap = 0;
 	playing = false;
+	wait_for_opp = true;
 } else {
 	var effect_arr = scr_play_locale(true,chosen_position,rarity,element,card_index,target_1,target_2,target_3);
 	//array_delete(hand_rarity,hand_choice,1);
