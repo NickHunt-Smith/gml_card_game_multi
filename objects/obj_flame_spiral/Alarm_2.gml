@@ -11,7 +11,7 @@ if seq_change != noone {
 	seq_change = noone;
 }
 
-if global.pvp_active = false  {
+if global.pvp_active = false or eff_type = "play" {
 	alarm[1] = 10;
 	fire_on_card = part_system_create(Ps_Fire);
 	part_system_position(fire_on_card, x, y);
