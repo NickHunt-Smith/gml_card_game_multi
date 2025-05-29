@@ -83,7 +83,7 @@ if rarities_types_chosen = false {
 			rarities_types_chosen = true;
 		}
 		
-		if global.pvp_active = true && global.is_server = true && rarity_locked = true {
+		if global.pvp_active = true && global.is_server = true {
 			var _b = buffer_create(1,buffer_grow,1)
 			buffer_write(_b,buffer_u8,NETWORK_PACKETS.DRAFTING) 
 			var rarities_types = "";
