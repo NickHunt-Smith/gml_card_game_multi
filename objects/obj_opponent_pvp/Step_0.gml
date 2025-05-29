@@ -23,6 +23,7 @@ if global.priority = "opp" && global.drafting = false {
 					if global.stack_active = true {
 						if global.spell_stack[array_length(global.spell_stack)-1].opp = true {
 							global.priority = "player";
+							global.player_enabled = true;
 						} else {
 							global.resolve_stack = true;
 						}
