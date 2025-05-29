@@ -119,7 +119,7 @@ if rarities_types_chosen = false {
 		shooting_stars = part_system_create(Ps_Shooting_Stars);
 		part_system_position(shooting_stars, 1520, 250);
 		part_system_depth(shooting_stars,-900);
-	} else if (global.pvp_active = true && global.is_server = false) {
+	} else if (global.pvp_active = true && global.is_server = false) && rarity_locked = false {
 		if steam_net_packet_receive() {
 			var inbuf = buffer_create(16,buffer_grow,1)
 			var _sender = steam_net_packet_get_sender_id()
