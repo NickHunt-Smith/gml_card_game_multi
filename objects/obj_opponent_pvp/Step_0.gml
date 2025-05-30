@@ -436,14 +436,25 @@ if global.priority = "opp" && global.drafting = false {
 					wait_for_opp = false;
 					alarm[3] = 65;
 					var valid_choice = false;
-					while valid_choice = false {
-						hand_choice = irandom(array_length(hand_rarity)-1);
-						if hand_rarity[hand_choice] = rarity && hand_card_type[hand_choice] = card_type {
-							valid_choice = true;
-						}
+					//while valid_choice = false {
+					//	hand_choice = irandom(array_length(hand_rarity)-1);
+					//	if hand_rarity[hand_choice] = rarity && hand_card_type[hand_choice] = card_type {
+					//		valid_choice = true;
+					//	}
+					//}
+					
+					for (var _i = 0; _i < array_length(hand_rarity); _i++) {
+						if hand_rarity[_i] = rarity && hand_card_type[_i] = card_type {
+							hand_choice = _i;
+							valid_choice = true
+							break
+						} 
 					}
-					array_delete(hand_rarity,hand_choice,1);
-					array_delete(hand_card_type,hand_choice,1);
+					
+					if valid_choice = true {
+						array_delete(hand_rarity,hand_choice,1);
+						array_delete(hand_card_type,hand_choice,1);
+					}
 					playing = true;
 					break
 				default:

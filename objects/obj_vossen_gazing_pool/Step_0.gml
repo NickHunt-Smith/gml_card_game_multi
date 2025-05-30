@@ -74,7 +74,6 @@ if eff_type = "lingering" {
 	}
 	
 	for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
-		show_debug_message(memory_stack)
 		if array_contains(memory_stack,global.spell_stack[_i]) = false {
 			if (global.spell_stack[_i].opp = opp) && lingering_active = true {
 				playing_spell = true;
