@@ -20,7 +20,12 @@ if (eff_type = "play") && (wait = false) {
 		wait = true;
 		card_state.target_arrows_enabled = true;
 		card_state.target_1 = target_1;
-		alarm[1] = 150;
+		array_delete(global.spell_stack,card_state.order_in_stack,1);
+		if global.pvp_active = false {
+			var copy = scr_play_spell(opp,target_1.rarity,target_1.element,target_1.card_index,target_1.target_1,target_1.target_2,target_1.target_3);
+		}
+		instance_destroy(card_state);
+		instance_destroy();
 	}
 }
 
@@ -82,9 +87,7 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 			global.targeting = false;
 			global.targeting_spell = false;
 			array_delete(global.spell_stack,array_length(global.spell_stack)-1,1);
-			if global.pvp_active = false {
-				var copy = scr_play_spell(opp,target_1.rarity,target_1.element,target_1.card_index,target_1.target_1,target_1.target_2,target_1.target_3);
-			}
+			var copy = scr_play_spell(opp,target_1.rarity,target_1.element,target_1.card_index,target_1.target_1,target_1.target_2,target_1.target_3);
 			instance_destroy(card_state);
 			instance_destroy();
 		}	
