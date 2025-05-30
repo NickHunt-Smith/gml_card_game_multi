@@ -220,10 +220,10 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			array_delete(random_rarities,0,1);
 			
 			if draft_count = 3 {
-				rarity = 0;
+				rarity = 3;
 			}
 			if draft_count = 2 {
-				rarity = 4;
+				rarity = 0;
 			}
 		}
 	

@@ -18,9 +18,14 @@ if (eff_type = "play") && (wait = false) {
 	} else {
 		wait = true;
 		wait_target = true;
+		
+		global.targeting_empty = true;
+		target_empty = instance_create_depth(0,0,0,obj_target_empty);
+		target_empty.position = target_2.position;
+		
 		card_state.target_arrows_enabled = true;
 		card_state.target_1 = target_1;
-		card_state.target_2 = target_2;
+		card_state.target_2 = target_empty;
 	}
 }
 

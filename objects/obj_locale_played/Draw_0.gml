@@ -30,10 +30,10 @@ if big_mode = false {
 		draw_sprite_ext(s_strength_logo,0,x+168,y+328,0.17,0.17,0,c_white,alpha)
 		draw_sprite_ext(global.rarity_gem_list[rarity],0,x+84,y+299,0.18,0.18,0,c_white,alpha)
 	
-		if (moused) && (tooltip_created = false) && effect_function.has_effect != false {
-			alarm[2] = 100;
-			tooltip_created = true;
-		}
+		//if (moused) && (tooltip_created = false) && effect_function_inst.has_effect != false {
+		//	alarm[2] = 100;
+		//	tooltip_created = true;
+		//}
 
 		if (moused = false) && (tooltip_created = true){
 			if tooltip_inst != noone {
