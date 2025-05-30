@@ -24,6 +24,9 @@ if (eff_type = "play") && (wait = false) {
 	} else {
 		wait = true;
 		wait_target = true;
+		card_state.target_arrows_enabled = true;
+		card_state.target_1 = target_1;
+		card_state.target_2 = target_2;
 	}
 }
 
