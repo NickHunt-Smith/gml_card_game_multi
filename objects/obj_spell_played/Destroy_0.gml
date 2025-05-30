@@ -11,3 +11,8 @@ if big_mode = true {
 if instance_exists(tooltip_inst) {
 	instance_destroy(tooltip_inst)
 }
+
+if play_seq != noone {
+	layer_sequence_destroy(play_seq);
+	play_seq = noone;
+}
