@@ -74,6 +74,7 @@ if eff_type = "lingering" {
 	}
 	
 	for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
+		show_debug_message(memory_stack)
 		if array_contains(memory_stack,global.spell_stack[_i]) = false {
 			if (global.spell_stack[_i].opp = opp) && lingering_active = true {
 				playing_spell = true;
@@ -89,7 +90,6 @@ if eff_type = "lingering" {
 		playing_spell = false;
 		var copy = scr_play_spell(opp,global.spell_stack[playing_spell_i].rarity,global.spell_stack[playing_spell_i].element,global.spell_stack[playing_spell_i].card_index,global.spell_stack[playing_spell_i].target_1,global.spell_stack[playing_spell_i].target_2,global.spell_stack[playing_spell_i].target_3);
 		array_push(memory_stack,copy);
-		show_debug_message(memory_stack)
 	}
 }
 
