@@ -75,9 +75,9 @@ if eff_type = "lingering" {
 		card_state.tooltip_counter = ruby_spells_seen;
 	}
 	
-	if (opp = true && global.opp.ruby_spells_played - ruby_spells_start >= spells_seen_threshold) or (opp = false && global.player.ruby_spells_played - ruby_spells_start >= spells_seen_threshold) {
+	if (opp = true && global.opponent.ruby_spells_played - ruby_spells_start >= spells_seen_threshold) or (opp = false && global.player.ruby_spells_played - ruby_spells_start >= spells_seen_threshold) {
 		if opp = true {
-			ruby_spells_start = global.opp.ruby_spells_played;
+			ruby_spells_start = global.opponent.ruby_spells_played;
 		} else {
 			ruby_spells_start = global.player.ruby_spells_played;
 		}
