@@ -311,7 +311,6 @@ if global.priority = "opp" && global.drafting = false {
 						}
 					}
 					
-					
 					for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
 						if target_1_position = "stack" + string(_i) {
 							target_1 = global.spell_stack[_i]

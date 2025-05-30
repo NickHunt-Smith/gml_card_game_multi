@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-position = "stack" + string(order_in_stack);
+position = "stack" + string(order_in_stack-1);
 
 if just_played = true {
 	if rarity = 0 {
