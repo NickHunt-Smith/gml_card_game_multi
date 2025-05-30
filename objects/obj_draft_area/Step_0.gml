@@ -219,7 +219,7 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			rarity = random_rarities[0];
 			array_delete(random_rarities,0,1);
 			
-			rarity = 2;
+			rarity = 3;
 		}
 	
 		var card_type = 0;

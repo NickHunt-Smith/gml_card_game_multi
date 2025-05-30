@@ -67,6 +67,10 @@ if (global.targeting_spell = true) && (moused) && (highlighted = false) {
 	}
 } 
 
+if target_highlight != noone {
+	part_system_position(target_highlight,x,y);
+}
+
 if (global.targeting_spell = true) && (!moused) && (highlighted = true) {
 	if (global.source_target.allowed_target_opp = true && opp = true) or (global.source_target.allowed_target_player = true && opp = false) {
 		part_system_destroy(target_highlight);
