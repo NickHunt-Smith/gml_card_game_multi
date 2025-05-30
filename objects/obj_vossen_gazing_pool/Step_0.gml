@@ -63,11 +63,13 @@ if eff_type = "lingering" {
 			}
 		}
 	} else {
-		if global.opp_copying = true {
-			lingering_active = false;
-		} else {
-			lingering_active = true;
-			global.opp_copying = true
+		if lingering_active = false {
+			if global.opp_copying = true {
+				lingering_active = false;
+			} else {
+				lingering_active = true;
+				global.opp_copying = true
+			}
 		}
 	}
 	
@@ -87,6 +89,7 @@ if eff_type = "lingering" {
 		playing_spell = false;
 		var copy = scr_play_spell(opp,global.spell_stack[playing_spell_i].rarity,global.spell_stack[playing_spell_i].element,global.spell_stack[playing_spell_i].card_index,global.spell_stack[playing_spell_i].target_1,global.spell_stack[playing_spell_i].target_2,global.spell_stack[playing_spell_i].target_3);
 		array_push(memory_stack,copy);
+		show_debug_message(memory_stack)
 	}
 }
 
