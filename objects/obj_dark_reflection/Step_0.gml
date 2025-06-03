@@ -20,12 +20,12 @@ if (eff_type = "play") && (wait = false) {
 		wait_target = true;
 		
 		global.targeting_empty = true;
-		target_empty = instance_create_depth(0,0,0,obj_target_empty);
-		target_empty.position = target_2.position;
+		//target_empty = instance_create_depth(0,0,0,obj_target_empty);
+		//target_empty.position = target_2.position;
 		
 		card_state.target_arrows_enabled = true;
 		card_state.target_1 = target_1;
-		card_state.target_2 = target_empty;
+		card_state.target_2 = target_2;
 	}
 }
 
@@ -91,7 +91,7 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 				if target_2 = noone {
 					card_details = card_details + ",noone";
 				} else {
-					card_details = card_details + "," + string(target_2.position);
+					card_details = card_details + "," + string(target_2.position) + "_empty";
 				}
 				if target_3 = noone {
 					card_details = card_details + ",noone";

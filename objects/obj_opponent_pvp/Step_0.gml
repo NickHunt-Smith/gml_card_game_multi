@@ -181,6 +181,62 @@ if global.priority = "opp" && global.drafting = false {
 						} else {
 							target_2 = global.player_locale_4;
 						}
+					} else if target_2_position = "left_player_empty" {
+						if global.opp_locale_1 != noone {
+							target_2 = instance_create_depth(0,0,0,obj_target_empty);
+							target_2.position = "left_opp";
+						} else {
+							target_2 = "self";
+						}
+					} else if target_2_position = "left_middle_player_empty" {
+						if global.opp_locale_2 != noone {
+							target_2 = instance_create_depth(0,0,0,obj_target_empty);
+							target_2.position = "left_middle_opp";
+						} else {
+							target_2 = "self";
+						}
+					} else if target_2_position = "right_middle_player_empty" {
+						if global.opp_locale_3 != noone {
+							target_2 = instance_create_depth(0,0,0,obj_target_empty);
+							target_2.position = "right_middle_opp";
+						} else {
+							target_2 = "self";
+						}
+					} else if target_2_position = "right_player_empty" {
+						if global.opp_locale_4 != noone {
+							target_2 = instance_create_depth(0,0,0,obj_target_empty);
+							target_2.position = "right_opp";
+						} else {
+							target_2 = "self";
+						}
+					} else if target_2_position = "left_opp_empty" {
+						if global.player_locale_1 != noone {
+							target_2 = instance_create_depth(0,0,0,obj_target_empty);
+							target_2.position = "left_player";
+						} else {
+							target_2 = "self";
+						}
+					} else if target_2_position = "left_middle_opp_empty" {
+						if global.player_locale_2 != noone {
+							target_2 = instance_create_depth(0,0,0,obj_target_empty);
+							target_2.position = "left_middle_player";
+						} else {
+							target_2 = "self";
+						}
+					} else if target_2_position = "right_middle_opp_empty" {
+						if global.player_locale_3 != noone {
+							target_2 = instance_create_depth(0,0,0,obj_target_empty);
+							target_2.position = "right_middle_player";
+						} else {
+							target_2 = "self";
+						}
+					} else if target_2_position = "right_opp_empty" {
+						if global.player_locale_4 != noone {
+							target_2 = instance_create_depth(0,0,0,obj_target_empty);
+							target_2.position = "right_player";
+						} else {
+							target_2 = "self";
+						}
 					}
 					
 					if target_3_position = "noone" {
