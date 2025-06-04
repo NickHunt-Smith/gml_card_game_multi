@@ -238,7 +238,9 @@ if global.priority = "opp" && global.drafting = false {
 							target_2 = "self";
 						}
 					}
-					show_debug_message(target_2.position)
+					if target_2 != noone {
+						show_debug_message(target_2.position)
+					}
 					
 					if target_3_position = "noone" {
 						target_3 = noone;
