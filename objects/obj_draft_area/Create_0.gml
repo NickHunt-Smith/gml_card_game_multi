@@ -15,6 +15,7 @@ x_memory_1 = 0;
 x_memory_2 = 0;
 x_memory_3 = 0;
 global.draft_area_visible = true;
+only_draft_area = false;
 
 summon_whirlpool_1 = noone;
 summon_whirlpool_2 = noone;

@@ -1,7 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if rarities_types_chosen = false {
+
+if global.drafting = false && only_draft_area = false {
+	global.drafting = true;
+	global.player_enabled = false;
+	only_draft_area = true;
+}
+
+if rarities_types_chosen = false && only_draft_area = true {
+	
 	if (global.pvp_active = true && global.is_server = true) or global.pvp_active = false or rarity_locked = true {
 		for (var _i = 0; _i < draft_count; _i++) {
 			var rarity = 0;
@@ -207,8 +215,6 @@ if global.pvp_active = false or rarities_types_chosen = true {
 
 
 	if (summon_cards = true) && debug_test = false {
-		global.drafting = true;
-		global.player_enabled = false;
 	
 		var card_inst = noone;
 	
@@ -219,12 +225,12 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			rarity = random_rarities[0];
 			array_delete(random_rarities,0,1);
 			
-			//if draft_count = 3 {
-			//	rarity = 1;
-			//}
-			//if draft_count = 2 {
-			//	rarity = 3;
-			//}
+			if draft_count = 3 {
+				rarity = 1;
+			}
+			if draft_count = 2 {
+				rarity = 1;
+			}
 		}
 	
 		var card_type = 0;
@@ -234,12 +240,12 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			card_type = random_card_types[0];
 			array_delete(random_card_types,0,1);
 			
-			//if draft_count = 3 {
-			//	card_type = 1;
-			//}
-			//if draft_count = 2 {
-			//	card_type = 1;
-			//}
+			if draft_count = 3 {
+				card_type = 0;
+			}
+			if draft_count = 2 {
+				card_type = 0;
+			}
 		}
 	
 		var element = 0;
