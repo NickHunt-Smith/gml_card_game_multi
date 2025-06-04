@@ -53,7 +53,7 @@ if wait_stack = true {
 				}
 			}
 			wait = true;
-			alarm[2] = 10;
+			alarm[4] = 10;
 		}
 	
 		wait_stack = false;
@@ -77,7 +77,7 @@ if wait_stack = true {
 				}
 			}
 			wait = true;
-			alarm[2] = 10;
+			alarm[4] = 10;
 		}
 	
 		wait_stack = false;

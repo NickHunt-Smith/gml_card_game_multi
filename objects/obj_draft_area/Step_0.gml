@@ -219,9 +219,9 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			rarity = random_rarities[0];
 			array_delete(random_rarities,0,1);
 			
-			//if draft_count = 3 {
-			//	rarity = 3;
-			//}
+			if draft_count = 3 {
+				rarity = 1;
+			}
 			//if draft_count = 2 {
 			//	rarity = 3;
 			//}
@@ -234,9 +234,9 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			card_type = random_card_types[0];
 			array_delete(random_card_types,0,1);
 			
-			//if draft_count = 3 {
-			//	card_type = 1;
-			//}
+			if draft_count = 3 {
+				card_type = 1;
+			}
 			//if draft_count = 2 {
 			//	card_type = 1;
 			//}
