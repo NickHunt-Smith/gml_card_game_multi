@@ -3,7 +3,7 @@
 
 if game_start = true {
 	randomise();
-	global.drafting = true;
+	//global.drafting = true;
 	if global.pvp_active = true {
 		global.opponent = instance_create_depth(0,0,0,obj_opponent_pvp);
 	} else {
