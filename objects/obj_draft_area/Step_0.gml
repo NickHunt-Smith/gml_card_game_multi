@@ -223,7 +223,7 @@ if global.pvp_active = false or rarities_types_chosen = true {
 				rarity = 3;
 			}
 			if draft_count = 2 {
-				rarity = 0;
+				rarity = 3;
 			}
 		}
 	
@@ -238,7 +238,7 @@ if global.pvp_active = false or rarities_types_chosen = true {
 				card_type = 1;
 			}
 			if draft_count = 2 {
-				card_type = 0;
+				card_type = 1;
 			}
 		}
 	
