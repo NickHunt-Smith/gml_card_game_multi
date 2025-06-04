@@ -50,6 +50,7 @@ draft_inst = noone;
 global.cards_in_hand = [];
 global.spell_stack = [];
 global.being_destroyed = [];
+global.ignore_next_opp_locale = 0;
 
 global.player_copying = false;
 global.opp_copying = false;
