@@ -6,7 +6,6 @@ if global.drafting = false && only_draft_area = false {
 	global.drafting = true;
 	global.player_enabled = false;
 	only_draft_area = true;
-	button_draw = true;
 }
 
 if rarities_types_chosen = false && only_draft_area = true {
@@ -216,6 +215,7 @@ if global.pvp_active = false or rarities_types_chosen = true {
 
 
 	if (summon_cards = true) && debug_test = false {
+		button_draw = true;
 	
 		var card_inst = noone;
 	
