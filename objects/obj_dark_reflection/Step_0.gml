@@ -19,7 +19,7 @@ if (eff_type = "play") && (wait = false) {
 		wait = true;
 		wait_target = true;
 		
-		global.targeting_empty = true;
+		//global.targeting_empty = true;
 		//target_empty = instance_create_depth(0,0,0,obj_target_empty);
 		//target_empty.position = target_2.position;
 		

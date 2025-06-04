@@ -371,6 +371,7 @@ if global.priority = "opp" && global.drafting = false {
 						if global.opp_locale_1 = noone {
 							target_2 = instance_create_depth(0,0,0,obj_target_empty);
 							target_2.position = "left_opp";
+							target_2.opp = true;
 						} else {
 							target_2 = "self";
 						}
@@ -378,6 +379,7 @@ if global.priority = "opp" && global.drafting = false {
 						if global.opp_locale_2 = noone {
 							target_2 = instance_create_depth(0,0,0,obj_target_empty);
 							target_2.position = "left_middle_opp";
+							target_2.opp = true;
 						} else {
 							target_2 = "self";
 						}
@@ -385,6 +387,7 @@ if global.priority = "opp" && global.drafting = false {
 						if global.opp_locale_3 = noone {
 							target_2 = instance_create_depth(0,0,0,obj_target_empty);
 							target_2.position = "right_middle_opp";
+							target_2.opp = true;
 						} else {
 							target_2 = "self";
 						}
@@ -392,6 +395,7 @@ if global.priority = "opp" && global.drafting = false {
 						if global.opp_locale_4 = noone {
 							target_2 = instance_create_depth(0,0,0,obj_target_empty);
 							target_2.position = "right_opp";
+							target_2.opp = true;
 						} else {
 							target_2 = "self";
 						}
@@ -399,6 +403,7 @@ if global.priority = "opp" && global.drafting = false {
 						if global.player_locale_1 = noone {
 							target_2 = instance_create_depth(0,0,0,obj_target_empty);
 							target_2.position = "left_player";
+							target_2.opp = true;
 						} else {
 							target_2 = "self";
 						}
@@ -406,6 +411,7 @@ if global.priority = "opp" && global.drafting = false {
 						if global.player_locale_2 = noone {
 							target_2 = instance_create_depth(0,0,0,obj_target_empty);
 							target_2.position = "left_middle_player";
+							target_2.opp = true;
 						} else {
 							target_2 = "self";
 						}
@@ -413,6 +419,7 @@ if global.priority = "opp" && global.drafting = false {
 						if global.player_locale_3 = noone {
 							target_2 = instance_create_depth(0,0,0,obj_target_empty);
 							target_2.position = "right_middle_player";
+							target_2.opp = true;
 						} else {
 							target_2 = "self";
 						}
@@ -420,12 +427,10 @@ if global.priority = "opp" && global.drafting = false {
 						if global.player_locale_4 = noone {
 							target_2 = instance_create_depth(0,0,0,obj_target_empty);
 							target_2.position = "right_player";
+							target_2.opp = true;
 						} else {
 							target_2 = "self";
 						}
-					}
-					if target_2 != noone {
-						show_debug_message(target_2.position)
 					}
 					
 					for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
