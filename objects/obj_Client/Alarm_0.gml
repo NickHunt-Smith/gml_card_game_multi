@@ -1,5 +1,5 @@
 if sync_draft() = true {
-	room_goto(PvP);
+	alarm[1] = 40;
 } else {
 	alarm[0] = 1;
 }
