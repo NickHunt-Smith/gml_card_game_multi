@@ -7,7 +7,6 @@ if big_mode = false {
 	
 	if moused = true && target_arrows_enabled = true {
 		depth = -900;
-		//if target_1 != noone {
 		if instance_exists(target_1) {
 			if target_1.position != "end_turn" {
 				if target_1.is_locale = true {
@@ -29,43 +28,47 @@ if big_mode = false {
 				draw_text_transformed_color(x+(target_x - x)/2,y+(target_y - y)/2,"1",1,1,angle_to_target,c_white,c_white,c_white,c_white,1)
 			}
 		}
-		if target_2 != noone && target_2.position != "end_turn"{
-			if target_2.is_locale = true {
-				target_x = target_2.x + 112;
-				target_y = target_2.y + 184;
-			} else {
-				target_x = target_2.x;
-				target_y = target_2.y;
+		if instance_exists(target_2) {
+			if target_2.position != "end_turn"{
+				if target_2.is_locale = true {
+					target_x = target_2.x + 112;
+					target_y = target_2.y + 184;
+				} else {
+					target_x = target_2.x;
+					target_y = target_2.y;
+				}
+				var angle_to_target = -arctan((target_x - x)/(y - target_y))*57.23;
+				if y < target_y {
+					angle_to_target += 180;
+				}
+				var distance_to_target = sqrt(sqr(target_x - x) + sqr(y - target_y));
+				draw_sprite_ext(s_target_arrow_red,0,x,y,1,distance_to_target/460,angle_to_target,c_white,1);
+				if angle_to_target > 90 or angle_to_target < -90 {
+					angle_to_target += 180;
+				}
+				draw_text_transformed_color(x+(target_x - x)/2,y+(target_y - y)/2,"2",1,1,angle_to_target,c_white,c_white,c_white,c_white,1)
 			}
-			var angle_to_target = -arctan((target_x - x)/(y - target_y))*57.23;
-			if y < target_y {
-				angle_to_target += 180;
-			}
-			var distance_to_target = sqrt(sqr(target_x - x) + sqr(y - target_y));
-			draw_sprite_ext(s_target_arrow_red,0,x,y,1,distance_to_target/460,angle_to_target,c_white,1);
-			if angle_to_target > 90 or angle_to_target < -90 {
-				angle_to_target += 180;
-			}
-			draw_text_transformed_color(x+(target_x - x)/2,y+(target_y - y)/2,"2",1,1,angle_to_target,c_white,c_white,c_white,c_white,1)
 		}
-		if target_3 != noone && target_3.position != "end_turn" {
-			if target_3.is_locale = true {
-				target_x = target_3.x + 112;
-				target_y = target_3.y + 184;
-			} else {
-				target_x = target_3.x;
-				target_y = target_3.y;
+		if instance_exists(target_3) {
+			if target_3.position != "end_turn" {
+				if target_3.is_locale = true {
+					target_x = target_3.x + 112;
+					target_y = target_3.y + 184;
+				} else {
+					target_x = target_3.x;
+					target_y = target_3.y;
+				}
+				var angle_to_target = -arctan((target_x - x)/(y - target_y))*57.23;
+				if y < target_y {
+					angle_to_target += 180;
+				}
+				var distance_to_target = sqrt(sqr(target_x - x) + sqr(y - target_y));
+				draw_sprite_ext(s_target_arrow_red,0,x,y,1,distance_to_target/460,angle_to_target,c_white,1);
+				if angle_to_target > 90 or angle_to_target < -90 {
+					angle_to_target += 180;
+				}
+				draw_text_transformed_color(x+(target_x - x)/2,y+(target_y - y)/2,"3",1,1,angle_to_target,c_white,c_white,c_white,c_white,1)
 			}
-			var angle_to_target = -arctan((target_x - x)/(y - target_y))*57.23;
-			if y < target_y {
-				angle_to_target += 180;
-			}
-			var distance_to_target = sqrt(sqr(target_x - x) + sqr(y - target_y));
-			draw_sprite_ext(s_target_arrow_red,0,x,y,1,distance_to_target/460,angle_to_target,c_white,1);
-			if angle_to_target > 90 or angle_to_target < -90 {
-				angle_to_target += 180;
-			}
-			draw_text_transformed_color(x+(target_x - x)/2,y+(target_y - y)/2,"3",1,1,angle_to_target,c_white,c_white,c_white,c_white,1)
 		}
 	} else {
 		depth = -800;
