@@ -5,6 +5,7 @@ ruby_spells_start = 0;
 ruby_spells_seen = 0;
 spells_seen_threshold = 2;
 channel_boost = 1;
+just_created = true;
 
 channel_2 = false;
 channel_3 = false;

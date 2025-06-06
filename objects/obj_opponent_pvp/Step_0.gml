@@ -27,6 +27,8 @@ if global.priority = "opp" && global.drafting = false {
 						} else {
 							global.resolve_stack = true;
 						}
+						global.player.passed = false;
+						global.opponent.passed = false;
 					} else {
 						if global.player.passed = true {
 							global.priority = "player";

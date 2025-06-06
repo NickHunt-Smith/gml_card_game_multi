@@ -67,6 +67,15 @@ if eff_type = "play" {
 
 if eff_type = "lingering" {
 	
+	if just_created = true {
+		if opp = true {
+			ruby_spells_start = global.opponent.ruby_spells_played;
+		} else {
+			ruby_spells_start = global.player.ruby_spells_played;
+		}
+		just_created = false;
+	}
+	
 	if opp = true {
 		ruby_spells_seen = global.opponent.ruby_spells_played - ruby_spells_start;
 		card_state.tooltip_counter = ruby_spells_seen;

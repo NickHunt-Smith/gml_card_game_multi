@@ -225,13 +225,6 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		} else {
 			rarity = random_rarities[0];
 			array_delete(random_rarities,0,1);
-			
-			if draft_count = 3 {
-				rarity = 0;
-			}
-			if draft_count = 2 {
-				rarity = 1;
-			}
 		}
 	
 		var card_type = 0;
@@ -240,13 +233,6 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		} else {
 			card_type = random_card_types[0];
 			array_delete(random_card_types,0,1);
-			
-			if draft_count = 3 {
-				card_type = 1;
-			}
-			if draft_count = 2 {
-				card_type = 0;
-			}
 		}
 	
 		var element = 0;
@@ -314,6 +300,12 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		}
 	
 		var order = 0;
+		
+		// debug
+		rarity = 1;
+		element = 2;
+		card_type = 0;
+		card_index = 1;
 	
 		card_inst_1 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
@@ -384,6 +376,12 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		}
 	
 		var order = 1;
+		
+		// debug
+		rarity = 3;
+		element = 2;
+		card_type = 1;
+		card_index = 0;
 	
 		card_inst_2 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
@@ -454,6 +452,12 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		}
 	
 		var order = 2;
+		
+		// debug
+		rarity = 0;
+		element = 0;
+		card_type = 1;
+		card_index = 0;
 	
 		card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
