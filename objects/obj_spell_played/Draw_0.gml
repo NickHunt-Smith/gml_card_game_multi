@@ -8,6 +8,7 @@ if big_mode = false {
 	if moused = true && target_arrows_enabled = true {
 		depth = -900;
 		if target_1 != noone {
+			show_debug_message(target_1)
 			if target_1.position != "end_turn" {
 				if target_1.is_locale = true {
 					target_x = target_1.x + 112;
