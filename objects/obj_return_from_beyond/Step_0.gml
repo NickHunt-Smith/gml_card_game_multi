@@ -52,7 +52,7 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 			if target_1 = noone {
 				card_details = card_details + ",noone";
 			} else {
-				card_details = card_details + "," + string(target_1.position);
+				card_details = card_details + "," + string(target_1.position) + "_empty";
 			}
 			if target_2 = noone {
 				card_details = card_details + ",noone";

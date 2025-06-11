@@ -315,6 +315,70 @@ if global.priority = "opp" && global.drafting = false {
 						} else {
 							target_1 = global.player_locale_4;
 						}
+					} else if target_1_position = "left_player_empty" {
+						if global.opp_locale_1 = noone {
+							target_1 = instance_create_depth(0,0,0,obj_target_empty);
+							target_1.position = "left_opp";
+							target_1.opp = true;
+						} else {
+							target_1 = "self";
+						}
+					} else if target_1_position = "left_middle_player_empty" {
+						if global.opp_locale_2 = noone {
+							target_1 = instance_create_depth(0,0,0,obj_target_empty);
+							target_1.position = "left_middle_opp";
+							target_1.opp = true;
+						} else {
+							target_1 = "self";
+						}
+					} else if target_1_position = "right_middle_player_empty" {
+						if global.opp_locale_3 = noone {
+							target_1 = instance_create_depth(0,0,0,obj_target_empty);
+							target_1.position = "right_middle_opp";
+							target_1.opp = true;
+						} else {
+							target_1 = "self";
+						}
+					} else if target_1_position = "right_player_empty" {
+						if global.opp_locale_4 = noone {
+							target_1 = instance_create_depth(0,0,0,obj_target_empty);
+							target_1.position = "right_opp";
+							target_1.opp = true;
+						} else {
+							target_1 = "self";
+						}
+					} else if target_1_position = "left_opp_empty" {
+						if global.player_locale_1 = noone {
+							target_1 = instance_create_depth(0,0,0,obj_target_empty);
+							target_1.position = "left_player";
+							target_1.opp = true;
+						} else {
+							target_1 = "self";
+						}
+					} else if target_1_position = "left_middle_opp_empty" {
+						if global.player_locale_2 = noone {
+							target_1 = instance_create_depth(0,0,0,obj_target_empty);
+							target_1.position = "left_middle_player";
+							target_1.opp = true;
+						} else {
+							target_1 = "self";
+						}
+					} else if target_1_position = "right_middle_opp_empty" {
+						if global.player_locale_3 = noone {
+							target_1 = instance_create_depth(0,0,0,obj_target_empty);
+							target_1.position = "right_middle_player";
+							target_1.opp = true;
+						} else {
+							target_1 = "self";
+						}
+					} else if target_1_position = "right_opp_empty" {
+						if global.player_locale_4 = noone {
+							target_1 = instance_create_depth(0,0,0,obj_target_empty);
+							target_1.position = "right_player";
+							target_1.opp = true;
+						} else {
+							target_1 = "self";
+						}
 					}
 					
 					for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
