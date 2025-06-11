@@ -41,7 +41,7 @@ if skip_target_1 = false {
 		}
 	}
 	
-	//global.ignore_next_opp_locale += 1;
+	global.ignore_next_opp_locale += 1;
 	var effect_arr = scr_play_locale(opp,target_1.position,rarity_high,element_high,card_index_high,noone,noone,noone);
 	alarm[0] = 50;
 } else {

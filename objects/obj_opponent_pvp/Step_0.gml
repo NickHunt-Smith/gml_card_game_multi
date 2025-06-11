@@ -8,7 +8,7 @@
 //	alarm[2] = 30;
 //}
 	
-if global.priority = "opp" && global.drafting = false && global.resolve_stack = false {
+if global.priority = "opp" && global.drafting = false {
 	if wait_for_opp = true {
 		var inbuf = buffer_create(16,buffer_grow,1)
 		// Check if opp is done. If they are, then we're both done and we can move on
@@ -21,14 +21,18 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 			switch _type {
 				case NETWORK_PACKETS.OPP_PASSED:
 					if global.stack_active = true {
-						if global.spell_stack[array_length(global.spell_stack)-1].opp = true {
-							global.priority = "player";
-							global.player_enabled = true;
+						if global.resolve_stack = true {
+							alarm[1] = 1;
 						} else {
-							global.resolve_stack = true;
+							if global.spell_stack[array_length(global.spell_stack)-1].opp = true {
+								global.priority = "player";
+								global.player_enabled = true;
+							} else {
+								global.resolve_stack = true;
+							}
+							global.player.passed = false;
+							global.opponent.passed = false;
 						}
-						global.player.passed = false;
-						global.opponent.passed = false;
 					} else {
 						if global.player.passed = true {
 							global.priority = "player";
