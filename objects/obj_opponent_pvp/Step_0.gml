@@ -49,6 +49,7 @@ if global.priority = "opp" && global.drafting = false {
 					break
 				case NETWORK_PACKETS.OPP_PLAYED_LOCALE:
 					if global.ignore_next_opp_locale > 0 {
+						show_debug_message("locale ignored");
 						global.ignore_next_opp_locale -= 1;
 					} else {
 						var _inString = buffer_read(inbuf,buffer_string);

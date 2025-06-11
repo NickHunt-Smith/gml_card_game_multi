@@ -34,9 +34,15 @@ if (eff_type = "play") && (wait = false) {
 if wait_stack = true {
 	if instance_exists(target_1) = false or target_1.position = "end_turn" or (opp = true && array_length(global.opponent.destroyed_locales_rarity) = 0) or (opp = false && array_length(global.player.destroyed_locales_rarity) = 0){
 		skip_target_1 = true;
+		if global.pvp_active = true {
+			global.ignore_next_opp_locale -= 1;
+		}
 	}
 	if (target_1.position = "left_player" && global.player_locale_1 != noone) or (target_1.position = "left_middle_player" && global.player_locale_2 != noone) or (target_1.position = "right_middle_player" && global.player_locale_3 != noone) or (target_1.position = "right_player" && global.player_locale_4 != noone) or (target_1.position = "left_opp" && global.opp_locale_1 != noone) or (target_1.position = "left_middle_opp" && global.opp_locale_2 != noone) or (target_1.position = "right_middle_opp" && global.opp_locale_3 != noone) or (target_1.position = "right_opp" && global.opp_locale_4 != noone){
 		skip_target_1 = true;
+		if global.pvp_active = true {
+			global.ignore_next_opp_locale -= 1;
+		}
 	}
 	alarm[2] = 10;
 	wait_stack = false;
