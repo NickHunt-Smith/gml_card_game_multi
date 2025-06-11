@@ -115,6 +115,7 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 			global.player_enabled = true;
 			
 			global.targeting = false;
+			global.targeting_empty = false;
 			wait_target = true;
 			
 			card_state.target_arrows_enabled = true;
