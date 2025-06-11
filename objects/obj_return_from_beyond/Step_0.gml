@@ -21,6 +21,11 @@ if (eff_type = "play") && (wait = false) {
 	} else {
 		wait = true;
 		wait_target = true;
+		
+		if global.pvp_active = true && opp = true {
+			global.ignore_next_opp_locale += 1;
+		}
+		
 		card_state.target_arrows_enabled = true;
 		card_state.target_1 = target_1;
 	}
