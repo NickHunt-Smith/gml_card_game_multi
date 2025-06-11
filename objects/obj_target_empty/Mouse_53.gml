@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.targeting_empty = true && active = true {
+if global.targeting_empty = true && active = true && opp = false {
 
 	if moused_1 = true && global.player_locale_1 = noone {
 		position = "left_player";

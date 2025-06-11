@@ -32,6 +32,7 @@ if (eff_type = "play") && (wait = false) {
 }
 
 if wait_stack = true {
+	show_debug_message(target_1.position)
 	if instance_exists(target_1) = false or target_1.position = "end_turn" or (opp = true && array_length(global.opponent.destroyed_locales_rarity) = 0) or (opp = false && array_length(global.player.destroyed_locales_rarity) = 0){
 		skip_target_1 = true;
 	}
