@@ -168,11 +168,11 @@ for (var hand_iter = 0; hand_iter < array_length(hand_rarity); hand_iter++) {
 	}
 }
 
-draw_sprite_ext(s_opp_cards_tooltip,0,2214,25,1,1,0,c_white,1);
-draw_set_font(Empower_font);
-tooltip_string_1 = "Locales: " + string(common_locales) + "/" + string(uncommon_locales) + "/" + string(rare_locales) + "/" + string(mythic_locales) + "/" + string(legendary_locales);
-draw_text_colour(2450,75,tooltip_string_1,c_maroon,c_maroon,c_maroon,c_maroon,1);
-tooltip_string_2 = "Spells: " + string(common_spells) + "/" + string(uncommon_spells) + "/" + string(rare_spells) + "/" + string(mythic_spells) + "/" + string(legendary_spells);
-draw_text_colour(2450,125,tooltip_string_2,c_maroon,c_maroon,c_maroon,c_maroon,1);
+//draw_sprite_ext(s_opp_cards_tooltip,0,2214,25,1,1,0,c_white,1);
+//draw_set_font(Empower_font);
+//tooltip_string_1 = "Locales: " + string(common_locales) + "/" + string(uncommon_locales) + "/" + string(rare_locales) + "/" + string(mythic_locales) + "/" + string(legendary_locales);
+//draw_text_colour(2450,75,tooltip_string_1,c_maroon,c_maroon,c_maroon,c_maroon,1);
+//tooltip_string_2 = "Spells: " + string(common_spells) + "/" + string(uncommon_spells) + "/" + string(rare_spells) + "/" + string(mythic_spells) + "/" + string(legendary_spells);
+//draw_text_colour(2450,125,tooltip_string_2,c_maroon,c_maroon,c_maroon,c_maroon,1);
 
-draw_text_colour(2450,175,string(global.turn_count),c_maroon,c_maroon,c_maroon,c_maroon,1);
+//draw_text_colour(2450,175,string(global.turn_count),c_maroon,c_maroon,c_maroon,c_maroon,1);
