@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 on_hit_damage = -1;
+enable_player = false;
 
 eff_type = "none";
 

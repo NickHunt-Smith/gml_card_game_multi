@@ -52,6 +52,7 @@ global.spell_stack = [];
 global.being_destroyed = [];
 global.ignore_next_opp_locale = 0;
 global.turn_count = 0;
+global.lingering_active = false;
 
 global.player_copying = false;
 global.opp_copying = false;

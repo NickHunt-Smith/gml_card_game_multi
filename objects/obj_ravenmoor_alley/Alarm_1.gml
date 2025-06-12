@@ -17,3 +17,8 @@ if seq_change_health != noone {
 }
 
 target_1 = noone;
+
+global.lingering_active = false;
+if enable_player = true {
+	global.player_enabled = true;
+}

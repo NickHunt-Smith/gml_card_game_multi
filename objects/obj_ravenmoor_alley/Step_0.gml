@@ -32,8 +32,14 @@ if eff_type = "play" {
 }
 
 // Opposite target
-if eff_type = "lingering" {
+if eff_type = "lingering" && global.lingering_active = false {
 	if card_state.was_damaged = true {
+		global.lingering_active = true;
+		if global.player_enabled = true {
+			global.player_enabled = false;
+			enable_player = true;
+		}
+		
 		card_state.was_damaged = false;
 		
 		if opp = false {
