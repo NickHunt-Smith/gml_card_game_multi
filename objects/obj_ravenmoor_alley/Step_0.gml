@@ -31,53 +31,97 @@ if eff_type = "play" {
 	instance_destroy();
 }
 
+// Opposite target
 if eff_type = "lingering" {
 	if card_state.was_damaged = true {
 		card_state.was_damaged = false;
 		
 		if opp = false {
 				
-			if global.opp_locale_1 = noone && global.opp_locale_2 = noone && global.opp_locale_3 = noone && global.opp_locale_4 = noone {
+			if (global.opp_locale_1 = noone && card_state.position = "left_player") or (global.opp_locale_2 = noone && card_state.position = "left_middle player") or (global.opp_locale_3 = noone && card_state.position = "right_middle_player") or (global.opp_locale_4 = noone && card_state.position = "right_player"){
 				seq_no_target = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_no_targets);
 				alarm[1] = 60;
 			} else {
-				while (target_1 = noone) {
-					var temp = random(100);
-					if temp < 25 {
-						target_1 = global.opp_locale_1;
-					} else if (temp >= 25) && (temp < 50) {
-						target_1 = global.opp_locale_2;
-					} else if (temp >= 50) && (temp < 75) {
-						target_1 = global.opp_locale_3;
-					} else if (temp >= 75) {
-						target_1 = global.opp_locale_4;
-					}
+				if card_state.position = "left_player" {
+					target_1 = global.opp_locale_1;
+				} else if card_state.position = "left_middle_player" {
+					target_1 = global.opp_locale_2;
+				} else if card_state.position = "right_middle_player" {
+					target_1 = global.opp_locale_3;
+				} else if card_state.position = "right_player" {
+					target_1 = global.opp_locale_4;
 				}
 				alarm[3] = 10;
 			}
 		} else {
 			
-			if global.player_locale_1 = noone && global.player_locale_2 = noone && global.player_locale_3 = noone && global.player_locale_4 = noone {
+			if (global.player_locale_1 = noone && card_state.position = "left_opp") or (global.player_locale_2 = noone && card_state.position = "left_middle opp") or (global.player_locale_3 = noone && card_state.position = "right_middle_opp") or (global.player_locale_4 = noone && card_state.position = "right_opp"){
 				seq_no_target = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_no_targets);
 				alarm[1] = 60;
 			} else {
-				while (target_1 = noone) {
-					var temp = random(100);
-					if temp < 25 {
-						target_1 = global.player_locale_1;
-					} else if (temp >= 25) && (temp < 50) {
-						target_1 = global.player_locale_2;
-					} else if (temp >= 50) && (temp < 75) {
-						target_1 = global.player_locale_3;
-					} else if (temp >= 75) {
-						target_1 = global.player_locale_4;
-					}
+				if card_state.position = "left_opp" {
+					target_1 = global.player_locale_1;
+				} else if card_state.position = "left_middle_opp" {
+					target_1 = global.player_locale_2;
+				} else if card_state.position = "right_middle_opp" {
+					target_1 = global.player_locale_3;
+				} else if card_state.position = "right_opp" {
+					target_1 = global.player_locale_4;
 				}
 				alarm[3] = 10;
 			}
 		}
 	}
 }
+
+//// Random target
+//if eff_type = "lingering" {
+//	if card_state.was_damaged = true {
+//		card_state.was_damaged = false;
+		
+//		if opp = false {
+				
+//			if global.opp_locale_1 = noone && global.opp_locale_2 = noone && global.opp_locale_3 = noone && global.opp_locale_4 = noone {
+//				seq_no_target = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_no_targets);
+//				alarm[1] = 60;
+//			} else {
+//				while (target_1 = noone) {
+//					var temp = random(100);
+//					if temp < 25 {
+//						target_1 = global.opp_locale_1;
+//					} else if (temp >= 25) && (temp < 50) {
+//						target_1 = global.opp_locale_2;
+//					} else if (temp >= 50) && (temp < 75) {
+//						target_1 = global.opp_locale_3;
+//					} else if (temp >= 75) {
+//						target_1 = global.opp_locale_4;
+//					}
+//				}
+//				alarm[3] = 10;
+//			}
+//		} else {
+			
+//			if global.player_locale_1 = noone && global.player_locale_2 = noone && global.player_locale_3 = noone && global.player_locale_4 = noone {
+//				seq_no_target = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_no_targets);
+//				alarm[1] = 60;
+//			} else {
+//				while (target_1 = noone) {
+//					var temp = random(100);
+//					if temp < 25 {
+//						target_1 = global.player_locale_1;
+//					} else if (temp >= 25) && (temp < 50) {
+//						target_1 = global.player_locale_2;
+//					} else if (temp >= 50) && (temp < 75) {
+//						target_1 = global.player_locale_3;
+//					} else if (temp >= 75) {
+//						target_1 = global.player_locale_4;
+//					}
+//				}
+//				alarm[3] = 10;
+//			}
+//		}
+//	}
+//}
 
 if (eff_type = "end_turn") && (wait = false) {
 	if eff_done = true {
