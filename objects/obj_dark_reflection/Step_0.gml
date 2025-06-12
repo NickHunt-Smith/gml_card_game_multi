@@ -19,9 +19,9 @@ if (eff_type = "play") && (wait = false) {
 		wait = true;
 		wait_target = true;
 		
-		if global.pvp_active = true && opp = true {
-			global.ignore_next_opp_locale += 1;
-		}
+		//if global.pvp_active = true && opp = true {
+		//	global.ignore_next_opp_locale += 1;
+		//}
 		
 		card_state.target_arrows_enabled = true;
 		card_state.target_1 = target_1;
@@ -32,21 +32,21 @@ if (eff_type = "play") && (wait = false) {
 if wait_stack = true {
 	if instance_exists(target_1) = false or target_1.position = "end_turn" {
 		skip_target_1 = true;
-		if global.pvp_active = true {
-			global.ignore_next_opp_locale -= 1;
-		}
+		//if global.pvp_active = true {
+		//	global.ignore_next_opp_locale -= 1;
+		//}
 	}
 	if instance_exists(target_2) = false or target_2.position = "end_turn" {
 		skip_target_2 = true;
-		if global.pvp_active = true {
-			global.ignore_next_opp_locale -= 1;
-		}
+		//if global.pvp_active = true {
+		//	global.ignore_next_opp_locale -= 1;
+		//}
 	}
 	if (target_2.position = "left_player" && global.player_locale_1 != noone) or (target_2.position = "left_middle_player" && global.player_locale_2 != noone) or (target_2.position = "right_middle_player" && global.player_locale_3 != noone) or (target_2.position = "right_player" && global.player_locale_4 != noone) or (target_2.position = "left_opp" && global.opp_locale_1 != noone) or (target_2.position = "left_middle_opp" && global.opp_locale_2 != noone) or (target_2.position = "right_middle_opp" && global.opp_locale_3 != noone) or (target_2.position = "right_opp" && global.opp_locale_4 != noone){
 		skip_target_2 = true;
-		if global.pvp_active = true {
-			global.ignore_next_opp_locale -= 1;
-		}
+		//if global.pvp_active = true {
+		//	global.ignore_next_opp_locale -= 1;
+		//}
 	}
 	alarm[2] = 10;
 	wait_stack = false;
