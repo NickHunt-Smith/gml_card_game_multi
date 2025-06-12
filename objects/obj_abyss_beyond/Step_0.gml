@@ -53,7 +53,7 @@ if eff_type = "lingering" {
 	if opp = false {
 		if array_length(global.player.destroyed_locales_rarity) >= channel_1_threshold && channel_2 = false {
 			channel_up_seq = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_channel_up);
-			var seq_change_health = scr_change_numbers(boosted_channel,card_state.x+26,card_state.y + 328);
+			var seq_change_health = scr_change_numbers(bonus_channel_1,card_state.x+26,card_state.y + 328);
 			alarm[1] = 100;
 			if card_state.frozen = true {
 				card_state.memory_channel += bonus_channel_1;
@@ -64,7 +64,7 @@ if eff_type = "lingering" {
 		}
 		if array_length(global.player.destroyed_locales_rarity) >= channel_2_threshold && channel_3 = false {
 			channel_up_seq = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_channel_up);
-			var seq_change_health = scr_change_numbers(boosted_channel,card_state.x+26,card_state.y + 328);
+			var seq_change_health = scr_change_numbers(bonus_channel_2,card_state.x+26,card_state.y + 328);
 			alarm[1] = 100;
 			if card_state.frozen = true {
 				card_state.memory_channel += bonus_channel_2;
@@ -76,7 +76,7 @@ if eff_type = "lingering" {
 	} else {
 		if array_length(global.opponent.destroyed_locales_rarity) >= channel_1_threshold && channel_2 = false {
 			channel_up_seq = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_channel_up);
-			var seq_change_health = scr_change_numbers(boosted_channel,card_state.x+26,card_state.y + 328);
+			var seq_change_health = scr_change_numbers(bonus_channel_1,card_state.x+26,card_state.y + 328);
 			alarm[1] = 100;
 			if card_state.frozen = true {
 				card_state.memory_channel += bonus_channel_1;
@@ -87,7 +87,7 @@ if eff_type = "lingering" {
 		}
 		if array_length(global.opponent.destroyed_locales_rarity) >= channel_2_threshold && channel_3 = false {
 			channel_up_seq = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_channel_up);
-			var seq_change_health = scr_change_numbers(boosted_channel,card_state.x+26,card_state.y + 328);
+			var seq_change_health = scr_change_numbers(bonus_channel_2,card_state.x+26,card_state.y + 328);
 			alarm[1] = 100;
 			if card_state.frozen = true {
 				card_state.memory_channel += bonus_channel_2;
