@@ -26,6 +26,9 @@ if (eff_type = "play") && (wait = false) {
 		}
 		instance_destroy(card_state);
 		instance_destroy();
+		
+		mirror = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_mirrorspell);
+		alarm[1] = 20;
 	}
 }
 
@@ -43,7 +46,7 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 	}
 	if target_1 != noone {
 		
-		if global.pvp_active = true && opp=false {
+		if global.pvp_active = true && opp=false && ignore_buffer = false {
 			var _b = buffer_create(1,buffer_grow,1)
 			buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PLAYED_SPELL)
 			var card_details = string(card_state.card_type) + "," + string(card_state.rarity) + "," + string(card_state.element) + "," + string(card_state.card_index) 
@@ -84,12 +87,18 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 			global.player_enabled = true;
 			wait_target = true;
 		} else {
-			global.targeting = false;
-			global.targeting_spell = false;
-			array_delete(global.spell_stack,array_length(global.spell_stack)-1,1);
-			var copy = scr_play_spell(opp,target_1.rarity,target_1.element,target_1.card_index,target_1.target_1,target_1.target_2,target_1.target_3);
-			instance_destroy(card_state);
-			instance_destroy();
+			
+			mirror = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_mirrorspell);
+			alarm[1] = 20;
+			wait_target = true;
+			
+			//global.targeting = false;
+			//global.targeting_spell = false;
+			//array_delete(global.spell_stack,array_length(global.spell_stack)-1,1);
+			//var copy = scr_play_spell(opp,target_1.rarity,target_1.element,target_1.card_index,target_1.target_1,target_1.target_2,target_1.target_3);
+			//instance_destroy(card_state);
+			//instance_destroy();
 		}	
+		
 	}
 }

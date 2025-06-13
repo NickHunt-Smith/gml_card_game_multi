@@ -22,8 +22,10 @@ allowed_target_player = true;
 seq_change_health_1 =noone;
 seq_change = noone;
 seq_no_target = noone;
+mirror = noone;
 
 opp = false;
+ignore_buffer = false;
 
 depth = -1200;
 

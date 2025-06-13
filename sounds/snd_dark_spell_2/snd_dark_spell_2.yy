@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.112,
+  "duration":2.0752153,
   "name":"snd_dark_spell_2",
   "parent":{
     "name":"onyx",

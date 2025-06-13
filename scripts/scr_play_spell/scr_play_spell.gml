@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_play_spell(opp,rarity,element,card_index,target_1,target_2,target_3){
+function scr_play_spell(opp,rarity,element,card_index,target_1,target_2,target_3,play_seq = true,ignore_buffer = false){
 	
 	card_type = 1;
 	card_attr = 0;
@@ -16,6 +16,9 @@ function scr_play_spell(opp,rarity,element,card_index,target_1,target_2,target_3
 	inst_art_spell.card_index = card_index;
 	inst_art_spell.spell_sprite = spell_sprite;
 	inst_art_spell.opp = opp;
+	if play_seq = false {
+		inst_art_spell.just_played = false;
+	}
 		
 		
 	if array_length(global.spell_stack) = 0 {
@@ -33,6 +36,9 @@ function scr_play_spell(opp,rarity,element,card_index,target_1,target_2,target_3
 	effect_inst_opp_spell.target_2 = target_2;
 	effect_inst_opp_spell.target_3 = target_3;
 	effect_inst_opp_spell.opp = opp;
+	if ignore_buffer = true {
+		effect_inst_opp_spell.ignore_buffer = true;
+	}
 		
 	if element = 0 {
 		if opp = true {

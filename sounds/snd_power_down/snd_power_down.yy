@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":4.296,
+  "duration":4.25932,
   "name":"snd_power_down",
   "parent":{
     "name":"onyx",
