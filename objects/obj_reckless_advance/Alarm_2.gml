@@ -3,6 +3,7 @@
 
 if explode != noone {
 	layer_sequence_destroy(explode);
+	explode = noone;
 }
 
 var total_damage = 0;

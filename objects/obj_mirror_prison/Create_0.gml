@@ -3,7 +3,7 @@
 
 end_turn_damage = -1;
 
-channel_base = 1;
+channel_base = 3;
 channel_bonus = 2;
 channelling_extra = false;
 
