@@ -22,8 +22,13 @@ if target_1.shielded = true && total_damage != 0{
 	
 	seq_change_health_1 = scr_change_numbers(total_damage,target_1.x+global.health_offset_x,target_1.y + 328);
 	target_1.health_locale += total_damage;
+	
 }
 
-clash = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_clash);
-alarm[4] = 60;
+if target_1.health_locale = 0 {
+	alarm[0] = 60;
+} else {
+	clash = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_clash);
+	alarm[4] = 60;
+}
 

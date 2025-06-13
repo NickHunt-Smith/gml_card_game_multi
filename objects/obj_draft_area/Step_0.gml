@@ -448,8 +448,8 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			card_type = 1;
 			card_index = 2;
 		} else if draft_count = 2 {
-			rarity = 0;
-			element = 0;
+			rarity = 2;
+			element = 2;
 			card_type = 0;
 			card_index = 0;
 		} else if draft_count = 1 {
