@@ -1,4 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-instance_destroy(card_state);
+if card_state != noone {
+	instance_destroy(card_state);
+}

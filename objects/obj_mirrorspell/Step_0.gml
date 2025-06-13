@@ -17,18 +17,12 @@ if (eff_type = "play") && (wait = false) {
 		wait = true;
 		global.source_target = self;
 	} else {
-		wait = true;
-		card_state.target_arrows_enabled = true;
-		card_state.target_1 = target_1;
-		array_delete(global.spell_stack,card_state.order_in_stack,1);
-		if global.pvp_active = false {
-			var copy = scr_play_spell(opp,target_1.rarity,target_1.element,target_1.card_index,target_1.target_1,target_1.target_2,target_1.target_3);
+		if target_1 = noone {
+			instance_destroy();
+		} else {
+			mirror = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_mirrorspell);
+			alarm[1] = 20;
 		}
-		instance_destroy(card_state);
-		instance_destroy();
-		
-		mirror = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_mirrorspell);
-		alarm[1] = 20;
 	}
 }
 
