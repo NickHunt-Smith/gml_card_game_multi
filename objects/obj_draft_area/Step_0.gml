@@ -443,10 +443,10 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		
 		// debug
 		if draft_count = 3 {
-			rarity = 2;
+			rarity = 1;
 			element = 0;
 			card_type = 1;
-			card_index = 2;
+			card_index = 1;
 		} else if draft_count = 2 {
 			rarity = 2;
 			element = 2;
