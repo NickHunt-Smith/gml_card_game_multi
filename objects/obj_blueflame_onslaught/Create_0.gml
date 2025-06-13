@@ -39,6 +39,7 @@ shield_seq_3 = noone;
 shield_seq_4 = noone;
 
 opp = false;
+ignore_buffer = false
 
 depth = -1200;
 

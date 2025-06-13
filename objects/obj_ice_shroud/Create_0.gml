@@ -24,6 +24,7 @@ seq_change = noone;
 seq_no_target = noone;
 
 opp = false;
+ignore_buffer = false
 
 depth = -1200;
 

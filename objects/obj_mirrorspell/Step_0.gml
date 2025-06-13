@@ -18,6 +18,7 @@ if (eff_type = "play") && (wait = false) {
 		global.source_target = self;
 	} else {
 		wait = true;
+		wait_target = true;
 		if target_1 = noone {
 			instance_destroy();
 		} else {

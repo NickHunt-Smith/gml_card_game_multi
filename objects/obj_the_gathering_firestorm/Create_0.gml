@@ -28,6 +28,7 @@ shield_seq = noone;
 channel_up_seq = noone;
 
 opp = false;
+ignore_buffer = false
 
 depth = -1200;
 

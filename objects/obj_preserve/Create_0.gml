@@ -27,6 +27,7 @@ seq_no_target = noone;
 fortify_seq = noone;
 
 opp = false;
+ignore_buffer = false
 
 depth = -1200;
 

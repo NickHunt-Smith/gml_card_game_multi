@@ -30,6 +30,7 @@ fortify_seq = noone;
 seq_restore_change = noone;
 
 opp = false;
+ignore_buffer = false
 
 depth = -1200;
 

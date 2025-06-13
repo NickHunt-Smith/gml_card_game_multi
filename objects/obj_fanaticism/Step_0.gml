@@ -70,7 +70,7 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 			draw_instructions_1 = false;
 			draw_instructions_2 = false;
 			
-			if global.pvp_active = true && opp=false {
+			if global.pvp_active = true && opp=false && ignore_buffer = false{
 				var _b = buffer_create(1,buffer_grow,1)
 				buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PLAYED_SPELL)
 				var card_details = string(card_state.card_type) + "," + string(card_state.rarity) + "," + string(card_state.element) + "," + string(card_state.card_index) 

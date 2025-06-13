@@ -42,5 +42,6 @@ target_2 = noone;
 target_3 = noone;
 
 opp = false;
+ignore_buffer = false
 
 depth = -1200;

@@ -38,6 +38,7 @@ seq_change_7 = noone;
 seq_change_8 = noone;
 
 opp = false;
+ignore_buffer = false
 
 target_1 = noone;
 target_2 = noone;
