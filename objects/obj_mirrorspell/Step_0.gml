@@ -79,7 +79,9 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 			//} else {
 			//	global.no_pass_prio = false;
 			//}
-			global.player_enabled = true;
+			if global.priority = "player" {
+				global.player_enabled = true;
+			}
 			wait_target = true;
 		} else {
 			
