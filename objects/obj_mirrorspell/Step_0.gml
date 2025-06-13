@@ -83,6 +83,8 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 			wait_target = true;
 		} else {
 			
+			global.targeting = false;
+			global.targeting_spell = false;
 			mirror = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_mirrorspell);
 			alarm[1] = 20;
 			wait_target = true;

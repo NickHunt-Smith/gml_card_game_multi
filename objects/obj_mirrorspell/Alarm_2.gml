@@ -4,7 +4,7 @@ if mirror != noone {
 	mirror = noone;
 }
 
-global.targeting = false;
-global.targeting_spell = false;
-global.player_enabled = true;
+if global.priority = "player" {
+	global.player_enabled = true;
+}
 instance_destroy();
