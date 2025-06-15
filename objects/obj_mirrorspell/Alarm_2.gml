@@ -4,6 +4,11 @@ if mirror != noone {
 	mirror = noone;
 }
 
+if global.player_copying = true {
+	global.targeting = false;
+	global.targeting_spell = false;
+}
+
 if global.priority = "player" {
 	global.player_enabled = true;
 }

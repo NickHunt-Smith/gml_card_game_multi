@@ -21,7 +21,7 @@ if (eff_type = "play") && (wait = false) {
 		wait_target = true;
 		if instance_exists(target_1) = true {
 			mirror = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_mirrorspell);
-			alarm[1] = 60;
+			alarm[1] = 20;
 		}
 	}
 }
@@ -82,10 +82,12 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 				global.player_enabled = true;
 			}
 			wait_target = true;
+			card_state.target_1 = target_1;
 		} else {
-			
-			global.targeting = false;
-			global.targeting_spell = false;
+			if global.player_copying = false {
+				global.targeting = false;
+				global.targeting_spell = false;
+			}
 			mirror = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_mirrorspell);
 			alarm[1] = 20;
 			wait_target = true;
