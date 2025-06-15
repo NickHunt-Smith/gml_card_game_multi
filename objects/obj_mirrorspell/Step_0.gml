@@ -19,9 +19,7 @@ if (eff_type = "play") && (wait = false) {
 	} else {
 		wait = true;
 		wait_target = true;
-		if target_1 = noone {
-			instance_destroy();
-		} else {
+		if instance_exists(target_1) = true {
 			mirror = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_mirrorspell);
 			alarm[1] = 20;
 		}
