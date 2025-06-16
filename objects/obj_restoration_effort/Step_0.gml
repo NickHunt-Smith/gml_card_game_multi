@@ -24,7 +24,7 @@ if (eff_type = "play") && (wait = false) {
 }
 
 if wait_stack = true {
-	if instance_exists(target_1) = true or opp = true {
+	if instance_exists(target_1) = true {
 		wait = false;
 		eff_done = true;
 	} else {
