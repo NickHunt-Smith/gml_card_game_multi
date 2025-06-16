@@ -24,8 +24,12 @@ if (eff_type = "play") && (wait = false) {
 }
 
 if wait_stack = true {
-	if instance_exists(target_1) = false or target_1.position = "end_turn" {
+	if instance_exists(target_1) = false {
 		skip_target_1 = true;
+	} else if instance_exists(target_1) = true {
+		if target_1.position = "end_turn" {
+			skip_target_1 = true;
+		}
 	}
 	alarm[2] = 10;
 	wait_stack = false;

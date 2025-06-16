@@ -96,7 +96,9 @@ if global.pvp_active = false {
 	if switch_priority = true {
 		global.priority = "opp";
 	} else {
-		global.player_enabled = true;
+		if global.end_turn_active = false && global.resolve_stack = false {
+			global.player_enabled = true;
+		}
 	}
 } else {
 	if emit_destroy = true {

@@ -24,7 +24,7 @@ if (eff_type = "play") && (wait = false) {
 }
 
 if wait_stack = true {
-	if instance_exists(target_1) = true or target_1.position = "end_turn" or opp = true {
+	if instance_exists(target_1) = true or opp = true {
 		wait = false;
 		eff_done = true;
 	} else {
