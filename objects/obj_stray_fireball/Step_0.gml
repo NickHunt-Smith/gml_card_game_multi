@@ -6,6 +6,8 @@ if (eff_type = "play") && (wait = false) {
 		instance_destroy();
 	} else {
 		wait = true
+		global.player_enabled = true;
+		
 		if global.pvp_active = true && opp=false && ignore_buffer = false {
 			var _b = buffer_create(1,buffer_grow,1)
 			buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PLAYED_SPELL)

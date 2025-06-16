@@ -463,6 +463,7 @@
     {"id":{"name":"Ps_Portal_Circle_Blue","path":"particles/Ps_Portal_Circle_Blue/Ps_Portal_Circle_Blue.yy",},},
     {"id":{"name":"Ps_Portal_Circle_Gold","path":"particles/Ps_Portal_Circle_Gold/Ps_Portal_Circle_Gold.yy",},},
     {"id":{"name":"Ps_Portal_Circle_Pulse","path":"particles/Ps_Portal_Circle_Pulse/Ps_Portal_Circle_Pulse.yy",},},
+    {"id":{"name":"Ps_Portal_Circle_Red_no_target","path":"particles/Ps_Portal_Circle_Red_no_target/Ps_Portal_Circle_Red_no_target.yy",},},
     {"id":{"name":"Ps_portal_dark","path":"particles/Ps_portal_dark/Ps_portal_dark.yy",},},
     {"id":{"name":"Ps_Portal_Green","path":"particles/Ps_Portal_Green/Ps_Portal_Green.yy",},},
     {"id":{"name":"Ps_Portal_Lightning","path":"particles/Ps_Portal_Lightning/Ps_Portal_Lightning.yy",},},

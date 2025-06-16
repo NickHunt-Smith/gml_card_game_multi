@@ -1,0 +1,26 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"Ps_Portal_Circle_Red_no_target",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"Blurry_Dots","additiveBlend":true,"directionIncrease":0.0,"directionMax":360.0,"directionMin":0.0,"directionWiggle":0.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":1,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":4357887,"GMPresetName":null,"gravityDirection":90.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":40.0,"lifetimeMin":10.0,"linkedEmitter":null,"locked":false,"midColour":3697516543,"mode":0,"name":"Blurry_Dots","orientationIncrease":0.0,"orientationMax":25.0,"orientationMin":360.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":150.83908,"regionW":134.8797,"regionX":-1.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.6,"scaleY":1.0,"shape":1,"sizeIncrease":0.0,"sizeMax":0.05,"sizeMin":0.001,"sizeWiggle":0.35,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.05,"speedMin":0.005,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":12571135,"texture":8,},
+    {"$GMPSEmitter":"","%Name":"Circle_Pulse","additiveBlend":true,"directionIncrease":0.0,"directionMax":100.0,"directionMin":80.0,"directionWiggle":0.0,"distribution":1,"editorColour":16777215,"editorDrawShape":true,"emitCount":-11,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":85009919,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":60.0,"lifetimeMin":80.0,"linkedEmitter":null,"locked":false,"midColour":760965631,"mode":0,"name":"Circle_Pulse","orientationIncrease":0.0,"orientationMax":350.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":1.0,"regionW":1.0,"regionX":0.0,"regionY":0.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":1.0,"scaleY":1.0,"shape":3,"sizeIncrease":0.008,"sizeMax":0.75,"sizeMin":0.7,"sizeWiggle":0.0,"spawnOnDeathCount":0,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":0.0,"speedMin":0.0,"speedWiggle":0.0,"spriteAnimate":true,"spriteId":{"name":"Spr_Glow_Circle_2","path":"sprites/Spr_Glow_Circle_2/Spr_Glow_Circle_2.yy",},"spriteRandom":false,"spriteStretch":false,"startColour":5992191,"texture":-1,},
+  ],
+  "name":"Ps_Portal_Circle_Red_no_target",
+  "parent":{
+    "name":"Portals",
+    "path":"folders/Particle Systems/Portals.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":false,
+  "xorigin":-1,
+  "yorigin":11,
+}

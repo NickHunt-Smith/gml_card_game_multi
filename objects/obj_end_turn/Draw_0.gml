@@ -19,6 +19,10 @@ if global.player_enabled = true {
 	}
 } else {
 	draw_sprite_ext(s_button_red,0,x,y,0.45,0.45,0,c_white,1);
+	if global.targeting = true {
+		draw_text_ext_transformed(x,y-38,"No",0,100,0.5,0.5,0);
+		draw_text_ext_transformed(x,y-8,"Target",0,100,0.5,0.5,0);
+	}
 }
 
 if global.stack_active = false && global.end_turn_active = false {

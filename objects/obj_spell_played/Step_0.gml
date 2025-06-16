@@ -52,7 +52,7 @@ if (mouse_x > x-65) && (mouse_x < x + 65) && (mouse_y > y-65) && (mouse_y < y + 
 	moused = false;
 }
 
-if global.resolve_stack = false {
+if global.resolve_stack = false && big_mode = false {
 	x = lerp(x, 1527 - 140*(order_in_stack - 1) +70*(array_length(global.spell_stack) - 1), lerp_amount);
 	//x = lerp(x, 1527 + 140*(array_length(global.spell_stack) - order_in_stack), lerp_amount);
 	y = lerp(y, y_stack, lerp_amount);

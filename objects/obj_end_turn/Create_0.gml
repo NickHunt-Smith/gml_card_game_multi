@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 end_turn_shimmer = noone;
+no_target_shimmer = noone;
 shimmering = false;
 global.wait_for_effect = true;
 global.end_turn_active = false;

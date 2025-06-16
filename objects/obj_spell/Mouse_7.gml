@@ -11,6 +11,7 @@ if (global.player_enabled = true) {
 			alarm[0] = 65;
 			playing = true;
 			play_area_active = false;
+			global.player_enabled = false;
 		} else {
 			obj_mouse_manager.grabbed_card = noone;
 		}

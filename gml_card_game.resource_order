@@ -386,6 +386,7 @@
     {"name":"Ps_Portal_Circle_Blue_end_turn","order":11,"path":"particles/Ps_Portal_Circle_Blue_end_turn/Ps_Portal_Circle_Blue_end_turn.yy",},
     {"name":"Ps_Portal_Circle_Gold","order":15,"path":"particles/Ps_Portal_Circle_Gold/Ps_Portal_Circle_Gold.yy",},
     {"name":"Ps_Portal_Circle_Pulse","order":16,"path":"particles/Ps_Portal_Circle_Pulse/Ps_Portal_Circle_Pulse.yy",},
+    {"name":"Ps_Portal_Circle_Red_no_target","order":22,"path":"particles/Ps_Portal_Circle_Red_no_target/Ps_Portal_Circle_Red_no_target.yy",},
     {"name":"Ps_portal_dark","order":21,"path":"particles/Ps_portal_dark/Ps_portal_dark.yy",},
     {"name":"Ps_Portal_Green","order":17,"path":"particles/Ps_Portal_Green/Ps_Portal_Green.yy",},
     {"name":"Ps_Portal_Lightning","order":18,"path":"particles/Ps_Portal_Lightning/Ps_Portal_Lightning.yy",},

@@ -1,18 +1,39 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.player_enabled = true {
-	if (collision_point(mouse_x,mouse_y,self,false,false)) && (shimmering = false) {
+
+if (collision_point(mouse_x,mouse_y,self,false,false)) && (shimmering = false) {
+	if global.targeting = true {
+		no_target_shimmer = part_system_create(Ps_Portal_Circle_Red_no_target);
+		part_system_position(no_target_shimmer, x, y);
+		part_system_depth(no_target_shimmer,-1100);
+		shimmering = true;
+	} else if global.player_enabled = true {
 		end_turn_shimmer = part_system_create(Ps_Portal_Circle_Blue_end_turn);
 		part_system_position(end_turn_shimmer, x, y);
 		part_system_depth(end_turn_shimmer,-1100);
 		shimmering = true;
-	} else if (!collision_point(mouse_x,mouse_y,self,false,false)) && (shimmering = true) {
-		part_system_destroy(end_turn_shimmer);
-		shimmering = false;
 	}
-} else if (global.player_enabled = false) && (shimmering = true) {
+} 
+if shimmering = true && no_target_shimmer != noone && global.targeting = false {
+	part_system_destroy(no_target_shimmer);
+	no_target_shimmer = noone;
+	shimmering = false;
+}
+if (!collision_point(mouse_x,mouse_y,self,false,false)) && (shimmering = true) {
+	if no_target_shimmer != noone {
+		part_system_destroy(no_target_shimmer);
+		no_target_shimmer = noone;
+	}
+	if end_turn_shimmer != noone {
+		part_system_destroy(end_turn_shimmer);
+		end_turn_shimmer = noone;
+	}
+	shimmering = false;
+}
+if (global.player_enabled = false) && (shimmering = true) && end_turn_shimmer != noone {
 	part_system_destroy(end_turn_shimmer);
+	end_turn_shimmer = noone;
 	shimmering = false;
 }
 
