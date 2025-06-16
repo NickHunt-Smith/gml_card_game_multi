@@ -121,7 +121,9 @@ if global.pvp_active = false {
 			if global.priority = "opp" {
 				global.player_enabled = false;
 			} else {
-				global.player_enabled = true;
+				if global.end_turn_active = false && global.resolve_stack = false {
+					global.player_enabled = true;
+				}
 			}
 		}
 	} else {
@@ -133,7 +135,9 @@ if global.pvp_active = false {
 		if global.priority = "opp" {
 			global.player_enabled = false;
 		} else {
-			global.player_enabled = true;
+			if global.end_turn_active = false && global.resolve_stack = false {
+				global.player_enabled = true;
+			}
 		}
 	}
 }
