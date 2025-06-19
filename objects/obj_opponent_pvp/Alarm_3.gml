@@ -29,5 +29,5 @@ if card_type = 1 {
 	global.player.passed = false;
 	global.opponent.passed = false;
 	global.priority = "player";
-	global.player_enabled = true;
+	//global.player_enabled = true;
 }

@@ -46,6 +46,15 @@ if just_played = true {
 	alarm[5] = 90;
 }
 
+if enable_player_after_effect = true {
+	if instance_exists(effect_function_inst) = false {
+		if global.priority = "player" {
+			global.player_enabled = true;
+		}
+		enable_player_after_effect = false;
+	}
+}
+
 //if channel < 1 && channelling = true {
 //	part_system_destroy(channelled_sys);
 //	channelling = false;
