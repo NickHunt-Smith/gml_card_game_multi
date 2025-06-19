@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-play_damage_1 = -1;
+play_damage_1 = -2;
+strength_threshold = 2;
 
 eff_instructions_1 = "Deal 1 to locale twice";
 draw_instructions_1 = false;

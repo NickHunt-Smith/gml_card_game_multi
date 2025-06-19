@@ -3,7 +3,7 @@
 
 play_damage_1 = -4;
 channel = 4;
-channel_threshold = 15;
+channel_threshold = 10;
 
 eff_instructions_1 = "Deal " + string(abs(play_damage_1)) + " to target locale";
 draw_instructions_1 = false;

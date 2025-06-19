@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"40a3b186-7206-40a7-8880-af32002af29b","name":"40a3b186-7206-40a7-8880-af32002af29b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"09ce1c01-1f28-4c02-9f14-d7e03667fb70","name":"09ce1c01-1f28-4c02-9f14-d7e03667fb70","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":576,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"f1e5589e-dc7e-4f7c-9732-0f422c6c4d09","blendMode":0,"displayName":"default","isLocked":false,"name":"f1e5589e-dc7e-4f7c-9732-0f422c6c4d09","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"977abbc5-2f17-4b07-b6f5-38bfef60e15e","blendMode":0,"displayName":"default","isLocked":false,"name":"977abbc5-2f17-4b07-b6f5-38bfef60e15e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_delgar_sulfuric_pass",
   "nineSlice":null,
@@ -63,14 +63,16 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":576.0,
+    "seqWidth":448.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"40a3b186-7206-40a7-8880-af32002af29b","path":"sprites/s_delgar_sulfuric_pass/s_delgar_sulfuric_pass.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c0ff0f06-acbe-4d6c-ad9f-7c3b601b346b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"09ce1c01-1f28-4c02-9f14-d7e03667fb70","path":"sprites/s_delgar_sulfuric_pass/s_delgar_sulfuric_pass.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"bece3466-92b8-47c5-9f20-8e678f466dd9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"739dd5c7-a62d-462f-99ba-58f31297e26b","name":"739dd5c7-a62d-462f-99ba-58f31297e26b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"50990185-854b-4fe0-8709-84eb4c48bb84","name":"50990185-854b-4fe0-8709-84eb4c48bb84","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":576,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"235ff47f-3335-4bb4-9f0b-92d93f9f7f36","blendMode":0,"displayName":"default","isLocked":false,"name":"235ff47f-3335-4bb4-9f0b-92d93f9f7f36","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6e2ad789-da28-4c06-9507-fedb2d30180b","blendMode":0,"displayName":"default","isLocked":false,"name":"6e2ad789-da28-4c06-9507-fedb2d30180b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_flame_spiral",
   "nineSlice":{
@@ -82,14 +82,16 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":576.0,
+    "seqWidth":448.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"739dd5c7-a62d-462f-99ba-58f31297e26b","path":"sprites/s_flame_spiral/s_flame_spiral.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b8c49d5b-36f7-40e1-b5a5-1cd104d7a54e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"50990185-854b-4fe0-8709-84eb4c48bb84","path":"sprites/s_flame_spiral/s_flame_spiral.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fb5fb1a6-3d8e-4554-b81e-3fe3c04ba9a0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

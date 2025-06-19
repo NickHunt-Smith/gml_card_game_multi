@@ -24,11 +24,19 @@ if (eff_type = "play") && (wait = false) {
 
 if wait_stack = true {
 	if instance_exists(target_1) = false or target_1.position = "end_turn" {
-		skip_target_1 = true;
+		seq_no_target = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_no_targets);
+		alarm[0] = 60;
 	} else {
 		target_1.illusory = true;
+		channel_up_seq = layer_sequence_create("effect_layer",target_1.x+112,target_1.y+184,seq_channel_up);
+		var seq_change_health = scr_change_numbers(bonus_channel_1,target_1.x+26,target_1.y + 328);
+		alarm[1] = 100;
+		if target_1.frozen = true {
+			target_1.memory_channel += bonus_channel_1;
+		} else {
+			target_1.channel += bonus_channel_1;
+		}
 	}
-	alarm[0] = 50;
 	wait_stack = false;
 }
 

@@ -2,7 +2,6 @@
 // You can write your code in this editor
 
 if game_start = true {
-	randomise();
 	game_start = false;
 	
 	alarm[0] = 10;

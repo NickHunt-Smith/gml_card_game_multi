@@ -4,6 +4,8 @@
 eff_instructions_1 = "Give locale Illusory";
 draw_instructions_1 = false;
 
+bonus_channel_1 = 1;
+
 eff_type = "none";
 
 card_state = noone;
@@ -22,6 +24,7 @@ allowed_target_player = true;
 seq_change_health_1 =noone;
 seq_change = noone;
 seq_no_target = noone;
+channel_up_seq = noone;
 
 opp = false;
 ignore_buffer = false

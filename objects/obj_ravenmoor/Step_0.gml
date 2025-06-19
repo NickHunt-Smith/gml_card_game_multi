@@ -187,9 +187,55 @@ if (eff_type = "end_turn") && (wait = false) {
 			card_state.channel = card_state.memory_channel;
 		}
 	
-		wait = true;
-	
-		alarm[0] = 100;
+		// Deal 1 to random enemy locale
+		x += 112;
+		y += 184;
+				
+		if opp = false {
+				
+			if global.opp_locale_1 = noone && global.opp_locale_2 = noone && global.opp_locale_3 = noone && global.opp_locale_4 = noone {
+				seq_no_target = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_no_targets);
+				wait = true;
+				alarm[0] = 100;
+			} else {
+				while (target_1 = noone) {
+					var temp = random(100);
+					if temp < 25 {
+						target_1 = global.opp_locale_1;
+					} else if (temp >= 25) && (temp < 50) {
+						target_1 = global.opp_locale_2;
+					} else if (temp >= 50) && (temp < 75) {
+						target_1 = global.opp_locale_3;
+					} else if (temp >= 75) {
+						target_1 = global.opp_locale_4;
+					}
+				}
+				wait = true;
+				alarm[2] = 100;
+			} 
+		} else {
+			
+			if global.player_locale_1 = noone && global.player_locale_2 = noone && global.player_locale_3 = noone && global.player_locale_4 = noone {
+				seq_no_target = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_no_targets);
+				wait = true;
+				alarm[0] = 100;
+			} else {
+				while (target_1 = noone) {
+					var temp = random(100);
+					if temp < 25 {
+						target_1 = global.player_locale_1;
+					} else if (temp >= 25) && (temp < 50) {
+						target_1 = global.player_locale_2;
+					} else if (temp >= 50) && (temp < 75) {
+						target_1 = global.player_locale_3;
+					} else if (temp >= 75) {
+						target_1 = global.player_locale_4;
+					}
+				}
+				wait = true;
+				alarm[2] = 100;
+			}
+		}
 	}
 	
 }

@@ -7,6 +7,9 @@ channel_3 = false;
 bonus_channel_1 = 2;
 bonus_channel_2 = 2;
 
+spell_threshold_1 = 3;
+spell_threshold_1 = 6;
+
 eff_type = "none";
 
 card_state = noone;

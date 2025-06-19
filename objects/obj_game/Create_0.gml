@@ -4,6 +4,8 @@ var _loaded = texturegroup_load("Default");
 
 //audio_play_sound(snd_volcano,10,true);
 
+randomise();
+
 //show_debug_message(window_get_width())
 //show_debug_message(window_get_height())
 window_set_size(1920, 992);
@@ -25,11 +27,12 @@ global.format_perspective = vertex_format_end();
 
 game_start = true;
 if global.pvp_active = false {
-	if random(100) < 50 {
-		global.priority = "player";
-	} else {
-		global.priority = "opp"
-	}
+	//if random(100) < 50 {
+	//	global.priority = "player";
+	//} else {
+	//	global.priority = "opp"
+	//}
+	global.priority = "player";
 }
 global.no_pass_prio = false;
 global.opponent = noone;
@@ -123,7 +126,7 @@ global.uncommon_ruby_locales_health_list, global.uncommon_ruby_locales_channel_l
 // 0
 array_push(global.uncommon_ruby_locales_sprite_list,s_wisplit_hills)
 array_push(global.uncommon_ruby_locales_art_list,s_wisplit_hills_art)
-array_push(global.uncommon_ruby_locales_health_list,4)
+array_push(global.uncommon_ruby_locales_health_list,2)
 array_push(global.uncommon_ruby_locales_channel_list,2)
 array_push(global.uncommon_ruby_locales_effect_list,obj_wisplit_hills)
 
@@ -156,7 +159,7 @@ global.rare_ruby_locales_health_list, global.rare_ruby_locales_channel_list, glo
 array_push(global.rare_ruby_locales_sprite_list,s_flame_spiral)
 array_push(global.rare_ruby_locales_art_list,s_flame_spiral_art)
 array_push(global.rare_ruby_locales_health_list,5)
-array_push(global.rare_ruby_locales_channel_list,4)
+array_push(global.rare_ruby_locales_channel_list,2)
 array_push(global.rare_ruby_locales_effect_list,obj_flame_spiral)
 
 // 1
@@ -195,14 +198,14 @@ array_push(global.mythic_ruby_locales_effect_list,obj_geyser_fields)
 array_push(global.mythic_ruby_locales_sprite_list,s_ancient_forge)
 array_push(global.mythic_ruby_locales_art_list,s_ancient_forge_art)
 array_push(global.mythic_ruby_locales_health_list,4)
-array_push(global.mythic_ruby_locales_channel_list,3)
+array_push(global.mythic_ruby_locales_channel_list,4)
 array_push(global.mythic_ruby_locales_effect_list,obj_ancient_forge)
 
 // 2
 array_push(global.mythic_ruby_locales_sprite_list,s_welcoming_hearthside)
 array_push(global.mythic_ruby_locales_art_list,s_welcoming_hearthside_art)
-array_push(global.mythic_ruby_locales_health_list,7)
-array_push(global.mythic_ruby_locales_channel_list,4)
+array_push(global.mythic_ruby_locales_health_list,8)
+array_push(global.mythic_ruby_locales_channel_list,5)
 array_push(global.mythic_ruby_locales_effect_list,obj_welcoming_hearthside)
 
 // Legendary Ruby locales
@@ -233,8 +236,8 @@ array_push(global.legendary_ruby_locales_effect_list,obj_firestorm)
 // 2
 array_push(global.legendary_ruby_locales_sprite_list,s_delgar_sulfuric_pass)
 array_push(global.legendary_ruby_locales_art_list,s_delgar_sulfuric_pass_art)
-array_push(global.legendary_ruby_locales_health_list,5)
-array_push(global.legendary_ruby_locales_channel_list,6)
+array_push(global.legendary_ruby_locales_health_list,7)
+array_push(global.legendary_ruby_locales_channel_list,9)
 array_push(global.legendary_ruby_locales_effect_list,obj_delgar_sulfuric_pass)
 
 // Ruby spells ============================================================================
@@ -685,7 +688,7 @@ global.uncommon_onyx_locales_health_list, global.uncommon_onyx_locales_channel_l
 // 0
 array_push(global.uncommon_onyx_locales_sprite_list,s_haunted_manor)
 array_push(global.uncommon_onyx_locales_art_list,s_haunted_manor_art)
-array_push(global.uncommon_onyx_locales_health_list,1)
+array_push(global.uncommon_onyx_locales_health_list,2)
 array_push(global.uncommon_onyx_locales_channel_list,2)
 array_push(global.uncommon_onyx_locales_effect_list,obj_haunted_manor)
 
@@ -731,7 +734,7 @@ array_push(global.rare_onyx_locales_effect_list,obj_mist_swept_highlands)
 // 2
 array_push(global.rare_onyx_locales_sprite_list,s_trinket_vendor)
 array_push(global.rare_onyx_locales_art_list,s_trinket_vendor_art)
-array_push(global.rare_onyx_locales_health_list,5)
+array_push(global.rare_onyx_locales_health_list,4)
 array_push(global.rare_onyx_locales_channel_list,3)
 array_push(global.rare_onyx_locales_effect_list,obj_trinket_vendor)
 
@@ -757,7 +760,7 @@ array_push(global.mythic_onyx_locales_effect_list,obj_grand_ravenmoor_church)
 array_push(global.mythic_onyx_locales_sprite_list,s_ravenmoor_market)
 array_push(global.mythic_onyx_locales_art_list,s_ravenmoor_market_art)
 array_push(global.mythic_onyx_locales_health_list,6)
-array_push(global.mythic_onyx_locales_channel_list,4)
+array_push(global.mythic_onyx_locales_channel_list,2)
 array_push(global.mythic_onyx_locales_effect_list,obj_ravenmoor_market)
 
 // 2
@@ -782,7 +785,7 @@ global.legendary_onyx_locales_health_list, global.legendary_onyx_locales_channel
 array_push(global.legendary_onyx_locales_sprite_list,s_vossen_gazing_pool)
 array_push(global.legendary_onyx_locales_art_list,s_vossen_gazing_pool_art)
 array_push(global.legendary_onyx_locales_health_list,6)
-array_push(global.legendary_onyx_locales_channel_list,2)
+array_push(global.legendary_onyx_locales_channel_list,1)
 array_push(global.legendary_onyx_locales_effect_list,obj_vossen_gazing_pool)
 
 // 1
@@ -795,7 +798,7 @@ array_push(global.legendary_onyx_locales_effect_list,obj_abyss_beyond)
 // 2
 array_push(global.legendary_onyx_locales_sprite_list,s_ravenmoor)
 array_push(global.legendary_onyx_locales_art_list,s_ravenmoor_art)
-array_push(global.legendary_onyx_locales_health_list,9)
+array_push(global.legendary_onyx_locales_health_list,6)
 array_push(global.legendary_onyx_locales_channel_list,4)
 array_push(global.legendary_onyx_locales_effect_list,obj_ravenmoor)
 

@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-play_damage_1 = -3;
-play_damage_2 = -2;
+play_damage_1 = -4;
+play_damage_2 = -3;
 
 eff_instructions_1 = "Deal " + string(abs(play_damage_1)) + " to target locale";
 eff_instructions_2 = "Deal " + string(abs(play_damage_2)) + " to different target locale";

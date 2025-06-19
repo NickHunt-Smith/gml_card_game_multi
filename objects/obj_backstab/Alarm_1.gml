@@ -15,12 +15,14 @@ if target_1.shielded = true {
 	target_1.health_locale += total_damage;
 }
 
-if target_1.health_locale != 0 {
-	dark_strike = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_backstab);
-	scr_sequence_target(dark_strike,target_1,opp,card_state);
-	alarm[3] = 60;
-} else {
-	seq_no_target = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_no_targets);
-	alarm[0] = 60;
-}
+alarm[0] = 50;
+
+//if target_1.health_locale != 0 {
+//	dark_strike = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_backstab);
+//	scr_sequence_target(dark_strike,target_1,opp,card_state);
+//	alarm[3] = 60;
+//} else {
+//	seq_no_target = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_no_targets);
+//	alarm[0] = 60;
+//}
 

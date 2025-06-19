@@ -4,8 +4,8 @@
 channel_2 = false;
 channel_3 = false;
 
-channel_1_threshold = 8;
-channel_2_threshold = 15;
+channel_1_threshold = 5;
+channel_2_threshold = 10;
 
 bonus_channel_1 = 2;
 bonus_channel_2 = 3;

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-channel_bonus = 1;
+channel_bonus = 2;
 
 eff_type = "none";
 

@@ -5,6 +5,11 @@ if seq_no_target != noone {
 	layer_sequence_destroy(seq_no_target);
 }
 
+if spark != noone {
+	layer_sequence_destroy(spark);
+	spark = noone;
+}
+
 wait = false;
 eff_done = true;
 

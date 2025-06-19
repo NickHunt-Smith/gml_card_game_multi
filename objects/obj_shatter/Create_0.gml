@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-play_damage_1 = -3;
+play_damage_1 = -4;
 
 eff_instructions_1 = "Deal " + string(abs(play_damage_1)) + " to locale if Frozen";
 draw_instructions_1 = false;
