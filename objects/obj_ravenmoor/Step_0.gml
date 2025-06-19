@@ -63,7 +63,7 @@ if eff_type = "lingering" {
 			channel_2 = true;
 		}
 	} else {
-		if global.opponent.drained >= channel_1_threshold && channel_2 = false {
+		if global.opponent.drained >= channel_threshold && channel_2 = false {
 			channel_up_seq = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_channel_up);
 			var seq_change_health = scr_change_numbers(bonus_channel_1,card_state.x+26,card_state.y + 328);
 			alarm[1] = 100;
