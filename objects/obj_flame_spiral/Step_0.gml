@@ -51,12 +51,12 @@ if (eff_type = "play") && (wait = false) {
 
 if (eff_type = "play") && (wait = true) && (wait_target = false) {
 	if opp = true {
-		alarm[2] = 10;
 		wait_target = true;
 		//target_1 = target;
-		if target_1 = noone {
+		if instance_exists(target_1) = false or target_1.position = "end_turn" {
 			skip_target_1 = true; 
 		}
+		alarm[2] = 10;
 	} else if target != noone {
 		target_1 = target;
 		if target_1.position = "end_turn" or instance_exists(target_1) = false {
