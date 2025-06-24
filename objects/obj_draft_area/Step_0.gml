@@ -91,6 +91,14 @@ if rarities_types_chosen = false && only_draft_area = true {
 			rarities_types_chosen = true;
 		}
 		
+		if draft_count = 3 {
+			if random_card_types[0] = 0 && random_card_types[1] = 0 {
+				random_card_types[2] = 1;
+			} else if random_card_types[0] = 1 && random_card_types[1] = 1 {
+				random_card_types[2] = 0;
+			}
+		}
+		
 		if global.pvp_active = true && global.is_server = true && rarity_locked = false {
 			var _b = buffer_create(1,buffer_grow,1)
 			buffer_write(_b,buffer_u8,NETWORK_PACKETS.DRAFTING) 

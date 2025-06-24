@@ -8,7 +8,7 @@ bonus_channel_1 = 2;
 bonus_channel_2 = 2;
 
 spell_threshold_1 = 3;
-spell_threshold_1 = 6;
+spell_threshold_2 = 6;
 
 eff_type = "none";
 
