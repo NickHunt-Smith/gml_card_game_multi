@@ -63,4 +63,4 @@ ruby_spell_increase = false;
 overwritten = false;
 overwriting = false;
 card_sprite_scale = 0.67;
-enable_player_after_effect = false;
+enable_player_after_effect = true;
