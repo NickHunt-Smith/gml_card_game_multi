@@ -64,3 +64,4 @@ overwritten = false;
 overwriting = false;
 card_sprite_scale = 0.67;
 enable_player_after_effect = true;
+enable_player_after_big_mode = false;
