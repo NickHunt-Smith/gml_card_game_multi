@@ -49,7 +49,6 @@ if (eff_type = "play") && (wait = false) {
 				array_push(global.opponent.hand_card_type,card_type_scry);
 				instance_destroy();
 			}
-			wait = true;
 		}
 	}
 }
