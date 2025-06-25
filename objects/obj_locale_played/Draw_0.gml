@@ -59,7 +59,7 @@ if big_mode = false {
 				increment_shield = -0.01;
 			}
 			alpha_shield = clamp(alpha_shield+increment_shield,0,1);
-			draw_sprite_ext(s_shielded,0,x,y,0.49,0.52,0,c_white,alpha_shield);
+			draw_sprite_ext(s_shielded,0,x,y,0.50,0.51,0,c_white,alpha_shield);
 		}
 		
 		if frozen = true {
