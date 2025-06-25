@@ -9,5 +9,8 @@ if (moused = true) && (global.targeting = false) && obj_mouse_manager.grabbed_ca
 	depth = -1300
 	big_mode = true
 	global.big_mode = true;
-	global.player_enabled = false;
+	if global.player_enabled = true {
+		enable_player_after_big_mode = true; 
+		global.player_enabled = false;
+	}
 } 

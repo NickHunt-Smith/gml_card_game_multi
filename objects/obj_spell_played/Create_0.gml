@@ -42,3 +42,4 @@ target_y = 0;
 highlighted = false;
 target_highlight = noone;
 position = "stack";
+enable_player_after_big_mode = false;

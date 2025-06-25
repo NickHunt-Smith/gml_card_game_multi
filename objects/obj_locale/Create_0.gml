@@ -31,6 +31,7 @@ sprite_gap = 0;
 play_scale = 1;
 play_scale_stats = 1;
 alpha = 0;
+enable_player_after_big_mode = false;
 
 // Set what PFX we need.
 pfx_border_top = Ps_Fire_Line_top;

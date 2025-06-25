@@ -29,6 +29,7 @@ sprite_gap = 0;
 alpha = 0;
 play_element_seq = noone;
 y_stack = 748;
+enable_player_after_big_mode = false;
 
 lerp_amount = 0.65;
 

@@ -10,6 +10,9 @@ if global.big_mode = false && moused = true {
 	image_yscale = 2
 	global.big_mode = true;
 	big_mode = true;
-	global.player_enabled = false;
+	if global.player_enabled = true {
+		enable_player_after_big_mode = true; 
+		global.player_enabled = false;
+	}
 	depth = -1300;
 }

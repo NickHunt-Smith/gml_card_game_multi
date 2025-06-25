@@ -24,8 +24,9 @@ if playing = false {
 		if big_mode = true {
 			global.big_mode = false;
 			big_mode = false;
-			if global.drafting = false && global.targeting = false {
+			if global.drafting = false && global.targeting = false && enable_player_after_big_mode = true {
 				global.player_enabled = true;
+				enable_player_after_big_mode = false;
 			}
 		}
 		x = lerp(x, 1520 + 180*(order_in_hand) -90*(array_length(global.cards_in_hand) - 1), lerp_amount);

@@ -6,7 +6,10 @@ if big_mode = true {
 	y = y_memory;
 	global.big_mode = false;
 	big_mode = false;
-	global.player_enabled = true;
+	if global.drafting = false && global.targeting = false && enable_player_after_big_mode = true {
+		global.player_enabled = true;
+		enable_player_after_big_mode = false;
+	}
 	depth = -800;
 }
 
