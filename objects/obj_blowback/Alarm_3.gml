@@ -10,6 +10,11 @@ if fireball_2 != noone {
 	fireball_2 = noone;
 }
 
+if seq_no_target != noone {
+	layer_sequence_destroy(seq_no_target);
+	seq_no_target = noone;
+}
+
 
 if eff_type = "play" && skip_target_1 = false {
 	var total_damage = 0;

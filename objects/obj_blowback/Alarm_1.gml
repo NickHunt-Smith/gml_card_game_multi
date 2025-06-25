@@ -7,6 +7,6 @@ if skip_target_2 = false {
 	alarm[3] = 90;
 } else {
 	seq_no_target = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_no_targets);
-	alarm[0] = 60;
+	alarm[3] = 60;
 }
 

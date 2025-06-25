@@ -1,11 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if clash != noone {
-	layer_sequence_destroy(clash);
-	clash = noone;
-}
-
 if strike_1 != noone {
 	layer_sequence_destroy(strike_1);
 	strike_1 = noone;
