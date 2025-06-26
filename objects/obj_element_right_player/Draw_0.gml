@@ -27,8 +27,8 @@ draw_set_font(Empower_font)
 global.channelled_right_player_loc_x = x-75;
 global.channelled_right_player_loc_y = y + 49;
 var channel_print = max_channel;
-if max_channel > 20 {
-	channel_print = 20;
+if max_channel > global.win_threshold {
+	channel_print = global.win_threshold;
 }
 if global.end_game_trigger = false {
 	draw_text_colour(global.channelled_right_player_loc_x,global.channelled_right_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)

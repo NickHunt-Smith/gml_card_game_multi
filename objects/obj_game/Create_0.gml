@@ -55,6 +55,7 @@ global.spell_stack = [];
 global.being_destroyed = [];
 global.ignore_next_opp_locale = 0;
 global.turn_count = 0;
+global.win_threshold = 30;
 global.lingering_active = false;
 
 global.player_copying = false;
@@ -720,7 +721,7 @@ global.rare_onyx_locales_health_list, global.rare_onyx_locales_channel_list, glo
 // 0
 array_push(global.rare_onyx_locales_sprite_list,s_ravenmoor_alley)
 array_push(global.rare_onyx_locales_art_list,s_ravenmoor_alley_art)
-array_push(global.rare_onyx_locales_health_list,6)
+array_push(global.rare_onyx_locales_health_list,5)
 array_push(global.rare_onyx_locales_channel_list,3)
 array_push(global.rare_onyx_locales_effect_list,obj_ravenmoor_alley)
 

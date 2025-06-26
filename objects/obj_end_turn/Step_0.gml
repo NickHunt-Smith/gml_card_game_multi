@@ -109,7 +109,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 			} else if (global.wait_for_effect = false) {
 				//global.player_enabled = true;
 				if locked_boosting = false {
-					if array_max(global.channelled_left_opp) >= 20  {
+					if array_max(global.channelled_left_opp) >= global.win_threshold  {
 						var max_channel = 0;
 						var max_channel_ind = 0;
 						for (var _i = 0; _i < array_length(global.channelled_right_opp); _i++) {
@@ -135,7 +135,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 						var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
 						alarm[8] = 100;
 						locked_boosting = true;
-					} else if array_max(global.channelled_right_opp) >= 20  {
+					} else if array_max(global.channelled_right_opp) >= global.win_threshold  {
 						var max_channel = 0;
 						var max_channel_ind = 0;
 						for (var _i = 0; _i < array_length(global.channelled_left_opp); _i++) {
@@ -161,7 +161,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 						var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
 						alarm[8] = 100;
 						locked_boosting = true;
-					} else if array_max(global.channelled_right_player) >= 20  {
+					} else if array_max(global.channelled_right_player) >= global.win_threshold  {
 						var max_channel = 0;
 						var max_channel_ind = 0;
 						for (var _i = 0; _i < array_length(global.channelled_left_player); _i++) {
@@ -187,7 +187,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 						var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
 						alarm[8] = 100;
 						locked_boosting = true;
-					} else if array_max(global.channelled_left_player) >= 20  {
+					} else if array_max(global.channelled_left_player) >= global.win_threshold  {
 						var max_channel = 0;
 						var max_channel_ind = 0;
 						for (var _i = 0; _i < array_length(global.channelled_right_player); _i++) {
@@ -280,7 +280,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 			} else if (global.wait_for_effect = false) {
 				//global.player_enabled = true;
 				if locked_boosting = false {
-					if array_max(global.channelled_left_player) >= 20  {
+					if array_max(global.channelled_left_player) >= global.win_threshold  {
 						var max_channel = 0;
 						var max_channel_ind = 0;
 						for (var _i = 0; _i < array_length(global.channelled_right_player); _i++) {
@@ -291,13 +291,13 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 						}
 				
 						if max_channel_ind = 0 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_ruby_extra);
+							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_ruby_extra);
 							global.channelled_right_player_ruby += locked_channel_boost;
 						} else if max_channel_ind = 1 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_pearl_extra);
+							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_pearl_extra);
 							global.channelled_right_player_pearl += locked_channel_boost;
 						} else if max_channel_ind = 2 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_onyx_extra);
+							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_onyx_extra);
 							global.channelled_right_player_onyx += locked_channel_boost;
 						}
 						layer_sequence_angle(channel_seq_1,90);
@@ -306,7 +306,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 						var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
 						alarm[8] = 100;
 						locked_boosting = true;
-					} else if array_max(global.channelled_right_player) >= 20  {
+					} else if array_max(global.channelled_right_player) >= global.win_threshold  {
 						var max_channel = 0;
 						var max_channel_ind = 0;
 						for (var _i = 0; _i < array_length(global.channelled_left_player); _i++) {
@@ -317,13 +317,13 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 						}
 				
 						if max_channel_ind = 0 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_ruby_extra);
+							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_ruby_extra);
 							global.channelled_left_player_ruby += locked_channel_boost;
 						} else if max_channel_ind = 1 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_pearl_extra);
+							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_pearl_extra);
 							global.channelled_left_player_pearl += locked_channel_boost;
 						} else if max_channel_ind = 2 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_onyx_extra);
+							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_onyx_extra);
 							global.channelled_left_player_onyx += locked_channel_boost;
 						}
 						layer_sequence_angle(channel_seq_1,-90);
@@ -332,7 +332,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 						var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
 						alarm[8] = 100;
 						locked_boosting = true;
-					} else if array_max(global.channelled_right_opp) >= 20  {
+					} else if array_max(global.channelled_right_opp) >= global.win_threshold  {
 						var max_channel = 0;
 						var max_channel_ind = 0;
 						for (var _i = 0; _i < array_length(global.channelled_left_opp); _i++) {
@@ -343,13 +343,13 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 						}
 				
 						if max_channel_ind = 0 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_ruby_extra);
+							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_ruby_extra);
 							global.channelled_left_opp_ruby += locked_channel_boost;
 						} else if max_channel_ind = 1 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_pearl_extra);
+							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_pearl_extra);
 							global.channelled_left_opp_pearl += locked_channel_boost;
 						} else if max_channel_ind = 2 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_onyx_extra);
+							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_onyx_extra);
 							global.channelled_left_opp_onyx += locked_channel_boost;
 						}
 						layer_sequence_angle(channel_seq_2,-90);
@@ -358,7 +358,7 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 						var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
 						alarm[8] = 100;
 						locked_boosting = true;
-					} else if array_max(global.channelled_left_opp) >= 20  {
+					} else if array_max(global.channelled_left_opp) >= global.win_threshold  {
 						var max_channel = 0;
 						var max_channel_ind = 0;
 						for (var _i = 0; _i < array_length(global.channelled_right_opp); _i++) {
@@ -369,13 +369,13 @@ if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && 
 						}
 				
 						if max_channel_ind = 0 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_ruby_extra);
+							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_ruby_extra);
 							global.channelled_right_opp_ruby += locked_channel_boost;
 						} else if max_channel_ind = 1 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_pearl_extra);
+							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_pearl_extra);
 							global.channelled_right_opp_pearl += locked_channel_boost;
 						} else if max_channel_ind = 2 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_onyx_extra);
+							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_onyx_extra);
 							global.channelled_right_opp_onyx += locked_channel_boost;
 						}
 						layer_sequence_angle(channel_seq_2,90);

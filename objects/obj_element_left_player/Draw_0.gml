@@ -1,7 +1,7 @@
 /// @description Fill circle with element, if channelling
 // You can write your code in this editor
 
-if global.end_game_trigger = true && array_max(global.channelled_left_player) >= 20 && fade_out = false {
+if global.end_game_trigger = true && array_max(global.channelled_left_player) >= global.win_threshold && fade_out = false {
 	part_system_depth(power_swirling,-1050);
 	depth = -1050;
 	draw_sprite_ext(s_spell_background,0,1520,720,5,5,0,c_black,alpha);
@@ -37,8 +37,8 @@ draw_set_font(Empower_font)
 global.channelled_left_player_loc_x = x+284;
 global.channelled_left_player_loc_y = y + 49;
 var channel_print = max_channel;
-if max_channel > 20 {
-	channel_print = 20;
+if max_channel > global.win_threshold {
+	channel_print = global.win_threshold;
 }
 if global.end_game_trigger = false {
 	draw_text_colour(global.channelled_left_player_loc_x,global.channelled_left_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)

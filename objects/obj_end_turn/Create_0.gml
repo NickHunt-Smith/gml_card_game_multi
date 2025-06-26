@@ -8,7 +8,7 @@ global.wait_for_effect = true;
 global.end_turn_active = false;
 combat_started = false;
 combat_ended = false;
-locked_channel_boost = 3;
+locked_channel_boost = 2;
 locked_boosting = false;
 
 combat_seq_player = noone;

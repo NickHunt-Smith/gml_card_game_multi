@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.channelled_right_player[0] >= 20 {
+if global.channelled_right_player[0] >= global.win_threshold {
 	win_sys_2 = layer_sequence_create("above_cards",x+525+105,y+90,seq_victory_ruby);
-} else if global.channelled_right_player[1] >= 20 {
+} else if global.channelled_right_player[1] >= global.win_threshold {
 	win_sys_2 = layer_sequence_create("above_cards",x+525+105,y+90,seq_victory_pearl);
-} else if global.channelled_right_player[2] >= 20 {
+} else if global.channelled_right_player[2] >= global.win_threshold {
 	win_sys_2 = layer_sequence_create("above_cards",x+525+105,y+90,seq_victory_onyx);
 }
 layer_sequence_xscale(win_sys_2,0.8);

@@ -1,5 +1,5 @@
 
-if button_draw = true {
+if button_draw = true && global.big_mode = false {
 	if view_opp = false and (mouse_x < 1527 + 48 and mouse_x > 1527 - 48) and (mouse_y < 753 + 48 and mouse_y > 753 - 48) {
 		view_opp = true;
 		part_system_depth(summon_whirlpool_1,-10);
