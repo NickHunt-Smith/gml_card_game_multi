@@ -25,8 +25,8 @@ if (eff_type = "play") && (wait = false) {
 
 if wait_stack = true {
 	if instance_exists(target_1) = true {
-		wait = false;
-		eff_done = true;
+		seq_no_target = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_no_targets);
+		alarm[0] = 60;
 	} else {
 		if opp = false {
 			var draft_inst = instance_create_depth(1510,400,-800,obj_draft_area);

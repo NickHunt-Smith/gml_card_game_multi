@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.344,
+  "duration":1.312517,
   "name":"snd_card_landing",
   "parent":{
     "name":"Sounds",

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.584,
+  "duration":1.5354422,
   "name":"snd_bike_crash",
   "parent":{
     "name":"Sounds",

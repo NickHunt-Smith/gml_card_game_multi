@@ -13,6 +13,16 @@ if just_played = true {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_uncommon_pearl_spell);
 		} else if element = 2 {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_uncommon_onyx_spell);
+		} else if element = 3 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_uncommon_sapphire);
+		} else if element = 4 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_uncommon_emerald);
+		} else if element = 5 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_uncommon_citrine);
+		} else if element = 6 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_uncommon_opal);
+		} else if element = 7 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_uncommon_amethyst);
 		}
 	} else if rarity = 2 {
 		if element = 0 {
@@ -21,6 +31,16 @@ if just_played = true {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_rare_pearl_spell);
 		} else if element = 2 {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_rare_onyx_spell);
+		} else if element = 3 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_rare_sapphire);
+		} else if element = 4 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_rare_emerald);
+		} else if element = 5 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_rare_citrine);
+		} else if element = 6 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_rare_opal);
+		} else if element = 7 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_rare_amethyst);
 		}
 	} else if rarity = 3 {
 		if element = 0 {
@@ -29,7 +49,17 @@ if just_played = true {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_mythic_pearl_spell);
 		} else if element = 2 {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_mythic_onyx_spell);
-		}
+		} else if element = 3 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_mythic_sapphire);
+		} else if element = 4 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_mythic_emerald);
+		} else if element = 5 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_mythic_citrine);
+		} else if element = 6 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_mythic_opal);
+		} else if element = 7 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_mythic_amethyst);
+		} 
 		screenshake(10, 4, 0.4);
 	} else if rarity = 4 {
 		if element = 0 {
@@ -38,6 +68,16 @@ if just_played = true {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_legendary_pearl_spell);
 		} else if element = 2 {
 			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_legendary_onyx_spell);
+		} else if element = 3 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_legendary_sapphire);
+		} else if element = 4 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_legendary_emerald);
+		} else if element = 5 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_legendary_citrine);
+		} else if element = 6 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_legendary_opal);
+		} else if element = 7 {
+			play_seq = layer_sequence_create("effect_layer",x,y,seq_play_legendary_amethyst);
 		}
 		screenshake(10, 4, 0.4);
 	}

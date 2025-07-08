@@ -8,6 +8,16 @@ if array_max(global.channelled_right_opp) >= global.win_threshold && power_swirl
 		power_swirling = part_system_create(Ps_pearl_swirl);
 	} else if global.channelled_right_opp[2] >= global.win_threshold {
 		power_swirling = part_system_create(Ps_onyx_swirl);
+	} else if global.channelled_right_opp[3] >= global.win_threshold {
+		power_swirling = part_system_create(Ps_sapphire_swirl);
+	} else if global.channelled_right_opp[4] >= global.win_threshold {
+		power_swirling = part_system_create(Ps_emerald_swirl);
+	} else if global.channelled_right_opp[5] >= global.win_threshold {
+		power_swirling = part_system_create(Ps_citrine_swirl);
+	} else if global.channelled_right_opp[6] >= global.win_threshold {
+		power_swirling = part_system_create(Ps_opal_swirl);
+	} else if global.channelled_right_opp[7] >= global.win_threshold {
+		power_swirling = part_system_create(Ps_amethyst_swirl);
 	}
 	part_system_position(power_swirling,x + 110,y + 90);
 	part_system_depth(power_swirling,-850);

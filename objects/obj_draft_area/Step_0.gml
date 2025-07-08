@@ -191,6 +191,7 @@ if global.pvp_active = false or rarities_types_chosen = true {
 	image_alpha = lerp(image_alpha, 1, 0.09);
 
 	if (summon_cards = true) && debug_test = true {
+		
 		global.drafting = true;
 		global.player_enabled = false;
 	
@@ -223,6 +224,10 @@ if global.pvp_active = false or rarities_types_chosen = true {
 
 
 	if (summon_cards = true) && debug_test = false {
+		if draft_count > 2 {
+			reroll_active = true;
+			global.rerolls_available += 1;
+		}
 		button_draw = true;
 	
 		var card_inst = noone;
@@ -247,52 +252,13 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		if element_locked = true {
 			element = element_locked_i;
 		} else {
-			var prob_ruby  = 33.33;
-			var prob_pearl  = 33.33;
-			var prob_onyx  = 33.33;
-			var total_ruby = global.channelled_left_player_ruby + global.channelled_right_player_ruby;
-			var total_pearl = global.channelled_left_player_pearl + global.channelled_right_player_pearl;
-			var total_onyx = global.channelled_left_player_onyx + global.channelled_right_player_onyx;
-			if total_ruby > 4 && total_onyx > 4 {
-				prob_ruby += 8;
-				prob_onyx += 8;
-				prob_pearl -= 16;
-			}
-			if total_ruby > 8 && total_onyx > 8 {
-				prob_ruby += 15;
-				prob_onyx += 15;
-				prob_pearl -= 30;
-			}
-			if total_ruby > 4 && total_pearl > 4 {
-				prob_ruby += 8;
-				prob_pearl += 8;
-				prob_onyx -= 16;
-			}
-			if total_ruby > 8 && total_pearl > 8 {
-				prob_ruby += 15;
-				prob_pearl += 15;
-				prob_onyx -= 30;
-			}
-			if total_onyx > 4 && total_pearl > 4 {
-				prob_onyx += 8;
-				prob_pearl += 8;
-				prob_ruby -= 16;
-			}
-			if total_onyx > 8 && total_pearl > 8{
-				prob_onyx += 15;
-				prob_pearl += 15;
-				prob_ruby -= 30;
-			}
-		
-			var element_dist = [prob_ruby,prob_ruby + prob_pearl,prob_ruby + prob_pearl + prob_onyx];
-			var temp = random(100);
-			if temp < element_dist[0] {
-				element = 0;
-			} else if temp >= element_dist[0] && temp < element_dist[1] {
-				element = 1;
-			} else if temp >= element_dist[1] && temp <= element_dist[2] {
-				element = 2;
-			}
+			element = scr_choose_element();
+			//var debug_dist = [0,0,0,0,0,0,0,0];
+			//for (var _i = 0; _i < 10000; _i++) {
+			//	element = scr_choose_element();
+				//debug_dist[element] += 1;
+			//}
+			//show_debug_message(debug_dist);
 		}
 	
 		var card_index_dist = [0];
@@ -315,52 +281,7 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		if element_locked = true {
 			element = element_locked_i;
 		} else {
-			var prob_ruby  = 33.33;
-			var prob_pearl  = 33.33;
-			var prob_onyx  = 33.33;
-			var total_ruby = global.channelled_left_player_ruby + global.channelled_right_player_ruby;
-			var total_pearl = global.channelled_left_player_pearl + global.channelled_right_player_pearl;
-			var total_onyx = global.channelled_left_player_onyx + global.channelled_right_player_onyx;
-			if total_ruby > 5 && total_onyx > 5 {
-				prob_ruby += 8;
-				prob_onyx += 8;
-				prob_pearl -= 16;
-			}
-			if total_ruby > 10 && total_onyx > 10 {
-				prob_ruby += 15;
-				prob_onyx += 15;
-				prob_pearl -= 30;
-			}
-			if total_ruby > 5 && total_pearl > 5 {
-				prob_ruby += 8;
-				prob_pearl += 8;
-				prob_onyx -= 16;
-			}
-			if total_ruby > 10 && total_pearl > 10 {
-				prob_ruby += 15;
-				prob_pearl += 15;
-				prob_onyx -= 30;
-			}
-			if total_onyx > 5 && total_pearl > 5 {
-				prob_onyx += 8;
-				prob_pearl += 8;
-				prob_ruby -= 16;
-			}
-			if total_onyx > 10 && total_pearl > 10 {
-				prob_onyx += 15;
-				prob_pearl += 15;
-				prob_ruby -= 30;
-			}
-		
-			var element_dist = [prob_ruby,prob_ruby + prob_pearl,prob_ruby + prob_pearl + prob_onyx];
-			var temp = random(100);
-			if temp < element_dist[0] {
-				element = 0;
-			} else if temp >= element_dist[0] && temp < element_dist[1] {
-				element = 1;
-			} else if temp >= element_dist[1] && temp <= element_dist[2] {
-				element = 2;
-			}
+			element = scr_choose_element();
 		}
 	
 		var card_index_dist = [0];
@@ -385,52 +306,7 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		if element_locked = true {
 			element = element_locked_i;
 		} else {
-			var prob_ruby  = 33.33;
-			var prob_pearl  = 33.33;
-			var prob_onyx  = 33.33;
-			var total_ruby = global.channelled_left_player_ruby + global.channelled_right_player_ruby;
-			var total_pearl = global.channelled_left_player_pearl + global.channelled_right_player_pearl;
-			var total_onyx = global.channelled_left_player_onyx + global.channelled_right_player_onyx;
-			if total_ruby > 5 && total_onyx > 5 {
-				prob_ruby += 8;
-				prob_onyx += 8;
-				prob_pearl -= 16;
-			}
-			if total_ruby > 10 && total_onyx > 10 {
-				prob_ruby += 15;
-				prob_onyx += 15;
-				prob_pearl -= 30;
-			}
-			if total_ruby > 5 && total_pearl > 5 {
-				prob_ruby += 8;
-				prob_pearl += 8;
-				prob_onyx -= 16;
-			}
-			if total_ruby > 10 && total_pearl > 10 {
-				prob_ruby += 15;
-				prob_pearl += 15;
-				prob_onyx -= 30;
-			}
-			if total_onyx > 5 && total_pearl > 5 {
-				prob_onyx += 8;
-				prob_pearl += 8;
-				prob_ruby -= 16;
-			}
-			if total_onyx > 10 && total_pearl > 10 {
-				prob_onyx += 15;
-				prob_pearl += 15;
-				prob_ruby -= 30;
-			}
-		
-			var element_dist = [prob_ruby,prob_ruby + prob_pearl,prob_ruby + prob_pearl + prob_onyx];
-			var temp = random(100);
-			if temp < element_dist[0] {
-				element = 0;
-			} else if temp >= element_dist[0] && temp < element_dist[1] {
-				element = 1;
-			} else if temp >= element_dist[1] && temp <= element_dist[2] {
-				element = 2;
-			}
+			element = scr_choose_element();
 		}
 	
 		var card_index_dist = [0];
@@ -449,30 +325,30 @@ if global.pvp_active = false or rarities_types_chosen = true {
 	
 		var order = 2;
 		
-		//// debug
-		//if draft_count = 3 {
-		//	rarity = 0;
-		//	element = 2;
-		//	card_type = 1;
-		//	card_index = 1;
-		//} else if draft_count = 2 {
-		//	rarity = 2;
-		//	element = 1;
-		//	card_type = 0;
-		//	card_index = 2;
-		//} else if draft_count = 1 {
-		//	rarity = 0;
-		//	element = 0;
-		//	card_type = 1;
-		//	card_index = 1;
-		//}
+		// debug
+		if draft_count = 3 {
+			rarity = 0;
+			element = 5;
+			card_type = 0;
+			card_index = 0;
+		} else if draft_count = 2 {
+			rarity = 0;
+			element = 3;
+			card_type = 0;
+			card_index = 0;
+		} else if draft_count = 1 {
+			rarity = 0;
+			element = 4;
+			card_type = 0;
+			card_index = 0;
+		}
 	
 		card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
-		if card_type_locked = false {
-			array_push(global.opponent.hand_rarity,rarity);
-			array_push(global.opponent.hand_card_type,card_type);
-		}
+		//if card_type_locked = false {
+		//	array_push(global.opponent.hand_rarity,rarity);
+		//	array_push(global.opponent.hand_card_type,card_type);
+		//}
 	
 		summon_cards = false;
 	}
@@ -496,6 +372,7 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		
 			if (draft_count = 0) {
 				button_draw = false;
+				reroll_active = false;
 				global.draft_area_visible = false;
 				alarm[1] = 1;
 				syncing = true;

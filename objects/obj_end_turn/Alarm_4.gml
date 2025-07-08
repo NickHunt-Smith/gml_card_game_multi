@@ -48,6 +48,16 @@ if global.player_locale_4 != noone && global.opp_locale_4 != noone {
 		combat_seq_player = layer_sequence_create("effect_layer",global.player_locale_4.x+112,global.player_locale_4.y+75,seq_combat_pearl);
 	} else if global.player_locale_4.element = 2 {
 		combat_seq_player = layer_sequence_create("effect_layer",global.player_locale_4.x+112,global.player_locale_4.y+75,seq_combat_onyx);
+	} else if global.player_locale_4.element = 3 {
+		combat_seq_player = layer_sequence_create("effect_layer",global.player_locale_4.x+112,global.player_locale_4.y+75,seq_combat_sapphire);
+	} else if global.player_locale_4.element = 4 {
+		combat_seq_player = layer_sequence_create("effect_layer",global.player_locale_4.x+112,global.player_locale_4.y+75,seq_combat_emerald);
+	} else if global.player_locale_4.element = 5 {
+		combat_seq_player = layer_sequence_create("effect_layer",global.player_locale_4.x+112,global.player_locale_4.y+75,seq_combat_citrine);
+	} else if global.player_locale_4.element = 6 {
+		combat_seq_player = layer_sequence_create("effect_layer",global.player_locale_4.x+112,global.player_locale_4.y+75,seq_combat_opal);
+	} else if global.player_locale_4.element = 7 {
+		combat_seq_player = layer_sequence_create("effect_layer",global.player_locale_4.x+112,global.player_locale_4.y+75,seq_combat_amethyst);
 	}
 	if global.opp_locale_4.element = 0 {
 		combat_seq_opp = layer_sequence_create("effect_layer",global.opp_locale_4.x+112,global.opp_locale_4.y+277,seq_combat_ruby);
@@ -55,6 +65,16 @@ if global.player_locale_4 != noone && global.opp_locale_4 != noone {
 		combat_seq_opp = layer_sequence_create("effect_layer",global.opp_locale_4.x+112,global.opp_locale_4.y+277,seq_combat_pearl);
 	} else if global.opp_locale_4.element = 2 {
 		combat_seq_opp = layer_sequence_create("effect_layer",global.opp_locale_4.x+112,global.opp_locale_4.y+277,seq_combat_onyx);
+	} else if global.opp_locale_4.element = 3 {
+		combat_seq_opp = layer_sequence_create("effect_layer",global.opp_locale_4.x+112,global.opp_locale_4.y+277,seq_combat_sapphire);
+	} else if global.opp_locale_4.element = 4 {
+		combat_seq_opp = layer_sequence_create("effect_layer",global.opp_locale_4.x+112,global.opp_locale_4.y+277,seq_combat_emerald);
+	} else if global.opp_locale_4.element = 5 {
+		combat_seq_opp = layer_sequence_create("effect_layer",global.opp_locale_4.x+112,global.opp_locale_4.y+277,seq_combat_citrine);
+	} else if global.opp_locale_4.element = 6 {
+		combat_seq_opp = layer_sequence_create("effect_layer",global.opp_locale_4.x+112,global.opp_locale_4.y+277,seq_combat_opal);
+	} else if global.opp_locale_4.element = 7 {
+		combat_seq_opp = layer_sequence_create("effect_layer",global.opp_locale_4.x+112,global.opp_locale_4.y+277,seq_combat_amethyst);
 	}
 	layer_sequence_angle(combat_seq_opp,180);
 	layer_sequence_xscale(combat_seq_player,0.43);

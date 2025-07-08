@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if big_mode = false {
-	if destroyed = false {
+	if destroyed = false && fading = false {
 		
 		draw_sprite_general(global.rarity_list[rarity][element][0][1][card_index],0,60,67,330,443,x,y,card_sprite_scale,card_sprite_scale,0,c_white,c_white,c_white,c_white,1)
 
@@ -15,7 +15,7 @@ if big_mode = false {
 		
 		//alpha = lerp(alpha,1,0.1);
 		draw_sprite_ext(s_locale_stats,0,x,y+293,0.68,0.68,0,c_white,alpha)
-		draw_sprite_ext(global.element_sprite_list[element],0,x-5,y+308,0.08,0.08,0,c_white,alpha)
+		draw_sprite_ext(global.element_sprite_list[element],0,x+20,y+331,0.08,0.08,0,c_white,alpha)
 		if channel > 9 {
 			draw_text_ext_transformed_color(x+55,y + 309,channel,20,200,0.7,1,0,c_maroon,c_maroon,c_maroon,c_maroon,alpha)
 		} else {

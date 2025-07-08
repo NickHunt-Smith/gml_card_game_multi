@@ -18,7 +18,7 @@ if alpha = 1 {
 	draw_text_color(1520,745,"Victory!",c_white,c_white,c_white,c_white,1);
 }
 
-global.channelled_left_player = [global.channelled_left_player_ruby,global.channelled_left_player_pearl,global.channelled_left_player_onyx];
+global.channelled_left_player = [global.channelled_left_player_ruby,global.channelled_left_player_pearl,global.channelled_left_player_onyx,global.channelled_left_player_sapphire,global.channelled_left_player_emerald,global.channelled_left_player_citrine,global.channelled_left_player_opal,global.channelled_left_player_amethyst];
 max_channel = 0;
 var max_channel_ind = 0;
 var tied = false;
@@ -44,12 +44,32 @@ if global.end_game_trigger = false {
 	draw_text_colour(global.channelled_left_player_loc_x,global.channelled_left_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)
 }
 
+if max_channel_ind != max_channel_ind_current && max_channel > 0 && max_element_seq = noone {
+	max_channel_ind_current = max_channel_ind;
+	if max_channel_ind = 0 {
+		max_element_seq = layer_sequence_create("effect_layer",x+108,y+88,seq_element_ruby);
+	} else if max_channel_ind = 1 {
+		max_element_seq = layer_sequence_create("effect_layer",x+108,y+88,seq_element_pearl);		
+	} else if max_channel_ind = 2 {
+		max_element_seq = layer_sequence_create("effect_layer",x+108,y+88,seq_element_onyx);		
+	} else if max_channel_ind = 3 {
+		max_element_seq = layer_sequence_create("effect_layer",x+108,y+88,seq_element_sapphire);		
+	} else if max_channel_ind = 4 {
+		max_element_seq = layer_sequence_create("effect_layer",x+108,y+88,seq_element_emerald);		
+	} else if max_channel_ind = 5 {
+		max_element_seq = layer_sequence_create("effect_layer",x+108,y+88,seq_element_citrine);		
+	} else if max_channel_ind = 6 {
+		max_element_seq = layer_sequence_create("effect_layer",x+108,y+88,seq_element_opal);		
+	} else if max_channel_ind = 7 {
+		max_element_seq = layer_sequence_create("effect_layer",x+108,y+88,seq_element_amethyst);		
+	}
+	alarm[5] = 60;
+}
 
-if tied = false
-{
-	draw_sprite_ext(element_sprites[max_channel_ind],0,x,y,0.3624158,0.3500271,0,c_white,1);
-	var increment = global.channelled_left_player[max_channel_ind]*14.8;
-	//draw_sprite_general(gauge_element_sprites[max_channel_ind],0,0,142,448,increment,977,1466-(increment*0.68),0.5714286,0.68,0,c_white,c_white,c_white,c_white,1)
+
+if max_channel > 0 && max_channel_ind_draw != 1000 {
+	//draw_sprite_ext(element_sprites[max_channel_ind],0,x,y,0.3624158,0.3500271,0,c_white,1);
+	draw_sprite_ext(element_sprites[max_channel_ind_draw],0,x+108,y+88,0.3624158,0.3500271,0,c_white,1);
 }
 
 var radius_gauge = 55;

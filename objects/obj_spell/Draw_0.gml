@@ -72,6 +72,16 @@ if playing = true {
 			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_pearl);
 		} else if element = 2 {
 			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_onyx);
+		} else if element = 3 {
+			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_sapphire);
+		} else if element = 4 {
+			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_emerald);
+		} else if element = 5 {
+			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_citrine);
+		} else if element = 6 {
+			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_opal);
+		} else if element = 7 {
+			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_amethyst);
 		}
 		alpha = 0;
 	}

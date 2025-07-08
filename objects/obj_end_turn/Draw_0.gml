@@ -62,4 +62,5 @@ if global.stack_active = false && global.end_turn_active = false {
 	if global.opp_locale_4 != noone {
 		draw_sprite_ext(s_opp_combat_arrow,0,1917,689,1.18,0.67,180,c_white,alpha_fluc);
 	}
+	
 }

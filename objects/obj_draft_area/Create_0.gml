@@ -28,6 +28,8 @@ card_inst_2 = noone;
 card_inst_3 = noone;
 
 debug_test = false;
+reroll_active = false;
+reroll_shimmer = noone;
 
 rarity_locked = false;
 rarity_locked_i = 0;
@@ -39,3 +41,8 @@ card_type_locked_i = 0;
 random_rarities = [];
 random_card_types = [];
 rarities_types_chosen = false;
+
+channel_threshold_1 = 2;
+channel_threshold_2 = 4;
+channel_threshold_3 = 6;
+channel_threshold_4 = 8;

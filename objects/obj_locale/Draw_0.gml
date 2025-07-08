@@ -61,6 +61,16 @@ if playing = true {
 			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_pearl);
 		} else if element = 2 {
 			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_onyx);
+		} else if element = 3 {
+			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_sapphire);
+		} else if element = 4 {
+			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_emerald);
+		} else if element = 5 {
+			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_citrine);
+		} else if element = 6 {
+			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_opal);
+		} else if element = 7 {
+			play_element_seq = layer_sequence_create("above_cards",x,y,seq_play_amethyst);
 		}
 		alpha = 0;
 	}
@@ -71,7 +81,7 @@ if playing = true {
 		var channel = global.rarity_list[rarity][element][0][3][card_index];
 		var health_locale = global.rarity_list[rarity][element][0][2][card_index];
 		draw_sprite_ext(s_locale_stats,0,x-164,y-222+293*(play_scale_stats+0.5),0.68*(play_scale_stats+0.5),0.68*(play_scale_stats+0.5),0,c_white,alpha)
-		draw_sprite_ext(global.element_sprite_list[element],0,x-164-5*(play_scale_stats+0.5),y-222+308*(play_scale_stats+0.5),0.08*(play_scale_stats+0.5),0.08*(play_scale_stats+0.5),0,c_white,alpha)
+		draw_sprite_ext(global.element_sprite_list[element],0,x-164+20*(play_scale_stats+0.5),y-222+331*(play_scale_stats+0.5),0.08*(play_scale_stats+0.5),0.08*(play_scale_stats+0.5),0,c_white,alpha)
 		if channel > 9 {
 			draw_text_ext_transformed_color(x-164+55*(play_scale_stats+0.5),y-222 + 309*(play_scale_stats+0.5),channel,20,200,0.7*(play_scale_stats+0.5),1*(play_scale_stats+0.5),0,c_maroon,c_maroon,c_maroon,c_maroon,alpha)
 		} else {
