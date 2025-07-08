@@ -86,7 +86,7 @@ if (eff_type = "end_turn") && (wait = false) {
 			} else if (card_state.position = "left_opp") {
 				channel_seq = layer_sequence_create("effect_layer",x + 180,y -60,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
-				layer_sequence_angle(channel_seq,150);
+				layer_sequence_angle(channel_seq,150+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_left_opp,0,array_length(global.channelled_left_opp));
 				array_sort(channel_copy,false);
@@ -97,7 +97,7 @@ if (eff_type = "end_turn") && (wait = false) {
 			} else if (card_state.position = "left_middle_opp") {
 				channel_seq = layer_sequence_create("effect_layer",x + 70,y -60,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
-				layer_sequence_angle(channel_seq,210);
+				layer_sequence_angle(channel_seq,210+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_left_opp,0,array_length(global.channelled_left_opp));
 				array_sort(channel_copy,false);
@@ -108,7 +108,7 @@ if (eff_type = "end_turn") && (wait = false) {
 			} else if (card_state.position = "right_middle_opp") {
 				channel_seq = layer_sequence_create("effect_layer",x + 180,y -60,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
-				layer_sequence_angle(channel_seq,150);
+				layer_sequence_angle(channel_seq,150+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_right_opp,0,array_length(global.channelled_right_opp));
 				array_sort(channel_copy,false);
@@ -119,7 +119,7 @@ if (eff_type = "end_turn") && (wait = false) {
 			} else if (card_state.position = "right_opp") {
 				channel_seq = layer_sequence_create("effect_layer",x + 70,y -60,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
-				layer_sequence_angle(channel_seq,210);
+				layer_sequence_angle(channel_seq,210+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_right_opp,0,array_length(global.channelled_right_opp));
 				array_sort(channel_copy,false);
