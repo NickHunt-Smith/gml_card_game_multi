@@ -17,12 +17,12 @@ if target_1.is_empty = true {
 	target_1.channel = 1;
 	target_1.health_locale = 1;
 		
-	//var effect_inst_opp = instance_create_depth(target_1.x,target_1.y,-800,obj_calm_ocean);
-	//effect_inst_opp.eff_type = "play";
-	//effect_inst_opp.card_state = target_1;
-	//target_1.effect_function = obj_calm_ocean;
-	//target_1.effect_function_inst = effect_inst_opp;
-	//effect_inst_opp.opp = opp;
+	var effect_inst_opp = instance_create_depth(target_1.x,target_1.y,-800,obj_calm_ocean);
+	effect_inst_opp.eff_type = "play";
+	effect_inst_opp.card_state = target_1;
+	target_1.effect_function = obj_calm_ocean;
+	target_1.effect_function_inst = effect_inst_opp;
+	effect_inst_opp.opp = opp;
 
 	//effect_inst_opp.target_1 = noone;
 	//effect_inst_opp.target_2 = noone;
