@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_play_locale(opp,position,rarity,element,card_index,target_1,target_2,target_3){
+function scr_play_locale(opp,position,rarity,element,card_index,target_1,target_2,target_3,play_seq = true,ignore_buffer = false){
 	
 	if position = "left_opp" {
 		locale_lane_y = 301;
@@ -42,6 +42,10 @@ function scr_play_locale(opp,position,rarity,element,card_index,target_1,target_
 	inst_art_locale.opp = opp;
 	inst_art_locale.position = position;
 	
+	if play_seq = false {
+		inst_art_locale.just_played = false;
+	}
+	
 	if position = "left_opp" {
 		global.opp_locale_1 = inst_art_locale;
 	} else if position = "left_middle_opp" {
@@ -79,6 +83,9 @@ function scr_play_locale(opp,position,rarity,element,card_index,target_1,target_
 		effect_inst_opp.target_3 = inst_art_locale
 	} else {
 		effect_inst_opp.target_3 = target_3;
+	}
+	if ignore_buffer = true {
+		effect_inst_opp_spell.ignore_buffer = true;
 	}
 			
 	lingering_effect_inst_opp = instance_create_depth(inst_art_locale.x,inst_art_locale.y,-800,inst_art_locale.effect_function);

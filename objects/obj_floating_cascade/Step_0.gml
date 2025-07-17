@@ -10,13 +10,13 @@ if (eff_type = "play") && (wait = false) {
 				var _b = buffer_create(1,buffer_grow,1)
 				buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PLAYED_LOCALE)
 				var card_details = string(card_state.position) + "," + string(card_state.card_type) + "," + string(card_state.rarity) + "," + string(card_state.element) + "," + string(card_state.card_index) 
-				if target_1.is_empty = true {
-					target_1 = noone;
-				}
 				if target_1 = noone {
 					card_details = card_details + ",noone";
 				} else {
 					card_details = card_details + "," + string(target_1.position);
+					if target_1.is_empty = true {
+						card_details = card_details + "_empty";
+					}
 				}
 				if target_2 = noone {
 					card_details = card_details + ",noone";
@@ -65,10 +65,7 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 	if opp = true {
 		wait_target = true;
 		//target_1 = target;
-		if target_1 = noone {
-			wait = false;
-			eff_done = true;
-		} else if target_1.position = "end_turn" {
+		if target_1 = noone or target_1.position = "end_turn" {
 			seq_no_target = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_no_targets);
 			alarm[1] = 60;
 		} else {
