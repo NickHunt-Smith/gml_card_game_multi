@@ -85,7 +85,7 @@ function scr_play_locale(opp,position,rarity,element,card_index,target_1,target_
 		effect_inst_opp.target_3 = target_3;
 	}
 	if ignore_buffer = true {
-		effect_inst_opp_spell.ignore_buffer = true;
+		effect_inst_opp.ignore_buffer = true;
 	}
 			
 	lingering_effect_inst_opp = instance_create_depth(inst_art_locale.x,inst_art_locale.y,-800,inst_art_locale.effect_function);
