@@ -11,6 +11,7 @@ has_effect = true;
 wait_shield = false;
 wait = false;
 opp = false;
+ignore_buffer = false;
 
 channel_seq = noone;
 seq_change_health =noone;

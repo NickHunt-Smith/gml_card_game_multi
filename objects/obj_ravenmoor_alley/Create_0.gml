@@ -13,6 +13,7 @@ eff_done = false;
 wait = false;
 opp = false;
 has_effect = true;
+ignore_buffer = false;
 
 target_1 = noone;
 seq_no_target = noone;

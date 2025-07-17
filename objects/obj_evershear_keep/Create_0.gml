@@ -10,6 +10,7 @@ card_state = noone;
 
 eff_done = false;
 has_effect = true;
+ignore_buffer = false;
 
 wait = false;
 opp = false;

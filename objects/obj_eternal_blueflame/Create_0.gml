@@ -12,6 +12,7 @@ has_effect = true;
 
 wait = false;
 opp = false;
+ignore_buffer = false;
 
 blueflame = noone;
 channel_seq = noone;

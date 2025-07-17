@@ -12,6 +12,7 @@ eff_done = false;
 wait = false;
 opp = false;
 has_effect = true;
+ignore_buffer = false;
 
 spiral = noone;
 firestorm = noone;

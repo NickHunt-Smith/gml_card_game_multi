@@ -22,7 +22,7 @@ if eff_type = "play" {
 	card_state.tooltip_text = "Ruby spell";
 	card_state.tooltip_text_plural = true;
 	
-	if global.pvp_active = true && opp=false && global.resolve_stack = false {
+	if global.pvp_active = true && opp=false && global.resolve_stack = false && ignore_buffer = false {
 		var _b = buffer_create(1,buffer_grow,1)
 		buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PLAYED_LOCALE)
 		var card_details = string(card_state.position) + "," + string(card_state.card_type) + "," + string(card_state.rarity) + "," + string(card_state.element) + "," + string(card_state.card_index) 
