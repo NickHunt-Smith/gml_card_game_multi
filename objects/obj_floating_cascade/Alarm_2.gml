@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if target_1.is_empty = true {
-	var effect_arr = scr_play_locale(opp,target_1.position,0,3,1,noone,noone,noone,play_seq = false,ignore_buffer = true);
+	var effect_arr = scr_play_locale(opp,target_1.position,0,3,1,noone,noone,noone,false,true);
 	alarm[1] = 40;
 } else if (target_1.element = 3 && target_1.rarity = 0 && target_1.card_index = 1) or (target_1.element = 3 && target_1.rarity = 2 && target_1.card_index = 0) or (target_1.element = 3 && target_1.rarity = 4 && target_1.card_index = 0) {
 	fortify_seq = layer_sequence_create("effect_layer",target_1.x+112,target_1.y+230,seq_fortify);
