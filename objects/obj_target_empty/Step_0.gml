@@ -64,7 +64,7 @@ if (!moused_4) && (highlighted_4 = true) {
 	highlighted_4 = false;
 }
 
-if global.targeting_empty = true && active = true {
+if (global.targeting_empty = true or global.targeting_empty_nonempty = true) && active = true {
 
 	if (moused_1) && (highlighted_1 = false) && global.player_locale_1 = noone{
 		target_highlight_1 = part_system_create(Ps_Locale_Highlight_small);

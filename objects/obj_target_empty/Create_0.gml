@@ -7,6 +7,7 @@ position = "left_player";
 x_offset = 219;
 y_offset = 352;
 is_locale = true;
+is_empty = true;
 
 x_1 = 1020;
 y_1 = 845;

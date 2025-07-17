@@ -21,6 +21,5 @@ if global.targeting_spell = true && moused = true && global.big_mode = false {
 			target_highlight = noone;
 		}
 		highlighted = false;
-		global.targeting_spell = false;
 	}
 }

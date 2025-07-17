@@ -75,6 +75,7 @@ if big_mode = false {
 		
 	}
 } else {
+	sprite_index = global.rarity_list[rarity][element][0][0][card_index];
 	draw_sprite_ext(s_spell_background,0,1520,720,5,5,0,c_black,0.6);
 	//draw_sprite_ext(global.rarity_list[rarity][element][0][0][card_index],0,1513,723,2,2,0,c_white,1);
 	

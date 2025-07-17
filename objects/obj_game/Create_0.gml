@@ -18,6 +18,7 @@ depth = -402;
 increment = 0;
 reverse = false;
 global.health_offset_x = 193;
+global.channel_offset_x = 50;
 
 vertex_format_begin();
 vertex_format_add_colour();
@@ -42,6 +43,7 @@ global.stack_active = false;
 global.resolve_stack = false;
 global.targeting = false;
 global.targeting_empty = false;
+global.targeting_empty_nonempty = false;
 global.targeting_spell = false;
 global.drafting = false;
 global.draft_area_visible = false;
@@ -946,11 +948,11 @@ array_push(global.common_sapphire_locales_channel_list,1)
 array_push(global.common_sapphire_locales_effect_list,obj_blustery_cliffside)
 
 // 1
-array_push(global.common_sapphire_locales_sprite_list,s_fetid_sewer)
-array_push(global.common_sapphire_locales_art_list,s_fetid_sewer_art)
+array_push(global.common_sapphire_locales_sprite_list,s_calm_ocean)
+array_push(global.common_sapphire_locales_art_list,s_calm_ocean_art)
 array_push(global.common_sapphire_locales_health_list,1)
 array_push(global.common_sapphire_locales_channel_list,1)
-array_push(global.common_sapphire_locales_effect_list,obj_fetid_sewer)
+array_push(global.common_sapphire_locales_effect_list,obj_calm_ocean)
 
 // 2
 array_push(global.common_sapphire_locales_sprite_list,s_decrepit_chapel)
@@ -971,11 +973,11 @@ global.uncommon_sapphire_locales_list = [global.uncommon_sapphire_locales_sprite
 global.uncommon_sapphire_locales_health_list, global.uncommon_sapphire_locales_channel_list, global.uncommon_sapphire_locales_effect_list]
 
 // 0
-array_push(global.uncommon_sapphire_locales_sprite_list,s_haunted_manor)
-array_push(global.uncommon_sapphire_locales_art_list,s_haunted_manor_art)
-array_push(global.uncommon_sapphire_locales_health_list,2)
+array_push(global.uncommon_sapphire_locales_sprite_list,s_floating_cascade)
+array_push(global.uncommon_sapphire_locales_art_list,s_floating_cascade_art)
+array_push(global.uncommon_sapphire_locales_health_list,1)
 array_push(global.uncommon_sapphire_locales_channel_list,2)
-array_push(global.uncommon_sapphire_locales_effect_list,obj_haunted_manor)
+array_push(global.uncommon_sapphire_locales_effect_list,obj_floating_cascade)
 
 // 1
 array_push(global.uncommon_sapphire_locales_sprite_list,s_starlit_sanctuary)
@@ -1003,11 +1005,11 @@ global.rare_sapphire_locales_list = [global.rare_sapphire_locales_sprite_list,gl
 global.rare_sapphire_locales_health_list, global.rare_sapphire_locales_channel_list, global.rare_sapphire_locales_effect_list]
 
 // 0
-array_push(global.rare_sapphire_locales_sprite_list,s_ravenmoor_alley)
-array_push(global.rare_sapphire_locales_art_list,s_ravenmoor_alley_art)
-array_push(global.rare_sapphire_locales_health_list,5)
-array_push(global.rare_sapphire_locales_channel_list,3)
-array_push(global.rare_sapphire_locales_effect_list,obj_ravenmoor_alley)
+array_push(global.rare_sapphire_locales_sprite_list,s_wild_ocean)
+array_push(global.rare_sapphire_locales_art_list,s_wild_ocean_art)
+array_push(global.rare_sapphire_locales_health_list,4)
+array_push(global.rare_sapphire_locales_channel_list,4)
+array_push(global.rare_sapphire_locales_effect_list,obj_wild_ocean)
 
 // 1
 array_push(global.rare_sapphire_locales_sprite_list,s_mist_swept_highlands)
@@ -1067,11 +1069,11 @@ global.legendary_sapphire_locales_list = [global.legendary_sapphire_locales_spri
 global.legendary_sapphire_locales_health_list, global.legendary_sapphire_locales_channel_list, global.legendary_sapphire_locales_effect_list]
 
 // 0
-array_push(global.legendary_sapphire_locales_sprite_list,s_vossen_gazing_pool)
-array_push(global.legendary_sapphire_locales_art_list,s_vossen_gazing_pool_art)
-array_push(global.legendary_sapphire_locales_health_list,6)
-array_push(global.legendary_sapphire_locales_channel_list,1)
-array_push(global.legendary_sapphire_locales_effect_list,obj_vossen_gazing_pool)
+array_push(global.legendary_sapphire_locales_sprite_list,s_tempestuous_ocean)
+array_push(global.legendary_sapphire_locales_art_list,s_tempestuous_ocean_art)
+array_push(global.legendary_sapphire_locales_health_list,7)
+array_push(global.legendary_sapphire_locales_channel_list,7)
+array_push(global.legendary_sapphire_locales_effect_list,obj_tempestuous_ocean)
 
 // 1
 array_push(global.legendary_sapphire_locales_sprite_list,s_abyss_beyond)
@@ -1099,9 +1101,9 @@ global.common_sapphire_spells_effect_list = []
 global.common_sapphire_spells_list = [global.common_sapphire_spells_sprite_list,global.common_sapphire_spells_art_list,global.common_sapphire_spells_effect_list]
 
 // 0 
-array_push(global.common_sapphire_spells_sprite_list,s_fanaticism)
-array_push(global.common_sapphire_spells_art_list,s_fanaticism_art)
-array_push(global.common_sapphire_spells_effect_list,obj_fanaticism)
+array_push(global.common_sapphire_spells_sprite_list,s_dampen)
+array_push(global.common_sapphire_spells_art_list,s_dampen_art)
+array_push(global.common_sapphire_spells_effect_list,obj_dampen)
 
 // 1
 array_push(global.common_sapphire_spells_sprite_list,s_backstab)
@@ -1122,9 +1124,9 @@ global.uncommon_sapphire_spells_effect_list = []
 global.uncommon_sapphire_spells_list = [global.uncommon_sapphire_spells_sprite_list,global.uncommon_sapphire_spells_art_list,global.uncommon_sapphire_spells_effect_list]
 
 // 0 
-array_push(global.uncommon_sapphire_spells_sprite_list,s_starry_vision)
-array_push(global.uncommon_sapphire_spells_art_list,s_starry_vision_art)
-array_push(global.uncommon_sapphire_spells_effect_list,obj_starry_vision)
+array_push(global.uncommon_sapphire_spells_sprite_list,aqueous_upheaval)
+array_push(global.uncommon_sapphire_spells_art_list,aqueous_upheaval_art)
+array_push(global.uncommon_sapphire_spells_effect_list,obj_aqueous_upheaval)
 
 // 1
 array_push(global.uncommon_sapphire_spells_sprite_list,s_tithes)
@@ -1145,9 +1147,9 @@ global.rare_sapphire_spells_effect_list = []
 global.rare_sapphire_spells_list = [global.rare_sapphire_spells_sprite_list,global.rare_sapphire_spells_art_list,global.rare_sapphire_spells_effect_list]
 
 // 0 
-array_push(global.rare_sapphire_spells_sprite_list,s_mirrorspell)
-array_push(global.rare_sapphire_spells_art_list,s_mirrorspell_art)
-array_push(global.rare_sapphire_spells_effect_list,obj_mirrorspell)
+array_push(global.rare_sapphire_spells_sprite_list,s_norvista_trickery)
+array_push(global.rare_sapphire_spells_art_list,s_norvista_trickery_art)
+array_push(global.rare_sapphire_spells_effect_list,obj_norvista_trickery)
 
 // 1
 array_push(global.rare_sapphire_spells_sprite_list,s_subjugate)

@@ -26,7 +26,7 @@ card_index = 1;
 tooltip_inst = noone;
 tooltip_created = false;
 var effect_function = noone;
-var effect_function_inst = noone;
+effect_function_inst = noone;
 
 tooltip_extra = false;
 tooltip_text = "";

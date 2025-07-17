@@ -14,4 +14,4 @@ if mouse_y > y {
 
 var mouse_distance = sqrt(sqr(mouse_x - x) + sqr(y - mouse_y))/arrow_height;
 
-draw_sprite_ext(s_target_arrow,0,x,y,1,mouse_distance,angle_to_mouse,c_white,1);
+draw_sprite_ext(s_target_arrow,0,x,y,mouse_distance,mouse_distance,angle_to_mouse,c_white,1);

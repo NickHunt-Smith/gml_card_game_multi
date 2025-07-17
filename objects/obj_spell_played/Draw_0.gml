@@ -21,11 +21,15 @@ if big_mode = false {
 					angle_to_target += 180;
 				}
 				var distance_to_target = sqrt(sqr(target_x - x) + sqr(y - target_y));
-				draw_sprite_ext(s_target_arrow_red,0,x,y,1,distance_to_target/460,angle_to_target,c_white,1);
+				if opp = false {
+					draw_sprite_ext(s_target_arrow_panel,0,x,y,distance_to_target/1454,distance_to_target/1454,angle_to_target,c_white,1);
+				} else {
+					draw_sprite_ext(s_target_arrow_panel_red,0,x,y,distance_to_target/1454,distance_to_target/1454,angle_to_target,c_white,1);
+				}
 				if angle_to_target > 90 or angle_to_target < -90 {
 					angle_to_target += 180;
 				}
-				draw_text_transformed_color(x+(target_x - x)/2,y+(target_y - y)/2,"1",1,1,angle_to_target,c_white,c_white,c_white,c_white,1)
+				draw_text_transformed_color(x+2.92*(target_x - x)/5,y+2.92*(target_y - y)/5,"1",distance_to_target/450,distance_to_target/450,angle_to_target,c_white,c_white,c_white,c_white,1)
 			}
 		}
 		if instance_exists(target_2) {
@@ -42,11 +46,15 @@ if big_mode = false {
 					angle_to_target += 180;
 				}
 				var distance_to_target = sqrt(sqr(target_x - x) + sqr(y - target_y));
-				draw_sprite_ext(s_target_arrow_red,0,x,y,1,distance_to_target/460,angle_to_target,c_white,1);
+				if opp = false {
+					draw_sprite_ext(s_target_arrow_panel,0,x,y,distance_to_target/1454,distance_to_target/1454,angle_to_target,c_white,1);
+				} else {
+					draw_sprite_ext(s_target_arrow_panel_red,0,x,y,distance_to_target/1454,distance_to_target/1454,angle_to_target,c_white,1);
+				}
 				if angle_to_target > 90 or angle_to_target < -90 {
 					angle_to_target += 180;
 				}
-				draw_text_transformed_color(x+(target_x - x)/2,y+(target_y - y)/2,"2",1,1,angle_to_target,c_white,c_white,c_white,c_white,1)
+				draw_text_transformed_color(x+2.92*(target_x - x)/5,y+2.92*(target_y - y)/5,"2",distance_to_target/450,distance_to_target/450,angle_to_target,c_white,c_white,c_white,c_white,1)
 			}
 		}
 		if instance_exists(target_3) {
@@ -63,11 +71,15 @@ if big_mode = false {
 					angle_to_target += 180;
 				}
 				var distance_to_target = sqrt(sqr(target_x - x) + sqr(y - target_y));
-				draw_sprite_ext(s_target_arrow_red,0,x,y,1,distance_to_target/460,angle_to_target,c_white,1);
+				if opp = false {
+					draw_sprite_ext(s_target_arrow_panel,0,x,y,distance_to_target/1454,distance_to_target/1454,angle_to_target,c_white,1);
+				} else {
+					draw_sprite_ext(s_target_arrow_panel_red,0,x,y,distance_to_target/1454,distance_to_target/1454,angle_to_target,c_white,1);
+				}
 				if angle_to_target > 90 or angle_to_target < -90 {
 					angle_to_target += 180;
 				}
-				draw_text_transformed_color(x+(target_x - x)/2,y+(target_y - y)/2,"3",1,1,angle_to_target,c_white,c_white,c_white,c_white,1)
+				draw_text_transformed_color(x+2.92*(target_x - x)/5,y+2.92*(target_y - y)/5,"3",distance_to_target/450,distance_to_target/450,angle_to_target,c_white,c_white,c_white,c_white,1)
 			}
 		}
 	} else {

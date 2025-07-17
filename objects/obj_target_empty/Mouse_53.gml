@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.targeting_empty = true && active = true && opp = false {
+if (global.targeting_empty = true or global.targeting_empty_nonempty) && active = true && opp = false {
 
 	if moused_1 = true && global.player_locale_1 = noone {
 		position = "left_player";
@@ -12,6 +12,7 @@ if global.targeting_empty = true && active = true && opp = false {
 		}
 		highlighted_1 = false;
 		global.targeting_empty = false;
+		global.targeting_empty_nonempty = false;
 		active = false;
 		x = x_1;
 		y = y_1;
@@ -26,6 +27,7 @@ if global.targeting_empty = true && active = true && opp = false {
 		}
 		highlighted_2 = false;
 		global.targeting_empty = false;
+		global.targeting_empty_nonempty = false;
 		active = false;
 		x = x_2;
 		y = y_2;
@@ -40,6 +42,7 @@ if global.targeting_empty = true && active = true && opp = false {
 		}
 		highlighted_3 = false;
 		global.targeting_empty = false;
+		global.targeting_empty_nonempty = false;
 		active = false;
 		x = x_3;
 		y = y_3;
@@ -54,6 +57,7 @@ if global.targeting_empty = true && active = true && opp = false {
 		}
 		highlighted_4 = false;
 		global.targeting_empty = false;
+		global.targeting_empty_nonempty = false;
 		active = false;
 		x = x_4;
 		y = y_4;
