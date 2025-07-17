@@ -3,6 +3,7 @@ card_state.rarity = 2;
 card_state.card_index = 0;
 		
 var effect_inst_opp = instance_create_depth(card_state.x,card_state.y,-800,obj_wild_ocean);
+effect_inst_opp.ignore_buffer = true;
 effect_inst_opp.eff_type = "play";
 effect_inst_opp.card_state = card_state;
 card_state.effect_function_inst = effect_inst_opp;
