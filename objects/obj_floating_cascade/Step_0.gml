@@ -10,7 +10,9 @@ if (eff_type = "play") && (wait = false) {
 				var _b = buffer_create(1,buffer_grow,1)
 				buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PLAYED_LOCALE)
 				var card_details = string(card_state.position) + "," + string(card_state.card_type) + "," + string(card_state.rarity) + "," + string(card_state.element) + "," + string(card_state.card_index) 
-				target_1 = noone;
+				if target_1.is_empty = true {
+					target_1 = noone;
+				}
 				if target_1 = noone {
 					card_details = card_details + ",noone";
 				} else {
@@ -30,6 +32,12 @@ if (eff_type = "play") && (wait = false) {
 				steam_net_packet_send(global.other_id,_b)
 				buffer_delete(_b)
 			}
+			
+			if target_empty != noone {
+				instance_destroy(target_empty);
+				target_empty = noone;
+			}
+			
 			instance_destroy();
 		} else {
 			x += 112;
