@@ -19,7 +19,7 @@ if target_1.is_empty = true {
 		
 	var effect_inst_opp = instance_create_depth(target_1.x,target_1.y,-800,obj_calm_ocean);
 	effect_inst_opp.eff_type = "play";
-	effect_inst_opp.card_state = target_1;
+	//effect_inst_opp.card_state = target_1;
 	target_1.effect_function = obj_calm_ocean;
 	target_1.effect_function_inst = effect_inst_opp;
 	effect_inst_opp.opp = opp;
