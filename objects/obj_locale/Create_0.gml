@@ -23,7 +23,7 @@ yrotation = 0;
 xrotation = 0;
 max_angle = 15;
 
-lerp_amount = 0.65;
+lerp_amount = 0.15;
 overwriting = false;
 playing = false;
 play_element_seq = noone;

@@ -7,7 +7,7 @@ if global.resolve_stack = true && global.drafting = false && global.end_game_tri
 		global.spell_stack[array_length(global.spell_stack)-1].effect_function_inst.wait_stack = true;
 		eff_first = false;
 	} else {
-		if instance_exists(eff_function_inst_stack) = false && array_length(global.being_destroyed) = 0 {
+		if instance_exists(eff_function_inst_stack) = false && array_length(global.being_destroyed) = 0 && array_length(global.destroy_effects) = 0 {
 			array_delete(global.spell_stack,array_length(global.spell_stack)-1,1);
 			if array_length(global.spell_stack) = 0 {
 				if global.pvp_active = true {

@@ -31,7 +31,7 @@ play_element_seq = noone;
 y_stack = 748;
 enable_player_after_big_mode = false;
 
-lerp_amount = 0.65;
+lerp_amount = 0.15;
 
 // Set what PFX we need.
 pfx_border_top = Ps_Fire_Line_top;

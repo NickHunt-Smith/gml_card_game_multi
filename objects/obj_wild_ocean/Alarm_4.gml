@@ -14,7 +14,7 @@ if waves_seq != noone {
 targets = [];
 if opp = true {
 	if global.player_locale_1 = noone && global.player_locale_2 = noone && global.player_locale_3 = noone && global.player_locale_4 = noone {
-		seq_no_target = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_no_targets);
+		seq_no_target = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_no_targets);
 		alarm[0] = 60;
 	} else {
 		if global.player_locale_1 != noone {
@@ -32,7 +32,7 @@ if opp = true {
 	}
 } else {
 	if global.opp_locale_1 = noone && global.opp_locale_2 = noone && global.opp_locale_3 = noone && global.opp_locale_4 = noone {
-		seq_no_target = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_no_targets);
+		seq_no_target = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_no_targets);
 		alarm[0] = 60;
 	} else {
 		if global.opp_locale_1 != noone {

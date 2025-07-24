@@ -80,4 +80,7 @@ if eff_type = "play" {
 	if global.priority = "player" && opp = false && global.resolve_stack = false {
 		global.priority = "opp";
 	} 
+	//if global.priority = "opp" && opp = true && global.resolve_stack = false {
+	//	global.priority = "player";
+	//}
 }
