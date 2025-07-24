@@ -5,6 +5,7 @@ if eff_type = "play" {
 	if global.priority = "player" && opp = false && global.resolve_stack = false {
 		global.priority = "opp";
 	} 
+	show_debug_message(ignore_buffer)
 	if global.pvp_active = true && opp=false && global.resolve_stack = false && ignore_buffer = false {
 		var _b = buffer_create(1,buffer_grow,1)
 		buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PLAYED_LOCALE)

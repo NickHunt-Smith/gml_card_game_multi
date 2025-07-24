@@ -5,6 +5,7 @@ if (eff_type = "play") && (wait = false) {
 	if eff_done = true {
 		instance_destroy();
 	} else if opp = false {
+		allowed_target_opp = false;
 		sys_eff_instructions = part_system_create(Ps_eff_instructions);
 		part_system_position(sys_eff_instructions, 1527,100);
 		part_system_depth(sys_eff_instructions,-1100);
