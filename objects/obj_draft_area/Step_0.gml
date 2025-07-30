@@ -334,23 +334,23 @@ if global.pvp_active = false or rarities_types_chosen = true {
 	
 		var order = 2;
 		
-		// debug
-		if draft_count = 3 {
-			rarity = 0;
-			element = 2;
-			card_type = 0;
-			card_index = 0;
-		} else if draft_count = 2 {
-			rarity = 0;
-			element = 3;
-			card_type = 1;
-			card_index = 2;
-		} else if draft_count = 1 {
-			rarity = 3;
-			element = 3;
-			card_type = 0;
-			card_index = 2;
-		}
+		//// debug
+		//if draft_count = 3 {
+		//	rarity = 0;
+		//	element = 2;
+		//	card_type = 0;
+		//	card_index = 0;
+		//} else if draft_count = 2 {
+		//	rarity = 0;
+		//	element = 3;
+		//	card_type = 1;
+		//	card_index = 2;
+		//} else if draft_count = 1 {
+		//	rarity = 3;
+		//	element = 3;
+		//	card_type = 0;
+		//	card_index = 2;
+		//}
 	
 		card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
