@@ -956,10 +956,10 @@ array_push(global.common_sapphire_locales_channel_list,1)
 array_push(global.common_sapphire_locales_effect_list,obj_calm_ocean)
 
 // 2
-array_push(global.common_sapphire_locales_sprite_list,s_decrepit_chapel)
-array_push(global.common_sapphire_locales_art_list,s_decrepit_chapel_art)
-array_push(global.common_sapphire_locales_health_list,1)
-array_push(global.common_sapphire_locales_channel_list,2)
+array_push(global.common_sapphire_locales_sprite_list,s_idyllic_beach)
+array_push(global.common_sapphire_locales_art_list,s_idyllic_beach_art)
+array_push(global.common_sapphire_locales_health_list,4)
+array_push(global.common_sapphire_locales_channel_list,0)
 array_push(global.common_sapphire_locales_effect_list,obj_decrepit_chapel)
 
 // Uncommon sapphire locales
@@ -988,11 +988,11 @@ array_push(global.uncommon_sapphire_locales_channel_list,3)
 array_push(global.uncommon_sapphire_locales_effect_list,obj_erupting_reservoir)
 
 // 2
-array_push(global.uncommon_sapphire_locales_sprite_list,s_wasteland)
-array_push(global.uncommon_sapphire_locales_art_list,s_wasteland_art)
+array_push(global.uncommon_sapphire_locales_sprite_list,s_turqoise_lagoon)
+array_push(global.uncommon_sapphire_locales_art_list,s_turqoise_lagoon_art)
 array_push(global.uncommon_sapphire_locales_health_list,2)
-array_push(global.uncommon_sapphire_locales_channel_list,3)
-array_push(global.uncommon_sapphire_locales_effect_list,obj_wasteland)
+array_push(global.uncommon_sapphire_locales_channel_list,2)
+array_push(global.uncommon_sapphire_locales_effect_list,obj_turqoise_lagoon)
 
 // Rare sapphire locales
 
@@ -1013,18 +1013,18 @@ array_push(global.rare_sapphire_locales_channel_list,4)
 array_push(global.rare_sapphire_locales_effect_list,obj_wild_ocean)
 
 // 1
-array_push(global.rare_sapphire_locales_sprite_list,s_mist_swept_highlands)
-array_push(global.rare_sapphire_locales_art_list,s_mist_swept_highlands_art)
-array_push(global.rare_sapphire_locales_health_list,4)
-array_push(global.rare_sapphire_locales_channel_list,3)
-array_push(global.rare_sapphire_locales_effect_list,obj_mist_swept_highlands)
+array_push(global.rare_sapphire_locales_sprite_list,s_aephiran_archipelago)
+array_push(global.rare_sapphire_locales_art_list,s_aephiran_archipelago_art)
+array_push(global.rare_sapphire_locales_health_list,5)
+array_push(global.rare_sapphire_locales_channel_list,2)
+array_push(global.rare_sapphire_locales_effect_list,obj_aephiran_archipelago)
 
 // 2
-array_push(global.rare_sapphire_locales_sprite_list,s_trinket_vendor)
-array_push(global.rare_sapphire_locales_art_list,s_trinket_vendor_art)
-array_push(global.rare_sapphire_locales_health_list,4)
+array_push(global.rare_sapphire_locales_sprite_list,s_worlds_edge)
+array_push(global.rare_sapphire_locales_art_list,s_worlds_edge_art)
+array_push(global.rare_sapphire_locales_health_list,5)
 array_push(global.rare_sapphire_locales_channel_list,3)
-array_push(global.rare_sapphire_locales_effect_list,obj_trinket_vendor)
+array_push(global.rare_sapphire_locales_effect_list,obj_worlds_edge)
 
 // Mythic sapphire locales
 
@@ -1038,25 +1038,25 @@ global.mythic_sapphire_locales_list = [global.mythic_sapphire_locales_sprite_lis
 global.mythic_sapphire_locales_health_list, global.mythic_sapphire_locales_channel_list, global.mythic_sapphire_locales_effect_list]
 
 // 0
-array_push(global.mythic_sapphire_locales_sprite_list,s_grand_ravenmoor_church)
-array_push(global.mythic_sapphire_locales_art_list,s_grand_ravenmoor_church_art)
-array_push(global.mythic_sapphire_locales_health_list,6)
+array_push(global.mythic_sapphire_locales_sprite_list,s_virellia_delta)
+array_push(global.mythic_sapphire_locales_art_list,s_virellia_delta_art)
+array_push(global.mythic_sapphire_locales_health_list,5)
 array_push(global.mythic_sapphire_locales_channel_list,3)
-array_push(global.mythic_sapphire_locales_effect_list,obj_grand_ravenmoor_church)
+array_push(global.mythic_sapphire_locales_effect_list,obj_virellia_delta)
 
 // 1
-array_push(global.mythic_sapphire_locales_sprite_list,s_ravenmoor_market)
-array_push(global.mythic_sapphire_locales_art_list,s_ravenmoor_market_art)
-array_push(global.mythic_sapphire_locales_health_list,6)
-array_push(global.mythic_sapphire_locales_channel_list,2)
-array_push(global.mythic_sapphire_locales_effect_list,obj_ravenmoor_market)
+array_push(global.mythic_sapphire_locales_sprite_list,s_aephira_falls)
+array_push(global.mythic_sapphire_locales_art_list,s_aephira_falls_art)
+array_push(global.mythic_sapphire_locales_health_list,3)
+array_push(global.mythic_sapphire_locales_channel_list,4)
+array_push(global.mythic_sapphire_locales_effect_list,obj_aephira_falls)
 
 // 2
-array_push(global.mythic_sapphire_locales_sprite_list,s_mirror_prison)
-array_push(global.mythic_sapphire_locales_art_list,s_mirror_prison_art)
-array_push(global.mythic_sapphire_locales_health_list,8)
-array_push(global.mythic_sapphire_locales_channel_list,3)
-array_push(global.mythic_sapphire_locales_effect_list,obj_mirror_prison)
+array_push(global.mythic_sapphire_locales_sprite_list,s_vaporizing_lake)
+array_push(global.mythic_sapphire_locales_art_list,s_vaporizing_lake_art)
+array_push(global.mythic_sapphire_locales_health_list,3)
+array_push(global.mythic_sapphire_locales_channel_list,6)
+array_push(global.mythic_sapphire_locales_effect_list,obj_vaporizing_lake)
 
 // Legendary sapphire locales
 
@@ -1084,11 +1084,18 @@ array_push(global.legendary_sapphire_locales_channel_list,4)
 array_push(global.legendary_sapphire_locales_effect_list,obj_norvista)
 
 // 2
-array_push(global.legendary_sapphire_locales_sprite_list,s_ravenmoor)
-array_push(global.legendary_sapphire_locales_art_list,s_ravenmoor_art)
-array_push(global.legendary_sapphire_locales_health_list,6)
+array_push(global.legendary_sapphire_locales_sprite_list,s_airtide)
+array_push(global.legendary_sapphire_locales_art_list,s_airtide_art)
+array_push(global.legendary_sapphire_locales_health_list,2)
 array_push(global.legendary_sapphire_locales_channel_list,4)
-array_push(global.legendary_sapphire_locales_effect_list,obj_ravenmoor)
+array_push(global.legendary_sapphire_locales_effect_list,obj_airtide)
+
+// 3
+array_push(global.legendary_sapphire_locales_sprite_list,s_ripple_unbound)
+array_push(global.legendary_sapphire_locales_art_list,s_ripple_unbound_art)
+array_push(global.legendary_sapphire_locales_health_list,5)
+array_push(global.legendary_sapphire_locales_channel_list,4)
+array_push(global.legendary_sapphire_locales_effect_list,obj_ripple_unbound)
 
 // sapphire spells ============================================================================
 // [0][3][1][0]  sprite = 0, art = 1, effect = 2
@@ -1107,14 +1114,14 @@ array_push(global.common_sapphire_spells_art_list,s_dampen_art)
 array_push(global.common_sapphire_spells_effect_list,obj_dampen)
 
 // 1
-array_push(global.common_sapphire_spells_sprite_list,s_backstab)
-array_push(global.common_sapphire_spells_art_list,s_backstab_art)
-array_push(global.common_sapphire_spells_effect_list,obj_backstab)
+array_push(global.common_sapphire_spells_sprite_list,s_essence_of_water)
+array_push(global.common_sapphire_spells_art_list,s_essence_of_water_art)
+array_push(global.common_sapphire_spells_effect_list,obj_essence_of_water)
 
 // 2
-array_push(global.common_sapphire_spells_sprite_list,s_consumed)
-array_push(global.common_sapphire_spells_art_list,s_consumed_art)
-array_push(global.common_sapphire_spells_effect_list,obj_consumed)
+array_push(global.common_sapphire_spells_sprite_list,s_southward_current)
+array_push(global.common_sapphire_spells_art_list,s_southward_current_art)
+array_push(global.common_sapphire_spells_effect_list,obj_southward_current)
 
 // Uncommon sapphire spells
 
@@ -1135,9 +1142,9 @@ array_push(global.uncommon_sapphire_spells_art_list,s_skyborne_art)
 array_push(global.uncommon_sapphire_spells_effect_list,obj_skyborne_surge)
 
 // 2
-array_push(global.uncommon_sapphire_spells_sprite_list,s_restoration_effort)
-array_push(global.uncommon_sapphire_spells_art_list,s_restoration_effort_art)
-array_push(global.uncommon_sapphire_spells_effect_list,obj_restoration_effort)
+array_push(global.uncommon_sapphire_spells_sprite_list,s_quenched_thirst)
+array_push(global.uncommon_sapphire_spells_art_list,s_quenched_thirst_art)
+array_push(global.uncommon_sapphire_spells_effect_list,obj_quenched_thirst)
 
 // Rare sapphire spells
 
@@ -1158,9 +1165,9 @@ array_push(global.rare_sapphire_spells_art_list,s_intercepting_current_art)
 array_push(global.rare_sapphire_spells_effect_list,obj_intercepting_current)
 
 // 2
-array_push(global.rare_sapphire_spells_sprite_list,s_vossen_ritual)
-array_push(global.rare_sapphire_spells_art_list,s_vossen_ritual_art)
-array_push(global.rare_sapphire_spells_effect_list,obj_vossen_ritual)
+array_push(global.rare_sapphire_spells_sprite_list,s_erratic_cloudburst)
+array_push(global.rare_sapphire_spells_art_list,s_erratic_cloudburst_art)
+array_push(global.rare_sapphire_spells_effect_list,obj_erratic_cloudburst)
 
 // Mythic sapphire spells
 
@@ -1171,14 +1178,14 @@ global.mythic_sapphire_spells_effect_list = []
 global.mythic_sapphire_spells_list = [global.mythic_sapphire_spells_sprite_list,global.mythic_sapphire_spells_art_list,global.mythic_sapphire_spells_effect_list]
 
 // 0 
-array_push(global.mythic_sapphire_spells_sprite_list,s_crumble)
-array_push(global.mythic_sapphire_spells_art_list,s_crumble_art)
-array_push(global.mythic_sapphire_spells_effect_list,obj_crumble)
+array_push(global.mythic_sapphire_spells_sprite_list,s_sudden_deluge)
+array_push(global.mythic_sapphire_spells_art_list,s_sudden_deluge_art)
+array_push(global.mythic_sapphire_spells_effect_list,obj_sudden_deluge)
 
 // 1
-array_push(global.mythic_sapphire_spells_sprite_list,s_dark_reflection)
-array_push(global.mythic_sapphire_spells_art_list,s_dark_reflection_art)
-array_push(global.mythic_sapphire_spells_effect_list,obj_dark_reflection)
+array_push(global.mythic_sapphire_spells_sprite_list,s_norvistan_protection)
+array_push(global.mythic_sapphire_spells_art_list,s_norvistan_protection_art)
+array_push(global.mythic_sapphire_spells_effect_list,obj_norvistan_protection)
 
 // 2
 array_push(global.mythic_sapphire_spells_sprite_list,s_excommunicate)
@@ -1194,19 +1201,19 @@ global.legendary_sapphire_spells_effect_list = []
 global.legendary_sapphire_spells_list = [global.legendary_sapphire_spells_sprite_list,global.legendary_sapphire_spells_art_list,global.legendary_sapphire_spells_effect_list]
 
 // 0 
-array_push(global.legendary_sapphire_spells_sprite_list,s_abyssal_descent)
-array_push(global.legendary_sapphire_spells_art_list,s_abyssal_descent_art)
-array_push(global.legendary_sapphire_spells_effect_list,obj_abyssal_descent)
+array_push(global.legendary_sapphire_spells_sprite_list,s_tsunami)
+array_push(global.legendary_sapphire_spells_art_list,s_tsunami_art)
+array_push(global.legendary_sapphire_spells_effect_list,obj_tsunami)
 
 // 1
-array_push(global.legendary_sapphire_spells_sprite_list,s_shelter_in_mist)
-array_push(global.legendary_sapphire_spells_art_list,s_shelter_in_mist_art)
-array_push(global.legendary_sapphire_spells_effect_list,obj_shelter_in_mist)
+array_push(global.legendary_sapphire_spells_sprite_list,s_displace)
+array_push(global.legendary_sapphire_spells_art_list,s_displace_art)
+array_push(global.legendary_sapphire_spells_effect_list,obj_displace)
 
 // 2
-array_push(global.legendary_sapphire_spells_sprite_list,s_return_from_beyond)
-array_push(global.legendary_sapphire_spells_art_list,s_return_from_beyond_art)
-array_push(global.legendary_sapphire_spells_effect_list,obj_return_from_beyond)
+array_push(global.legendary_sapphire_spells_sprite_list,s_reality_ripples)
+array_push(global.legendary_sapphire_spells_art_list,s_reality_ripples_art)
+array_push(global.legendary_sapphire_spells_effect_list,obj_reality_ripples)
 
 //====================================================================================================================================
 

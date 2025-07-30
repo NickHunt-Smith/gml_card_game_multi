@@ -23,6 +23,8 @@ skip_target_1 = false;
 skip_target_2 = false;
 allowed_target_opp = true;
 allowed_target_player = true;
+linger_1 = noone;
+linger_2 = noone;
 
 seq_change_health_1 =noone;
 seq_change_health_2 =noone;

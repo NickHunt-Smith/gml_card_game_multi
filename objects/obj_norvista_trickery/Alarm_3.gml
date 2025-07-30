@@ -27,30 +27,37 @@ var x_2 = global.spell_stack[stack_iter_2].x
 global.spell_stack[stack_iter_1].x = x_2;
 global.spell_stack[stack_iter_2].x = x_1;
 
-
-for (var _i = 0; _i < array_length(global.spell_stack); _i++) {	
-	if global.spell_stack[_i].target_1 = target_1 {
-		global.spell_stack[_i].target_1 = target_2;
-		global.spell_stack[_i].effect_function_inst.target_1 = target_2;
-	} else if global.spell_stack[_i].target_1 = target_2 {
-		global.spell_stack[_i].target_1 = target_1;
-		global.spell_stack[_i].effect_function_inst.target_1 = target_1;
-	}
-	
-	if global.spell_stack[_i].target_2 = target_1 {
-		global.spell_stack[_i].target_2 = target_2;
-		global.spell_stack[_i].effect_function_inst.target_2 = target_2;
-	} else if global.spell_stack[_i].target_2 = target_2 {
-		global.spell_stack[_i].target_2 = target_1;
-		global.spell_stack[_i].effect_function_inst.target_2 = target_1;
-	}
-	
-	if global.spell_stack[_i].target_3 = target_1 {
-		global.spell_stack[_i].target_3 = target_2;
-		global.spell_stack[_i].effect_function_inst.target_3 = target_2;
-	} else if global.spell_stack[_i].target_3 = target_2 {
-		global.spell_stack[_i].target_3 = target_1;
-		global.spell_stack[_i].effect_function_inst.target_3 = target_1;
+for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
+	if global.spell_stack[_i].order_in_stack != card_state.order_in_stack {
+		if global.spell_stack[_i].target_1 != noone {
+			if global.spell_stack[_i].target_1.id = target_1.id {
+				global.spell_stack[_i].target_1 = target_2;
+				global.spell_stack[_i].effect_function_inst.target_1 = target_2;
+			} else if global.spell_stack[_i].target_1.id = target_2.id {
+				global.spell_stack[_i].target_1 = target_1;
+				global.spell_stack[_i].effect_function_inst.target_1 = target_1;
+			}
+		}
+		
+		if global.spell_stack[_i].target_2 != noone {
+			if global.spell_stack[_i].target_2.id = target_1.id {
+				global.spell_stack[_i].target_2 = target_2;
+				global.spell_stack[_i].effect_function_inst.target_2 = target_2;
+			} else if global.spell_stack[_i].target_2.id = target_2.id {
+				global.spell_stack[_i].target_2 = target_1;
+				global.spell_stack[_i].effect_function_inst.target_2 = target_1;
+			}
+		}
+		
+		if global.spell_stack[_i].target_3 != noone {
+			if global.spell_stack[_i].target_3.id = target_1.id {
+				global.spell_stack[_i].target_3 = target_2;
+				global.spell_stack[_i].effect_function_inst.target_3 = target_2;
+			} else if global.spell_stack[_i].target_3.id = target_2.id {
+				global.spell_stack[_i].target_3 = target_1;
+				global.spell_stack[_i].effect_function_inst.target_3 = target_1;
+			}
+		}
 	}
 }
 
