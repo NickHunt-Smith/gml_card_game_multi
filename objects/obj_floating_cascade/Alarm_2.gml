@@ -6,7 +6,11 @@ if target_1.is_empty = true {
 	alarm[1] = 40;
 } else if (target_1.element = 3 && target_1.rarity = 0 && target_1.card_index = 1) or (target_1.element = 3 && target_1.rarity = 2 && target_1.card_index = 0) or (target_1.element = 3 && target_1.rarity = 4 && target_1.card_index = 0) {
 	fortify_seq = layer_sequence_create("effect_layer",target_1.x+112,target_1.y+230,seq_fortify);
-	target_1.channel += flood_channel_boost;
+	if target_1.frozen = true {
+		target_1.memory_channel += flood_channel_boost;
+	} else {
+		target_1.channel += flood_channel_boost;
+	}
 	target_1.health_locale += flood_strength_boost;
 	alarm[1] = 60;
 } else {

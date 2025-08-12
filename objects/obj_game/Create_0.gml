@@ -64,6 +64,8 @@ global.lingering_active = false;
 
 global.player_copying = false;
 global.opp_copying = false;
+global.player_playing_locale = false;
+global.opp_playing_locale = false;
 
 global.player_locale_1 = noone;
 global.player_locale_2 = noone;
@@ -1234,16 +1236,16 @@ global.common_emerald_locales_health_list, global.common_emerald_locales_channel
 // 0
 array_push(global.common_emerald_locales_sprite_list,s_sun_drenched_clearing)
 array_push(global.common_emerald_locales_art_list,s_sun_drenched_clearing_art)
-array_push(global.common_emerald_locales_health_list,2)
+array_push(global.common_emerald_locales_health_list,3)
 array_push(global.common_emerald_locales_channel_list,1)
 array_push(global.common_emerald_locales_effect_list,obj_sun_drenched_clearing)
 
 // 1
-array_push(global.common_emerald_locales_sprite_list,s_fetid_sewer)
-array_push(global.common_emerald_locales_art_list,s_fetid_sewer_art)
+array_push(global.common_emerald_locales_sprite_list,s_expanding_forest)
+array_push(global.common_emerald_locales_art_list,s_expanding_forest_art)
 array_push(global.common_emerald_locales_health_list,1)
 array_push(global.common_emerald_locales_channel_list,1)
-array_push(global.common_emerald_locales_effect_list,obj_fetid_sewer)
+array_push(global.common_emerald_locales_effect_list,obj_expanding_forest)
 
 // 2
 array_push(global.common_emerald_locales_sprite_list,s_decrepit_chapel)
@@ -1264,11 +1266,11 @@ global.uncommon_emerald_locales_list = [global.uncommon_emerald_locales_sprite_l
 global.uncommon_emerald_locales_health_list, global.uncommon_emerald_locales_channel_list, global.uncommon_emerald_locales_effect_list]
 
 // 0
-array_push(global.uncommon_emerald_locales_sprite_list,s_haunted_manor)
-array_push(global.uncommon_emerald_locales_art_list,s_haunted_manor_art)
+array_push(global.uncommon_emerald_locales_sprite_list,s_seedspreader)
+array_push(global.uncommon_emerald_locales_art_list,s_seedspreader_art)
 array_push(global.uncommon_emerald_locales_health_list,2)
-array_push(global.uncommon_emerald_locales_channel_list,2)
-array_push(global.uncommon_emerald_locales_effect_list,obj_haunted_manor)
+array_push(global.uncommon_emerald_locales_channel_list,3)
+array_push(global.uncommon_emerald_locales_effect_list,obj_seedspreader)
 
 // 1
 array_push(global.uncommon_emerald_locales_sprite_list,s_starlit_sanctuary)
@@ -1296,11 +1298,11 @@ global.rare_emerald_locales_list = [global.rare_emerald_locales_sprite_list,glob
 global.rare_emerald_locales_health_list, global.rare_emerald_locales_channel_list, global.rare_emerald_locales_effect_list]
 
 // 0
-array_push(global.rare_emerald_locales_sprite_list,s_ravenmoor_alley)
-array_push(global.rare_emerald_locales_art_list,s_ravenmoor_alley_art)
-array_push(global.rare_emerald_locales_health_list,5)
-array_push(global.rare_emerald_locales_channel_list,3)
-array_push(global.rare_emerald_locales_effect_list,obj_ravenmoor_alley)
+array_push(global.rare_emerald_locales_sprite_list,s_vine_choked_crevice)
+array_push(global.rare_emerald_locales_art_list,s_vine_choked_crevice_art)
+array_push(global.rare_emerald_locales_health_list,1)
+array_push(global.rare_emerald_locales_channel_list,1)
+array_push(global.rare_emerald_locales_effect_list,obj_vine_choked_crevice)
 
 // 1
 array_push(global.rare_emerald_locales_sprite_list,s_mist_swept_highlands)
@@ -1392,9 +1394,9 @@ global.common_emerald_spells_effect_list = []
 global.common_emerald_spells_list = [global.common_emerald_spells_sprite_list,global.common_emerald_spells_art_list,global.common_emerald_spells_effect_list]
 
 // 0 
-array_push(global.common_emerald_spells_sprite_list,s_fanaticism)
-array_push(global.common_emerald_spells_art_list,s_fanaticism_art)
-array_push(global.common_emerald_spells_effect_list,obj_fanaticism)
+array_push(global.common_emerald_spells_sprite_list,s_decompose)
+array_push(global.common_emerald_spells_art_list,s_decompose_art)
+array_push(global.common_emerald_spells_effect_list,obj_decompose)
 
 // 1
 array_push(global.common_emerald_spells_sprite_list,s_backstab)

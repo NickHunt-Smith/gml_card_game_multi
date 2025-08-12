@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-eff_instructions_1 = "Reduce health to 1";
+eff_instructions_1 = "Reduce Strength to 1";
 draw_instructions_1 = false;
 
 eff_type = "none";

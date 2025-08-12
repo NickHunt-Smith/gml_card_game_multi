@@ -83,6 +83,11 @@ if just_played = true {
 	//play_seq.sequence.tracks[1].tracks[2].keyframes[0].channels[0].value = 0.5 + 0.01*random_range(0,100);
 	//show_debug_message(copy_struct.sequence.tracks[1].tracks[2].keyframes[0].channels[0].value)
 	just_played = false;
+	if opp = false {
+		global.player_playing_locale = true;
+	} else {
+		global.opp_playing_locale = true;
+	}
 	alarm[5] = 90;
 }
 
