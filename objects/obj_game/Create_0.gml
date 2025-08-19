@@ -1248,11 +1248,11 @@ array_push(global.common_emerald_locales_channel_list,1)
 array_push(global.common_emerald_locales_effect_list,obj_expanding_forest)
 
 // 2
-array_push(global.common_emerald_locales_sprite_list,s_decrepit_chapel)
-array_push(global.common_emerald_locales_art_list,s_decrepit_chapel_art)
-array_push(global.common_emerald_locales_health_list,1)
+array_push(global.common_emerald_locales_sprite_list,s_leafy_village)
+array_push(global.common_emerald_locales_art_list,s_leafy_village_art)
+array_push(global.common_emerald_locales_health_list,3)
 array_push(global.common_emerald_locales_channel_list,2)
-array_push(global.common_emerald_locales_effect_list,obj_decrepit_chapel)
+array_push(global.common_emerald_locales_effect_list,obj_leafy_village)
 
 // Uncommon emerald locales
 
@@ -1305,18 +1305,18 @@ array_push(global.rare_emerald_locales_channel_list,1)
 array_push(global.rare_emerald_locales_effect_list,obj_vine_choked_crevice)
 
 // 1
-array_push(global.rare_emerald_locales_sprite_list,s_mist_swept_highlands)
-array_push(global.rare_emerald_locales_art_list,s_mist_swept_highlands_art)
-array_push(global.rare_emerald_locales_health_list,4)
-array_push(global.rare_emerald_locales_channel_list,3)
-array_push(global.rare_emerald_locales_effect_list,obj_mist_swept_highlands)
+array_push(global.rare_emerald_locales_sprite_list,s_hazy_woods)
+array_push(global.rare_emerald_locales_art_list,s_hazy_woods_art)
+array_push(global.rare_emerald_locales_health_list,5)
+array_push(global.rare_emerald_locales_channel_list,5)
+array_push(global.rare_emerald_locales_effect_list,obj_hazy_woods)
 
 // 2
-array_push(global.rare_emerald_locales_sprite_list,s_trinket_vendor)
-array_push(global.rare_emerald_locales_art_list,s_trinket_vendor_art)
-array_push(global.rare_emerald_locales_health_list,4)
-array_push(global.rare_emerald_locales_channel_list,3)
-array_push(global.rare_emerald_locales_effect_list,obj_trinket_vendor)
+array_push(global.rare_emerald_locales_sprite_list,s_emerald_wellspring)
+array_push(global.rare_emerald_locales_art_list,s_emerald_wellspring_art)
+array_push(global.rare_emerald_locales_health_list,3)
+array_push(global.rare_emerald_locales_channel_list,2)
+array_push(global.rare_emerald_locales_effect_list,obj_emerald_wellspring)
 
 // Mythic emerald locales
 
@@ -1330,25 +1330,25 @@ global.mythic_emerald_locales_list = [global.mythic_emerald_locales_sprite_list,
 global.mythic_emerald_locales_health_list, global.mythic_emerald_locales_channel_list, global.mythic_emerald_locales_effect_list]
 
 // 0
-array_push(global.mythic_emerald_locales_sprite_list,s_grand_ravenmoor_church)
-array_push(global.mythic_emerald_locales_art_list,s_grand_ravenmoor_church_art)
-array_push(global.mythic_emerald_locales_health_list,6)
-array_push(global.mythic_emerald_locales_channel_list,3)
-array_push(global.mythic_emerald_locales_effect_list,obj_grand_ravenmoor_church)
-
-// 1
-array_push(global.mythic_emerald_locales_sprite_list,s_ravenmoor_market)
-array_push(global.mythic_emerald_locales_art_list,s_ravenmoor_market_art)
+array_push(global.mythic_emerald_locales_sprite_list,s_omnitree)
+array_push(global.mythic_emerald_locales_art_list,s_omnitree_art)
 array_push(global.mythic_emerald_locales_health_list,6)
 array_push(global.mythic_emerald_locales_channel_list,2)
-array_push(global.mythic_emerald_locales_effect_list,obj_ravenmoor_market)
+array_push(global.mythic_emerald_locales_effect_list,obj_omnitree)
+
+// 1
+array_push(global.mythic_emerald_locales_sprite_list,s_wayglade)
+array_push(global.mythic_emerald_locales_art_list,s_wayglade_art)
+array_push(global.mythic_emerald_locales_health_list,3)
+array_push(global.mythic_emerald_locales_channel_list,2)
+array_push(global.mythic_emerald_locales_effect_list,obj_wayglade)
 
 // 2
-array_push(global.mythic_emerald_locales_sprite_list,s_mirror_prison)
-array_push(global.mythic_emerald_locales_art_list,s_mirror_prison_art)
-array_push(global.mythic_emerald_locales_health_list,8)
-array_push(global.mythic_emerald_locales_channel_list,3)
-array_push(global.mythic_emerald_locales_effect_list,obj_mirror_prison)
+array_push(global.mythic_emerald_locales_sprite_list,s_valley_of_thorns)
+array_push(global.mythic_emerald_locales_art_list,s_valley_of_thorns_art)
+array_push(global.mythic_emerald_locales_health_list,7)
+array_push(global.mythic_emerald_locales_channel_list,6)
+array_push(global.mythic_emerald_locales_effect_list,obj_valley_of_thorns)
 
 // Legendary emerald locales
 
@@ -1362,18 +1362,18 @@ global.legendary_emerald_locales_list = [global.legendary_emerald_locales_sprite
 global.legendary_emerald_locales_health_list, global.legendary_emerald_locales_channel_list, global.legendary_emerald_locales_effect_list]
 
 // 0
-array_push(global.legendary_emerald_locales_sprite_list,s_vossen_gazing_pool)
-array_push(global.legendary_emerald_locales_art_list,s_vossen_gazing_pool_art)
-array_push(global.legendary_emerald_locales_health_list,6)
+array_push(global.legendary_emerald_locales_sprite_list,s_burgeoning_seed)
+array_push(global.legendary_emerald_locales_art_list,s_burgeoning_seed_art)
+array_push(global.legendary_emerald_locales_health_list,2)
 array_push(global.legendary_emerald_locales_channel_list,1)
-array_push(global.legendary_emerald_locales_effect_list,obj_vossen_gazing_pool)
+array_push(global.legendary_emerald_locales_effect_list,obj_burgeoning_seed)
 
 // 1
-array_push(global.legendary_emerald_locales_sprite_list,s_abyss_beyond)
-array_push(global.legendary_emerald_locales_art_list,s_abyss_beyond_art)
-array_push(global.legendary_emerald_locales_health_list,10)
-array_push(global.legendary_emerald_locales_channel_list,5)
-array_push(global.legendary_emerald_locales_effect_list,obj_abyss_beyond)
+array_push(global.legendary_emerald_locales_sprite_list,s_path_of_vitality)
+array_push(global.legendary_emerald_locales_art_list,s_path_of_vitality_art)
+array_push(global.legendary_emerald_locales_health_list,7)
+array_push(global.legendary_emerald_locales_channel_list,0)
+array_push(global.legendary_emerald_locales_effect_list,obj_path_of_vitality)
 
 // 2
 array_push(global.legendary_emerald_locales_sprite_list,s_ravenmoor)
@@ -1399,14 +1399,14 @@ array_push(global.common_emerald_spells_art_list,s_decompose_art)
 array_push(global.common_emerald_spells_effect_list,obj_decompose)
 
 // 1
-array_push(global.common_emerald_spells_sprite_list,s_backstab)
-array_push(global.common_emerald_spells_art_list,s_backstab_art)
-array_push(global.common_emerald_spells_effect_list,obj_backstab)
+array_push(global.common_emerald_spells_sprite_list,s_touch_omnitree)
+array_push(global.common_emerald_spells_art_list,s_touch_omnitree_art)
+array_push(global.common_emerald_spells_effect_list,obj_touch_omnitree)
 
 // 2
-array_push(global.common_emerald_spells_sprite_list,s_consumed)
-array_push(global.common_emerald_spells_art_list,s_consumed_art)
-array_push(global.common_emerald_spells_effect_list,obj_consumed)
+array_push(global.common_emerald_spells_sprite_list,s_vine_wall)
+array_push(global.common_emerald_spells_art_list,s_vine_wall_art)
+array_push(global.common_emerald_spells_effect_list,obj_vine_wall)
 
 // Uncommon emerald spells
 
@@ -1417,9 +1417,9 @@ global.uncommon_emerald_spells_effect_list = []
 global.uncommon_emerald_spells_list = [global.uncommon_emerald_spells_sprite_list,global.uncommon_emerald_spells_art_list,global.uncommon_emerald_spells_effect_list]
 
 // 0 
-array_push(global.uncommon_emerald_spells_sprite_list,s_starry_vision)
-array_push(global.uncommon_emerald_spells_art_list,s_starry_vision_art)
-array_push(global.uncommon_emerald_spells_effect_list,obj_starry_vision)
+array_push(global.uncommon_emerald_spells_sprite_list,s_branching_trails)
+array_push(global.uncommon_emerald_spells_art_list,s_branching_trails_art)
+array_push(global.uncommon_emerald_spells_effect_list,obj_branching_trails)
 
 // 1
 array_push(global.uncommon_emerald_spells_sprite_list,s_tithes)
@@ -1440,19 +1440,19 @@ global.rare_emerald_spells_effect_list = []
 global.rare_emerald_spells_list = [global.rare_emerald_spells_sprite_list,global.rare_emerald_spells_art_list,global.rare_emerald_spells_effect_list]
 
 // 0 
-array_push(global.rare_emerald_spells_sprite_list,s_mirrorspell)
-array_push(global.rare_emerald_spells_art_list,s_mirrorspell_art)
-array_push(global.rare_emerald_spells_effect_list,obj_mirrorspell)
+array_push(global.rare_emerald_spells_sprite_list,s_reconstruct)
+array_push(global.rare_emerald_spells_art_list,s_reconstruct_art)
+array_push(global.rare_emerald_spells_effect_list,obj_reconstruct)
 
 // 1
-array_push(global.rare_emerald_spells_sprite_list,s_subjugate)
-array_push(global.rare_emerald_spells_art_list,s_subjugate_art)
-array_push(global.rare_emerald_spells_effect_list,obj_subjugate)
+array_push(global.rare_emerald_spells_sprite_list,s_disorient)
+array_push(global.rare_emerald_spells_art_list,s_disorient_art)
+array_push(global.rare_emerald_spells_effect_list,obj_disorient)
 
 // 2
-array_push(global.rare_emerald_spells_sprite_list,s_vossen_ritual)
-array_push(global.rare_emerald_spells_art_list,s_vossen_ritual_art)
-array_push(global.rare_emerald_spells_effect_list,obj_vossen_ritual)
+array_push(global.rare_emerald_spells_sprite_list,s_latticework_roots)
+array_push(global.rare_emerald_spells_art_list,s_latticework_roots_art)
+array_push(global.rare_emerald_spells_effect_list,obj_latticework_roots)
 
 // Mythic emerald spells
 
@@ -1463,14 +1463,14 @@ global.mythic_emerald_spells_effect_list = []
 global.mythic_emerald_spells_list = [global.mythic_emerald_spells_sprite_list,global.mythic_emerald_spells_art_list,global.mythic_emerald_spells_effect_list]
 
 // 0 
-array_push(global.mythic_emerald_spells_sprite_list,s_crumble)
-array_push(global.mythic_emerald_spells_art_list,s_crumble_art)
-array_push(global.mythic_emerald_spells_effect_list,obj_crumble)
+array_push(global.mythic_emerald_spells_sprite_list,s_overgrow)
+array_push(global.mythic_emerald_spells_art_list,s_overgrow_art)
+array_push(global.mythic_emerald_spells_effect_list,obj_overgrow)
 
 // 1
-array_push(global.mythic_emerald_spells_sprite_list,s_dark_reflection)
-array_push(global.mythic_emerald_spells_art_list,s_dark_reflection_art)
-array_push(global.mythic_emerald_spells_effect_list,obj_dark_reflection)
+array_push(global.mythic_emerald_spells_sprite_list,s_verdant_repression)
+array_push(global.mythic_emerald_spells_art_list,s_verdant_repression_art)
+array_push(global.mythic_emerald_spells_effect_list,obj_verdant_repression)
 
 // 2
 array_push(global.mythic_emerald_spells_sprite_list,s_excommunicate)
@@ -1486,19 +1486,19 @@ global.legendary_emerald_spells_effect_list = []
 global.legendary_emerald_spells_list = [global.legendary_emerald_spells_sprite_list,global.legendary_emerald_spells_art_list,global.legendary_emerald_spells_effect_list]
 
 // 0 
-array_push(global.legendary_emerald_spells_sprite_list,s_abyssal_descent)
-array_push(global.legendary_emerald_spells_art_list,s_abyssal_descent_art)
-array_push(global.legendary_emerald_spells_effect_list,obj_abyssal_descent)
+array_push(global.legendary_emerald_spells_sprite_list,s_engulf)
+array_push(global.legendary_emerald_spells_art_list,s_engulf_art)
+array_push(global.legendary_emerald_spells_effect_list,obj_engulf)
 
 // 1
-array_push(global.legendary_emerald_spells_sprite_list,s_shelter_in_mist)
-array_push(global.legendary_emerald_spells_art_list,s_shelter_in_mist_art)
-array_push(global.legendary_emerald_spells_effect_list,obj_shelter_in_mist)
+array_push(global.legendary_emerald_spells_sprite_list,s_ensnare)
+array_push(global.legendary_emerald_spells_art_list,s_ensnare_art)
+array_push(global.legendary_emerald_spells_effect_list,obj_ensnare)
 
 // 2
-array_push(global.legendary_emerald_spells_sprite_list,s_return_from_beyond)
-array_push(global.legendary_emerald_spells_art_list,s_return_from_beyond_art)
-array_push(global.legendary_emerald_spells_effect_list,obj_return_from_beyond)
+array_push(global.legendary_emerald_spells_sprite_list,s_earthflux)
+array_push(global.legendary_emerald_spells_art_list,s_earthflux_art)
+array_push(global.legendary_emerald_spells_effect_list,obj_earthflux)
 
 //====================================================================================================================================
 

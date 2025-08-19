@@ -18,6 +18,8 @@ if (target_1.element = 3 && target_1.rarity = 0 && target_1.card_index = 1) or (
 	target_1.card_index = 1;
 	target_1.channel = 1;
 	target_1.health_locale = 1;
+	target_1.initial_element = 3;
+	target_1.initial_rarity = 0;
 		
 	var effect_inst_opp = instance_create_depth(target_1.x,target_1.y,-800,obj_calm_ocean);
 	effect_inst_opp.ignore_buffer = true;

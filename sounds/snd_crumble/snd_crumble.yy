@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.832,
+  "duration":2.8021314,
   "name":"snd_crumble",
   "parent":{
     "name":"onyx",

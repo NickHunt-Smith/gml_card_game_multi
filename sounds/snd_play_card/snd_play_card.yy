@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.832,
+  "duration":2.7849433,
   "name":"snd_play_card",
   "parent":{
     "name":"Sounds",

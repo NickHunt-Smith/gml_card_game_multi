@@ -21,6 +21,8 @@ is_locale = true;
 play_seq = noone;
 just_played = true;
 alpha = 1;
+initial_element = 0;
+initial_rarity = 0;
 
 x_memory = 0;
 y_memory = 0;
@@ -35,6 +37,7 @@ tooltip_text = "";
 tooltip_text_plural = false;
 tooltip_counter = 0;
 
+set_initial_params = true;
 channelling = false;
 channelled_sys = noone;
 target_highlight = noone;

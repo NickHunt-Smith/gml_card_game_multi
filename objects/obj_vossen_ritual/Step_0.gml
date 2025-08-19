@@ -42,68 +42,68 @@ if wait_stack = true {
 		alarm[0] = 80;
 	} else {
 		targets = [];
-		var min_health = 1000;
+		var min_channel = 1000;
 		if global.opp_locale_1 != noone {
-			if global.opp_locale_1.health_locale = min_health {
+			if global.opp_locale_1.channel = min_channel {
 				array_push(targets,global.opp_locale_1);
-			} else if global.opp_locale_1.health_locale < min_health {
-				min_health = global.opp_locale_1.health_locale;
+			} else if global.opp_locale_1.channel < min_channel {
+				min_channel = global.opp_locale_1.channel;
 				targets = [global.opp_locale_1];
 			}
 		}
 		if global.opp_locale_2 != noone {
-			if global.opp_locale_2.health_locale = min_health {
+			if global.opp_locale_2.channel = min_channel {
 				array_push(targets,global.opp_locale_2);
-			} else if global.opp_locale_2.health_locale < min_health {
-				min_health = global.opp_locale_2.health_locale;
+			} else if global.opp_locale_2.channel < min_channel {
+				min_channel = global.opp_locale_2.channel;
 				targets = [global.opp_locale_2];
 			}
 		}
 		if global.opp_locale_3 != noone {
-			if global.opp_locale_3.health_locale = min_health {
+			if global.opp_locale_3.channel = min_channel {
 				array_push(targets,global.opp_locale_3);
-			} else if global.opp_locale_3.health_locale < min_health {
-				min_health = global.opp_locale_3.health_locale;
+			} else if global.opp_locale_3.channel < min_channel {
+				min_channel = global.opp_locale_3.channel;
 				targets = [global.opp_locale_3];
 			}
 		}
 		if global.opp_locale_4 != noone {
-			if global.opp_locale_4.health_locale = min_health {
+			if global.opp_locale_4.channel = min_channel {
 				array_push(targets,global.opp_locale_4);
-			} else if global.opp_locale_4.health_locale < min_health {
-				min_health = global.opp_locale_4.health_locale;
+			} else if global.opp_locale_4.channel < min_channel {
+				min_channel = global.opp_locale_4.channel;
 				targets = [global.opp_locale_4];
 			}
 		}
 		if global.player_locale_1 != noone {
-			if global.player_locale_1.health_locale = min_health {
+			if global.player_locale_1.channel = min_channel {
 				array_push(targets,global.player_locale_1);
-			} else if global.player_locale_1.health_locale < min_health {
-				min_health = global.player_locale_1.health_locale;
+			} else if global.player_locale_1.channel < min_channel {
+				min_channel = global.player_locale_1.channel;
 				targets = [global.player_locale_1];
 			}
 		}
 		if global.player_locale_2 != noone {
-			if global.player_locale_2.health_locale = min_health {
+			if global.player_locale_2.channel = min_channel {
 				array_push(targets,global.player_locale_2);
-			} else if global.player_locale_2.health_locale < min_health {
-				min_health = global.player_locale_2.health_locale;
+			} else if global.player_locale_2.channel < min_channel {
+				min_channel = global.player_locale_2.channel;
 				targets = [global.player_locale_2];
 			}
 		}
 		if global.player_locale_3 != noone {
-			if global.player_locale_3.health_locale = min_health {
+			if global.player_locale_3.channel = min_channel {
 				array_push(targets,global.player_locale_3);
-			} else if global.player_locale_3.health_locale < min_health {
-				min_health = global.player_locale_3.health_locale;
+			} else if global.player_locale_3.channel < min_channel {
+				min_channel = global.player_locale_3.channel;
 				targets = [global.player_locale_3];
 			}
 		}
 		if global.player_locale_4 != noone {
-			if global.player_locale_4.health_locale = min_health {
+			if global.player_locale_4.channel = min_channel {
 				array_push(targets,global.player_locale_4);
-			} else if global.player_locale_4.health_locale < min_health {
-				min_health = global.player_locale_4.health_locale;
+			} else if global.player_locale_4.channel < min_channel {
+				min_channel = global.player_locale_4.channel;
 				targets = [global.player_locale_4];
 			}
 		}

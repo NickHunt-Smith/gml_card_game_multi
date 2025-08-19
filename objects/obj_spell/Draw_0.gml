@@ -87,7 +87,7 @@ if playing = true {
 	}
 	draw_sprite_general(global.rarity_list[rarity][element][1][1][card_index],0,60,67,330,443,x-164,y-222,play_scale,play_scale,0,c_white,c_white,c_white,c_white,1);
 	
-	sprite_gap = clamp(sprite_gap + 7,0,3*sprite_height/4);
+	sprite_gap = clamp(sprite_gap + 8,0,3*sprite_height/4);
 	if sprite_gap < sprite_height/2 {
 		draw_sprite_general(sprite_index,0,0,0,sprite_width,sprite_height/2-sprite_gap,x-sprite_width/2,y-sprite_height/2,1,1,0,c_white,c_white,c_white,c_white,1);
 		draw_sprite_general(sprite_index,0,0,sprite_height/2+sprite_gap,sprite_width,sprite_height/2-sprite_gap,x-sprite_width/2,y+sprite_gap,1,1,0,c_white,c_white,c_white,c_white,1);

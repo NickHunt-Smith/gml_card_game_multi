@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_sequence_target(seq,target,opp,card_state){
+function scr_sequence_target(seq,target,opp,card_state,target_element = false){
 	if target = card_state {
 		layer_sequence_angle(seq,0);
 		layer_sequence_xscale(seq,0.001);
@@ -16,8 +16,13 @@ function scr_sequence_target(seq,target,opp,card_state){
 		}
 		
 		if target.is_locale = true {
-			target_x = target.x + 112;
-			target_y = target.y + 184;
+			if target_element = true {
+				target_x = target.x + 20;
+				target_y = target.y + 331;
+			} else {
+				target_x = target.x + 112;
+				target_y = target.y + 184;
+			}
 		} else {
 			target_x = target.x;
 			target_y = target.y;

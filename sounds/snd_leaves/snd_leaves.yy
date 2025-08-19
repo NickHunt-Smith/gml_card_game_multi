@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_leaves",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.3132653,
+  "name":"snd_leaves",
+  "parent":{
+    "name":"emerald",
+    "path":"folders/Sounds/emerald.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_leaves.mp3",
+  "type":0,
+  "volume":1.0,
+}

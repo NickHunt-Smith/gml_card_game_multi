@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":8.784,
+  "duration":8.758368,
   "name":"snd_missile",
   "parent":{
     "name":"ruby",

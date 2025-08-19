@@ -4,7 +4,7 @@
 if big_mode = false {
 	if destroyed = false && fading = false {
 		
-		draw_sprite_general(global.rarity_list[rarity][element][0][1][card_index],0,60,67,330,443,x,y,card_sprite_scale,card_sprite_scale,0,c_white,c_white,c_white,c_white,1)
+		draw_sprite_general(global.rarity_list[initial_rarity][initial_element][0][1][card_index],0,60,67,330,443,x,y,card_sprite_scale,card_sprite_scale,0,c_white,c_white,c_white,c_white,1)
 
 		//draw_sprite_ext(s_locale_stats,0,x,y+293,0.68,0.68,0,c_white,1)
 		//draw_sprite_ext(global.element_sprite_list[element],0,x+25,y+308,0.08,0.08,0,c_white,1)
@@ -42,7 +42,7 @@ if big_mode = false {
 			tooltip_created = false;
 		}
 
-		if health_locale <= global.rarity_list[rarity][element][0][2][card_index]/2 && overwritten = false {
+		if health_locale <= global.rarity_list[initial_rarity][initial_element][0][2][card_index]/2 && overwritten = false {
 			draw_sprite_ext(s_cracks,0,x,y,0.49,0.5,0,c_white,1);
 			if crack_dust = false {
 				crack_sys = layer_sequence_create("effect_layer",x+112,y+184,seq_cracking);
@@ -75,7 +75,7 @@ if big_mode = false {
 		
 	}
 } else {
-	sprite_index = global.rarity_list[rarity][element][0][0][card_index];
+	sprite_index = global.rarity_list[initial_rarity][initial_element][0][0][card_index];
 	draw_sprite_ext(s_spell_background,0,1520,720,5,5,0,c_black,0.6);
 	//draw_sprite_ext(global.rarity_list[rarity][element][0][0][card_index],0,1513,723,2,2,0,c_white,1);
 	
