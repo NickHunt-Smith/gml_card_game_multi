@@ -253,14 +253,8 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			element = element_locked_i;
 		} else {
 			element = scr_choose_element();
-			if element = 4 {
-				element = 0;
-			} else if element = 5 {
-				element = 1;
-			} else if element = 6 {
-				element = 2;
-			} else if element = 7 {
-				element = 3;
+			while element = 5 or element = 6 or element = 7 {
+				element = scr_choose_element();
 			}
 			//var debug_dist = [0,0,0,0,0,0,0,0];
 			//for (var _i = 0; _i < 10000; _i++) {
@@ -291,14 +285,8 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			element = element_locked_i;
 		} else {
 			element = scr_choose_element();
-			if element = 4 {
-				element = 0;
-			} else if element = 5 {
-				element = 1;
-			} else if element = 6 {
-				element = 2;
-			} else if element = 7 {
-				element = 3;
+			while element = 5 or element = 6 or element = 7 {
+				element = scr_choose_element();
 			}
 		}
 	
@@ -325,14 +313,8 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			element = element_locked_i;
 		} else {
 			element = scr_choose_element();
-			if element = 4 {
-				element = 0;
-			} else if element = 5 {
-				element = 1;
-			} else if element = 6 {
-				element = 2;
-			} else if element = 7 {
-				element = 3;
+			while element = 5 or element = 6 or element = 7 {
+				element = scr_choose_element();
 			}
 		}
 	
