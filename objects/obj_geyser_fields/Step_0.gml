@@ -49,6 +49,16 @@ if eff_type = "destroyed" && destroyed_eff_done = false {
 	instance_destroy();
 }
 
+if eff_type = "transform" && destroyed_eff_done = false {
+	if opp = true {
+		global.opponent.ruby_bonus_spell_damage += bonus_damage;
+	} else {
+		global.player.ruby_bonus_spell_damage += bonus_damage;
+	}
+	destroyed_eff_done = true;
+	instance_destroy();
+}
+
 if (eff_type = "end_turn") && (wait = false) {
 	if eff_done = true {
 		global.wait_for_effect = false;

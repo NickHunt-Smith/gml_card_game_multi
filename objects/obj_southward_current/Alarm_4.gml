@@ -44,5 +44,11 @@ if target_1 = noone {
 	lingering_effect_inst_opp.card_state = target_1;
 	target_1.lingering_effect_function_inst = lingering_effect_inst_opp;
 	lingering_effect_inst_opp.opp = target_1.opp;
+	
+	var transform_effect_inst_opp = instance_create_depth(target_1.x,target_1.y,-800,obj_calm_ocean);
+	transform_effect_inst_opp.eff_type = "transform";
+	transform_effect_inst_opp.card_state = target_1;
+	target_1.transform_effect_function_inst = transform_effect_inst_opp;
+	transform_effect_inst_opp.opp = target_1.opp;
 	alarm[3] = 40;
 }

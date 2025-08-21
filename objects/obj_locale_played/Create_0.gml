@@ -13,6 +13,7 @@ health_memory = 0;
 effect_function = noone;
 effect_function_inst = noone;
 lingering_effect_function_inst = noone;
+transform_effect_function_inst = noone;
 destroyed_eff = noone;
 position = "left player";
 opp = false;
