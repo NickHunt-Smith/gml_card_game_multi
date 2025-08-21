@@ -72,6 +72,9 @@ if big_mode = false {
 			part_system_position(illusory_sys, x+112, y+184);
 			part_system_depth(illusory_sys,-800);
 		}
+		if illusory_sys!=noone {
+			part_system_position(illusory_sys, x+112, y+184);
+		}
 		
 	}
 } else {

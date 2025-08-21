@@ -4,7 +4,7 @@
 flood_channel_boost = 1;
 flood_strength_boost = 1;
 
-eff_instructions_1 = "Flood friendly location twice";
+eff_instructions_1 = "Flood enemy location";
 draw_instructions_1 = false;
 
 eff_type = "none";

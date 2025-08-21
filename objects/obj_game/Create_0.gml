@@ -1010,7 +1010,7 @@ global.rare_sapphire_locales_health_list, global.rare_sapphire_locales_channel_l
 // 0
 array_push(global.rare_sapphire_locales_sprite_list,s_wild_ocean)
 array_push(global.rare_sapphire_locales_art_list,s_wild_ocean_art)
-array_push(global.rare_sapphire_locales_health_list,4)
+array_push(global.rare_sapphire_locales_health_list,2)
 array_push(global.rare_sapphire_locales_channel_list,4)
 array_push(global.rare_sapphire_locales_effect_list,obj_wild_ocean)
 
@@ -1074,7 +1074,7 @@ global.legendary_sapphire_locales_health_list, global.legendary_sapphire_locales
 // 0
 array_push(global.legendary_sapphire_locales_sprite_list,s_tempestuous_ocean)
 array_push(global.legendary_sapphire_locales_art_list,s_tempestuous_ocean_art)
-array_push(global.legendary_sapphire_locales_health_list,7)
+array_push(global.legendary_sapphire_locales_health_list,3)
 array_push(global.legendary_sapphire_locales_channel_list,7)
 array_push(global.legendary_sapphire_locales_effect_list,obj_tempestuous_ocean)
 
