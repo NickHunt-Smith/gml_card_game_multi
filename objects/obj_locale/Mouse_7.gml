@@ -10,14 +10,14 @@ if (global.player_enabled = true) {
 				array_delete(global.cards_in_hand,order_in_hand,1);
 				part_system_destroy(global.locale_highlight_left);
 				locale_lane_x = 1018;
-				alarm[0] = 65;
+				alarm[0] = 62;
 				playing = true;
 				global.player_enabled = false;
 			} else {
 				array_delete(global.cards_in_hand,order_in_hand,1);
 				part_system_destroy(global.locale_highlight_left);
 				locale_lane_x = 1018;
-				alarm[0] = 65;
+				alarm[0] = 62;
 				overwriting = true;
 				playing = true;
 				global.player_locale_1.overwritten = true;
@@ -29,14 +29,14 @@ if (global.player_enabled = true) {
 				array_delete(global.cards_in_hand,order_in_hand,1);
 				part_system_destroy(global.locale_highlight_left_middle);
 				locale_lane_x = 1283;
-				alarm[0] = 65;
+				alarm[0] = 62;
 				playing = true;
 				global.player_enabled = false;
 			} else {
 				array_delete(global.cards_in_hand,order_in_hand,1);
 				part_system_destroy(global.locale_highlight_left_middle);
 				locale_lane_x = 1283;
-				alarm[0] = 65;
+				alarm[0] = 62;
 				overwriting = true;
 				playing = true;
 				global.player_locale_2.overwritten = true;
@@ -48,14 +48,14 @@ if (global.player_enabled = true) {
 				array_delete(global.cards_in_hand,order_in_hand,1);
 				part_system_destroy(global.locale_highlight_right_middle);
 				locale_lane_x = 1545;
-				alarm[0] = 65;
+				alarm[0] = 62;
 				playing = true;
 				global.player_enabled = false;
 			} else {
 				array_delete(global.cards_in_hand,order_in_hand,1);
 				part_system_destroy(global.locale_highlight_right_middle);
 				locale_lane_x = 1545;
-				alarm[0] = 65;
+				alarm[0] = 62;
 				overwriting = true;
 				playing = true;
 				global.player_locale_3.overwritten = true;
@@ -67,14 +67,14 @@ if (global.player_enabled = true) {
 				array_delete(global.cards_in_hand,order_in_hand,1);
 				part_system_destroy(global.locale_highlight_right);
 				locale_lane_x = 1805;
-				alarm[0] = 65;
+				alarm[0] = 62;
 				playing = true;
 				global.player_enabled = false;
 			} else {
 				array_delete(global.cards_in_hand,order_in_hand,1);
 				part_system_destroy(global.locale_highlight_right);
 				locale_lane_x = 1805;
-				alarm[0] = 65;
+				alarm[0] = 62;
 				overwriting = true;
 				playing = true;
 				global.player_locale_4.overwritten = true;

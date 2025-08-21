@@ -1273,18 +1273,18 @@ array_push(global.uncommon_emerald_locales_channel_list,3)
 array_push(global.uncommon_emerald_locales_effect_list,obj_seedspreader)
 
 // 1
-array_push(global.uncommon_emerald_locales_sprite_list,s_starlit_sanctuary)
-array_push(global.uncommon_emerald_locales_art_list,s_starlit_sanctuary_art)
-array_push(global.uncommon_emerald_locales_health_list,2)
-array_push(global.uncommon_emerald_locales_channel_list,2)
-array_push(global.uncommon_emerald_locales_effect_list,obj_starlit_sanctuary)
+array_push(global.uncommon_emerald_locales_sprite_list,s_mangrove_thicket)
+array_push(global.uncommon_emerald_locales_art_list,s_mangrove_thicket_art)
+array_push(global.uncommon_emerald_locales_health_list,3)
+array_push(global.uncommon_emerald_locales_channel_list,3)
+array_push(global.uncommon_emerald_locales_effect_list,obj_mangrove_thicket)
 
 // 2
-array_push(global.uncommon_emerald_locales_sprite_list,s_wasteland)
-array_push(global.uncommon_emerald_locales_art_list,s_wasteland_art)
+array_push(global.uncommon_emerald_locales_sprite_list,s_towering_vegetation)
+array_push(global.uncommon_emerald_locales_art_list,s_towering_vegetation_art)
 array_push(global.uncommon_emerald_locales_health_list,2)
-array_push(global.uncommon_emerald_locales_channel_list,3)
-array_push(global.uncommon_emerald_locales_effect_list,obj_wasteland)
+array_push(global.uncommon_emerald_locales_channel_list,1)
+array_push(global.uncommon_emerald_locales_effect_list,obj_towering_vegetation)
 
 // Rare emerald locales
 
@@ -1376,11 +1376,11 @@ array_push(global.legendary_emerald_locales_channel_list,0)
 array_push(global.legendary_emerald_locales_effect_list,obj_path_of_vitality)
 
 // 2
-array_push(global.legendary_emerald_locales_sprite_list,s_ravenmoor)
-array_push(global.legendary_emerald_locales_art_list,s_ravenmoor_art)
-array_push(global.legendary_emerald_locales_health_list,6)
-array_push(global.legendary_emerald_locales_channel_list,4)
-array_push(global.legendary_emerald_locales_effect_list,obj_ravenmoor)
+array_push(global.legendary_emerald_locales_sprite_list,s_keyroot_caverns)
+array_push(global.legendary_emerald_locales_art_list,s_keyroot_caverns_art)
+array_push(global.legendary_emerald_locales_health_list,4)
+array_push(global.legendary_emerald_locales_channel_list,7)
+array_push(global.legendary_emerald_locales_effect_list,obj_keyroot_caverns)
 
 // emerald spells ============================================================================
 // [0][4][1][0]  sprite = 0, art = 1, effect = 2
@@ -1422,14 +1422,14 @@ array_push(global.uncommon_emerald_spells_art_list,s_branching_trails_art)
 array_push(global.uncommon_emerald_spells_effect_list,obj_branching_trails)
 
 // 1
-array_push(global.uncommon_emerald_spells_sprite_list,s_tithes)
-array_push(global.uncommon_emerald_spells_art_list,s_tithes_art)
-array_push(global.uncommon_emerald_spells_effect_list,obj_tithes)
+array_push(global.uncommon_emerald_spells_sprite_list,s_enlarge)
+array_push(global.uncommon_emerald_spells_art_list,s_enlarge_art)
+array_push(global.uncommon_emerald_spells_effect_list,obj_enlarge)
 
 // 2
-array_push(global.uncommon_emerald_spells_sprite_list,s_restoration_effort)
-array_push(global.uncommon_emerald_spells_art_list,s_restoration_effort_art)
-array_push(global.uncommon_emerald_spells_effect_list,obj_restoration_effort)
+array_push(global.uncommon_emerald_spells_sprite_list,s_mighty_attraction)
+array_push(global.uncommon_emerald_spells_art_list,s_mighty_attraction_art)
+array_push(global.uncommon_emerald_spells_effect_list,obj_mighty_attraction)
 
 // Rare emerald spells
 
@@ -1473,9 +1473,9 @@ array_push(global.mythic_emerald_spells_art_list,s_verdant_repression_art)
 array_push(global.mythic_emerald_spells_effect_list,obj_verdant_repression)
 
 // 2
-array_push(global.mythic_emerald_spells_sprite_list,s_excommunicate)
-array_push(global.mythic_emerald_spells_art_list,s_excommunicate_art)
-array_push(global.mythic_emerald_spells_effect_list,obj_excommunicate)
+array_push(global.mythic_emerald_spells_sprite_list,s_one_earth)
+array_push(global.mythic_emerald_spells_art_list,s_one_earth_art)
+array_push(global.mythic_emerald_spells_effect_list,obj_one_earth)
 
 // Legendary emerald spells
 
