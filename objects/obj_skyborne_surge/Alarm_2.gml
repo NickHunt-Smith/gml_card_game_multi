@@ -20,6 +20,14 @@ if target_1.is_empty = true {
 	target_1.health_locale += flood_strength_boost;
 	alarm[3] = 60;
 } else {
+	
+	var transform_effect_inst_opp = instance_create_depth(target_1.x,target_1.y,-800,global.rarity_list[target_1.rarity][target_1.element][0][4][target_1.card_index]);
+	transform_effect_inst_opp.eff_type = "transform";
+	transform_effect_inst_opp.card_state = target_1;
+	target_1.transform_effect_function_inst = transform_effect_inst_opp;
+	transform_effect_inst_opp.opp = target_1.opp;
+	
+	instance_destroy(target_1.lingering_effect_function_inst);
 
 	target_1.element = 3;
 	target_1.rarity = 0;

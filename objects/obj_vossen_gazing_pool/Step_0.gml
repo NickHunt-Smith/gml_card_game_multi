@@ -105,6 +105,15 @@ if eff_type = "destroyed" && destroyed_eff_done = false {
 	destroyed_eff_done = true;
 }
 
+if eff_type = "transform" && destroyed_eff_done = false {
+	if opp = false {
+		global.player_copying = false;
+	} else {
+		global.opp_copying = false;
+	}
+	destroyed_eff_done = true;
+}
+
 if (eff_type = "end_turn") && (wait = false) {
 	if eff_done = true {
 		global.wait_for_effect = false;

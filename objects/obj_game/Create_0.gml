@@ -1677,9 +1677,9 @@ global.common_citrine_spells_effect_list = []
 global.common_citrine_spells_list = [global.common_citrine_spells_sprite_list,global.common_citrine_spells_art_list,global.common_citrine_spells_effect_list]
 
 // 0 
-array_push(global.common_citrine_spells_sprite_list,s_fanaticism)
-array_push(global.common_citrine_spells_art_list,s_fanaticism_art)
-array_push(global.common_citrine_spells_effect_list,obj_fanaticism)
+array_push(global.common_citrine_spells_sprite_list,s_grasp_at_nothing)
+array_push(global.common_citrine_spells_art_list,s_grasp_at_nothing_art)
+array_push(global.common_citrine_spells_effect_list,obj_grasp_at_nothing)
 
 // 1
 array_push(global.common_citrine_spells_sprite_list,s_backstab)
