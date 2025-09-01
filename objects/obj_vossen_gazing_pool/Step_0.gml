@@ -35,9 +35,9 @@ if eff_type = "play" {
 }
 
 if eff_type = "lingering" {
-	if global.pvp_active = true && opp = true {
-		instance_destroy();
-	}
+	//if global.pvp_active = true && opp = true {
+	//	instance_destroy();
+	//}
 	
 	if global.stack_active = true && stack_active = false {
 		stack_active = true;
@@ -91,7 +91,8 @@ if eff_type = "lingering" {
 	}
 	if global.targeting = false && playing_spell = true {
 		playing_spell = false;
-		var copy = scr_play_spell(opp,global.spell_stack[playing_spell_i].rarity,global.spell_stack[playing_spell_i].element,global.spell_stack[playing_spell_i].card_index,global.spell_stack[playing_spell_i].target_1,global.spell_stack[playing_spell_i].target_2,global.spell_stack[playing_spell_i].target_3);
+		//var copy = scr_play_spell(opp,global.spell_stack[playing_spell_i].rarity,global.spell_stack[playing_spell_i].element,global.spell_stack[playing_spell_i].card_index,global.spell_stack[playing_spell_i].target_1,global.spell_stack[playing_spell_i].target_2,global.spell_stack[playing_spell_i].target_3);
+		var copy = scr_play_spell(opp,global.spell_stack[playing_spell_i].rarity,global.spell_stack[playing_spell_i].element,global.spell_stack[playing_spell_i].card_index,global.spell_stack[playing_spell_i].target_1,global.spell_stack[playing_spell_i].target_2,global.spell_stack[playing_spell_i].target_3,false,true);
 		array_push(memory_stack,copy);
 	}
 }

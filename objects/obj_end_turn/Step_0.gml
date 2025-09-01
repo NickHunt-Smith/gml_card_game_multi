@@ -39,7 +39,7 @@ if (global.player_enabled = false) && (shimmering = true) && end_turn_shimmer !=
 
 // Conduct end of turn effects if not waiting for animations
 
-if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && global.end_game_trigger = false {
+if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && global.end_game_trigger = false && global.drafting = false {
 	
 	if combat_ended = false {
 		if combat_started = false {

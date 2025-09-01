@@ -41,6 +41,8 @@ ruby_spell_damage = 0;
 
 frozen_locales = 0;
 
+voids = 0;
+
 // Setup AI Deck
 
 rarity = 0;

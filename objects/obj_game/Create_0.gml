@@ -1519,23 +1519,23 @@ global.common_citrine_locales_health_list, global.common_citrine_locales_channel
 // 0
 array_push(global.common_citrine_locales_sprite_list,s_dusty_pass)
 array_push(global.common_citrine_locales_art_list,s_dusty_pass_art)
-array_push(global.common_citrine_locales_health_list,2)
+array_push(global.common_citrine_locales_health_list,1)
 array_push(global.common_citrine_locales_channel_list,1)
 array_push(global.common_citrine_locales_effect_list,obj_dusty_pass)
 
 // 1
-array_push(global.common_citrine_locales_sprite_list,s_fetid_sewer)
-array_push(global.common_citrine_locales_art_list,s_fetid_sewer_art)
-array_push(global.common_citrine_locales_health_list,1)
-array_push(global.common_citrine_locales_channel_list,1)
-array_push(global.common_citrine_locales_effect_list,obj_fetid_sewer)
-
-// 2
-array_push(global.common_citrine_locales_sprite_list,s_decrepit_chapel)
-array_push(global.common_citrine_locales_art_list,s_decrepit_chapel_art)
+array_push(global.common_citrine_locales_sprite_list,s_sweltering_savannah)
+array_push(global.common_citrine_locales_art_list,s_sweltering_savannah_art)
 array_push(global.common_citrine_locales_health_list,1)
 array_push(global.common_citrine_locales_channel_list,2)
-array_push(global.common_citrine_locales_effect_list,obj_decrepit_chapel)
+array_push(global.common_citrine_locales_effect_list,obj_sweltering_savannah)
+
+// 2
+array_push(global.common_citrine_locales_sprite_list,s_windswept_steppe)
+array_push(global.common_citrine_locales_art_list,s_windswept_steppe_art)
+array_push(global.common_citrine_locales_health_list,2)
+array_push(global.common_citrine_locales_channel_list,0)
+array_push(global.common_citrine_locales_effect_list,obj_windswept_steppe)
 
 // Uncommon citrine locales
 
@@ -1581,11 +1581,11 @@ global.rare_citrine_locales_list = [global.rare_citrine_locales_sprite_list,glob
 global.rare_citrine_locales_health_list, global.rare_citrine_locales_channel_list, global.rare_citrine_locales_effect_list]
 
 // 0
-array_push(global.rare_citrine_locales_sprite_list,s_ravenmoor_alley)
-array_push(global.rare_citrine_locales_art_list,s_ravenmoor_alley_art)
-array_push(global.rare_citrine_locales_health_list,5)
-array_push(global.rare_citrine_locales_channel_list,3)
-array_push(global.rare_citrine_locales_effect_list,obj_ravenmoor_alley)
+array_push(global.rare_citrine_locales_sprite_list,s_mireth_badlands)
+array_push(global.rare_citrine_locales_art_list,s_mireth_badlands_art)
+array_push(global.rare_citrine_locales_health_list,3)
+array_push(global.rare_citrine_locales_channel_list,1)
+array_push(global.rare_citrine_locales_effect_list,obj_mireth_badlands)
 
 // 1
 array_push(global.rare_citrine_locales_sprite_list,s_mist_swept_highlands)
@@ -1645,25 +1645,25 @@ global.legendary_citrine_locales_list = [global.legendary_citrine_locales_sprite
 global.legendary_citrine_locales_health_list, global.legendary_citrine_locales_channel_list, global.legendary_citrine_locales_effect_list]
 
 // 0
-array_push(global.legendary_citrine_locales_sprite_list,s_vossen_gazing_pool)
-array_push(global.legendary_citrine_locales_art_list,s_vossen_gazing_pool_art)
-array_push(global.legendary_citrine_locales_health_list,6)
-array_push(global.legendary_citrine_locales_channel_list,1)
-array_push(global.legendary_citrine_locales_effect_list,obj_vossen_gazing_pool)
-
-// 1
-array_push(global.legendary_citrine_locales_sprite_list,s_abyss_beyond)
-array_push(global.legendary_citrine_locales_art_list,s_abyss_beyond_art)
-array_push(global.legendary_citrine_locales_health_list,10)
-array_push(global.legendary_citrine_locales_channel_list,5)
-array_push(global.legendary_citrine_locales_effect_list,obj_abyss_beyond)
-
-// 2
-array_push(global.legendary_citrine_locales_sprite_list,s_ravenmoor)
-array_push(global.legendary_citrine_locales_art_list,s_ravenmoor_art)
+array_push(global.legendary_citrine_locales_sprite_list,s_gale_out_of_time)
+array_push(global.legendary_citrine_locales_art_list,s_gale_out_of_time_art)
 array_push(global.legendary_citrine_locales_health_list,6)
 array_push(global.legendary_citrine_locales_channel_list,4)
-array_push(global.legendary_citrine_locales_effect_list,obj_ravenmoor)
+array_push(global.legendary_citrine_locales_effect_list,obj_gale_out_of_time)
+
+// 1
+array_push(global.legendary_citrine_locales_sprite_list,s_veirypher)
+array_push(global.legendary_citrine_locales_art_list,s_veirypher_art)
+array_push(global.legendary_citrine_locales_health_list,2)
+array_push(global.legendary_citrine_locales_channel_list,4)
+array_push(global.legendary_citrine_locales_effect_list,obj_veirypher)
+
+// 2
+array_push(global.legendary_citrine_locales_sprite_list,s_mirage_library)
+array_push(global.legendary_citrine_locales_art_list,s_mirage_library_art)
+array_push(global.legendary_citrine_locales_health_list,6)
+array_push(global.legendary_citrine_locales_channel_list,2)
+array_push(global.legendary_citrine_locales_effect_list,obj_mirage_library)
 
 // citrine spells ============================================================================
 // [0][5][1][0]  sprite = 0, art = 1, effect = 2
@@ -1682,9 +1682,9 @@ array_push(global.common_citrine_spells_art_list,s_grasp_at_nothing_art)
 array_push(global.common_citrine_spells_effect_list,obj_grasp_at_nothing)
 
 // 1
-array_push(global.common_citrine_spells_sprite_list,s_backstab)
-array_push(global.common_citrine_spells_art_list,s_backstab_art)
-array_push(global.common_citrine_spells_effect_list,obj_backstab)
+array_push(global.common_citrine_spells_sprite_list,s_passage_of_time)
+array_push(global.common_citrine_spells_art_list,s_passage_of_time_art)
+array_push(global.common_citrine_spells_effect_list,obj_passage_of_time)
 
 // 2
 array_push(global.common_citrine_spells_sprite_list,s_consumed)
@@ -1700,14 +1700,14 @@ global.uncommon_citrine_spells_effect_list = []
 global.uncommon_citrine_spells_list = [global.uncommon_citrine_spells_sprite_list,global.uncommon_citrine_spells_art_list,global.uncommon_citrine_spells_effect_list]
 
 // 0 
-array_push(global.uncommon_citrine_spells_sprite_list,s_starry_vision)
-array_push(global.uncommon_citrine_spells_art_list,s_starry_vision_art)
-array_push(global.uncommon_citrine_spells_effect_list,obj_starry_vision)
+array_push(global.uncommon_citrine_spells_sprite_list,s_windwalk)
+array_push(global.uncommon_citrine_spells_art_list,s_windwalk_art)
+array_push(global.uncommon_citrine_spells_effect_list,obj_windwalk)
 
 // 1
-array_push(global.uncommon_citrine_spells_sprite_list,s_tithes)
-array_push(global.uncommon_citrine_spells_art_list,s_tithes_art)
-array_push(global.uncommon_citrine_spells_effect_list,obj_tithes)
+array_push(global.uncommon_citrine_spells_sprite_list,s_uncovered_tome)
+array_push(global.uncommon_citrine_spells_art_list,s_uncovered_tome_art)
+array_push(global.uncommon_citrine_spells_effect_list,obj_uncovered_tome)
 
 // 2
 array_push(global.uncommon_citrine_spells_sprite_list,s_restoration_effort)
@@ -1723,9 +1723,9 @@ global.rare_citrine_spells_effect_list = []
 global.rare_citrine_spells_list = [global.rare_citrine_spells_sprite_list,global.rare_citrine_spells_art_list,global.rare_citrine_spells_effect_list]
 
 // 0 
-array_push(global.rare_citrine_spells_sprite_list,s_mirrorspell)
-array_push(global.rare_citrine_spells_art_list,s_mirrorspell_art)
-array_push(global.rare_citrine_spells_effect_list,obj_mirrorspell)
+array_push(global.rare_citrine_spells_sprite_list,s_into_the_gale)
+array_push(global.rare_citrine_spells_art_list,s_into_the_gale_art)
+array_push(global.rare_citrine_spells_effect_list,obj_into_the_gale)
 
 // 1
 array_push(global.rare_citrine_spells_sprite_list,s_subjugate)
@@ -1746,14 +1746,14 @@ global.mythic_citrine_spells_effect_list = []
 global.mythic_citrine_spells_list = [global.mythic_citrine_spells_sprite_list,global.mythic_citrine_spells_art_list,global.mythic_citrine_spells_effect_list]
 
 // 0 
-array_push(global.mythic_citrine_spells_sprite_list,s_crumble)
-array_push(global.mythic_citrine_spells_art_list,s_crumble_art)
-array_push(global.mythic_citrine_spells_effect_list,obj_crumble)
+array_push(global.mythic_citrine_spells_sprite_list,s_citromorphosis)
+array_push(global.mythic_citrine_spells_art_list,s_citromorphosis_art)
+array_push(global.mythic_citrine_spells_effect_list,obj_citromorphosis)
 
 // 1
-array_push(global.mythic_citrine_spells_sprite_list,s_dark_reflection)
-array_push(global.mythic_citrine_spells_art_list,s_dark_reflection_art)
-array_push(global.mythic_citrine_spells_effect_list,obj_dark_reflection)
+array_push(global.mythic_citrine_spells_sprite_list,s_accelerate)
+array_push(global.mythic_citrine_spells_art_list,s_accelerate_art)
+array_push(global.mythic_citrine_spells_effect_list,obj_accelerate)
 
 // 2
 array_push(global.mythic_citrine_spells_sprite_list,s_excommunicate)
@@ -1769,9 +1769,9 @@ global.legendary_citrine_spells_effect_list = []
 global.legendary_citrine_spells_list = [global.legendary_citrine_spells_sprite_list,global.legendary_citrine_spells_art_list,global.legendary_citrine_spells_effect_list]
 
 // 0 
-array_push(global.legendary_citrine_spells_sprite_list,s_abyssal_descent)
-array_push(global.legendary_citrine_spells_art_list,s_abyssal_descent_art)
-array_push(global.legendary_citrine_spells_effect_list,obj_abyssal_descent)
+array_push(global.legendary_citrine_spells_sprite_list,s_carress_of_the_gale)
+array_push(global.legendary_citrine_spells_art_list,s_carress_of_the_gale_art)
+array_push(global.legendary_citrine_spells_effect_list,obj_carress_of_the_gale)
 
 // 1
 array_push(global.legendary_citrine_spells_sprite_list,s_shelter_in_mist)

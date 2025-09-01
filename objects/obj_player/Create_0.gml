@@ -13,3 +13,5 @@ drained = 0;
 destroyed_locales_rarity = [];
 destroyed_locales_element = [];
 destroyed_locales_card_index = [];
+
+voids = 0;

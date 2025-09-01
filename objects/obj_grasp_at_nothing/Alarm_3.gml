@@ -64,6 +64,7 @@ if opp = false {
 		}
 		seq_change_channel_2 = scr_change_numbers(channel,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
 	}
+	global.player.voids += 1;
 } else {
 	var max_channel = 0;
 	var max_channel_inds = [0,0,0,0,0,0,0,0];
@@ -130,6 +131,7 @@ if opp = false {
 		}
 		seq_change_channel_2 = scr_change_numbers(channel,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
 	}
+	global.opponent.voids += 1;
 }
 
 alarm[0] = 50;
