@@ -34,7 +34,7 @@ if discard_variant = false {
 	}
 
 	if wait_stack = true {
-		if instance_exists(target_1) = false or target_1.position = "end_turn" {
+		if target_1 = noone or target_1.position = "end_turn" {
 			skip_target_1 = true;
 		}
 		alarm[1] = 10;
