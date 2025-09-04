@@ -34,6 +34,7 @@ play_scale = 1;
 play_scale_stats = 1;
 alpha = 0;
 draw_card = true;
+discard_in_progress = false;
 
 // Set what PFX we need.
 pfx_border_top = Ps_Fire_Line_top;

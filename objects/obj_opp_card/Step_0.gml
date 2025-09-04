@@ -1,9 +1,10 @@
 /// @description Check if the cursor is over us.
 // If the cursor is over us
 
-if discard_seq = noone && discarding = true {
+if discard_in_progress = false && discarding = true {
 	discard_seq = layer_sequence_create("above_cards",x,y,seq_discard);
 	alarm[3] = 20;
+	discard_in_progress = true;
 }
 
 if (big_mode = false) {

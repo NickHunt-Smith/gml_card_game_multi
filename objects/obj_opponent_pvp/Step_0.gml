@@ -823,6 +823,7 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 					//	array_delete(hand_rarity,hand_choice,1);
 					//	array_delete(hand_card_type,hand_choice,1);
 					//}
+					break
 				default:
 					show_debug_message("Unknown packet received opp")
 					show_debug_message(string(_type))
