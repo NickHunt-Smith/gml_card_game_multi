@@ -30,6 +30,7 @@ if discard_variant = false {
 			global.source_target = self;
 		} else {
 			wait = true;
+			wait_target = true;
 		}
 	}
 
