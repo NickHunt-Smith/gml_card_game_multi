@@ -35,6 +35,7 @@ if discard_variant = false {
 	}
 
 	if wait_stack = true {
+		show_debug_message(target_1);
 		if opp = false {
 			if target_1 = noone or target_1.position = "end_turn" {
 				skip_target_1 = true;

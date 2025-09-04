@@ -18,5 +18,4 @@ global.opponent.passed = false;
 
 array_delete(global.opponent.hand_rarity,order_in_hand,1);
 array_delete(global.opponent.hand_card_type,order_in_hand,1);
-show_debug_message(global.cards_in_hand_opp);
-array_delete(global.cards_in_hand_opp,order_in_hand,1);
+//array_delete(global.cards_in_hand_opp,order_in_hand,1);
