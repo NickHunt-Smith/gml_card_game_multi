@@ -4,7 +4,7 @@ if discard_seq != noone {
 	discard_seq = noone;
 }
 
-discard_eff = instance_create_depth(x,y,-800,effect_function);
+discard_eff = instance_create_depth(x,y,-800,global.rarity_list[rarity][element][1][2][card_index]);
 discard_eff.eff_type = "discarded";
 discard_eff.card_state = self;
 discard_eff.opp = opp;
