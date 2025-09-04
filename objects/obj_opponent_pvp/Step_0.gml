@@ -461,7 +461,6 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 					var target_1_position = _inString[4];
 					var target_2_position = _inString[5];
 					var target_3_position = _inString[6];
-					show_debug_message(target_1_position)
 					
 					if target_1_position = "noone" {
 						target_1 = noone;
@@ -579,6 +578,8 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 						}
 					} else if target_1_position = "hand" {
 						target_1 = "hand";
+					} else if target_1_position = "end_turn" {
+						target_1 = "end_turn";
 					}
 					
 					for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
@@ -703,6 +704,8 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 						}
 					} else if target_2_position = "hand" {
 						target_2 = "hand";
+					} else if target_2_position = "end_turn" {
+						target_2 = "end_turn";
 					}
 					
 					for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
@@ -763,6 +766,8 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 						}
 					} else if target_3_position = "hand" {
 						target_3 = "hand";
+					} else if target_3_position = "end_turn" {
+						target_3 = "end_turn";
 					}
 					
 					for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
