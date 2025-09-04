@@ -28,6 +28,12 @@ if card_type = 1 {
 
 	global.player.passed = false;
 	global.opponent.passed = false;
-	global.priority = "player";
-	//global.player_enabled = true;
+	// Dont pass prio if timetailor
+	var timetailor = false;
+	if (element = 5 and rarity = 1 and card_index = 0) or (element = 5 and rarity = 3 and card_index = 0) {
+		timetailor = true;
+	}
+	if timetailor = false {
+		global.priority = "player";
+	}
 }

@@ -28,17 +28,20 @@ function scr_scry_card(rarity,element,card_type,card_index,order,card_inst_1){
 	card_inst_1.x_start = x_draft;
 	card_inst_1.y_start = y_draft;
 	card_inst_1.draft_mode = true;
+	card_inst_1.opp = false;
 	
+	var effect_function = 0;
 	if card_type = 0 {
-		var effect_function = global.rarity_list[rarity][element][card_type][4][card_index]
+		effect_function = global.rarity_list[rarity][element][card_type][4][card_index]
 	} else {
-		var effect_function = global.rarity_list[rarity][element][card_type][2][card_index]
+		effect_function = global.rarity_list[rarity][element][card_type][2][card_index]
 	}
 	var effect_inst = instance_create_depth(card_inst_1.x,card_inst_1.y,-800,effect_function);
 	effect_inst.eff_type = "created";
 	effect_inst.card_state = card_inst_1;
 	effect_inst.opp = false;
 	card_inst_1.created_eff = effect_inst
+	card_inst_1.effect_function = effect_function;
 	
 	return card_inst_1
 }

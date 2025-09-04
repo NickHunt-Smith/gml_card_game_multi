@@ -18,6 +18,8 @@ x_hand = 1520;
 order_in_hand = 1;
 y_hand_hover = 1520;
 y_hand_unhover = 1640;
+position = "hand";
+discard_eff = noone;
 
 yrotation = 0;
 xrotation = 0;
@@ -25,6 +27,7 @@ max_angle = 15;
 
 lerp_amount = 0.15;
 overwriting = false;
+discarding = false;
 playing = false;
 play_element_seq = noone;
 sprite_gap = 0;
@@ -67,6 +70,8 @@ card_type = 1;
 card_attr = 1;
 card_index = 1;
 
+discard_seq = noone;
+draw_card = true;
 created_eff = noone;
 tooltip_created = false;
 tooltip_extra = false;

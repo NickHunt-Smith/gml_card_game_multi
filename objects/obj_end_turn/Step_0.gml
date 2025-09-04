@@ -42,9 +42,14 @@ if (global.player_enabled = false) && (shimmering = true) && end_turn_shimmer !=
 if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && global.end_game_trigger = false && global.drafting = false {
 	
 	if combat_ended = false {
-		if combat_started = false {
-			alarm[0] = 50;
-			combat_started = true;
+		if global.skip_combat = false {
+			if combat_started = false {
+				alarm[0] = 50;
+				combat_started = true;
+			}
+		} else {
+			global.skip_combat = false;
+			combat_ended = true;
 		}
 	} else {
 		

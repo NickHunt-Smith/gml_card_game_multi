@@ -576,6 +576,8 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 						} else {
 							target_1 = "self";
 						}
+					} else if target_1_position = "hand" {
+						target_1 = "hand";
 					}
 					
 					for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
@@ -698,6 +700,8 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 						} else {
 							target_2 = "self";
 						}
+					} else if target_2_position = "hand" {
+						target_2 = "hand";
 					}
 					
 					for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
@@ -756,6 +760,8 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 						} else {
 							target_3 = global.player_locale_4;
 						}
+					} else if target_3_position = "hand" {
+						target_3 = "hand";
 					}
 					
 					for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
@@ -788,6 +794,35 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 					}
 					playing = true;
 					break
+				case NETWORK_PACKETS.OPP_DISCARDED:
+					var _inString = buffer_read(inbuf,buffer_string);
+					_inString = string_split(_inString,",");
+					card_type = int64(_inString[0]);
+					rarity = int64(_inString[1]);
+					element = int64(_inString[2]);
+					card_index = int64(_inString[3]);
+					
+					var valid_choice = false;
+					
+					for (var _i = 0; _i < array_length(hand_rarity); _i++) {
+						if hand_rarity[_i] = rarity && hand_card_type[_i] = card_type {
+							hand_choice = _i;
+							valid_choice = true
+							break
+						} 
+					}
+					
+					global.cards_in_hand_opp[valid_choice].card_type = card_type;
+					global.cards_in_hand_opp[valid_choice].rarity = rarity;
+					global.cards_in_hand_opp[valid_choice].element = element;
+					global.cards_in_hand_opp[valid_choice].card_index = card_index;
+					global.cards_in_hand_opp[valid_choice].discarding = true;
+					wait_for_opp = false;
+					
+					//if valid_choice = true {
+					//	array_delete(hand_rarity,hand_choice,1);
+					//	array_delete(hand_card_type,hand_choice,1);
+					//}
 				default:
 					show_debug_message("Unknown packet received opp")
 					show_debug_message(string(_type))

@@ -336,13 +336,13 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		
 		// debug
 		if draft_count = 3 {
-			rarity = 3;
-			element = 5;
+			rarity = 1;
+			element = 7;
 			card_type = 1;
-			card_index = 1;
+			card_index = 0;
 		} else if draft_count = 2 {
-			rarity = 0;
-			element = 0;
+			rarity = 1;
+			element = 7;
 			card_type = 1;
 			card_index = 0;
 		} else if draft_count = 1 {
@@ -354,10 +354,10 @@ if global.pvp_active = false or rarities_types_chosen = true {
 	
 		card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
-		if card_type_locked = false {
-			array_push(global.opponent.hand_rarity,rarity);
-			array_push(global.opponent.hand_card_type,card_type);
-		}
+		//if card_type_locked = false {
+		//	array_push(global.opponent.hand_rarity,rarity);
+		//	array_push(global.opponent.hand_card_type,card_type);
+		//}
 	
 		summon_cards = false;
 	}

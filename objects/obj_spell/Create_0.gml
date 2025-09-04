@@ -18,12 +18,15 @@ x_hand = 1520;
 order_in_hand = 1;
 y_hand_hover = 1520;
 y_hand_unhover = 1640;
+position = "hand";
+discard_eff = noone;
 
 yrotation = 0;
 xrotation = 0;
 max_angle = 15;
 
 playing = false;
+discarding = false;
 play_scale = 1;
 sprite_gap = 0;
 alpha = 0;
@@ -59,6 +62,8 @@ locale_highlight_right_middle = false
 locale_highlight_right = false
 play_area_highlight = noone;
 play_area_alpha = 0;
+discard_seq = noone;
+draw_card = true;
 
 rarity = 1;
 element = 1;

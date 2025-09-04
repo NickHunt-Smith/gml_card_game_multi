@@ -1,7 +1,7 @@
 /// @description When destroyed, no longer highlight card
 // You can write your code in this editor
 
-if (draft_mode = false) {
+if (draft_mode = false) && discarding = false {
 	//part_system_destroy(global._pfx_border_top);
 	//part_system_destroy(global._pfx_border_right);
 	//part_system_destroy(global._pfx_border_bottom);

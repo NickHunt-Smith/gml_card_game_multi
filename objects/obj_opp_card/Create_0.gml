@@ -26,12 +26,14 @@ max_angle = 8;
 
 lerp_amount = 0.15;
 overwriting = false;
+discarding = false;
 playing = false;
 play_element_seq = noone;
 sprite_gap = 0;
 play_scale = 1;
 play_scale_stats = 1;
 alpha = 0;
+draw_card = true;
 
 // Set what PFX we need.
 pfx_border_top = Ps_Fire_Line_top;
@@ -67,6 +69,8 @@ card_type = 1;
 card_attr = 1;
 card_index = 1;
 
+discard_eff = noone;
+discard_seq = noone;
 created_eff = noone;
 tooltip_created = false;
 tooltip_extra = false;

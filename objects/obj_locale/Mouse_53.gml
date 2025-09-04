@@ -1,5 +1,5 @@
 
-if playing = false {
+if playing = false && global.targeting_hand = false {
 	if (draft_mode = true) && (big_mode = false) && global.big_mode = false {
 		if (moused = true) {
 			draft_mode = false;
@@ -32,4 +32,14 @@ if playing = false {
 		//image_yscale = 0.5;
 		depth = -1000;
 	}
+}
+
+if global.targeting_hand = true && moused = true && global.big_mode = false && discarding = false {
+	if (global.source_target.allowed_target_opp = true && opp = true) or (global.source_target.allowed_target_player = true && opp = false) {
+		global.source_target.target = self;
+	}
+	
+	discarding = true;
+	discard_seq = layer_sequence_create("above_cards",x,y,seq_discard);
+	alarm[3] = 20;
 }
