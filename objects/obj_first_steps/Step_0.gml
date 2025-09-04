@@ -35,8 +35,14 @@ if discard_variant = false {
 	}
 
 	if wait_stack = true {
-		if target_1 = noone or target_1.position = "end_turn" {
-			skip_target_1 = true;
+		if opp = false {
+			if target_1 = noone or target_1.position = "end_turn" {
+				skip_target_1 = true;
+			}
+		} else {
+			if target_1 != "hand" {
+				skip_target_1 = true;
+			}
 		}
 		alarm[1] = 10;
 		wait_stack = false;
