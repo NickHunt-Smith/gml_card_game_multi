@@ -461,6 +461,7 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 					var target_1_position = _inString[4];
 					var target_2_position = _inString[5];
 					var target_3_position = _inString[6];
+					show_debug_message(target_1_position)
 					
 					if target_1_position = "noone" {
 						target_1 = noone;
