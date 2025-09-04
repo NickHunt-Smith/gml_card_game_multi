@@ -91,6 +91,8 @@ if discard_variant = false {
 		
 			if instance_exists(target_1) = true && target_1.position != "end_turn" {
 				target_1.discarding = true;
+			} else {
+				global.player_enabled = true;
 			}
 		
 			wait_target = true;

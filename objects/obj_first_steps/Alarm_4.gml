@@ -9,6 +9,4 @@ if player_reenable = true {
 	global.player_enabled = true;
 }
 
-
-
 instance_destroy();
