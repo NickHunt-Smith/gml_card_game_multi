@@ -56,6 +56,7 @@ if discard_variant = false {
 			target = noone;
 		}
 		if target_1 != noone {
+			show_debug_message(target_1.position)
 		
 			if global.pvp_active = true && opp=false && ignore_buffer = false {
 				var _b = buffer_create(1,buffer_grow,1)
