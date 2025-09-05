@@ -16,5 +16,15 @@ global.opponent.wait_for_opp = true;
 global.player.passed = false;
 global.opponent.passed = false;
 
-array_delete(global.opponent.hand_rarity,order_in_hand-1,1);
-array_delete(global.opponent.hand_card_type,order_in_hand-1,1);
+var hand_choice = 0;
+for (var _i = 0; _i < array_length(hand_rarity); _i++) {
+	if hand_rarity[_i] = rarity && hand_card_type[_i] = card_type {
+		hand_choice = _i;
+		break
+	} 
+}
+
+show_debug_message(hand_choice)
+
+array_delete(global.opponent.hand_rarity,hand_choice,1);
+array_delete(global.opponent.hand_card_type,hand_choice,1);
