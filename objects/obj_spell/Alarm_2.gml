@@ -4,6 +4,10 @@ if discard_seq != noone {
 	discard_seq = noone;
 }
 
+if global.priority = "player" {
+	global.player_enabled = true;
+}
+
 discard_eff = instance_create_depth(x,y,-800,effect_function);
 discard_eff.eff_type = "discarded";
 discard_eff.card_state = self;
@@ -19,10 +23,6 @@ if global.pvp_active = true && opp=false {
 	buffer_write(_b,buffer_string,card_details)
 	steam_net_packet_send(global.other_id,_b)
 	buffer_delete(_b)
-}
-
-if global.priority = "player" {
-	global.player_enabled = true;
 }
 
 instance_destroy();
