@@ -24,7 +24,5 @@ global.opponent.passed = false;
 //	} 
 //}
 
-show_debug_message(order_in_hand)
-
-array_delete(global.opponent.hand_rarity,order_in_hand-1,1);
-array_delete(global.opponent.hand_card_type,order_in_hand-1,1);
+array_delete(global.opponent.hand_rarity,order_in_hand,1);
+array_delete(global.opponent.hand_card_type,order_in_hand,1);
