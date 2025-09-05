@@ -30,7 +30,7 @@ if global.targeting = true && global.big_mode = false {
 	global.source_target.target = self;
 }
 
-if global.stack_active = true && global.resolve_stack = false && global.targeting = false && global.priority = "player" {
+if global.stack_active = true && global.resolve_stack = false && global.targeting = false && global.priority = "player" && global.player_enabled = true {
 	
 	if global.pvp_active = true {
 		var _b = buffer_create(1,buffer_grow,1)
