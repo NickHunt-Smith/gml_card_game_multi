@@ -818,11 +818,11 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 						} 
 					}
 					
-					global.cards_in_hand_opp[valid_choice].card_type = card_type;
-					global.cards_in_hand_opp[valid_choice].rarity = rarity;
-					global.cards_in_hand_opp[valid_choice].element = element;
-					global.cards_in_hand_opp[valid_choice].card_index = card_index;
-					global.cards_in_hand_opp[valid_choice].discarding = true;
+					global.cards_in_hand_opp[hand_choice].card_type = card_type;
+					global.cards_in_hand_opp[hand_choice].rarity = rarity;
+					global.cards_in_hand_opp[hand_choice].element = element;
+					global.cards_in_hand_opp[hand_choice].card_index = card_index;
+					global.cards_in_hand_opp[hand_choice].discarding = true;
 					wait_for_opp = false;
 					
 					//if valid_choice = true {
