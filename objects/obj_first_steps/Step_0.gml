@@ -3,6 +3,7 @@
 
 if eff_type = "discarded" && wait = false {
 	if global.player_enabled = true {
+		global.player_enabled = false;
 		player_reenable = true;
 	}
 	var x_future = 1527 - 140*(array_length(global.spell_stack)) +70*array_length(global.spell_stack);

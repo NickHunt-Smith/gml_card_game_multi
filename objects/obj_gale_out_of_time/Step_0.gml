@@ -70,9 +70,9 @@ if (eff_type = "play") && (wait = false) {
 if eff_type = "lingering" {
 	
 	if opp = true {
-		card_state.tooltip_counter = global.opponent.ruby_spells_played;
+		card_state.tooltip_counter = global.opponent.voids;
 	} else {
-		card_state.tooltip_counter = global.player.ruby_spells_played;
+		card_state.tooltip_counter = global.player.voids;
 	}
 }
 

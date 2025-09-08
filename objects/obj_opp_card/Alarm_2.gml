@@ -15,6 +15,7 @@ discard_eff.card_index = card_index;
 global.opponent.wait_for_opp = true;
 global.player.passed = false;
 global.opponent.passed = false;
+global.opponent.discards += 1;
 
 //var hand_choice = 0;
 //for (var _i = 0; _i < array_length(hand_rarity); _i++) {

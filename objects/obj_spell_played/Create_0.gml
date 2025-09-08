@@ -25,7 +25,7 @@ card_attr = 1;
 card_index = 1;
 tooltip_inst = noone;
 tooltip_created = false;
-var effect_function = noone;
+effect_function = noone;
 effect_function_inst = noone;
 
 tooltip_extra = false;

@@ -29,9 +29,9 @@ if opp = false {
 		} else if max_channel_inds[5] = 1 {
 			global.channelled_left_opp_citrine += channel_void;
 		} else if max_channel_inds[6] = 1 {
-			global.channelled_left_opp_amethyst += channel_void;
-		} else if max_channel_inds[7] = 1 {
 			global.channelled_left_opp_opal += channel_void;
+		} else if max_channel_inds[7] = 1 {
+			global.channelled_left_opp_amethyst += channel_void;
 		}
 		seq_change_channel_1 = scr_change_numbers(channel_void,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
 	}
@@ -66,9 +66,9 @@ if opp = false {
 		} else if max_channel_inds[5] = 1 {
 			global.channelled_right_opp_citrine += channel_void;
 		} else if max_channel_inds[6] = 1 {
-			global.channelled_right_opp_amethyst += channel_void;
-		} else if max_channel_inds[7] = 1 {
 			global.channelled_right_opp_opal += channel_void;
+		} else if max_channel_inds[7] = 1 {
+			global.channelled_right_opp_amethyst += channel_void;
 		}
 		seq_change_channel_2 = scr_change_numbers(channel_void,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
 	}
@@ -104,9 +104,9 @@ if opp = false {
 		} else if max_channel_inds[5] = 1 {
 			global.channelled_left_player_citrine += channel_void;
 		} else if max_channel_inds[6] = 1 {
-			global.channelled_left_player_amethyst += channel_void;
-		} else if max_channel_inds[7] = 1 {
 			global.channelled_left_player_opal += channel_void;
+		} else if max_channel_inds[7] = 1 {
+			global.channelled_left_player_amethyst += channel_void;
 		}
 		seq_change_channel_1 = scr_change_numbers(channel_void,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
 	}
@@ -141,9 +141,9 @@ if opp = false {
 		} else if max_channel_inds[5] = 1 {
 			global.channelled_right_player_citrine += channel_void;
 		} else if max_channel_inds[6] = 1 {
-			global.channelled_right_player_amethyst += channel_void;
-		} else if max_channel_inds[7] = 1 {
 			global.channelled_right_player_opal += channel_void;
+		} else if max_channel_inds[7] = 1 {
+			global.channelled_right_player_amethyst += channel_void;
 		}
 		seq_change_channel_2 = scr_change_numbers(channel_void,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
 	}

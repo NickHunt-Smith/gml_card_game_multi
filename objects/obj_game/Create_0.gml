@@ -2092,18 +2092,18 @@ array_push(global.common_amethyst_locales_channel_list,1)
 array_push(global.common_amethyst_locales_effect_list,obj_violet_field)
 
 // 1
-array_push(global.common_amethyst_locales_sprite_list,s_fetid_sewer)
-array_push(global.common_amethyst_locales_art_list,s_fetid_sewer_art)
-array_push(global.common_amethyst_locales_health_list,1)
+array_push(global.common_amethyst_locales_sprite_list,s_rapture_factory)
+array_push(global.common_amethyst_locales_art_list,s_rapture_factory_art)
+array_push(global.common_amethyst_locales_health_list,3)
 array_push(global.common_amethyst_locales_channel_list,1)
-array_push(global.common_amethyst_locales_effect_list,obj_fetid_sewer)
+array_push(global.common_amethyst_locales_effect_list,obj_rapture_factory)
 
 // 2
-array_push(global.common_amethyst_locales_sprite_list,s_decrepit_chapel)
-array_push(global.common_amethyst_locales_art_list,s_decrepit_chapel_art)
-array_push(global.common_amethyst_locales_health_list,1)
-array_push(global.common_amethyst_locales_channel_list,2)
-array_push(global.common_amethyst_locales_effect_list,obj_decrepit_chapel)
+array_push(global.common_amethyst_locales_sprite_list,s_lost_grove)
+array_push(global.common_amethyst_locales_art_list,s_lost_grove_art)
+array_push(global.common_amethyst_locales_health_list,3)
+array_push(global.common_amethyst_locales_channel_list,3)
+array_push(global.common_amethyst_locales_effect_list,obj_lost_grove)
 
 // Uncommon amethyst locales
 
@@ -2117,11 +2117,11 @@ global.uncommon_amethyst_locales_list = [global.uncommon_amethyst_locales_sprite
 global.uncommon_amethyst_locales_health_list, global.uncommon_amethyst_locales_channel_list, global.uncommon_amethyst_locales_effect_list]
 
 // 0
-array_push(global.uncommon_amethyst_locales_sprite_list,s_haunted_manor)
-array_push(global.uncommon_amethyst_locales_art_list,s_haunted_manor_art)
-array_push(global.uncommon_amethyst_locales_health_list,2)
-array_push(global.uncommon_amethyst_locales_channel_list,2)
-array_push(global.uncommon_amethyst_locales_effect_list,obj_haunted_manor)
+array_push(global.uncommon_amethyst_locales_sprite_list,s_amethyst_obelisk)
+array_push(global.uncommon_amethyst_locales_art_list,s_amethyst_obelisk_art)
+array_push(global.uncommon_amethyst_locales_health_list,4)
+array_push(global.uncommon_amethyst_locales_channel_list,4)
+array_push(global.uncommon_amethyst_locales_effect_list,obj_amethyst_obelisk)
 
 // 1
 array_push(global.uncommon_amethyst_locales_sprite_list,s_starlit_sanctuary)
@@ -2149,11 +2149,11 @@ global.rare_amethyst_locales_list = [global.rare_amethyst_locales_sprite_list,gl
 global.rare_amethyst_locales_health_list, global.rare_amethyst_locales_channel_list, global.rare_amethyst_locales_effect_list]
 
 // 0
-array_push(global.rare_amethyst_locales_sprite_list,s_ravenmoor_alley)
-array_push(global.rare_amethyst_locales_art_list,s_ravenmoor_alley_art)
-array_push(global.rare_amethyst_locales_health_list,5)
-array_push(global.rare_amethyst_locales_channel_list,3)
-array_push(global.rare_amethyst_locales_effect_list,obj_ravenmoor_alley)
+array_push(global.rare_amethyst_locales_sprite_list,s_bizarre_dreamscape)
+array_push(global.rare_amethyst_locales_art_list,s_bizarre_dreamscape_art)
+array_push(global.rare_amethyst_locales_health_list,6)
+array_push(global.rare_amethyst_locales_channel_list,2)
+array_push(global.rare_amethyst_locales_effect_list,obj_bizarre_dreamscape)
 
 // 1
 array_push(global.rare_amethyst_locales_sprite_list,s_mist_swept_highlands)
@@ -2181,11 +2181,11 @@ global.mythic_amethyst_locales_list = [global.mythic_amethyst_locales_sprite_lis
 global.mythic_amethyst_locales_health_list, global.mythic_amethyst_locales_channel_list, global.mythic_amethyst_locales_effect_list]
 
 // 0
-array_push(global.mythic_amethyst_locales_sprite_list,s_grand_ravenmoor_church)
-array_push(global.mythic_amethyst_locales_art_list,s_grand_ravenmoor_church_art)
-array_push(global.mythic_amethyst_locales_health_list,6)
-array_push(global.mythic_amethyst_locales_channel_list,3)
-array_push(global.mythic_amethyst_locales_effect_list,obj_grand_ravenmoor_church)
+array_push(global.mythic_amethyst_locales_sprite_list,s_realm_infinite)
+array_push(global.mythic_amethyst_locales_art_list,s_realm_infinite_art)
+array_push(global.mythic_amethyst_locales_health_list,8)
+array_push(global.mythic_amethyst_locales_channel_list,0)
+array_push(global.mythic_amethyst_locales_effect_list,obj_realm_infinite)
 
 // 1
 array_push(global.mythic_amethyst_locales_sprite_list,s_ravenmoor_market)
@@ -2213,11 +2213,11 @@ global.legendary_amethyst_locales_list = [global.legendary_amethyst_locales_spri
 global.legendary_amethyst_locales_health_list, global.legendary_amethyst_locales_channel_list, global.legendary_amethyst_locales_effect_list]
 
 // 0
-array_push(global.legendary_amethyst_locales_sprite_list,s_vossen_gazing_pool)
-array_push(global.legendary_amethyst_locales_art_list,s_vossen_gazing_pool_art)
-array_push(global.legendary_amethyst_locales_health_list,6)
-array_push(global.legendary_amethyst_locales_channel_list,1)
-array_push(global.legendary_amethyst_locales_effect_list,obj_vossen_gazing_pool)
+array_push(global.legendary_amethyst_locales_sprite_list,s_chamber_of_dreams)
+array_push(global.legendary_amethyst_locales_art_list,s_chamber_of_dreams_art)
+array_push(global.legendary_amethyst_locales_health_list,1)
+array_push(global.legendary_amethyst_locales_channel_list,4)
+array_push(global.legendary_amethyst_locales_effect_list,obj_chamber_of_dreams)
 
 // 1
 array_push(global.legendary_amethyst_locales_sprite_list,s_abyss_beyond)
@@ -2245,9 +2245,9 @@ global.common_amethyst_spells_effect_list = []
 global.common_amethyst_spells_list = [global.common_amethyst_spells_sprite_list,global.common_amethyst_spells_art_list,global.common_amethyst_spells_effect_list]
 
 // 0 
-array_push(global.common_amethyst_spells_sprite_list,s_fanaticism)
-array_push(global.common_amethyst_spells_art_list,s_fanaticism_art)
-array_push(global.common_amethyst_spells_effect_list,obj_fanaticism)
+array_push(global.common_amethyst_spells_sprite_list,s_recurring_dream)
+array_push(global.common_amethyst_spells_art_list,s_recurring_deam_art)
+array_push(global.common_amethyst_spells_effect_list,obj_recurring_dream)
 
 // 1
 array_push(global.common_amethyst_spells_sprite_list,s_backstab)
@@ -2291,19 +2291,19 @@ global.rare_amethyst_spells_effect_list = []
 global.rare_amethyst_spells_list = [global.rare_amethyst_spells_sprite_list,global.rare_amethyst_spells_art_list,global.rare_amethyst_spells_effect_list]
 
 // 0 
-array_push(global.rare_amethyst_spells_sprite_list,s_mirrorspell)
-array_push(global.rare_amethyst_spells_art_list,s_mirrorspell_art)
-array_push(global.rare_amethyst_spells_effect_list,obj_mirrorspell)
+array_push(global.rare_amethyst_spells_sprite_list,s_ransack)
+array_push(global.rare_amethyst_spells_art_list,s_ransack_art)
+array_push(global.rare_amethyst_spells_effect_list,obj_ransack)
 
 // 1
-array_push(global.rare_amethyst_spells_sprite_list,s_subjugate)
-array_push(global.rare_amethyst_spells_art_list,s_subjugate_art)
-array_push(global.rare_amethyst_spells_effect_list,obj_subjugate)
+array_push(global.rare_amethyst_spells_sprite_list,s_dreamstray)
+array_push(global.rare_amethyst_spells_art_list,s_dreamstray_art)
+array_push(global.rare_amethyst_spells_effect_list,obj_dreamstray)
 
 // 2
-array_push(global.rare_amethyst_spells_sprite_list,s_vossen_ritual)
-array_push(global.rare_amethyst_spells_art_list,s_vossen_ritual_art)
-array_push(global.rare_amethyst_spells_effect_list,obj_vossen_ritual)
+array_push(global.rare_amethyst_spells_sprite_list,s_rapture_infusion)
+array_push(global.rare_amethyst_spells_art_list,s_rapture_infusion_art)
+array_push(global.rare_amethyst_spells_effect_list,obj_rapture_infusion)
 
 // Mythic amethyst spells
 
@@ -2314,14 +2314,14 @@ global.mythic_amethyst_spells_effect_list = []
 global.mythic_amethyst_spells_list = [global.mythic_amethyst_spells_sprite_list,global.mythic_amethyst_spells_art_list,global.mythic_amethyst_spells_effect_list]
 
 // 0 
-array_push(global.mythic_amethyst_spells_sprite_list,s_crumble)
-array_push(global.mythic_amethyst_spells_art_list,s_crumble_art)
-array_push(global.mythic_amethyst_spells_effect_list,obj_crumble)
+array_push(global.mythic_amethyst_spells_sprite_list,s_dream_imprisonment)
+array_push(global.mythic_amethyst_spells_art_list,s_dream_imprisonment_art)
+array_push(global.mythic_amethyst_spells_effect_list,obj_dream_imprisonment)
 
 // 1
-array_push(global.mythic_amethyst_spells_sprite_list,s_dark_reflection)
-array_push(global.mythic_amethyst_spells_art_list,s_dark_reflection_art)
-array_push(global.mythic_amethyst_spells_effect_list,obj_dark_reflection)
+array_push(global.mythic_amethyst_spells_sprite_list,s_shared_amnesia)
+array_push(global.mythic_amethyst_spells_art_list,s_shared_amnesia_art)
+array_push(global.mythic_amethyst_spells_effect_list,obj_shared_amnesia)
 
 // 2
 array_push(global.mythic_amethyst_spells_sprite_list,s_excommunicate)

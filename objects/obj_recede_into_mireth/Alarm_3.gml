@@ -25,9 +25,9 @@ if opp = false {
 		} else if max_channel_inds[5] = 1 {
 			global.channelled_left_opp_citrine += channel;
 		} else if max_channel_inds[6] = 1 {
-			global.channelled_left_opp_amethyst += channel;
-		} else if max_channel_inds[7] = 1 {
 			global.channelled_left_opp_opal += channel;
+		} else if max_channel_inds[7] = 1 {
+			global.channelled_left_opp_amethyst += channel;
 		}
 		seq_change_channel_1 = scr_change_numbers(channel,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
 	}
@@ -58,9 +58,9 @@ if opp = false {
 		} else if max_channel_inds[5] = 1 {
 			global.channelled_right_opp_citrine += channel;
 		} else if max_channel_inds[6] = 1 {
-			global.channelled_right_opp_amethyst += channel;
-		} else if max_channel_inds[7] = 1 {
 			global.channelled_right_opp_opal += channel;
+		} else if max_channel_inds[7] = 1 {
+			global.channelled_right_opp_amethyst += channel;
 		}
 		seq_change_channel_2 = scr_change_numbers(channel,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
 	}
@@ -92,9 +92,9 @@ if opp = false {
 		} else if max_channel_inds[5] = 1 {
 			global.channelled_left_player_citrine += channel;
 		} else if max_channel_inds[6] = 1 {
-			global.channelled_left_player_amethyst += channel;
-		} else if max_channel_inds[7] = 1 {
 			global.channelled_left_player_opal += channel;
+		} else if max_channel_inds[7] = 1 {
+			global.channelled_left_player_amethyst += channel;
 		}
 		seq_change_channel_1 = scr_change_numbers(channel,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
 	}
@@ -125,9 +125,9 @@ if opp = false {
 		} else if max_channel_inds[5] = 1 {
 			global.channelled_right_player_citrine += channel;
 		} else if max_channel_inds[6] = 1 {
-			global.channelled_right_player_amethyst += channel;
-		} else if max_channel_inds[7] = 1 {
 			global.channelled_right_player_opal += channel;
+		} else if max_channel_inds[7] = 1 {
+			global.channelled_right_player_amethyst += channel;
 		}
 		seq_change_channel_2 = scr_change_numbers(channel,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
 	}

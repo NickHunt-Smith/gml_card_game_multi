@@ -40,8 +40,9 @@ ruby_bonus_spell_damage = 0;
 ruby_spell_damage = 0;
 
 frozen_locales = 0;
-
+consumed = 0;
 voids = 0;
+discards = 0;
 
 // Setup AI Deck
 

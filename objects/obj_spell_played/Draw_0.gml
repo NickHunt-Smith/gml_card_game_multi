@@ -3,7 +3,11 @@
 
 if big_mode = false {
 	draw_sprite_general(spell_sprite,0,57,62,333,336,x-60,y-60,0.37,0.37,0,c_white,c_white,c_white,c_white,1);
-	draw_sprite_ext(s_spell_frame,0,x,y,0.4,0.4,0,c_white,1);
+	if variable_struct_exists(effect_function_inst,"discard_variant") = true && effect_function_inst.discard_variant = true {
+		draw_sprite_ext(s_spell_frame,0,x,y,0.4,0.4,0,c_purple,1);
+	} else {
+		draw_sprite_ext(s_spell_frame,0,x,y,0.4,0.4,0,c_white,1);
+	}
 	
 	if moused = true && target_arrows_enabled = true {
 		depth = -900;

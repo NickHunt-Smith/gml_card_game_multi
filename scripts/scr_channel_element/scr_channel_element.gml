@@ -567,93 +567,93 @@ function scr_channel_element(card_state){
 		
 		if card_state.channel > 0 {
 			if (card_state.position = "left_player") {
-				channel_seq = layer_sequence_create("effect_layer",x + 180,y + 440,seq_channel_amethyst);
+				channel_seq = layer_sequence_create("effect_layer",x + 180,y + 440,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,210);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_left_player,0,array_length(global.channelled_left_player));
 				array_sort(channel_copy,false);
-				if global.channelled_left_player_amethyst = channel_copy[0] {
+				if global.channelled_left_player_opal = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
 				}
-				global.channelled_left_player_amethyst += card_state.channel;
+				global.channelled_left_player_opal += card_state.channel;
 			} else if (card_state.position = "left_middle_player") {
-				channel_seq = layer_sequence_create("effect_layer",x + 40,y + 480,seq_channel_amethyst);
+				channel_seq = layer_sequence_create("effect_layer",x + 40,y + 480,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,150);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_left_player,0,array_length(global.channelled_left_player));
 				array_sort(channel_copy,false);
-				if global.channelled_left_player_amethyst = channel_copy[0] {
+				if global.channelled_left_player_opal = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
 				}
-				global.channelled_left_player_amethyst += card_state.channel;
+				global.channelled_left_player_opal += card_state.channel;
 			} else if (card_state.position = "right_middle_player") {
-				channel_seq = layer_sequence_create("effect_layer",x + 180,y + 440,seq_channel_amethyst);
+				channel_seq = layer_sequence_create("effect_layer",x + 180,y + 440,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,210);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_right_player,0,array_length(global.channelled_right_player));
 				array_sort(channel_copy,false);
-				if global.channelled_right_player_amethyst = channel_copy[0] {
+				if global.channelled_right_player_opal = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
 				}
-				global.channelled_right_player_amethyst += card_state.channel;
+				global.channelled_right_player_opal += card_state.channel;
 			} else if (card_state.position = "right_player") {
-				channel_seq = layer_sequence_create("effect_layer",x + 40,y + 480,seq_channel_amethyst);
+				channel_seq = layer_sequence_create("effect_layer",x + 40,y + 480,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,150);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_right_player,0,array_length(global.channelled_right_player));
 				array_sort(channel_copy,false);
-				if global.channelled_right_player_amethyst = channel_copy[0] {
+				if global.channelled_right_player_opal = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
 				}
-				global.channelled_right_player_amethyst += card_state.channel;
+				global.channelled_right_player_opal += card_state.channel;
 			} else if (card_state.position = "left_opp") {
-				channel_seq = layer_sequence_create("effect_layer",x + 180,y -60,seq_channel_amethyst);
+				channel_seq = layer_sequence_create("effect_layer",x + 180,y -60,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,150+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_left_opp,0,array_length(global.channelled_left_opp));
 				array_sort(channel_copy,false);
-				if global.channelled_left_opp_amethyst = channel_copy[0] {
+				if global.channelled_left_opp_opal = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
 				}
-				global.channelled_left_opp_amethyst += card_state.channel;
+				global.channelled_left_opp_opal += card_state.channel;
 			} else if (card_state.position = "left_middle_opp") {
-				channel_seq = layer_sequence_create("effect_layer",x + 60,y -70,seq_channel_amethyst);
+				channel_seq = layer_sequence_create("effect_layer",x + 60,y -70,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,210+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_left_opp,0,array_length(global.channelled_left_opp));
 				array_sort(channel_copy,false);
-				if global.channelled_left_opp_amethyst = channel_copy[0] {
+				if global.channelled_left_opp_opal = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
 				}
-				global.channelled_left_opp_amethyst += card_state.channel;
+				global.channelled_left_opp_opal += card_state.channel;
 			} else if (card_state.position = "right_middle_opp") {
-				channel_seq = layer_sequence_create("effect_layer",x + 180,y -60,seq_channel_amethyst);
+				channel_seq = layer_sequence_create("effect_layer",x + 180,y -60,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,150+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_right_opp,0,array_length(global.channelled_right_opp));
 				array_sort(channel_copy,false);
-				if global.channelled_right_opp_amethyst = channel_copy[0] {
+				if global.channelled_right_opp_opal = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
 				}
-				global.channelled_right_opp_amethyst += card_state.channel;
+				global.channelled_right_opp_opal += card_state.channel;
 			} else if (card_state.position = "right_opp") {
-				channel_seq = layer_sequence_create("effect_layer",x + 60,y -70,seq_channel_amethyst);
+				channel_seq = layer_sequence_create("effect_layer",x + 60,y -70,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,210+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_right_opp,0,array_length(global.channelled_right_opp));
 				array_sort(channel_copy,false);
-				if global.channelled_right_opp_amethyst = channel_copy[0] {
+				if global.channelled_right_opp_opal = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
 				}
-				global.channelled_right_opp_amethyst += card_state.channel;
+				global.channelled_right_opp_opal += card_state.channel;
 			}
 		}
 		
@@ -661,93 +661,93 @@ function scr_channel_element(card_state){
 		
 		if card_state.channel > 0 {
 			if (card_state.position = "left_player") {
-				channel_seq = layer_sequence_create("effect_layer",x + 180,y + 440,seq_channel_opal);
+				channel_seq = layer_sequence_create("effect_layer",x + 180,y + 440,seq_channel_amethyst);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,210);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_left_player,0,array_length(global.channelled_left_player));
 				array_sort(channel_copy,false);
-				if global.channelled_left_player_opal = channel_copy[0] {
+				if global.channelled_left_player_amethyst = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
 				}
-				global.channelled_left_player_opal += card_state.channel;
+				global.channelled_left_player_amethyst += card_state.channel;
 			} else if (card_state.position = "left_middle_player") {
-				channel_seq = layer_sequence_create("effect_layer",x + 55,y + 440,seq_channel_opal);
+				channel_seq = layer_sequence_create("effect_layer",x + 55,y + 440,seq_channel_amethyst);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,150);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_left_player,0,array_length(global.channelled_left_player));
 				array_sort(channel_copy,false);
-				if global.channelled_left_player_opal = channel_copy[0] {
+				if global.channelled_left_player_amethyst = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
 				}
-				global.channelled_left_player_opal += card_state.channel;
+				global.channelled_left_player_amethyst += card_state.channel;
 			} else if (card_state.position = "right_middle_player") {
-				channel_seq = layer_sequence_create("effect_layer",x + 180,y + 440,seq_channel_opal);
+				channel_seq = layer_sequence_create("effect_layer",x + 180,y + 440,seq_channel_amethyst);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,210);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_right_player,0,array_length(global.channelled_right_player));
 				array_sort(channel_copy,false);
-				if global.channelled_right_player_opal = channel_copy[0] {
+				if global.channelled_right_player_amethyst = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
 				}
-				global.channelled_right_player_opal += card_state.channel;
+				global.channelled_right_player_amethyst += card_state.channel;
 			} else if (card_state.position = "right_player") {
-				channel_seq = layer_sequence_create("effect_layer",x + 55,y + 440,seq_channel_opal);
+				channel_seq = layer_sequence_create("effect_layer",x + 55,y + 440,seq_channel_amethyst);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,150);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_right_player,0,array_length(global.channelled_right_player));
 				array_sort(channel_copy,false);
-				if global.channelled_right_player_opal = channel_copy[0] {
+				if global.channelled_right_player_amethyst = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
 				}
-				global.channelled_right_player_opal += card_state.channel;
+				global.channelled_right_player_amethyst += card_state.channel;
 			} else if (card_state.position = "left_opp") {
-				channel_seq = layer_sequence_create("effect_layer",x + 180,y -60,seq_channel_opal);
+				channel_seq = layer_sequence_create("effect_layer",x + 180,y -60,seq_channel_amethyst);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,150+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_left_opp,0,array_length(global.channelled_left_opp));
 				array_sort(channel_copy,false);
-				if global.channelled_left_opp_opal = channel_copy[0] {
+				if global.channelled_left_opp_amethyst = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
 				}
-				global.channelled_left_opp_opal += card_state.channel;
+				global.channelled_left_opp_amethyst += card_state.channel;
 			} else if (card_state.position = "left_middle_opp") {
-				channel_seq = layer_sequence_create("effect_layer",x + 70,y -60,seq_channel_opal);
+				channel_seq = layer_sequence_create("effect_layer",x + 70,y -60,seq_channel_amethyst);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,210+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_left_opp,0,array_length(global.channelled_left_opp));
 				array_sort(channel_copy,false);
-				if global.channelled_left_opp_opal = channel_copy[0] {
+				if global.channelled_left_opp_amethyst = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
 				}
-				global.channelled_left_opp_opal += card_state.channel;
+				global.channelled_left_opp_amethyst += card_state.channel;
 			} else if (card_state.position = "right_middle_opp") {
-				channel_seq = layer_sequence_create("effect_layer",x + 180,y -60,seq_channel_opal);
+				channel_seq = layer_sequence_create("effect_layer",x + 180,y -60,seq_channel_amethyst);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,150+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_right_opp,0,array_length(global.channelled_right_opp));
 				array_sort(channel_copy,false);
-				if global.channelled_right_opp_opal = channel_copy[0] {
+				if global.channelled_right_opp_amethyst = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
 				}
-				global.channelled_right_opp_opal += card_state.channel;
+				global.channelled_right_opp_amethyst += card_state.channel;
 			} else if (card_state.position = "right_opp") {
-				channel_seq = layer_sequence_create("effect_layer",x + 70,y -60,seq_channel_opal);
+				channel_seq = layer_sequence_create("effect_layer",x + 70,y -60,seq_channel_amethyst);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,210+180);
 				var channel_copy = [];
 				array_copy(channel_copy,0,global.channelled_right_opp,0,array_length(global.channelled_right_opp));
 				array_sort(channel_copy,false);
-				if global.channelled_right_opp_opal = channel_copy[0] {
+				if global.channelled_right_opp_amethyst = channel_copy[0] {
 					seq_change_health = scr_change_numbers(card_state.channel,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
 				}
-				global.channelled_right_opp_opal += card_state.channel;
+				global.channelled_right_opp_amethyst += card_state.channel;
 			}
 		}
 		

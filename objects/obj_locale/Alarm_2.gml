@@ -4,6 +4,12 @@ if discard_seq != noone {
 	discard_seq = noone;
 }
 
+if global.priority = "player" {
+	global.player_enabled = true;
+}
+
+global.player.discards += 1;
+
 if global.pvp_active = true && opp=false {
 	var _b = buffer_create(1,buffer_grow,1)
 	buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_DISCARDED)

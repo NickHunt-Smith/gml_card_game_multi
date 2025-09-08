@@ -15,3 +15,5 @@ destroyed_locales_element = [];
 destroyed_locales_card_index = [];
 
 voids = 0;
+consumed = 0;
+discards = 0;
