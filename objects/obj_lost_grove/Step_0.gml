@@ -14,9 +14,6 @@ if (eff_type = "play") && (wait = false) {
 					card_details = card_details + ",noone";
 				} else {
 					card_details = card_details + "," + string(target_1.position);
-					if target_1.is_empty = true {
-						card_details = card_details + "_empty";
-					}
 				}
 				if target_2 = noone {
 					card_details = card_details + ",noone";
@@ -38,6 +35,8 @@ if (eff_type = "play") && (wait = false) {
 			wait = true;
 		
 			if opp = false {
+				x = x+112;
+				y = y+184;
 				instance_create_depth(x,y,-1100,obj_target_arrow);
 				global.player_enabled = false;
 				global.source_target = self;
