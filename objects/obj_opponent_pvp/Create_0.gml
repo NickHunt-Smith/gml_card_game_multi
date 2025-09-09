@@ -4,6 +4,7 @@ deciding = false;
 playing = false;
 passed = false;
 pass = false;
+discard_locale = false;
 inst_art_locale = noone;
 effect_inst_opp = noone;
 lingering_effect_inst_opp = noone;

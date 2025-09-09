@@ -33,7 +33,7 @@ if card_type = 1 {
 	if (element = 5 and rarity = 1 and card_index = 0) or (element = 5 and rarity = 3 and card_index = 0) {
 		timetailor = true;
 	}
-	var discard_locale = false;
+	discard_locale = false;
 	if (element = 7 and rarity = 0 and card_index = 2) {
 		discard_locale = true;
 	}

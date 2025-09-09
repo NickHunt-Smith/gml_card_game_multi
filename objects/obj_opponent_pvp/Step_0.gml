@@ -838,8 +838,7 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 					wait_for_opp = false;
 					
 					// Discard locale
-					if (element = 7 and rarity = 0 and card_index = 2) {
-						show_debug_message("hello")
+					if discard_locale = true {
 						global.priority = "player";
 					}
 					break
