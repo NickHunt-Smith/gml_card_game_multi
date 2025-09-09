@@ -837,10 +837,10 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 					global.cards_in_hand_opp[hand_choice].discarding = true;
 					wait_for_opp = false;
 					
-					//if valid_choice = true {
-					//	array_delete(hand_rarity,hand_choice,1);
-					//	array_delete(hand_card_type,hand_choice,1);
-					//}
+					// Discard locale
+					if (element = 7 and rarity = 0 and card_index = 2) {
+						global.priority = "player";
+					}
 					break
 				default:
 					show_debug_message("Unknown packet received opp")
