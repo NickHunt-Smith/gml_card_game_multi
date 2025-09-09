@@ -28,6 +28,7 @@ max_angle = 15;
 lerp_amount = 0.15;
 overwriting = false;
 discarding = false;
+pass_priority_discard = false;
 playing = false;
 play_element_seq = noone;
 sprite_gap = 0;

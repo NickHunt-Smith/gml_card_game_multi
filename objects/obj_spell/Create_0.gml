@@ -27,6 +27,7 @@ max_angle = 15;
 
 playing = false;
 discarding = false;
+pass_priority_discard = false;
 play_scale = 1;
 sprite_gap = 0;
 alpha = 0;

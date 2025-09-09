@@ -79,16 +79,16 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 		global.targeting_hand = false;
 		global.targeting = false;
 		
-		if eff_type = "play" {
-			if global.priority = "player" && opp = false && global.resolve_stack = false {
-				global.priority = "opp";
-			} 
-		}
-		
 		if instance_exists(target_1) = true && target_1.position != "end_turn" {
 			target_1.discarding = true;
+			target_1.pass_priority_discard = true;
 		} else {
 			card_state.health_locale = 0;
+			if eff_type = "play" {
+				if global.priority = "player" && opp = false && global.resolve_stack = false {
+					global.priority = "opp";
+				} 
+			}
 		}
 		
 		wait_target = true;

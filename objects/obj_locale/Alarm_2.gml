@@ -4,6 +4,10 @@ if discard_seq != noone {
 	discard_seq = noone;
 }
 
+if pass_priority_discard = true {
+	global.priority = "opp";
+}
+
 if global.priority = "player" {
 	global.player_enabled = true;
 }
