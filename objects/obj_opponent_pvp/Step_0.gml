@@ -203,6 +203,10 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 							} else {
 								target_1 = "self";
 							}
+						} else if target_1_position = "hand" {
+							target_1 = "hand";
+						} else if target_1_position = "end_turn" {
+							target_1 = "end_turn";
 						}
 					
 						if target_2_position = "noone" {
@@ -319,6 +323,10 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 							} else {
 								target_2 = "self";
 							}
+						} else if target_2_position = "hand" {
+							target_2 = "hand";
+						} else if target_2_position = "end_turn" {
+							target_2 = "end_turn";
 						}
 					
 						if target_3_position = "noone" {
@@ -435,6 +443,10 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 							} else {
 								target_3 = "self";
 							}
+						} else if target_3_position = "hand" {
+							target_3 = "hand";
+						} else if target_3_position = "end_turn" {
+							target_3 = "end_turn";
 						}
 					
 						wait_for_opp = false;
