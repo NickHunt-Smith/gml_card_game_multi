@@ -51,9 +51,12 @@ if (eff_type = "play") && (wait = false) {
 			} else {
 				if target_1 != "hand" {
 					card_state.health_locale = 0;
+					instance_destroy();
 				} else {
 					instance_destroy();
 				}
+				wait = false;
+				wait_target = true;
 			}
 		}
 	}
