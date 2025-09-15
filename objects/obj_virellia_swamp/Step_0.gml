@@ -35,8 +35,8 @@ if (eff_type = "play") && (wait = false) {
 			var max_rarity = 0;
 			if opp = true {
 				for (var _i = 0; _i < array_length(global.cards_in_hand); _i++) {
-					if global.cards_in_hand[_i].rarity >= max_rarity && global.cards_in_hand[_i].card_type[_i] = 1 {
-						max_rarity = global.cards_in_hand[_i].rarity[_i];
+					if global.cards_in_hand[_i].rarity >= max_rarity && global.cards_in_hand[_i].card_type = 1 {
+						max_rarity = global.cards_in_hand[_i].rarity;
 						spell_discard = global.cards_in_hand[_i];
 					}
 				}
