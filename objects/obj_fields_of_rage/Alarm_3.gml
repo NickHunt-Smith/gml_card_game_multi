@@ -15,7 +15,7 @@ if card_state.shielded = true && target_2_health != 0 {
 	card_state.shielded = false;
 	alarm[0] = 65;
 } else {
-	seq_change_health_2 = scr_change_numbers(-target_2_health,card_state.x+global.health_offset_x,card_state.y + 328);
-	card_state.health_locale -= target_2_health;
+	seq_change_health_2 = scr_change_numbers(-target_1_health,card_state.x+global.health_offset_x,card_state.y + 328);
+	card_state.health_locale -= target_1_health;
 	alarm[0] = 30;
 }

@@ -14,8 +14,8 @@ if target_1.shielded = true && target_1_health != 0 {
 	target_1.shielded = false;
 	alarm[3] = 65;
 } else {
-	seq_change_health_1 = scr_change_numbers(-target_1_health,target_1.x+global.health_offset_x,target_1.y + 328);
-	target_1.health_locale -= target_1_health;
+	seq_change_health_1 = scr_change_numbers(-target_2_health,target_1.x+global.health_offset_x,target_1.y + 328);
+	target_1.health_locale -= target_2_health;
 
 	alarm[3] = 40;
 }
