@@ -181,7 +181,7 @@ if (mouse_x > x) && (mouse_x < x + 240) && (mouse_y > y) && (mouse_y < y + 300) 
 	moused = false;
 }
 
-if (global.targeting = true) && (moused) && (highlighted = false) && (global.targeting_empty = false) && global.targeting_spell = false {
+if (global.targeting = true) && (moused) && (highlighted = false) && (global.targeting_empty = false) && global.targeting_spell = false && global.targeting_hand = false {
 	if (global.source_target.allowed_target_opp = true && opp = true) or (global.source_target.allowed_target_player = true && opp = false) {
 		target_highlight = part_system_create(Ps_Locale_Highlight_small);
 		part_system_position(target_highlight,x + 112,y + 184);

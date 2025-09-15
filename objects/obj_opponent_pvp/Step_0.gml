@@ -840,6 +840,7 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 					// Discard locale
 					if discard_locale = true {
 						global.priority = "player";
+						global.player_enabled = true;
 					}
 					break
 				default:

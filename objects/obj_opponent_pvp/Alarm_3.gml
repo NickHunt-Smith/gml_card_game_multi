@@ -34,7 +34,7 @@ if card_type = 1 {
 		timetailor = true;
 	}
 	discard_locale = false;
-	if (element = 7 and rarity = 0 and card_index = 2) {
+	if (element = 7 and rarity = 0 and card_index = 2) or (element = 7 and rarity = 1 and card_index = 1){
 		discard_locale = true;
 	}
 	if timetailor = false && discard_locale = false {

@@ -2124,18 +2124,18 @@ array_push(global.uncommon_amethyst_locales_channel_list,4)
 array_push(global.uncommon_amethyst_locales_effect_list,obj_amethyst_obelisk)
 
 // 1
-array_push(global.uncommon_amethyst_locales_sprite_list,s_starlit_sanctuary)
-array_push(global.uncommon_amethyst_locales_art_list,s_starlit_sanctuary_art)
+array_push(global.uncommon_amethyst_locales_sprite_list,s_ravenmoor_den)
+array_push(global.uncommon_amethyst_locales_art_list,s_ravenmoor_den_art)
 array_push(global.uncommon_amethyst_locales_health_list,2)
 array_push(global.uncommon_amethyst_locales_channel_list,2)
-array_push(global.uncommon_amethyst_locales_effect_list,obj_starlit_sanctuary)
+array_push(global.uncommon_amethyst_locales_effect_list,obj_ravenmoor_den)
 
 // 2
-array_push(global.uncommon_amethyst_locales_sprite_list,s_wasteland)
-array_push(global.uncommon_amethyst_locales_art_list,s_wasteland_art)
-array_push(global.uncommon_amethyst_locales_health_list,2)
-array_push(global.uncommon_amethyst_locales_channel_list,3)
-array_push(global.uncommon_amethyst_locales_effect_list,obj_wasteland)
+array_push(global.uncommon_amethyst_locales_sprite_list,s_sleeping_chamber)
+array_push(global.uncommon_amethyst_locales_art_list,s_sleeping_chamber_art)
+array_push(global.uncommon_amethyst_locales_health_list,4)
+array_push(global.uncommon_amethyst_locales_channel_list,1)
+array_push(global.uncommon_amethyst_locales_effect_list,obj_sleeping_chamber)
 
 // Rare amethyst locales
 
@@ -2156,18 +2156,18 @@ array_push(global.rare_amethyst_locales_channel_list,2)
 array_push(global.rare_amethyst_locales_effect_list,obj_bizarre_dreamscape)
 
 // 1
-array_push(global.rare_amethyst_locales_sprite_list,s_mist_swept_highlands)
-array_push(global.rare_amethyst_locales_art_list,s_mist_swept_highlands_art)
-array_push(global.rare_amethyst_locales_health_list,4)
-array_push(global.rare_amethyst_locales_channel_list,3)
-array_push(global.rare_amethyst_locales_effect_list,obj_mist_swept_highlands)
+array_push(global.rare_amethyst_locales_sprite_list,s_knowledge_dump)
+array_push(global.rare_amethyst_locales_art_list,s_knowledge_dump_art)
+array_push(global.rare_amethyst_locales_health_list,2)
+array_push(global.rare_amethyst_locales_channel_list,4)
+array_push(global.rare_amethyst_locales_effect_list,obj_knowledge_dump)
 
 // 2
-array_push(global.rare_amethyst_locales_sprite_list,s_trinket_vendor)
-array_push(global.rare_amethyst_locales_art_list,s_trinket_vendor_art)
-array_push(global.rare_amethyst_locales_health_list,4)
-array_push(global.rare_amethyst_locales_channel_list,3)
-array_push(global.rare_amethyst_locales_effect_list,obj_trinket_vendor)
+array_push(global.rare_amethyst_locales_sprite_list,s_fields_of_rage)
+array_push(global.rare_amethyst_locales_art_list,s_fields_of_rage_art)
+array_push(global.rare_amethyst_locales_health_list,5)
+array_push(global.rare_amethyst_locales_channel_list,5)
+array_push(global.rare_amethyst_locales_effect_list,obj_fields_of_rage)
 
 // Mythic amethyst locales
 
@@ -2188,18 +2188,18 @@ array_push(global.mythic_amethyst_locales_channel_list,0)
 array_push(global.mythic_amethyst_locales_effect_list,obj_realm_infinite)
 
 // 1
-array_push(global.mythic_amethyst_locales_sprite_list,s_ravenmoor_market)
-array_push(global.mythic_amethyst_locales_art_list,s_ravenmoor_market_art)
+array_push(global.mythic_amethyst_locales_sprite_list,s_delgar_shrine)
+array_push(global.mythic_amethyst_locales_art_list,s_delgar_shrine_art)
 array_push(global.mythic_amethyst_locales_health_list,6)
-array_push(global.mythic_amethyst_locales_channel_list,2)
-array_push(global.mythic_amethyst_locales_effect_list,obj_ravenmoor_market)
+array_push(global.mythic_amethyst_locales_channel_list,6)
+array_push(global.mythic_amethyst_locales_effect_list,obj_delgar_shrine)
 
 // 2
-array_push(global.mythic_amethyst_locales_sprite_list,s_mirror_prison)
-array_push(global.mythic_amethyst_locales_art_list,s_mirror_prison_art)
-array_push(global.mythic_amethyst_locales_health_list,8)
-array_push(global.mythic_amethyst_locales_channel_list,3)
-array_push(global.mythic_amethyst_locales_effect_list,obj_mirror_prison)
+array_push(global.mythic_amethyst_locales_sprite_list,s_virellia_swamp)
+array_push(global.mythic_amethyst_locales_art_list,s_virellia_swamp_art)
+array_push(global.mythic_amethyst_locales_health_list,3)
+array_push(global.mythic_amethyst_locales_channel_list,2)
+array_push(global.mythic_amethyst_locales_effect_list,obj_virellia_swamp)
 
 // Legendary amethyst locales
 
@@ -2220,18 +2220,18 @@ array_push(global.legendary_amethyst_locales_channel_list,4)
 array_push(global.legendary_amethyst_locales_effect_list,obj_chamber_of_dreams)
 
 // 1
-array_push(global.legendary_amethyst_locales_sprite_list,s_abyss_beyond)
-array_push(global.legendary_amethyst_locales_art_list,s_abyss_beyond_art)
-array_push(global.legendary_amethyst_locales_health_list,10)
-array_push(global.legendary_amethyst_locales_channel_list,5)
-array_push(global.legendary_amethyst_locales_effect_list,obj_abyss_beyond)
+array_push(global.legendary_amethyst_locales_sprite_list,s_piercing_havoc)
+array_push(global.legendary_amethyst_locales_art_list,s_piercing_havoc_art)
+array_push(global.legendary_amethyst_locales_health_list,20)
+array_push(global.legendary_amethyst_locales_channel_list,15)
+array_push(global.legendary_amethyst_locales_effect_list,obj_piercing_havoc)
 
 // 2
-array_push(global.legendary_amethyst_locales_sprite_list,s_ravenmoor)
-array_push(global.legendary_amethyst_locales_art_list,s_ravenmoor_art)
-array_push(global.legendary_amethyst_locales_health_list,6)
-array_push(global.legendary_amethyst_locales_channel_list,4)
-array_push(global.legendary_amethyst_locales_effect_list,obj_ravenmoor)
+array_push(global.legendary_amethyst_locales_sprite_list,s_castle_beyond_reason)
+array_push(global.legendary_amethyst_locales_art_list,s_castle_beyond_reason_art)
+array_push(global.legendary_amethyst_locales_health_list,3)
+array_push(global.legendary_amethyst_locales_channel_list,2)
+array_push(global.legendary_amethyst_locales_effect_list,obj_castle_beyond_reason)
 
 // amethyst spells ============================================================================
 // [0][7][1][0]  sprite = 0, art = 1, effect = 2
@@ -2250,14 +2250,14 @@ array_push(global.common_amethyst_spells_art_list,s_recurring_deam_art)
 array_push(global.common_amethyst_spells_effect_list,obj_recurring_dream)
 
 // 1
-array_push(global.common_amethyst_spells_sprite_list,s_backstab)
-array_push(global.common_amethyst_spells_art_list,s_backstab_art)
-array_push(global.common_amethyst_spells_effect_list,obj_backstab)
+array_push(global.common_amethyst_spells_sprite_list,s_reckless_abandon)
+array_push(global.common_amethyst_spells_art_list,s_reckless_abandon_art)
+array_push(global.common_amethyst_spells_effect_list,obj_reckless_abandon)
 
 // 2
-array_push(global.common_amethyst_spells_sprite_list,s_consumed)
-array_push(global.common_amethyst_spells_art_list,s_consumed_art)
-array_push(global.common_amethyst_spells_effect_list,obj_consumed)
+array_push(global.common_amethyst_spells_sprite_list,s_ignorant_bliss)
+array_push(global.common_amethyst_spells_art_list,s_ignorant_bliss_art)
+array_push(global.common_amethyst_spells_effect_list,obj_ignorant_bliss)
 
 // Uncommon amethyst spells
 
@@ -2273,14 +2273,14 @@ array_push(global.uncommon_amethyst_spells_art_list,s_first_steps_art)
 array_push(global.uncommon_amethyst_spells_effect_list,obj_first_steps)
 
 // 1
-array_push(global.uncommon_amethyst_spells_sprite_list,s_tithes)
-array_push(global.uncommon_amethyst_spells_art_list,s_tithes_art)
-array_push(global.uncommon_amethyst_spells_effect_list,obj_tithes)
+array_push(global.uncommon_amethyst_spells_sprite_list,s_liquify)
+array_push(global.uncommon_amethyst_spells_art_list,s_liquify_art)
+array_push(global.uncommon_amethyst_spells_effect_list,obj_liquify)
 
 // 2
-array_push(global.uncommon_amethyst_spells_sprite_list,s_restoration_effort)
-array_push(global.uncommon_amethyst_spells_art_list,s_restoration_effort_art)
-array_push(global.uncommon_amethyst_spells_effect_list,obj_restoration_effort)
+array_push(global.uncommon_amethyst_spells_sprite_list,s_in_a_trance)
+array_push(global.uncommon_amethyst_spells_art_list,s_in_a_trance_art)
+array_push(global.uncommon_amethyst_spells_effect_list,obj_in_a_trance)
 
 // Rare amethyst spells
 
@@ -2324,9 +2324,9 @@ array_push(global.mythic_amethyst_spells_art_list,s_shared_amnesia_art)
 array_push(global.mythic_amethyst_spells_effect_list,obj_shared_amnesia)
 
 // 2
-array_push(global.mythic_amethyst_spells_sprite_list,s_excommunicate)
-array_push(global.mythic_amethyst_spells_art_list,s_excommunicate_art)
-array_push(global.mythic_amethyst_spells_effect_list,obj_excommunicate)
+array_push(global.mythic_amethyst_spells_sprite_list,s_phantom_vengeance)
+array_push(global.mythic_amethyst_spells_art_list,s_phantom_vengeance_art)
+array_push(global.mythic_amethyst_spells_effect_list,obj_phantom_vengeance)
 
 // Legendary amethyst spells
 
@@ -2337,19 +2337,19 @@ global.legendary_amethyst_spells_effect_list = []
 global.legendary_amethyst_spells_list = [global.legendary_amethyst_spells_sprite_list,global.legendary_amethyst_spells_art_list,global.legendary_amethyst_spells_effect_list]
 
 // 0 
-array_push(global.legendary_amethyst_spells_sprite_list,s_abyssal_descent)
-array_push(global.legendary_amethyst_spells_art_list,s_abyssal_descent_art)
-array_push(global.legendary_amethyst_spells_effect_list,obj_abyssal_descent)
+array_push(global.legendary_amethyst_spells_sprite_list,s_havoc_eclipse)
+array_push(global.legendary_amethyst_spells_art_list,s_havoc_eclipse_art)
+array_push(global.legendary_amethyst_spells_effect_list,obj_havoc_eclipse)
 
 // 1
-array_push(global.legendary_amethyst_spells_sprite_list,s_shelter_in_mist)
-array_push(global.legendary_amethyst_spells_art_list,s_shelter_in_mist_art)
-array_push(global.legendary_amethyst_spells_effect_list,obj_shelter_in_mist)
+array_push(global.legendary_amethyst_spells_sprite_list,s_boundless_psychosis)
+array_push(global.legendary_amethyst_spells_art_list,s_boundless_psychosis_art)
+array_push(global.legendary_amethyst_spells_effect_list,obj_boundless_psychosis)
 
 // 2
-array_push(global.legendary_amethyst_spells_sprite_list,s_return_from_beyond)
-array_push(global.legendary_amethyst_spells_art_list,s_return_from_beyond_art)
-array_push(global.legendary_amethyst_spells_effect_list,obj_return_from_beyond)
+array_push(global.legendary_amethyst_spells_sprite_list,s_chaos_wake)
+array_push(global.legendary_amethyst_spells_art_list,s_chaos_wake_art)
+array_push(global.legendary_amethyst_spells_effect_list,obj_chaos_wake)
 
 //====================================================================================================================================
 

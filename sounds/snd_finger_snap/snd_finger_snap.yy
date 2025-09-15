@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.368889,
+  "duration":0.36888888,
   "name":"snd_finger_snap",
   "parent":{
     "name":"ruby",

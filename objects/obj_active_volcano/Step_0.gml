@@ -49,6 +49,8 @@ if (eff_type = "end_turn") && (wait = false) {
 		// Deal 1 to random enemy locale
 		x += 112;
 		y += 184;
+		
+		target_1 = noone;
 				
 		while (target_1 = noone) {
 			var temp = random(1000);
