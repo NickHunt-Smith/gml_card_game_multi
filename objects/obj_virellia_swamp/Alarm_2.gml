@@ -6,6 +6,7 @@ if discard_seq != noone {
 
 if opp = true {
 	global.player.discards += 1;
+	spell_discard.discarding = true;
 	instance_destroy(spell_discard);
 } else {
 	global.opponent.discards += 1;
