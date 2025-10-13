@@ -3,6 +3,11 @@
 
 position = "stack" + string(order_in_stack-1);
 
+if play_seq != noone {
+	layer_sequence_x(play_seq,x);
+	layer_sequence_y(play_seq,y);
+}
+
 if just_played = true {
 	if rarity = 0 {
 		play_seq = layer_sequence_create("effect_layer",x,y,seq_play_common_spell);

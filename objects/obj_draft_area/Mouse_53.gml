@@ -32,6 +32,7 @@ if button_draw = true && global.big_mode = false {
 
 if sqrt(sqr(mouse_x-2136) + sqr(mouse_y-753)) < 70 && reroll_active = true && global.rerolls_available > 0 {
 	global.rerolls_available -= 1;
+	global.rerolls_used += 1;
 	
 	var rarity = card_inst_1.rarity;
 	var card_type = card_inst_1.card_type;

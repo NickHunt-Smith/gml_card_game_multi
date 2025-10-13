@@ -62,6 +62,9 @@ global.rerolls_available = 0;
 global.turn_count = 0;
 global.win_threshold = 30;
 global.lingering_active = false;
+global.next_scry_legendary = false;
+global.scrys_boosted = false;
+global.rerolls_used = 0;
 
 global.player_copying = false;
 global.opp_copying = false;
@@ -1809,18 +1812,18 @@ array_push(global.common_opal_locales_channel_list,1)
 array_push(global.common_opal_locales_effect_list,obj_wrecked_workshop)
 
 // 1
-array_push(global.common_opal_locales_sprite_list,s_fetid_sewer)
-array_push(global.common_opal_locales_art_list,s_fetid_sewer_art)
+array_push(global.common_opal_locales_sprite_list,s_curio_boutique)
+array_push(global.common_opal_locales_art_list,s_curio_boutique_art)
 array_push(global.common_opal_locales_health_list,1)
 array_push(global.common_opal_locales_channel_list,1)
-array_push(global.common_opal_locales_effect_list,obj_fetid_sewer)
+array_push(global.common_opal_locales_effect_list,obj_curio_boutique)
 
 // 2
-array_push(global.common_opal_locales_sprite_list,s_decrepit_chapel)
-array_push(global.common_opal_locales_art_list,s_decrepit_chapel_art)
-array_push(global.common_opal_locales_health_list,1)
-array_push(global.common_opal_locales_channel_list,2)
-array_push(global.common_opal_locales_effect_list,obj_decrepit_chapel)
+array_push(global.common_opal_locales_sprite_list,s_silver_prairie)
+array_push(global.common_opal_locales_art_list,s_silver_prairie_art)
+array_push(global.common_opal_locales_health_list,3)
+array_push(global.common_opal_locales_channel_list,0)
+array_push(global.common_opal_locales_effect_list,obj_silver_prairie)
 
 // Uncommon opal locales
 
@@ -1834,25 +1837,25 @@ global.uncommon_opal_locales_list = [global.uncommon_opal_locales_sprite_list,gl
 global.uncommon_opal_locales_health_list, global.uncommon_opal_locales_channel_list, global.uncommon_opal_locales_effect_list]
 
 // 0
-array_push(global.uncommon_opal_locales_sprite_list,s_haunted_manor)
-array_push(global.uncommon_opal_locales_art_list,s_haunted_manor_art)
-array_push(global.uncommon_opal_locales_health_list,2)
+array_push(global.uncommon_opal_locales_sprite_list,s_corcia_lab)
+array_push(global.uncommon_opal_locales_art_list,s_corcia_lab_art)
+array_push(global.uncommon_opal_locales_health_list,3)
 array_push(global.uncommon_opal_locales_channel_list,2)
-array_push(global.uncommon_opal_locales_effect_list,obj_haunted_manor)
+array_push(global.uncommon_opal_locales_effect_list,obj_corcia_lab)
 
 // 1
-array_push(global.uncommon_opal_locales_sprite_list,s_starlit_sanctuary)
-array_push(global.uncommon_opal_locales_art_list,s_starlit_sanctuary_art)
-array_push(global.uncommon_opal_locales_health_list,2)
-array_push(global.uncommon_opal_locales_channel_list,2)
-array_push(global.uncommon_opal_locales_effect_list,obj_starlit_sanctuary)
+array_push(global.uncommon_opal_locales_sprite_list,s_underground_goldvein)
+array_push(global.uncommon_opal_locales_art_list,s_underground_goldvein_art)
+array_push(global.uncommon_opal_locales_health_list,4)
+array_push(global.uncommon_opal_locales_channel_list,0)
+array_push(global.uncommon_opal_locales_effect_list,obj_underground_goldvein)
 
 // 2
-array_push(global.uncommon_opal_locales_sprite_list,s_wasteland)
-array_push(global.uncommon_opal_locales_art_list,s_wasteland_art)
-array_push(global.uncommon_opal_locales_health_list,2)
-array_push(global.uncommon_opal_locales_channel_list,3)
-array_push(global.uncommon_opal_locales_effect_list,obj_wasteland)
+array_push(global.uncommon_opal_locales_sprite_list,s_lightning_deposit)
+array_push(global.uncommon_opal_locales_art_list,s_lightning_deposit_art)
+array_push(global.uncommon_opal_locales_health_list,3)
+array_push(global.uncommon_opal_locales_channel_list,1)
+array_push(global.uncommon_opal_locales_effect_list,obj_lightning_deposit)
 
 // Rare opal locales
 
@@ -1866,25 +1869,25 @@ global.rare_opal_locales_list = [global.rare_opal_locales_sprite_list,global.rar
 global.rare_opal_locales_health_list, global.rare_opal_locales_channel_list, global.rare_opal_locales_effect_list]
 
 // 0
-array_push(global.rare_opal_locales_sprite_list,s_ravenmoor_alley)
-array_push(global.rare_opal_locales_art_list,s_ravenmoor_alley_art)
-array_push(global.rare_opal_locales_health_list,5)
+array_push(global.rare_opal_locales_sprite_list,s_corcia_balcony)
+array_push(global.rare_opal_locales_art_list,s_corcia_balcony_art)
+array_push(global.rare_opal_locales_health_list,3)
 array_push(global.rare_opal_locales_channel_list,3)
-array_push(global.rare_opal_locales_effect_list,obj_ravenmoor_alley)
+array_push(global.rare_opal_locales_effect_list,obj_corcia_balcony)
 
 // 1
-array_push(global.rare_opal_locales_sprite_list,s_mist_swept_highlands)
-array_push(global.rare_opal_locales_art_list,s_mist_swept_highlands_art)
-array_push(global.rare_opal_locales_health_list,4)
+array_push(global.rare_opal_locales_sprite_list,s_aephira_trove)
+array_push(global.rare_opal_locales_art_list,s_aephira_trove_art)
+array_push(global.rare_opal_locales_health_list,3)
 array_push(global.rare_opal_locales_channel_list,3)
-array_push(global.rare_opal_locales_effect_list,obj_mist_swept_highlands)
+array_push(global.rare_opal_locales_effect_list,obj_aephira_trove)
 
 // 2
-array_push(global.rare_opal_locales_sprite_list,s_trinket_vendor)
-array_push(global.rare_opal_locales_art_list,s_trinket_vendor_art)
-array_push(global.rare_opal_locales_health_list,4)
-array_push(global.rare_opal_locales_channel_list,3)
-array_push(global.rare_opal_locales_effect_list,obj_trinket_vendor)
+array_push(global.rare_opal_locales_sprite_list,s_delgar_stormclouds)
+array_push(global.rare_opal_locales_art_list,s_delgar_stormclouds_art)
+array_push(global.rare_opal_locales_health_list,2)
+array_push(global.rare_opal_locales_channel_list,5)
+array_push(global.rare_opal_locales_effect_list,obj_delgar_stormclouds)
 
 // Mythic opal locales
 
@@ -1898,25 +1901,25 @@ global.mythic_opal_locales_list = [global.mythic_opal_locales_sprite_list,global
 global.mythic_opal_locales_health_list, global.mythic_opal_locales_channel_list, global.mythic_opal_locales_effect_list]
 
 // 0
-array_push(global.mythic_opal_locales_sprite_list,s_grand_ravenmoor_church)
-array_push(global.mythic_opal_locales_art_list,s_grand_ravenmoor_church_art)
-array_push(global.mythic_opal_locales_health_list,6)
+array_push(global.mythic_opal_locales_sprite_list,s_elzarc_forum)
+array_push(global.mythic_opal_locales_art_list,s_elzarc_forum_art)
+array_push(global.mythic_opal_locales_health_list,7)
 array_push(global.mythic_opal_locales_channel_list,3)
-array_push(global.mythic_opal_locales_effect_list,obj_grand_ravenmoor_church)
+array_push(global.mythic_opal_locales_effect_list,obj_elzarc_forum)
 
 // 1
-array_push(global.mythic_opal_locales_sprite_list,s_ravenmoor_market)
-array_push(global.mythic_opal_locales_art_list,s_ravenmoor_market_art)
-array_push(global.mythic_opal_locales_health_list,6)
-array_push(global.mythic_opal_locales_channel_list,2)
-array_push(global.mythic_opal_locales_effect_list,obj_ravenmoor_market)
+array_push(global.mythic_opal_locales_sprite_list,s_amphracell_factory)
+array_push(global.mythic_opal_locales_art_list,s_amphracell_factory_art)
+array_push(global.mythic_opal_locales_health_list,5)
+array_push(global.mythic_opal_locales_channel_list,3)
+array_push(global.mythic_opal_locales_effect_list,obj_amphracell_factory)
 
 // 2
-array_push(global.mythic_opal_locales_sprite_list,s_mirror_prison)
-array_push(global.mythic_opal_locales_art_list,s_mirror_prison_art)
-array_push(global.mythic_opal_locales_health_list,8)
-array_push(global.mythic_opal_locales_channel_list,3)
-array_push(global.mythic_opal_locales_effect_list,obj_mirror_prison)
+array_push(global.mythic_opal_locales_sprite_list,s_elzarc_consortium)
+array_push(global.mythic_opal_locales_art_list,s_elzarc_consortium_art)
+array_push(global.mythic_opal_locales_health_list,4)
+array_push(global.mythic_opal_locales_channel_list,5)
+array_push(global.mythic_opal_locales_effect_list,obj_elzarc_consortium)
 
 // Legendary opal locales
 
@@ -1930,25 +1933,25 @@ global.legendary_opal_locales_list = [global.legendary_opal_locales_sprite_list,
 global.legendary_opal_locales_health_list, global.legendary_opal_locales_channel_list, global.legendary_opal_locales_effect_list]
 
 // 0
-array_push(global.legendary_opal_locales_sprite_list,s_vossen_gazing_pool)
-array_push(global.legendary_opal_locales_art_list,s_vossen_gazing_pool_art)
-array_push(global.legendary_opal_locales_health_list,6)
-array_push(global.legendary_opal_locales_channel_list,1)
-array_push(global.legendary_opal_locales_effect_list,obj_vossen_gazing_pool)
+array_push(global.legendary_opal_locales_sprite_list,s_crackling_prism)
+array_push(global.legendary_opal_locales_art_list,s_crackling_prism_art)
+array_push(global.legendary_opal_locales_health_list,11)
+array_push(global.legendary_opal_locales_channel_list,4)
+array_push(global.legendary_opal_locales_effect_list,obj_crackling_prism)
 
 // 1
-array_push(global.legendary_opal_locales_sprite_list,s_abyss_beyond)
-array_push(global.legendary_opal_locales_art_list,s_abyss_beyond_art)
-array_push(global.legendary_opal_locales_health_list,10)
-array_push(global.legendary_opal_locales_channel_list,5)
-array_push(global.legendary_opal_locales_effect_list,obj_abyss_beyond)
+array_push(global.legendary_opal_locales_sprite_list,s_corcia_spire)
+array_push(global.legendary_opal_locales_art_list,s_corcia_spire_art)
+array_push(global.legendary_opal_locales_health_list,9)
+array_push(global.legendary_opal_locales_channel_list,6)
+array_push(global.legendary_opal_locales_effect_list,obj_corcia_spire)
 
 // 2
-array_push(global.legendary_opal_locales_sprite_list,s_ravenmoor)
-array_push(global.legendary_opal_locales_art_list,s_ravenmoor_art)
-array_push(global.legendary_opal_locales_health_list,6)
-array_push(global.legendary_opal_locales_channel_list,4)
-array_push(global.legendary_opal_locales_effect_list,obj_ravenmoor)
+array_push(global.legendary_opal_locales_sprite_list,s_secret_amphrachart)
+array_push(global.legendary_opal_locales_art_list,s_secret_amphrachart_art)
+array_push(global.legendary_opal_locales_health_list,1)
+array_push(global.legendary_opal_locales_channel_list,7)
+array_push(global.legendary_opal_locales_effect_list,obj_secret_amphrachart)
 
 // opal spells ============================================================================
 // [0][6][1][0]  sprite = 0, art = 1, effect = 2
@@ -1962,19 +1965,19 @@ global.common_opal_spells_effect_list = []
 global.common_opal_spells_list = [global.common_opal_spells_sprite_list,global.common_opal_spells_art_list,global.common_opal_spells_effect_list]
 
 // 0 
-array_push(global.common_opal_spells_sprite_list,s_fanaticism)
-array_push(global.common_opal_spells_art_list,s_fanaticism_art)
-array_push(global.common_opal_spells_effect_list,obj_fanaticism)
+array_push(global.common_opal_spells_sprite_list,s_corcian_compass)
+array_push(global.common_opal_spells_art_list,s_corcian_compass_art)
+array_push(global.common_opal_spells_effect_list,obj_corcian_compass)
 
 // 1
-array_push(global.common_opal_spells_sprite_list,s_backstab)
-array_push(global.common_opal_spells_art_list,s_backstab_art)
-array_push(global.common_opal_spells_effect_list,obj_backstab)
+array_push(global.common_opal_spells_sprite_list,s_amphramute)
+array_push(global.common_opal_spells_art_list,s_amphramute_art)
+array_push(global.common_opal_spells_effect_list,obj_amphramute)
 
 // 2
-array_push(global.common_opal_spells_sprite_list,s_consumed)
-array_push(global.common_opal_spells_art_list,s_consumed_art)
-array_push(global.common_opal_spells_effect_list,obj_consumed)
+array_push(global.common_opal_spells_sprite_list,s_lightning_bottle)
+array_push(global.common_opal_spells_art_list,s_lightning_bottle_art)
+array_push(global.common_opal_spells_effect_list,obj_lightning_bottle)
 
 // Uncommon opal spells
 
@@ -1985,19 +1988,19 @@ global.uncommon_opal_spells_effect_list = []
 global.uncommon_opal_spells_list = [global.uncommon_opal_spells_sprite_list,global.uncommon_opal_spells_art_list,global.uncommon_opal_spells_effect_list]
 
 // 0 
-array_push(global.uncommon_opal_spells_sprite_list,s_starry_vision)
-array_push(global.uncommon_opal_spells_art_list,s_starry_vision_art)
-array_push(global.uncommon_opal_spells_effect_list,obj_starry_vision)
+array_push(global.uncommon_opal_spells_sprite_list,s_obsessive_research)
+array_push(global.uncommon_opal_spells_art_list,s_obsessive_research_art)
+array_push(global.uncommon_opal_spells_effect_list,obj_obsessive_research)
 
 // 1
-array_push(global.uncommon_opal_spells_sprite_list,s_tithes)
-array_push(global.uncommon_opal_spells_art_list,s_tithes_art)
-array_push(global.uncommon_opal_spells_effect_list,obj_tithes)
+array_push(global.uncommon_opal_spells_sprite_list,s_amphralithic_glove)
+array_push(global.uncommon_opal_spells_art_list,s_amphralithic_glove_art)
+array_push(global.uncommon_opal_spells_effect_list,obj_amphralithic_glove)
 
 // 2
-array_push(global.uncommon_opal_spells_sprite_list,s_restoration_effort)
-array_push(global.uncommon_opal_spells_art_list,s_restoration_effort_art)
-array_push(global.uncommon_opal_spells_effect_list,obj_restoration_effort)
+array_push(global.uncommon_opal_spells_sprite_list,s_thunderbolt)
+array_push(global.uncommon_opal_spells_art_list,s_thunderbolt_art)
+array_push(global.uncommon_opal_spells_effect_list,obj_thunderbolt)
 
 // Rare opal spells
 
@@ -2008,19 +2011,19 @@ global.rare_opal_spells_effect_list = []
 global.rare_opal_spells_list = [global.rare_opal_spells_sprite_list,global.rare_opal_spells_art_list,global.rare_opal_spells_effect_list]
 
 // 0 
-array_push(global.rare_opal_spells_sprite_list,s_mirrorspell)
-array_push(global.rare_opal_spells_art_list,s_mirrorspell_art)
-array_push(global.rare_opal_spells_effect_list,obj_mirrorspell)
+array_push(global.rare_opal_spells_sprite_list,s_posthumous_success)
+array_push(global.rare_opal_spells_art_list,s_posthumous_success_art)
+array_push(global.rare_opal_spells_effect_list,obj_posthumous_success)
 
 // 1
-array_push(global.rare_opal_spells_sprite_list,s_subjugate)
-array_push(global.rare_opal_spells_art_list,s_subjugate_art)
-array_push(global.rare_opal_spells_effect_list,obj_subjugate)
+array_push(global.rare_opal_spells_sprite_list,s_elzarc_prestige)
+array_push(global.rare_opal_spells_art_list,s_elzarc_prestige_art)
+array_push(global.rare_opal_spells_effect_list,obj_elzarc_prestige)
 
 // 2
-array_push(global.rare_opal_spells_sprite_list,s_vossen_ritual)
-array_push(global.rare_opal_spells_art_list,s_vossen_ritual_art)
-array_push(global.rare_opal_spells_effect_list,obj_vossen_ritual)
+array_push(global.rare_opal_spells_sprite_list,s_unstable_amphracell)
+array_push(global.rare_opal_spells_art_list,s_unstable_amphracell_art)
+array_push(global.rare_opal_spells_effect_list,obj_unstable_amphracell)
 
 // Mythic opal spells
 
@@ -2031,19 +2034,19 @@ global.mythic_opal_spells_effect_list = []
 global.mythic_opal_spells_list = [global.mythic_opal_spells_sprite_list,global.mythic_opal_spells_art_list,global.mythic_opal_spells_effect_list]
 
 // 0 
-array_push(global.mythic_opal_spells_sprite_list,s_crumble)
-array_push(global.mythic_opal_spells_art_list,s_crumble_art)
-array_push(global.mythic_opal_spells_effect_list,obj_crumble)
+array_push(global.mythic_opal_spells_sprite_list,s_experiment_unleashed)
+array_push(global.mythic_opal_spells_art_list,s_experiment_unleashed_art)
+array_push(global.mythic_opal_spells_effect_list,obj_experiment_unleashed)
 
 // 1
-array_push(global.mythic_opal_spells_sprite_list,s_dark_reflection)
-array_push(global.mythic_opal_spells_art_list,s_dark_reflection_art)
-array_push(global.mythic_opal_spells_effect_list,obj_dark_reflection)
+array_push(global.mythic_opal_spells_sprite_list,s_amphralithic_cloak)
+array_push(global.mythic_opal_spells_art_list,s_amphralithic_cloak_art)
+array_push(global.mythic_opal_spells_effect_list,obj_amphralithic_cloak)
 
 // 2
-array_push(global.mythic_opal_spells_sprite_list,s_excommunicate)
-array_push(global.mythic_opal_spells_art_list,s_excommunicate_art)
-array_push(global.mythic_opal_spells_effect_list,obj_excommunicate)
+array_push(global.mythic_opal_spells_sprite_list,s_epiphany)
+array_push(global.mythic_opal_spells_art_list,s_epiphany_art)
+array_push(global.mythic_opal_spells_effect_list,obj_epiphany)
 
 // Legendary opal spells
 
@@ -2054,19 +2057,19 @@ global.legendary_opal_spells_effect_list = []
 global.legendary_opal_spells_list = [global.legendary_opal_spells_sprite_list,global.legendary_opal_spells_art_list,global.legendary_opal_spells_effect_list]
 
 // 0 
-array_push(global.legendary_opal_spells_sprite_list,s_abyssal_descent)
-array_push(global.legendary_opal_spells_art_list,s_abyssal_descent_art)
-array_push(global.legendary_opal_spells_effect_list,obj_abyssal_descent)
+array_push(global.legendary_opal_spells_sprite_list,s_prismatic_bolt)
+array_push(global.legendary_opal_spells_art_list,s_prismatic_bolt_art)
+array_push(global.legendary_opal_spells_effect_list,obj_prismatic_bolt)
 
 // 1
-array_push(global.legendary_opal_spells_sprite_list,s_shelter_in_mist)
-array_push(global.legendary_opal_spells_art_list,s_shelter_in_mist_art)
-array_push(global.legendary_opal_spells_effect_list,obj_shelter_in_mist)
+array_push(global.legendary_opal_spells_sprite_list,s_ultimate_amphra)
+array_push(global.legendary_opal_spells_art_list,s_ultimate_amphra_art)
+array_push(global.legendary_opal_spells_effect_list,obj_ultimate_amphra)
 
 // 2
-array_push(global.legendary_opal_spells_sprite_list,s_return_from_beyond)
-array_push(global.legendary_opal_spells_art_list,s_return_from_beyond_art)
-array_push(global.legendary_opal_spells_effect_list,obj_return_from_beyond)
+array_push(global.legendary_opal_spells_sprite_list,s_awe_struck)
+array_push(global.legendary_opal_spells_art_list,s_awe_struck_art)
+array_push(global.legendary_opal_spells_effect_list,obj_awe_struck)
 
 //====================================================================================================================================
 

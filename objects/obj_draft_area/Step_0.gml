@@ -239,6 +239,16 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			rarity = random_rarities[0];
 			array_delete(random_rarities,0,1);
 		}
+		
+		if global.next_scry_legendary = true {
+			global.next_scry_legendary = false;
+			rarity = 4;
+		}
+		
+		if global.scrys_boosted = true && rarity < 4 {
+			show_debug_message("hallo")
+			rarity += 1;
+		}
 	
 		var card_type = 0;
 		if card_type_locked = true {
@@ -337,27 +347,27 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		// debug
 		if draft_count = 3 {
 			rarity = 0;
-			element = 0;
+			element = 7;
 			card_type = 0;
 			card_index = 0;
 		} else if draft_count = 2 {
-			rarity = 1;
-			element = 7;
-			card_type = 1;
+			rarity = 0;
+			element = 6;
+			card_type = 0;
 			card_index = 0;
 		} else if draft_count = 1 {
-			rarity = 4;
-			element = 7;
-			card_type = 1;
+			rarity = 0;
+			element = 5;
+			card_type = 0;
 			card_index = 0;
 		}
 	
 		card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
-		if card_type_locked = false {
-			array_push(global.opponent.hand_rarity,rarity);
-			array_push(global.opponent.hand_card_type,card_type);
-		}
+		//if card_type_locked = false {
+		//	array_push(global.opponent.hand_rarity,rarity);
+		//	array_push(global.opponent.hand_card_type,card_type);
+		//}
 	
 		summon_cards = false;
 	}

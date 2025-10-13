@@ -1,6 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if channel_seq != noone {
+	layer_sequence_destroy(channel_seq);
+	channel_seq = noone;
+}
+
+if seq_change_health != noone {
+	layer_sequence_destroy(seq_change_health);
+	seq_change_health = noone;
+}
+
 if card_state.position = "left_player" {
 	if global.opp_locale_1 != noone {
 		target_1 = global.opp_locale_1;
