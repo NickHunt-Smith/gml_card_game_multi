@@ -1,14 +1,14 @@
 
 if global.pvp_active = false  {
 	alarm[1] = 10;
-} else if global.pvp_active = true && global.is_server = true {
+} else if global.pvp_active = true && opp = false {
 	var _b = buffer_create(1,buffer_grow,1)
 	buffer_write(_b,buffer_u8,NETWORK_PACKETS.SEND_REROLLS) 
 	buffer_write(_b,buffer_string,string(global.rerolls_used))
 	steam_net_packet_send(global.other_id,_b)
 	buffer_delete(_b)
 	alarm[1] = 10;
-} else if global.pvp_active = true && global.is_server = false {	
+} else if global.pvp_active = true && opp = true {	
 	
 	if steam_net_packet_receive() {
 		var inbuf = buffer_create(16,buffer_grow,1)
