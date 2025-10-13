@@ -5,7 +5,7 @@ rarity_scry = 0;
 element_scry = 6;
 card_type_scry = 0;
 hand_rarity = [];
-card_type_rarity = [];
+hand_card_type = [];
 
 eff_instructions_1 = "Discard to Scry 1 higher";
 draw_instructions_1 = false;

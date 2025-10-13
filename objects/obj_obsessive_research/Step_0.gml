@@ -18,7 +18,7 @@ if (eff_type = "play") && (wait = false) {
 		global.source_target = self;
 	} else {
 		hand_rarity = global.opponent.hand_rarity;
-		card_type_rarity = global.opponent.card_type_rarity;
+		hand_card_type = global.opponent.hand_card_type;
 		wait = true;
 		wait_target = true;
 	}
