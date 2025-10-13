@@ -2,10 +2,11 @@
 
 if skip_target_1 = false {
 	if global.drafting = false {
-		wait = false;
-		eff_done = true;
 
 		if opp = false {
+			wait = false;
+			eff_done = true;
+			
 			if rarity_scry < 4 {
 				rarity_scry += 1;
 			}
@@ -48,6 +49,8 @@ if skip_target_1 = false {
 				}
 				array_push(global.opponent.hand_rarity,missing_rarity);
 				array_push(global.opponent.hand_card_type,missing_card_type);
+				wait = false;
+				eff_done = true;
 			} else {
 				alarm[1] = 30;
 			}
