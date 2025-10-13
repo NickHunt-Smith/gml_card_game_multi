@@ -23,6 +23,10 @@ if skip_target_1 = false {
 		
 			global.player_enabled = false;
 		} else if opp = true {
+			show_debug_message(hand_rarity)
+			show_debug_message(hand_card_type)
+			show_debug_message(global.opponent.hand_rarity)
+			show_debug_message(global.opponent.hand_card_type)
 			var missing_rarity = 0;
 			var missing_card_type = 0;
 			var found_missing = false;

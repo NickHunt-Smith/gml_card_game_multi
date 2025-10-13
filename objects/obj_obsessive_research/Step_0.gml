@@ -17,8 +17,10 @@ if (eff_type = "play") && (wait = false) {
 		wait = true;
 		global.source_target = self;
 	} else {
-		hand_rarity = global.opponent.hand_rarity;
-		hand_card_type = global.opponent.hand_card_type;
+		for (var _j = 0; _j < array_length(global.opponent.hand_rarity); _j++) {
+			array_push(hand_rarity,global.opponent.hand_rarity[_j]);
+			array_push(hand_card_type,global.opponent.hand_card_type[_j]);
+		}
 		wait = true;
 		wait_target = true;
 	}
