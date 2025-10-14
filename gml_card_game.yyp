@@ -1064,6 +1064,7 @@
     {"id":{"name":"seq_ice_click","path":"sequences/seq_ice_click/seq_ice_click.yy",},},
     {"id":{"name":"seq_invert","path":"sequences/seq_invert/seq_invert.yy",},},
     {"id":{"name":"seq_locale_destroyed","path":"sequences/seq_locale_destroyed/seq_locale_destroyed.yy",},},
+    {"id":{"name":"seq_mirrorspell_fast","path":"sequences/seq_mirrorspell_fast/seq_mirrorspell_fast.yy",},},
     {"id":{"name":"seq_mirrorspell","path":"sequences/seq_mirrorspell/seq_mirrorspell.yy",},},
     {"id":{"name":"seq_no_targets","path":"sequences/seq_no_targets/seq_no_targets.yy",},},
     {"id":{"name":"seq_nullify_amethyst","path":"sequences/seq_nullify_amethyst/seq_nullify_amethyst.yy",},},

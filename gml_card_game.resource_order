@@ -916,6 +916,7 @@
     {"name":"seq_ice_click","order":2,"path":"sequences/seq_ice_click/seq_ice_click.yy",},
     {"name":"seq_invert","order":8,"path":"sequences/seq_invert/seq_invert.yy",},
     {"name":"seq_locale_destroyed","order":4,"path":"sequences/seq_locale_destroyed/seq_locale_destroyed.yy",},
+    {"name":"seq_mirrorspell_fast","order":18,"path":"sequences/seq_mirrorspell_fast/seq_mirrorspell_fast.yy",},
     {"name":"seq_mirrorspell","order":16,"path":"sequences/seq_mirrorspell/seq_mirrorspell.yy",},
     {"name":"seq_no_targets","order":2,"path":"sequences/seq_no_targets/seq_no_targets.yy",},
     {"name":"seq_nullify_amethyst","order":9,"path":"sequences/seq_nullify_amethyst/seq_nullify_amethyst.yy",},
