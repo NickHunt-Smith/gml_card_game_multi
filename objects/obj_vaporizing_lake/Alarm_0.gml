@@ -9,13 +9,15 @@ seq_change_health_1 = scr_change_numbers(restore_amount,card_state.x+global.heal
 card_state.health_locale += restore_amount;
 	
 seq_change_health_2 = scr_change_numbers(channel_boost,card_state.x+global.channel_offset_x,card_state.y + 328);
-if card_state.frozen = true {
-	if card_state.memory_channel != 0 {
-		card_state.memory_channel += channel_boost;
+if target_1.frozen = true {
+	target_1.memory_channel += channel_reduce;
+	if target_1.memory_channel < 0 {
+		target_1.memory_channel = 0
 	}
 } else {
-	if card_state.channel != 0 {
-		card_state.channel += channel_boost;
+	target_1.channel += channel_reduce;
+	if target_1.channel < 0 {
+		target_1.channel = 0
 	}
 }
 	

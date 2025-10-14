@@ -578,7 +578,7 @@ function scr_channel_element(card_state){
 				}
 				global.channelled_left_player_opal += card_state.channel;
 			} else if (card_state.position = "left_middle_player") {
-				channel_seq = layer_sequence_create("effect_layer",x + 40,y + 480,seq_channel_opal);
+				channel_seq = layer_sequence_create("effect_layer",x + 55,y + 440,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,150);
 				var channel_copy = [];
@@ -600,7 +600,7 @@ function scr_channel_element(card_state){
 				}
 				global.channelled_right_player_opal += card_state.channel;
 			} else if (card_state.position = "right_player") {
-				channel_seq = layer_sequence_create("effect_layer",x + 40,y + 480,seq_channel_opal);
+				channel_seq = layer_sequence_create("effect_layer",x + 55,y + 440,seq_channel_opal);
 				layer_sequence_speedscale(channel_seq,1);
 				layer_sequence_angle(channel_seq,150);
 				var channel_copy = [];

@@ -5,12 +5,14 @@ for (var _i = 0; _i < array_length(targets); _i++) {
 	array_push(change_health_seqs,seq_change_health_1);
 	
 	if targets[_i].frozen = true {
-		if targets[_i].memory_channel != 0 {
-			targets[_i].memory_channel += channel_reduce;
+		targets[_i].memory_channel += channel_reduce;
+		if targets[_i].memory_channel < 0 {
+			targets[_i].memory_channel = 0
 		}
 	} else {
-		if targets[_i].channel != 0 {
-			targets[_i].channel += channel_reduce;
+		targets[_i].channel += channel_reduce;
+		if targets[_i].channel < 0 {
+			targets[_i].channel = 0
 		}
 	}
 }
