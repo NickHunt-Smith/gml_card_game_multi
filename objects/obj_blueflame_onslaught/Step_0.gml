@@ -24,7 +24,6 @@ if (eff_type = "play") && (wait = false) {
 	} else {
 		wait = true;
 		wait_target = true;
-		show_debug_message(target_1.position)
 		card_state.target_arrows_enabled = true;
 		card_state.target_1 = target_1;
 	}
