@@ -47,3 +47,4 @@ x = x-10;
 y = y + 20;
 alpha_fluc = 1;
 reverse = false;
+is_empty = false;
