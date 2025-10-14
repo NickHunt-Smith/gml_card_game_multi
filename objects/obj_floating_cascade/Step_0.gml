@@ -66,7 +66,7 @@ if (eff_type = "play") && (wait = true) && (wait_target = false) {
 		wait_target = true;
 		//target_1 = target;
 		if target_1 = noone or target_1.position = "end_turn" {
-			seq_no_target = layer_sequence_create("effect_layer",card_state.x,card_state.y,seq_no_targets);
+			seq_no_target = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+184,seq_no_targets);
 			alarm[1] = 60;
 		} else {
 			wave_seq = layer_sequence_create("effect_layer",target_1.x+112,target_1.y+184,seq_wave);
