@@ -41,7 +41,9 @@ if seq_change_health_4 != noone {
 	layer_sequence_destroy(seq_change_health_4);
 }
 
-target_1.clashed = true;
+if target_1 != noone {
+	target_1.clashed = true;
+}
 
 wait = false;
 eff_done = true;
