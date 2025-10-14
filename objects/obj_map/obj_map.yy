@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_nolorus",
-    "path":"sprites/s_nolorus/s_nolorus.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

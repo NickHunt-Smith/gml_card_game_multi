@@ -1634,7 +1634,6 @@
     {"id":{"name":"s_mythic","path":"sprites/s_mythic/s_mythic.yy",},},
     {"id":{"name":"s_nolorus_00","path":"sprites/s_nolorus_00/s_nolorus_00.yy",},},
     {"id":{"name":"s_nolorus_10","path":"sprites/s_nolorus_10/s_nolorus_10.yy",},},
-    {"id":{"name":"s_nolorus","path":"sprites/s_nolorus/s_nolorus.yy",},},
     {"id":{"name":"s_norvista_art","path":"sprites/s_norvista_art/s_norvista_art.yy",},},
     {"id":{"name":"s_norvista_trickery_art","path":"sprites/s_norvista_trickery_art/s_norvista_trickery_art.yy",},},
     {"id":{"name":"s_norvista_trickery","path":"sprites/s_norvista_trickery/s_norvista_trickery.yy",},},
