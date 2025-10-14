@@ -22,7 +22,7 @@ if opp = true {
 		global.channelled_left_opp_citrine = 0;
 		global.channelled_left_opp_opal = 0;
 		global.channelled_left_opp_amethyst = 0;
-		seq_change_channel_1 = scr_change_numbers(max_channel,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
+		seq_change_channel_1 = scr_change_numbers(-max_channel,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
 	}
 	
 	var max_channel_1 = max_channel;
@@ -47,12 +47,12 @@ if opp = true {
 		global.channelled_right_opp_citrine = 0;
 		global.channelled_right_opp_opal = 0;
 		global.channelled_right_opp_amethyst = 0;
-		seq_change_channel_2 = scr_change_numbers(max_channel,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
+		seq_change_channel_2 = scr_change_numbers(-max_channel,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
 	}
 	if max_channel_1 < max_channel {
-		global.opponent.consumed -= max_channel;
+		global.opponent.consumed += max_channel;
 	} else {
-		global.opponent.consumed -= max_channel_1;
+		global.opponent.consumed += max_channel_1;
 	}
 } else {
 	var max_channel = 0;
@@ -76,7 +76,7 @@ if opp = true {
 		global.channelled_left_player_citrine = 0;
 		global.channelled_left_player_opal = 0;
 		global.channelled_left_player_amethyst = 0;
-		seq_change_channel_1 = scr_change_numbers(max_channel,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
+		seq_change_channel_1 = scr_change_numbers(-max_channel,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
 	}
 	
 	var max_channel_1 = max_channel;
@@ -101,12 +101,12 @@ if opp = true {
 		global.channelled_right_player_citrine = 0;
 		global.channelled_right_player_opal = 0;
 		global.channelled_right_player_amethyst = 0;
-		seq_change_channel_2 = scr_change_numbers(max_channel,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
+		seq_change_channel_2 = scr_change_numbers(-max_channel,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
 	}
 	if max_channel_1 < max_channel {
-		global.player.consumed -= max_channel;
+		global.player.consumed += max_channel;
 	} else {
-		global.player.consumed -= max_channel_1;
+		global.player.consumed += max_channel_1;
 	}
 }
 
