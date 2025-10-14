@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if opp = true and array_length(global.cards_in_hand) > array_length(global.cards_in_hand_opp) {
+if opp = true and array_length(global.cards_in_hand_opp) < array_length(global.cards_in_hand) {
 	array_push(global.opponent.hand_rarity,rarity_scry);
 	array_push(global.opponent.hand_card_type,card_type_scry);
 	alarm[3] = 20;
