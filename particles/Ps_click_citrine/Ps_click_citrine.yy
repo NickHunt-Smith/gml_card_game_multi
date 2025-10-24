@@ -1,0 +1,27 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"Ps_click_citrine",
+  "backdropHeight":768,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"",
+  "backdropWidth":1366,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"Smaller_Clouds_2","additiveBlend":true,"directionIncrease":-15.0,"directionMax":260.0,"directionMin":270.0,"directionWiggle":0.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":-4,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":0,"GMPresetName":null,"gravityDirection":351.0,"gravityForce":0.4,"headPosition":0.0,"lifetimeMax":100.0,"lifetimeMin":50.0,"linkedEmitter":null,"locked":false,"midColour":3983712165,"mode":0,"name":"Smaller_Clouds_2","orientationIncrease":0.0,"orientationMax":190.0,"orientationMin":160.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":58.780334,"regionW":11.249512,"regionX":28.0,"regionY":-12.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.9,"scaleY":0.9,"shape":1,"sizeIncrease":0.0,"sizeMax":0.3,"sizeMin":0.05,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":10.0,"speedMin":7.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":13417393,"texture":12,},
+    {"$GMPSEmitter":"","%Name":"Smaller_clouds","additiveBlend":true,"directionIncrease":-15.0,"directionMax":260.0,"directionMin":270.0,"directionWiggle":0.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":-4,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":0,"GMPresetName":null,"gravityDirection":351.0,"gravityForce":0.4,"headPosition":0.0,"lifetimeMax":100.0,"lifetimeMin":50.0,"linkedEmitter":null,"locked":false,"midColour":3983712685,"mode":0,"name":"Smaller_clouds","orientationIncrease":0.0,"orientationMax":190.0,"orientationMin":160.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":58.780334,"regionW":11.249512,"regionX":28.0,"regionY":-12.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.9,"scaleY":0.9,"shape":1,"sizeIncrease":0.0,"sizeMax":0.3,"sizeMin":0.05,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":10.0,"speedMin":7.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":1802285495,"texture":11,},
+    {"$GMPSEmitter":"","%Name":"Smoke","additiveBlend":false,"directionIncrease":-15.0,"directionMax":260.0,"directionMin":270.0,"directionWiggle":0.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":3,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":0.0,"emitIntervalMin":0.0,"emitIntervalUnits":0,"enabled":true,"endColour":9281440,"GMPresetName":null,"gravityDirection":351.0,"gravityForce":0.4,"headPosition":0.0,"lifetimeMax":100.0,"lifetimeMin":50.0,"linkedEmitter":null,"locked":false,"midColour":3979593450,"mode":0,"name":"Smoke","orientationIncrease":0.0,"orientationMax":190.0,"orientationMin":160.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":58.780334,"regionW":11.249512,"regionX":28.0,"regionY":-12.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.9,"scaleY":0.9,"shape":1,"sizeIncrease":-0.0036,"sizeMax":0.5,"sizeMin":0.05,"sizeWiggle":0.0,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.0,"speedMax":10.0,"speedMin":8.0,"speedWiggle":0.0,"spriteAnimate":false,"spriteId":{"name":"Spr_Fire","path":"sprites/Spr_Fire/Spr_Fire.yy",},"spriteRandom":false,"spriteStretch":true,"startColour":1798341585,"texture":-1,},
+  ],
+  "name":"Ps_click_citrine",
+  "parent":{
+    "name":"click_effects",
+    "path":"folders/Particle Systems/click_effects.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":false,
+  "showBackdropImage":false,
+  "xorigin":0,
+  "yorigin":0,
+}

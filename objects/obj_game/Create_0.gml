@@ -6,9 +6,11 @@ var _loaded = texturegroup_load("Default");
 
 randomise();
 
+global.camera_x_offset = 132;
+camera_set_view_pos(view_camera[0],global.camera_x_offset,0);
 //show_debug_message(window_get_width())
 //show_debug_message(window_get_height())
-window_set_size(1920, 992);
+//window_set_size(1920, 992);
 //window_set_fullscreen(true)
 global.card_offset_x = 112;
 global.card_offset_y = 184;

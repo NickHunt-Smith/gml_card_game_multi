@@ -3,6 +3,8 @@
   "%Name":"obj_sidewood",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_sidewood",
@@ -30,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_sidewood",
-    "path":"sprites/s_sidewood/s_sidewood.yy",
+    "name":"s_sideboard_wood_emerald",
+    "path":"sprites/s_sideboard_wood_emerald/s_sideboard_wood_emerald.yy",
   },
   "spriteMaskId":null,
   "visible":true,

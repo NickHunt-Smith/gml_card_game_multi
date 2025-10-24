@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_board",
-    "path":"sprites/s_board/s_board.yy",
+    "name":"s_board_emerald",
+    "path":"sprites/s_board_emerald/s_board_emerald.yy",
   },
   "spriteMaskId":null,
   "visible":true,

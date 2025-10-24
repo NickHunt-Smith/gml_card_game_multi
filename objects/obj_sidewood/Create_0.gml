@@ -1,0 +1,2 @@
+
+wood_clicks = [];
