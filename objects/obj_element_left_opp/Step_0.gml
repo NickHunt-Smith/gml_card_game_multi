@@ -1,12 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if array_max(global.channelled_right_opp) >= global.win_threshold && array_max(global.channelled_left_opp) >= global.win_threshold && global.end_game_trigger = false {
-	global.opp_enabled = false;
-	global.end_game_trigger = true;
+//if array_max(global.channelled_right_opp) >= global.win_threshold && array_max(global.channelled_left_opp) >= global.win_threshold && global.end_game_trigger = false {
+//	global.opp_enabled = false;
+//	global.end_game_trigger = true;
 	
-	alarm[1] = 60;
-}
+//	alarm[1] = 60;
+//}
 
 if array_max(global.channelled_left_opp) >= global.win_threshold && power_swirling = noone {
 	if global.channelled_left_opp[0] >= global.win_threshold {

@@ -19,3 +19,4 @@ if left = true {
 		draw_sprite_ext(sprite_index,0,c_x+ 0.5*view_wport[1],c_y + view_hport[1],0.7*resize_scale,0.7*resize_scale,180,arrow_color,1);
 	}
 }
+

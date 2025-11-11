@@ -1,0 +1,308 @@
+{
+    "tutorial": {
+        "precombat0": {
+            "narrator": false,
+            "locale_art": false,
+            "character_art": "char_mystery",
+            "character_name": "?",
+            "sound": false,
+            "text0": "\"Didn't even make it as far as the last one. A shame, I thought she showed the most promise so far.\"",
+            "text1": "\"Is it truly impossible for anyone to follow in those footsteps? To even approach those heights of power, let alone go beyond?\"",
+            "text2": "\"I can only keep trying. If there is someone out there and I don't get to them first, this world will soon disappear...\""
+        },
+        "precombat1": {
+            "narrator": true,
+            "locale_art": "s_leafy_village_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You shield your eyes from the orange light of the fading twilight sun as you round the last bend of the forest trail, scythe resting on your shoulder. A familiar scattering of leaf-covered houses greets you, your home village of Brindlevale.",
+            "text1": "Your fellow villagers are slowly turning in for the night, hacking away the last of the surrounding overgrowth and taking their belongings inside."
+        },
+        "precombat2": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": "Emery, the village leader, heaves a pile of dead vegetation away from his house. He nods at you as you pass.",
+            "text1": "\"Any issues out there today Alden?\""
+        },
+        "precombat3": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"Looking pretty clear at the moment, don't think we'll need another burn-off for a couple of days. Not that there's been much traffic recently anyway.\""
+        },
+        "precombat4": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": "Emery's eyes narrow. \"Still an important job, we've got to keep some connection to the outside world.\"",
+            "text1": "\"You'll be the one clearing a new trail if it gets fully overgrown.\""
+        },
+        "precombat5": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"I know, I know.\" You wave him away and continue through the village towards home."
+        },
+        "precombat6": {
+            "narrator": true,
+            "locale_art": "s_leafy_village_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You stride up to your home, which looks as well-kept as ever. Your mother Myrta prides herself on always having kept this house intact from the surrounding forest, though it's a lot easier when it's right in the centre."
+        },
+        "precombat7": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_eilira_quellow",
+            "character_name": "Eilira",
+            "sound": false,
+            "text0": "Your sister Eilira is examining the wooden facade closely, cutting off any remaining stems from the day with a pair of shears. As you approach she gives you a knowing look and gestures towards the nearby stream.",
+            "text1": "You nod back, then slowly lean your scythe against the wall, holding your breath. There's a slight metallic sound as you take your hand away, and Eilira shakes her head. Sure enough, you hear rustling from inside a moment later. "
+        },
+        "precombat8": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_myrta_quellow",
+            "character_name": "Myrta",
+            "sound": false,
+            "text0": "You hear your mother's muffled voice. \"Alden is that you? There's an almighty mess out the back I need some help with!\""
+        },
+        "precombat9": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "With a sigh, you call back. \"Yes Ma, I'll be there in a minute. Emery wanted me to move the last of his overgrowth, shouldn't be too long.\""
+        },
+        "precombat10": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_myrta_quellow",
+            "character_name": "Myrta",
+            "sound": false,
+            "text0": "Your mother mutters a few words that don't sound entirely like a no. You give Eilira a thumbs up, and she follows you away from the house."
+        },
+        "precombat11": {
+            "narrator": true,
+            "locale_art": "s_leafy_village_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "The sun is now fully behind the tree canopy, the only light coming from the windows of the nearby houses, illuminated by the fireplaces within. The villagers tend to start those fires early, keeping a clear beacon throughout the night to ward off the dark and encroaching forest.",
+            "text1": "It's unusual for any of the villagers to be out this late, but you and Eilira rarely get the time to talk freely amongst all the daily work. Certainly not with your mother around.",
+            "text2": "You settle on a mound of leaves near the stream, the soft rush of water barely audible. The forest remains silent."
+        },
+        "precombat12": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_eilira_quellow",
+            "character_name": "Eilira",
+            "sound": false,
+            "text0": "\"She was particularly bossy today. I barely got a moment to myself.\""
+        },
+        "precombat13": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"Care to trade? That scythe gets pretty heavy after swinging it around all day.\""
+        },
+        "precombat14": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_eilira_quellow",
+            "character_name": "Eilira",
+            "sound": false,
+            "text0": "\"I would if I could pick it up in the first place! At least you get to see more in a day than just the sides of the house. \""
+        },
+        "precombat15": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"True, there was a nice tree I saw at one point. Completely different from all the trees here, you're really missing out.\""
+        },
+        "precombat16": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_eilira_quellow",
+            "character_name": "Eilira",
+            "sound": false,
+            "text0": "You can barely see her in the dark, but you can sense her rolling her eyes. A few moments of silence pass, then she quietly pipes up. \"Are you still thinking seriously of leaving?\""
+        },
+        "precombat17": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "You can feel her anxiety as she waits for your response. \"Yes, I really do mean it. As safe as Brindlevale is, there's a whole world out there that I'm just too curious about.\"",
+            "text1": "\"The stories we've heard, Eilira! They're meant to scare us, but I can't help but want to see it for myself. Waterfalls floating in the sky, a city covered in lightning, fields of pumping lava and sandstorms that could tear the Omnitree to sawdust!\"",
+            "text2": "\"Our lives right now are just about survival really. There has to be more to it, doesn't there?\""
+        },
+        "precombat18": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_eilira_quellow",
+            "character_name": "Eilira",
+            "sound": false,
+            "text0": "You hear Eilira shifting uncomfortably. \"You know it's not that simple. Those places you're describing, they're alien, chaotic, out of control.\"",
+            "text1": "\"It's not even safe here, not really. You can't forget what happened to Father-\""
+        },
+        "precombat19": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"Of course I haven't forgotten, how could I ever! Why do you think I'm talking to you without Ma around? If she even knew what I was contemplating she'd be horrified!\"",
+            "text1": "You try to calm yourself. She's just concerned for you. \"It's because of you both that I didn't leave months ago.\"", 
+            "text2": "\"I know the dangers and I'm willing to take those risks, but I don't want to leave you both constantly wondering if I'm dead in the middle of nowhere.\"",
+            "text3": "\"I'm sorry, but I think you're going to have to live with that uncertainty.\""
+        },
+        "precombat20": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_eilira_quellow",
+            "character_name": "Eilira",
+            "sound": false,
+            "text0": "A few moments pass in silence. Eilira takes a deep breath, then says \"I won't be the one to stop you if this is really what you want. I won't pretend like it won't hurt though.\"",
+            "text1": "\"You have to promise to come back when you can. Periodically, like every few months. Something specific, so that we know if you're not back then...\"",
+            "text2": "She trails off, her voice catching in her throat."
+        },
+        "precombat21": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "You reach around her shoulder as she leans in against you. You hear her sniff, holding back tears. You say \"I promise.\"",
+            "text1": "It's not a promise you have any idea if you can keep. Perhaps it would be better for you not to return, for them to have some certainty in their lives."
+        },
+        "precombat22": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_eilira_quellow",
+            "character_name": "Eilira",
+            "sound": false,
+            "text0": "She pulls away and stands up. \"We should head back, Ma will start worrying. Assuming you're not planning to leave now?\""
+        },
+        "precombat23": {
+            "narrator": false,
+            "locale_art": "s_leafy_village_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"No I'll need a few days at least to gather some supplies and tools. Ideally without anyone noticing.\""
+        },
+        "precombat24": {
+            "narrator": true,
+            "locale_art": "s_leafy_village_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You follow Eilira back towards the glowing windows of Brindlevale. A difficult conversation as expected, but it needed to be had. The real question is whether to confront Ma in person or slink off along the trail without telling her first. It feels cruel to just leave...",
+            "text1": "You start to notice a slight breeze as you near the centre of the village. Odd, the trees usually shield all but the strongest wind...",
+            "text2": "The breeze builds suddenly to a strong gust, pushing you backwards. Eilira looks at you, clearly alarmed and confused."
+        },
+        "precombat25": {
+            "narrator": true,
+            "locale_art": "s_warlock_abduct",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "A dark shadow suddenly sweeps between you, a formless mass propelled by the wind. Orange sparks trail behind the shadow as it passes you, seeming to circle for a moment around your sister before violently jerking her away.",
+            "text1": "You cannot even hear Eilira's scream over the rushing air as she flies away from you, a look of terror on her face. In an instant she accelerates upwards, pulled up into the sky.",
+            "text2": "The wind begins to fade, and the calm quiet of the forest returns, leaves falling slowly to the ground around you. You stare dumbfounded at the empty space where Eilira stood only a few seconds ago.",
+            "text3": "You don't feel fear, or even a need to chase after her. Just a numb confusion, standing there for what seems like an eternity.",
+            "text4": "Emery appears before you, knife in hand, looking around in all directions."
+        },
+        "precombat26": {
+            "narrator": false,
+            "locale_art": "s_warlock_abduct",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": "\"What was that? What happened?\""
+        },
+        "precombat27": {
+            "narrator": false,
+            "locale_art": "s_warlock_abduct",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "You continue to stare, unable to find the words. \"I don't... Eilira, she...\""
+        },
+        "precombat28": {
+            "narrator": false,
+            "locale_art": "s_warlock_abduct",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": "\"Where'd she go?\""
+        },
+        "precombat29": {
+            "narrator": false,
+            "locale_art": "s_warlock_abduct",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"I think she's just... I think she's gone...\""
+        },
+        "precombat30": {
+            "narrator": false,
+            "locale_art": "s_warlock_abduct",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": "\"Gone where? Alden, get a grip! Where did Eilira go?\""
+        },
+        "precombat31": {
+            "narrator": false,
+            "locale_art": "s_warlock_abduct",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "You picture your sister, dragged out into the night. \"There was a shadow, it... took her, somehow...\""
+        },
+        "precombat32": {
+            "narrator": false,
+            "locale_art": "s_warlock_abduct",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": "Emery's face becomes grave. Other villagers are approaching, warily looking around. \"A shadow? Not the... was there a flash of orange too?\"",
+            "text1": "You nod, your brain starting to face reality. You know what this means. Emery hangs his head, despondent. \"I'm so sorry Alden. There's nothing we can do, that was the Warlock.\""
+        },
+        "precombat33": {
+            "narrator": "scene_transition",
+            "locale_art": "s_warlock_abduct",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": ""
+        },
+        "precombat34": {
+            "narrator": true,
+            "locale_art": "s_brindlevale_day",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "The next two days pass in a blur."
+        }
+    }
+}

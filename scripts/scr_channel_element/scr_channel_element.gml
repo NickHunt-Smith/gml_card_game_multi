@@ -94,6 +94,8 @@ function scr_channel_element(card_state){
 				}
 				global.channelled_right_opp_ruby += card_state.channel;
 			}
+		} else {
+			channel_seq = layer_sequence_create("effect_layer",x + 112,y +184,seq_no_channel);
 		}
 	} else if card_state.element = 1 {
 		if card_state.channel > 0 {
@@ -186,6 +188,8 @@ function scr_channel_element(card_state){
 				}
 				global.channelled_right_opp_pearl += card_state.channel;
 			}
+		} else {
+			channel_seq = layer_sequence_create("effect_layer",x + 112,y +184,seq_no_channel);
 		}
 	} else if card_state.element = 2 {
 		
@@ -279,8 +283,9 @@ function scr_channel_element(card_state){
 				}
 				global.channelled_right_opp_onyx += card_state.channel;
 			}
+		} else {
+			channel_seq = layer_sequence_create("effect_layer",x + 112,y +184,seq_no_channel);
 		}
-		
 	} else if card_state.element = 3 {
 		
 		if card_state.channel > 0 {
@@ -373,8 +378,9 @@ function scr_channel_element(card_state){
 				}
 				global.channelled_right_opp_sapphire += card_state.channel;
 			}
+		} else {
+			channel_seq = layer_sequence_create("effect_layer",x + 112,y +184,seq_no_channel);
 		}
-		
 	} else if card_state.element = 4 {
 		
 		if card_state.channel > 0 {
@@ -467,8 +473,9 @@ function scr_channel_element(card_state){
 				}
 				global.channelled_right_opp_emerald += card_state.channel;
 			}
+		} else {
+			channel_seq = layer_sequence_create("effect_layer",x + 112,y +184,seq_no_channel);
 		}
-		
 	} else if card_state.element = 5 {
 		
 		if card_state.channel > 0 {
@@ -561,8 +568,9 @@ function scr_channel_element(card_state){
 				}
 				global.channelled_right_opp_citrine += card_state.channel;
 			}
+		} else {
+			channel_seq = layer_sequence_create("effect_layer",x + 112,y +184,seq_no_channel);
 		}
-		
 	} else if card_state.element = 6 {
 		
 		if card_state.channel > 0 {
@@ -655,8 +663,9 @@ function scr_channel_element(card_state){
 				}
 				global.channelled_right_opp_opal += card_state.channel;
 			}
+		} else {
+			channel_seq = layer_sequence_create("effect_layer",x + 112,y +184,seq_no_channel);
 		}
-		
 	} else if card_state.element = 7 {
 		
 		if card_state.channel > 0 {
@@ -749,9 +758,9 @@ function scr_channel_element(card_state){
 				}
 				global.channelled_right_opp_amethyst += card_state.channel;
 			}
+		} else {
+			channel_seq = layer_sequence_create("effect_layer",x + 112,y +184,seq_no_channel);
 		}
-		
 	}
-	
 	return [channel_seq,seq_change_health]
 }

@@ -14,8 +14,13 @@ if global.player_enabled = true {
 		draw_text_ext_transformed(x,y-38,"End",0,100,0.7,0.7,0);
 		draw_text_ext_transformed(x,y-8,"Turn",0,100,0.7,0.7,0);
 	} else {
-		draw_set_font(Empower_font)
-		draw_text_ext_transformed(x,y-27,"Pass",0,100,0.8,0.8,0);
+		if global.stack_active = true && global.spell_stack[array_length(global.spell_stack)-1].opp = true {
+			draw_set_font(Empower_font)
+			draw_text_ext_transformed(x,y-15,"Resolve",0,100,0.5,0.5,0);
+		} else {
+			draw_set_font(Empower_font)
+			draw_text_ext_transformed(x,y-27,"Pass",0,100,0.8,0.8,0);
+		}
 	}
 } else {
 	draw_sprite_ext(s_button_red,0,x,y,0.45,0.45,0,c_white,1);

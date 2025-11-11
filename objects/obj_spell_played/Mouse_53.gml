@@ -4,7 +4,11 @@
 if big_mode = true {
 	x = x_memory;
 	y = y_memory;
-	global.big_mode = false;
+	if global.tutorial = true {
+		alarm[7] = 1;
+	} else {
+		global.big_mode = false;
+	}
 	big_mode = false;
 	if global.drafting = false && global.targeting = false && enable_player_after_big_mode = true {
 		global.player_enabled = true;

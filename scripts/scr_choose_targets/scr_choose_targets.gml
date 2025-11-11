@@ -377,6 +377,9 @@ function scr_choose_targets(target_type){
 				chosen_target = global.player_locale_4;
 			} 
 		}
+		if chosen_target = noone {
+			chosen_target = "pass";
+		}
 		targets = [chosen_target,noone,noone];
 	} else if target_type = "damage_big_2" {
 		if threat_2 = noone {
@@ -436,6 +439,9 @@ function scr_choose_targets(target_type){
 				chosen_target = global.opp_locale_4;
 				min_health = global.opp_locale_4.health_locale;
 			} 
+		}
+		if chosen_target = noone {
+			chosen_target = "pass";
 		}
 		targets = [chosen_target,noone,noone];
 	} else if target_type = "shield_any" {

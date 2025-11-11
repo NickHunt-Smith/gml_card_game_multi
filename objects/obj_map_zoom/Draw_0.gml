@@ -14,6 +14,7 @@ if button_1 = true {
 	draw_sprite_ext(s_zoom_slider_button,0,c_x + 0.9*view_wport[1],c_y + 0.25*view_hport[1] + y_camera_3*resize_scale,resize_scale,resize_scale,0,c_white,1);
 } else if button_4 = true {
 	draw_sprite_ext(s_zoom_slider_button,0,c_x + 0.9*view_wport[1],c_y + 0.25*view_hport[1] + y_camera_4*resize_scale,resize_scale,resize_scale,0,c_white,1);
-} else if button_5 = true {
-	draw_sprite_ext(s_zoom_slider_button,0,c_x + 0.9*view_wport[1],c_y + 0.25*view_hport[1] + y_camera_5*resize_scale,resize_scale,resize_scale,0,c_white,1);
-}
+} 
+//else if button_5 = true {
+//	draw_sprite_ext(s_zoom_slider_button,0,c_x + 0.9*view_wport[1],c_y + 0.25*view_hport[1] + y_camera_5*resize_scale,resize_scale,resize_scale,0,c_white,1);
+//}

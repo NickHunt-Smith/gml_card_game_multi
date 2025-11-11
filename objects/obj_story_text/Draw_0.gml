@@ -1,31 +1,130 @@
 
+if scene_playing = false {
+	var struct_var_name = "precombat" + string(_scene);
+	if variable_struct_exists(encounter_story,struct_var_name) {
+		curr_scene = encounter_story[$ struct_var_name];
+		narrator = curr_scene.narrator;
+		if curr_scene.locale_art = false {
+			locale_art = false;
+		} else {
+			locale_art = asset_get_index(curr_scene.locale_art);
+		}
+		if curr_scene.character_art = false {
+			character_art = false;
+		} else {
+			character_art = asset_get_index(curr_scene.character_art);
+			character_name = curr_scene.character_name;
+		}
+		scene_playing = true;
+		_scene += 1;
+	} else {
+		show_debug_message("story done");
+	}	
+}
+
+if text_rolling = false && fade_in = true {
+	var struct_var_name = "text" + string(_text);
+	if variable_struct_exists(curr_scene,struct_var_name)  {
+		chars_revealed = 0;
+		text = curr_scene[$ struct_var_name];
+		if narrator = false {
+			text = string_wrap(text, text_width_character);
+		} else {
+			text = string_wrap(text, text_width_narrator);
+		}
+		text_rolling = true;
+		_text += 1;
+	} else {
+		_text = 0;
+		scene_playing = false;
+	}
+}
+
 if fade_in = true {
 	draw_sprite_ext(s_spell_background,0,x,y,5,5,0,c_black,alpha_mood_lighting);
 	alpha_mood_lighting = clamp(alpha_mood_lighting + 0.005,0,0.85);
 	
-	draw_sprite_ext(sprite_index,0,x,y+185,0.4,0.38,0,c_white,alpha_story_elements);
-	draw_sprite_general(locale_art,0,60,67,330,443,x-165*0.72,y-218*0.72-160,0.72,0.72,0,c_white,c_white,c_white,c_white,alpha_story_elements);
-	draw_sprite_ext(s_story_locale_frame,0,x,y-160,0.7,0.7,0,c_white,alpha_story_elements);
-	alpha_story_elements = clamp(alpha_story_elements + 0.005,0,1);
+	draw_sprite_ext(sprite_index,0,x,y+185,0.4,0.38,0,c_white,alpha_story_frame);
 	
-	if narrator = false {
-		draw_sprite_ext(character_art,0,x-180,y+185,0.105,0.105,0,c_white,alpha_story_elements);
-		draw_sprite_ext(s_story_portrait_frame,0,x-180,y+185,0.16,0.16,0,c_white,alpha_story_elements);
+	alpha_story_frame = clamp(alpha_story_frame + 0.005,0,1);
+	
+	if alpha_story_frame = 1 {
+		if locale_art != false {
+			if narrator = "scene_transition" {
+				alpha_story_locale = clamp(alpha_story_locale - 0.003,0,1);
+			} else {
+				alpha_story_locale = clamp(alpha_story_locale + 0.01,0,1);
+			}
+		}
+		if character_art != false {
+			if narrator = "scene_transition" {
+				alpha_story_portrait = clamp(alpha_story_portrait - 0.003,0,1);
+			} else {
+				alpha_story_portrait = clamp(alpha_story_portrait + 0.01,0,1);
+			}
+		}
+	}
+	
+	if locale_art != false {
+		draw_sprite_general(locale_art,0,60,67,330,443,x-165*0.72,y-218*0.72-160,0.72,0.72,0,c_white,c_white,c_white,c_white,alpha_story_locale);
+		draw_sprite_ext(s_story_locale_frame,0,x,y-160,0.7,0.7,0,c_white,alpha_story_locale);
+	}
+	
+	if character_art != false {
+		draw_sprite_ext(character_art,0,x-190,y+185,0.105,0.105,0,c_white,alpha_story_portrait);
+		draw_sprite_ext(s_story_portrait_frame,0,x-190,y+185,0.16,0.16,0,c_white,alpha_story_portrait);
+		draw_sprite_ext(s_banner,0,x-190,y+270,0.118,0.118,0,c_white,alpha_story_portrait);
+		draw_set_alpha(alpha_story_portrait);
+		draw_set_font(Empower_font_story_portrait);
+		draw_set_colour(c_maroon);
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_top);
+		draw_text(x-190,y+258,character_name);
 	}
 }
 
-if alpha_story_elements = 1 {
+if alpha_story_portrait = 1 or (narrator = true && alpha_story_frame = 1) {
+	
 	chars_revealed += reveal_speed;
 	chars_revealed = min(chars_revealed, string_length(text)); 
 	var _text_current = string_copy(text, 1, chars_revealed);
 	
-	draw_set_font(Empower_font_story);
+	draw_set_alpha(1);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	draw_set_colour(c_maroon);
+	
 	if narrator = true {
-		draw_text_ext(x-270, y+90, _text_current, 28, 565);
+		draw_set_font(Empower_font_story);
+		draw_text(x-270, y+80, _text_current);
 	} else {
-		draw_text_ext(x-80, y+90, _text_current, 28, 365);
+		draw_set_font(Empower_font_story_character);
+		draw_text(x-85, y+80, _text_current);
 	}
+}
+
+if chars_revealed = string_length(text) && narrator != "scene_transition" {
+	if reverse = false {
+		alpha_next_text = clamp(alpha_next_text-0.005,0.6,1);
+	} else {
+		alpha_next_text = clamp(alpha_next_text+0.005,0.6,1);
+	}
+	if alpha_next_text = 0.6 {
+		reverse = true;
+	}
+	if alpha_next_text = 1 {
+		reverse = false;
+	}
+	
+	draw_sprite_ext(s_move_traingle,0,x+320,y+185,0.3,0.3,270,c_white,alpha_next_text);
+}
+
+if narrator = "scene_transition" && alpha_story_locale = 0 {
+	_text = 0;
+	scene_playing = false;
+}
+
+if narrator = "combat_transition" && duel_button_created = false {
+	duel_button = instance_create_depth(x+250,y+250,depth-1,obj_encounter_button);
+	duel_button.enemy = enemy;
 }

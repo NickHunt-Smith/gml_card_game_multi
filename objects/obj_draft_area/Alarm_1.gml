@@ -86,12 +86,26 @@ if global.pvp_active = false {
 		//array_push(global.opponent.hand_card_type,1);
 	}
 	global.drafting = false;
-	part_emitter_destroy_all(summon_whirlpool_1);
-	part_emitter_destroy_all(summon_whirlpool_2);
-	part_emitter_destroy_all(summon_whirlpool_3);
-	part_emitter_destroy_all(sparkle_rain);
-	part_system_destroy(shooting_stars);
-	//part_emitter_destroy_all(shooting_stars);
+	if summon_whirlpool_1 != noone {
+		part_emitter_destroy_all(summon_whirlpool_1);
+		summon_whirlpool_1 = noone;
+	}
+	if summon_whirlpool_2 != noone {
+		part_emitter_destroy_all(summon_whirlpool_2);
+		summon_whirlpool_2 = noone;
+	}
+	if summon_whirlpool_3 != noone {
+		part_emitter_destroy_all(summon_whirlpool_3);
+		summon_whirlpool_3 = noone;
+	}
+	if sparkle_rain != noone {
+		part_emitter_destroy_all(sparkle_rain);
+		sparkle_rain = noone;
+	}
+	if shooting_stars != noone {
+		part_system_destroy(shooting_stars);
+		shooting_stars = noone;
+	}
 	emit_destroy = false;
 	alarm[0] = 100;
 	if switch_priority = true {
@@ -103,12 +117,26 @@ if global.pvp_active = false {
 	}
 } else {
 	if emit_destroy = true {
-		part_emitter_destroy_all(summon_whirlpool_1);
-		part_emitter_destroy_all(summon_whirlpool_2);
-		part_emitter_destroy_all(summon_whirlpool_3);
-		part_emitter_destroy_all(sparkle_rain);
-		part_system_destroy(shooting_stars);
-		//part_emitter_destroy_all(shooting_stars);
+		if summon_whirlpool_1 != noone {
+			part_emitter_destroy_all(summon_whirlpool_1);
+			summon_whirlpool_1 = noone;
+		}
+		if summon_whirlpool_2 != noone {
+			part_emitter_destroy_all(summon_whirlpool_2);
+			summon_whirlpool_2 = noone;
+		}
+		if summon_whirlpool_3 != noone {
+			part_emitter_destroy_all(summon_whirlpool_3);
+			summon_whirlpool_3 = noone;
+		}
+		if sparkle_rain != noone {
+			part_emitter_destroy_all(sparkle_rain);
+			sparkle_rain = noone;
+		}
+		if shooting_stars != noone {
+			part_system_destroy(shooting_stars);
+			shooting_stars = noone;
+		}
 		emit_destroy = false;
 	}
 	if rarity_locked = false {

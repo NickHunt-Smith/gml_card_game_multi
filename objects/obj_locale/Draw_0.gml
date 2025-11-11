@@ -115,7 +115,7 @@ if draw_card = true {
 			layer_sequence_y(play_element_seq,y-(1-play_scale)*222);
 		}
 	} else {
-		if moused = false {
+		if moused = false or global.tutorial_step = 3 or global.tutorial_step = 4 or global.tutorial_step = 5 or global.tutorial_step = 6 or global.tutorial_step = 7 or global.tutorial_step = 8 {
 			draw_self()
 		} else {
 			//draw_sprite_ext(s_black_border,0,x,y,image_xscale,image_yscale,0,c_white,1);

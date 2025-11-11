@@ -61,7 +61,7 @@ overwriting = false;
 hand_rarity = [];
 hand_card_type = [];
 
-element_1 = 0;
+element_1 = 4;
 element_2 = 1;
 
 common_locales = 0;
@@ -89,78 +89,29 @@ deck_card_type = [];
 deck_card_index = [];
 deck_target = [];
 
-// Ruby
-// Dormant Volcano
+// Emerald
+// Expanding Forest
 array_push(deck_rarity,0);
-array_push(deck_element,0);
-array_push(deck_card_type,0);
-array_push(deck_card_index,0);
-array_push(deck_target,"none");
-
-// Spark
-array_push(deck_rarity,0);
-array_push(deck_element,0);
-array_push(deck_card_type,1);
-array_push(deck_card_index,0);
-array_push(deck_target,"damage_any_small");
-
-// Ruby Quarry
-array_push(deck_rarity,1);
-array_push(deck_element,0);
+array_push(deck_element,4);
 array_push(deck_card_type,0);
 array_push(deck_card_index,1);
 array_push(deck_target,"none");
 
-// Stray Fireball
-array_push(deck_rarity,1);
-array_push(deck_element,0);
-array_push(deck_card_type,1);
+// Sun-drenched Clearing
+array_push(deck_rarity,0);
+array_push(deck_element,4);
+array_push(deck_card_type,0);
 array_push(deck_card_index,0);
 array_push(deck_target,"none");
 
-// Gates of Delgar
-array_push(deck_rarity,2);
-array_push(deck_element,0);
-array_push(deck_card_type,0);
+// Vine Wall
+array_push(deck_rarity,0);
+array_push(deck_element,4);
+array_push(deck_card_type,1);
 array_push(deck_card_index,2);
-array_push(deck_target,"none");
+array_push(deck_target,"fortify_any_small");
 
-// Set Ablaze
-array_push(deck_rarity,2);
-array_push(deck_element,0);
-array_push(deck_card_type,1);
-array_push(deck_card_index,1);
-array_push(deck_target,"damage_any_big");
-
-// Delgar Geysers
-array_push(deck_rarity,3);
-array_push(deck_element,0);
-array_push(deck_card_type,0);
-array_push(deck_card_index,0);
-array_push(deck_target,"none");
-
-// Eye of the Firestorm
-array_push(deck_rarity,3);
-array_push(deck_element,0);
-array_push(deck_card_type,1);
-array_push(deck_card_index,0);
-array_push(deck_target,"damage_big_2");
-
-// Firestorm
-array_push(deck_rarity,4);
-array_push(deck_element,0);
-array_push(deck_card_type,0);
-array_push(deck_card_index,1);
-array_push(deck_target,"none");
-
-// Firesight
-array_push(deck_rarity,4);
-array_push(deck_element,0);
-array_push(deck_card_type,1);
-array_push(deck_card_index,0);
-array_push(deck_target,"damage_any_small");
-
-///////////////////////////////////////////////////////////////
+// Pearl
 // Defrosting Forest
 array_push(deck_rarity,0);
 array_push(deck_element,1);
@@ -168,65 +119,10 @@ array_push(deck_card_type,0);
 array_push(deck_card_index,1);
 array_push(deck_target,"none");
 
-// Marble Foundations
+// Icebound River
 array_push(deck_rarity,0);
 array_push(deck_element,1);
-array_push(deck_card_type,1);
-array_push(deck_card_index,1);
-array_push(deck_target,"fortify_any_small");
-
-// Evershear Entryway
-array_push(deck_rarity,1);
-array_push(deck_element,1);
-array_push(deck_card_type,0);
-array_push(deck_card_index,2);
-array_push(deck_target,"none");
-
-// Preserve
-array_push(deck_rarity,1);
-array_push(deck_element,1);
-array_push(deck_card_type,1);
-array_push(deck_card_index,1);
-array_push(deck_target,"fortify_any_small");
-
-// Heart Labyrinth
-array_push(deck_rarity,2);
-array_push(deck_element,1);
 array_push(deck_card_type,0);
 array_push(deck_card_index,0);
 array_push(deck_target,"none");
 
-// Ice Shroud
-array_push(deck_rarity,2);
-array_push(deck_element,1);
-array_push(deck_card_type,1);
-array_push(deck_card_index,0);
-array_push(deck_target,"freeze_any");
-
-// Eternal Blueflame
-array_push(deck_rarity,3);
-array_push(deck_element,1);
-array_push(deck_card_type,0);
-array_push(deck_card_index,0);
-array_push(deck_target,"none");
-
-// Avalanche
-array_push(deck_rarity,3);
-array_push(deck_element,1);
-array_push(deck_card_type,1);
-array_push(deck_card_index,1);
-array_push(deck_target,"none");
-
-// Certona Tundra
-array_push(deck_rarity,4);
-array_push(deck_element,1);
-array_push(deck_card_type,0);
-array_push(deck_card_index,2);
-array_push(deck_target,"none");
-
-// Isolate
-array_push(deck_rarity,4);
-array_push(deck_element,1);
-array_push(deck_card_type,1);
-array_push(deck_card_index,2);
-array_push(deck_target,"destroy_frozen");

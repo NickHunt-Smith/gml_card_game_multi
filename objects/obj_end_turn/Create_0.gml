@@ -8,7 +8,7 @@ global.wait_for_effect = true;
 global.end_turn_active = false;
 combat_started = false;
 combat_ended = false;
-locked_channel_boost = 2;
+locked_channel_boost = 1;
 locked_boosting = false;
 
 combat_seq_player = noone;
@@ -34,6 +34,10 @@ opp_1_done = false;
 opp_2_done = false;
 opp_3_done = false;
 opp_4_done = false;
+left_opp_boost_done = false;
+right_opp_boost_done = false;
+left_player_boost_done = false;
+right_player_boost_done = false;
 
 position = "end_turn";
 opp = "end_turn";

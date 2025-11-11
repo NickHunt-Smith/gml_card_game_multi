@@ -4,6 +4,13 @@ if global.story_active = false {
 		var c_y = camera_get_view_y(view_camera[1]);
 		story_frame = instance_create_layer(c_x+0.5*view_wport[1],c_y+0.5*view_hport[1],"story",obj_story_text);
 		global.story_active = true;
+		story_frame.encounter_story = global.story_json[$ name];
+		story_frame.enemy = enemy;
+		
+		if hover_effect != noone {
+			part_system_destroy(hover_effect);
+			hover_effect = noone;
+		}
 	}
 
 	if story_done = true && encounter_frame = noone && global.encounter_visible = false {

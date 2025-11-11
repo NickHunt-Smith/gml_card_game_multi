@@ -8,4 +8,3 @@ draw_self();
 
 // Draw the text (forground)
 draw_text(x,y, text)
-

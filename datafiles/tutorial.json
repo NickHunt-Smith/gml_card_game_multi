@@ -1,0 +1,543 @@
+{
+    "tutorial": {
+        "tutorial0": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Synematic combat is a duel of the mind, pitting your very essence against your opponent. Your memories obtained through your life experiences are the weapons you will use to achieve victory.\""
+        },
+        "tutorial1": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Now that you have your crystals, the first step is to hold a memory in your mind. Let's start simple, close your eyes and picture your home village in your head. This is called Scrying.\""
+        },
+        "tutorial2": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "These cards are representations of your memories, drawn from your mind. Right click on one to look more closely."
+        },
+        "tutorial3": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Each card has a few important components. The first is the element it belongs to, shown here. This is an Emerald card, indicated by this green crystal."
+        },
+        "tutorial4": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "This symbol represents the rarity of the card, in this case Common. The higher the rarity, the more powerful the card is likely to be."
+        },
+        "tutorial5": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "As the game progresses, higher rarity cards become more likely to appear. However, you will need to gather more powerful memories and defeat stronger opponents to obtain these high rarity cards."
+        },
+        "tutorial6": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "This number is the card's Channel value, which describes how much damage it will deal to opposing cards as well as how much mana it will channel to you at the end of the turn."
+        },
+        "tutorial7": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "This number is the card's Strength value, which describes how much damage it can take before it is destroyed."
+        },
+        "tutorial8": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "This area of the card is reserved for any additional effects it might have. Most cards have unique effects of some kind."
+        },
+        "tutorial9": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You can inspect cards more closely like this at any time by right clicking on them. Left click anywhere now to exit this screen."
+        },
+        "tutorial10": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "When Scrying, you are given a choice of three cards you can pick to add to your hand. Usually the cards will be different from one another, but Dravas clearly wants us to choose the Leafy Village right now."
+        },
+        "tutorial11": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Left click on one of the cards to add it to your hand."
+        },
+        "tutorial12": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Your opponent also Scrys an equal number of cards of equal rarity to you at the start of the turn."
+        },
+        "tutorial13": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Once you're picturing your village in your mind, you then bring it into existence. Take that vivid memory and project it into the real world!\""
+        },
+        "tutorial14": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Left click and drag the Leafy Village into the leftmost lane to put it in play."
+        },
+        "tutorial16": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"That's it! A small manifestation of your village stands before you. Pretty easy right?\""
+        },
+        "tutorial17": {
+            "narrator": false,
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"Wow, it barely takes any effort at all! How could I know nothing about this before...\""
+        },
+        "tutorial18": {
+            "narrator": false,
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "\"My turn now!\""
+        },
+        "tutorial20": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Cheeky of him to bring out this very clearing we're in right now. Let's move on to the next phase.\""
+        },
+        "tutorial21": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "A played locale's Element, Channel, Rarity and Strength are displayed below the card art. You can right click on played locales at any time to inspect them more closely. This locale Corrick played has no special effects."
+        },
+        "tutorial22": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "A key aspect of any duel is Priority, indicating which player currently has the opportunity to take an action."
+        },
+        "tutorial23": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Playing a locale passes priority to your opponent, allowing them to take an action. Corrick just played a locale, so you now have Priority again, indicated by the blue area here."
+        },
+        "tutorial24": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "If we had any more cards, we could play them now. Since our hand is empty, we will choose to pass priority to Corrick. The turn will end when both you and your opponent choose to pass immediately after each other."
+        },
+        "tutorial25": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Corrick also has an empty hand, so he will choose to pass Priority after you, ending the turn. Left click the Pass button now."
+        },
+        "tutorial27": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Now your summoned locales will deal damage to each other, using their channelling energy.\""
+        },
+        "tutorial29": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Your Village has 2 Channel, so it dealt 2 damage to Corrick's Clearing, reducing it from 3 Strength to 1 Strength. Corrick's Clearing has 1 Channel, so it dealt 1 damage to your Village, reducing it from 3 Strength to 2 Strength."
+        },
+        "tutorial30": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Since they both survived, they will now channel their energy directly to you, to be captured in your crystals.\""
+        },
+        "tutorial31": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Immediately after the Combat phase, it becomes the End Turn phase. Locales will Channel mana equal to their Channel value, then trigger any End Turn effects they might have."
+        },
+        "tutorial32": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "The order of the Channeling/End Turn effects is from left to right, with the Priority player's locales going first."
+        },
+        "tutorial33": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Since you have Priority, your Village will Channel 2 Emerald mana to you, then deal 1 damage to itself due to its End Turn effect. Afterwards, Corrick's Clearing will Channel 1 Emerald mana to him."
+        },
+        "tutorial35": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You receive a sudden surge of clarity as the green energy flows to you. Your body feels grounded, bound to the earth. You can actually feel the roots of the nearby trees, expanding and twisting together."
+        },
+        "tutorial36": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You feel the sun on the leaves above as though it were falling on your own back, sustaining you. The forest no longer seems like a chaotic maze, but a cathedral to life and hope stretching out across the world. You want the forest to expand even more."
+        },
+        "tutorial37": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"It's a profound experience at first isn't it? Don't get distracted Alden, you still have an opponent to face.\""
+        },
+        "tutorial38": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"The main reason Synemancy is so common is the presence of the Synematic barrier. You have the barrier right now since you channeled some energy, so does Corrick.\""
+        },
+        "tutorial39": {
+            "narrator": false,
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "Corrick is indeed glowing slightly with green energy, forming a barely-visible bubble around him. \"No ordinary weapon can get through this barrier, not swords or falling rocks or even powerful spells.\""
+        },
+        "tutorial40": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"The only way to defeat another channeling Synemancer is by overwhelming them with your own channeled mana. Depending on how powerful your foe is, you may need more or less mana.\""
+        },
+        "tutorial41": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"The other catch is that it's not enough to focus on just one element. You need two elements to reach the mana threshold to overcome the barrier, hence the two crystals I gave you.\""
+        },
+        "tutorial42": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Let's see what your Sapphire memories are like, so we can get another element going. Think of a time where you felt the presence of water most intensely.\""
+        },
+        "tutorial43": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You remember a few weeks ago, when a big rainstorm came through and drenched the village over a few hours. You picture the endless raindrops falling from the sky..."
+        },
+        "tutorial45": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "This time you have Scryed a spell rather than a locale. Right click on one to inspect more closely."
+        },
+        "tutorial46": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Spells do not have Channel or Strength in the same way as locales, although they do have an Element and a Rarity. A spell is a powerful one-time-use effect, which can help you gain an advantage over your opponent if used effectively."
+        },
+        "tutorial47": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Left click to exit this screen."
+        },
+        "tutorial48": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Keep in mind you can view your opponent's board while Scrying by left clicking this eye icon."
+        },
+        "tutorial49": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Left click the eye again to return to your Scry options."
+        },
+        "tutorial50": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Left click one of these Dampen spells to add it to your hand."
+        },
+        "tutorial51": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You also remember once travelling to the very edge of the forest on one of your more rebellious days, where the trees met the sea at a dramatic cliff-edge..."
+        },
+        "tutorial53": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Left click one of these Blustery Cliffsides to add it to your hand."
+        },
+        "tutorial54": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Now would be a good time to play the Dampen spell, which reduces a random enemy locale's Channel by 1. Right now, Corrick only has one locale, so his single Clearing will be guaranteed to be have its Channel reduced."
+        },
+        "tutorial55": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "With 0 Channel, Corrick's Clearing will be unable to deal any damage to your Village, and it also won't Channel any mana to him at the end of the turn."
+        },
+        "tutorial56": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Left click and drag the Dampen spell anywhere on the board to play it."
+        },
+        "tutorial58": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Whenever you play a spell when there are no other spells in play, it starts a spell chain. You can play as many spells as you want, and when you pass your opponent will be able to respond with spells of their own."
+        },
+        "tutorial59": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Locales cannot be played while the spell chain is active. Since you have no other spells, pass Priority to Corrick to see if he wants to play any spells in response to you."
+        },
+        "tutorial61": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"A spell? This is good Alden, you're catching on quickly.\""
+        },
+        "tutorial62": {
+            "narrator": false,
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "\"Well then, how about this?\""
+        },
+        "tutorial64": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You can right click on a spell to read its effect in the same way as a locale."
+        },
+        "tutorial65": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Some spells have specific targets, such as the one Corrick just played. Hover your mouse over the spell to see what its target is."
+        },
+        "tutorial66": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Since Corrick played a spell in response to you, you now have Priority again. You could play another spell if you had one, to which your opponent could respond, and so on. The maximum number of spells allowed in a chain is 7."
+        },
+        "tutorial67": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You don't have any more spells to play, so click the Resolve button to end the chain. You keep Priority when you choose to resolve the spell chain. The spells will resolve in reverse order, meaning Corrick's spell will use its effect first."
+        },
+        "tutorial69": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Now you can play your remaining Sapphire locale. It's important to play it on the right side, so you can start Channeling toward your second element."
+        },
+        "tutorial70": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Play your Cliffside in the third lane."
+        },
+        "tutorial73": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "End the turn by passing, since you're out of cards."
+        },
+        "tutorial76": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You now have 4 Emerald mana on your left, and 2 Sapphire mana on your right. 4 channeled mana of these two elements will be enough to defeat Corrick, though stronger enemies will require much more channeled mana."
+        },
+        "tutorial77": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You can hover your mouse over the mana counters or the channeling crystals to see how much mana of each element you have accumulated on each side. Since you reached the threshold for victory on the left side, your Emerald has started glowing."
+        },
+        "tutorial78": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You gain an additional benefit by having a crystal at the mana threshold - it will channel 1 mana to your other side, hence your Sapphire mana is at 2 rather than 1."
+        },
+        "tutorial79": {
+            "narrator": false,
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "You overhear Dravas quietly talking with Kusharn. \"Alden is actually doing well...just a bit more and he'll have enough to win...\""
+        },
+        "tutorial80": {
+            "narrator": false,
+            "character_art": "char_kusharn",
+            "character_name": "Kusharn",
+            "sound": false,
+            "text0": "Kusharn clicks her tongue dismissively. \"More of a reflection on Corrick than anything else isn't it? Don't get too excited.\""
+        },
+        "tutorial81": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You focus on Scrying more Sapphire memories, trying to picture water in its purest form..."
+        },
+        "tutorial85": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Sometimes you may not want to pick any of the cards you are offered through Scrying, or you may be looking for a specific card that is not currently available."
+        },
+        "tutorial86": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "In that case, you can perform a Scry reroll, which will produce three new options for you to choose from of the same type (locale/spell) and rarity. You only have 1 Scry reroll per turn, which carries over between turns if unused."
+        },
+        "tutorial87": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Left click here to reroll your Scry options, then pick one of the Vine Wall spells."
+        },
+        "tutorial89": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Play the Essence of Water spell."
+        },
+        "tutorial91": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Also play the Vine Wall spell."
+        },
+        "tutorial93": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "The Vine Wall spell requires you to target a friendly locale. The arrow tracking your mouse will indicate when you are choosing a target, and valid targets will be highlighted when you hover over them."
+        },
+        "tutorial94": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Left click on your Cliffside, enabling it to survive combat with the opposing Ice-Bound River once the spell resolves."
+        },
+        "tutorial95": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Pass Priority to Corrick."
+        },
+        "tutorial98": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Sometimes passing to your opponent can be the most powerful strategy, even if you have more cards you could play. If you pass right now and Corrick does too, you'll channel enough mana to beat him."
+        },
+        "tutorial99": {
+            "narrator": true,
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Pass Priority to Corrick to win the duel!"
+        }
+    }
+}

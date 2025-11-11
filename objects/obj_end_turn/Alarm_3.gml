@@ -85,24 +85,24 @@ if global.player_locale_3 != noone && global.opp_locale_3 != noone {
 	opp_scale = 2*((global.opp_locale_3.channel)/(global.player_locale_3.channel+global.opp_locale_3.channel))
 	alarm[1] = 14;
 	alarm[4] = 120;
-} else if global.player_locale_3 != noone {
-	if global.player_locale_3.frozen = false {
-		global.player_locale_3.channel += 1;
-	} else {
-		global.player_locale_3.memory_channel += 1;
-	}
-	channel_up_seq = layer_sequence_create("effect_layer",global.player_locale_3.x+112,global.player_locale_3.y+184,seq_channel_up);
-	var seq_change_health = scr_change_numbers(1,global.player_locale_3.x+26,global.player_locale_3.y + 328);
-	alarm[4] = 100;
-} else if global.opp_locale_3 != noone {
-	if global.opp_locale_3.frozen = false {
-		global.opp_locale_3.channel += 1;
-	} else {
-		global.opp_locale_3.memory_channel += 1;
-	}
-	channel_up_seq = layer_sequence_create("effect_layer",global.opp_locale_3.x+112,global.opp_locale_3.y+184,seq_channel_up);
-	var seq_change_health = scr_change_numbers(1,global.opp_locale_3.x+26,global.opp_locale_3.y + 328);
-	alarm[4] = 100;
+//} else if global.player_locale_3 != noone {
+//	if global.player_locale_3.frozen = false {
+//		global.player_locale_3.channel += 1;
+//	} else {
+//		global.player_locale_3.memory_channel += 1;
+//	}
+//	channel_up_seq = layer_sequence_create("effect_layer",global.player_locale_3.x+112,global.player_locale_3.y+184,seq_channel_up);
+//	var seq_change_health = scr_change_numbers(1,global.player_locale_3.x+26,global.player_locale_3.y + 328);
+//	alarm[4] = 100;
+//} else if global.opp_locale_3 != noone {
+//	if global.opp_locale_3.frozen = false {
+//		global.opp_locale_3.channel += 1;
+//	} else {
+//		global.opp_locale_3.memory_channel += 1;
+//	}
+//	channel_up_seq = layer_sequence_create("effect_layer",global.opp_locale_3.x+112,global.opp_locale_3.y+184,seq_channel_up);
+//	var seq_change_health = scr_change_numbers(1,global.opp_locale_3.x+26,global.opp_locale_3.y + 328);
+//	alarm[4] = 100;
 } else {
 	alarm[4] = 1;
 }

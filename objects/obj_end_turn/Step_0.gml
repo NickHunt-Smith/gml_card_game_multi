@@ -38,484 +38,492 @@ if (global.player_enabled = false) && (shimmering = true) && end_turn_shimmer !=
 }
 
 // Conduct end of turn effects if not waiting for animations
-
-if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && global.end_game_trigger = false && global.drafting = false {
+if global.tutorial = false or global.tutorial_step = 28 or global.tutorial_step = 34 or global.tutorial_step = 75 or global.tutorial_step = 100 {
+	if global.end_turn_active = true && array_length(global.being_destroyed) = 0 && global.end_game_trigger = false && global.drafting = false {
 	
-	if combat_ended = false {
-		if global.skip_combat = false {
-			if combat_started = false {
-				alarm[0] = 50;
-				combat_started = true;
+		if combat_ended = false {
+			if global.skip_combat = false {
+				if combat_started = false {
+					alarm[0] = 50;
+					combat_started = true;
+				}
+			} else {
+				global.skip_combat = false;
+				combat_ended = true;
 			}
 		} else {
-			global.skip_combat = false;
-			combat_ended = true;
-		}
-	} else {
 		
-		if global.priority = "player" {
+			if global.priority = "player" {
 		
-			if (global.player_locale_1 != noone) && (player_1_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.player_locale_1.x,global.player_locale_1.y,0,global.player_locale_1.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = false;
-				effect_inst.card_state = global.player_locale_1;
-				player_1_done = true;
-			} else if (global.opp_locale_1 != noone) && (opp_1_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.opp_locale_1.x,global.opp_locale_1.y,0,global.opp_locale_1.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = true;
-				effect_inst.card_state = global.opp_locale_1;
-				opp_1_done = true;
-			} else if (global.opp_locale_2 != noone) && (opp_2_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.opp_locale_2.x,global.opp_locale_2.y,0,global.opp_locale_2.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = true;
-				effect_inst.card_state = global.opp_locale_2;
-				opp_2_done = true;
-			} else if (global.player_locale_2 != noone) && (player_2_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.player_locale_2.x,global.player_locale_2.y,0,global.player_locale_2.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = false;
-				effect_inst.card_state = global.player_locale_2;
-				player_2_done = true;
-			} else if (global.player_locale_3 != noone) && (player_3_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.player_locale_3.x,global.player_locale_3.y,0,global.player_locale_3.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = false;
-				effect_inst.card_state = global.player_locale_3;
-				player_3_done = true;
-			} else if (global.opp_locale_3 != noone) && (opp_3_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.opp_locale_3.x,global.opp_locale_3.y,0,global.opp_locale_3.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = true;
-				effect_inst.card_state = global.opp_locale_3;
-				opp_3_done = true;
-			} else if (global.opp_locale_4 != noone) && (opp_4_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.opp_locale_4.x,global.opp_locale_4.y,0,global.opp_locale_4.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = true;
-				effect_inst.card_state = global.opp_locale_4;
-				opp_4_done = true;
-			} else if (global.player_locale_4 != noone) && (player_4_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.player_locale_4.x,global.player_locale_4.y,0,global.player_locale_4.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = false;
-				effect_inst.card_state = global.player_locale_4;
-				player_4_done = true;
-			} else if (global.wait_for_effect = false) {
-				//global.player_enabled = true;
-				if locked_boosting = false {
-					if array_max(global.channelled_left_opp) >= global.win_threshold  {
-						var max_channel = 0;
-						var max_channel_ind = 0;
-						for (var _i = 0; _i < array_length(global.channelled_right_opp); _i++) {
-							if global.channelled_right_opp[_i] >= max_channel {
-								max_channel = global.channelled_right_opp[_i];
-								max_channel_ind = _i;
+				if (global.player_locale_1 != noone) && (player_1_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.player_locale_1.x,global.player_locale_1.y,0,global.player_locale_1.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = false;
+					effect_inst.card_state = global.player_locale_1;
+					player_1_done = true;
+				} else if (global.opp_locale_1 != noone) && (opp_1_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.opp_locale_1.x,global.opp_locale_1.y,0,global.opp_locale_1.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = true;
+					effect_inst.card_state = global.opp_locale_1;
+					opp_1_done = true;
+				} else if (global.player_locale_2 != noone) && (player_2_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.player_locale_2.x,global.player_locale_2.y,0,global.player_locale_2.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = true;
+					effect_inst.card_state = global.player_locale_2;
+					player_2_done = true;
+				} else if (global.opp_locale_2 != noone) && (opp_2_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.opp_locale_2.x,global.opp_locale_2.y,0,global.opp_locale_2.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = true;
+					effect_inst.card_state = global.opp_locale_2;
+					opp_2_done = true;
+				} else if (global.player_locale_3 != noone) && (player_3_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.player_locale_3.x,global.player_locale_3.y,0,global.player_locale_3.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = false;
+					effect_inst.card_state = global.player_locale_3;
+					player_3_done = true;
+				} else if (global.opp_locale_3 != noone) && (opp_3_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.opp_locale_3.x,global.opp_locale_3.y,0,global.opp_locale_3.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = true;
+					effect_inst.card_state = global.opp_locale_3;
+					opp_3_done = true;
+				} else if (global.player_locale_4 != noone) && (player_4_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.player_locale_4.x,global.player_locale_4.y,0,global.player_locale_4.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = false;
+					effect_inst.card_state = global.player_locale_4;
+					player_4_done = true;
+				} else if (global.opp_locale_4 != noone) && (opp_4_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.opp_locale_4.x,global.opp_locale_4.y,0,global.opp_locale_4.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = true;
+					effect_inst.card_state = global.opp_locale_4;
+					opp_4_done = true;
+				} else if (global.wait_for_effect = false) {
+					//global.player_enabled = true;
+					if locked_boosting = false {
+						if array_max(global.channelled_left_player) >= global.win_threshold && left_player_boost_done = false {
+							var max_channel = 0;
+							var max_channel_ind = 0;
+							for (var _i = 0; _i < array_length(global.channelled_right_player); _i++) {
+								if global.channelled_right_player[_i] >= max_channel {
+									max_channel = global.channelled_right_player[_i];
+									max_channel_ind = _i;
+								}
 							}
-						}
 				
-						if max_channel_ind = 0 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_ruby_extra);
-							global.channelled_right_opp_ruby += locked_channel_boost;
-						} else if max_channel_ind = 1 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_pearl_extra);
-							global.channelled_right_opp_pearl += locked_channel_boost;
-						} else if max_channel_ind = 2 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_onyx_extra);
-							global.channelled_right_opp_onyx += locked_channel_boost;
-						} else if max_channel_ind = 3 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_sapphire_extra);
-							global.channelled_right_opp_sapphire += locked_channel_boost;
-						} else if max_channel_ind = 4 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_emerald_extra);
-							global.channelled_right_opp_emerald += locked_channel_boost;
-						} else if max_channel_ind = 5 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_citrine_extra);
-							global.channelled_right_opp_citrine += locked_channel_boost;
-						} else if max_channel_ind = 6 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_opal_extra);
-							global.channelled_right_opp_opal += locked_channel_boost;
-						} else if max_channel_ind = 7 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_amethyst_extra);
-							global.channelled_right_opp_amethyst += locked_channel_boost;
-						}
-						layer_sequence_angle(channel_seq_1,90);
-						layer_sequence_xscale(channel_seq_1,1.2);
-						layer_sequence_yscale(channel_seq_1,1.2);
-						var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
-						alarm[8] = 100;
-						locked_boosting = true;
-					} else if array_max(global.channelled_right_opp) >= global.win_threshold  {
-						var max_channel = 0;
-						var max_channel_ind = 0;
-						for (var _i = 0; _i < array_length(global.channelled_left_opp); _i++) {
-							if global.channelled_left_opp[_i] >= max_channel {
-								max_channel = global.channelled_left_opp[_i];
-								max_channel_ind = _i;
+							if max_channel_ind = 0 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,1400,seq_channel_ruby_extra);
+								global.channelled_right_player_ruby += locked_channel_boost;
+							} else if max_channel_ind = 1 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,1400,seq_channel_pearl_extra);
+								global.channelled_right_player_pearl += locked_channel_boost;
+							} else if max_channel_ind = 2 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,1400,seq_channel_onyx_extra);
+								global.channelled_right_player_onyx += locked_channel_boost;
+							} else if max_channel_ind = 3 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,1400,seq_channel_sapphire_extra);
+								global.channelled_right_player_sapphire += locked_channel_boost;
+							} else if max_channel_ind = 4 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,1400,seq_channel_emerald_extra);
+								global.channelled_right_player_emerald += locked_channel_boost;
+							} else if max_channel_ind = 5 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,1400,seq_channel_citrine_extra);
+								global.channelled_right_player_citrine += locked_channel_boost;
+							} else if max_channel_ind = 6 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,1400,seq_channel_opal_extra);
+								global.channelled_right_player_opal += locked_channel_boost;
+							} else if max_channel_ind = 7 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,1400,seq_channel_amethyst_extra);
+								global.channelled_right_player_amethyst += locked_channel_boost;
 							}
-						}
-				
-						if max_channel_ind = 0 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_ruby_extra);
-							global.channelled_left_opp_ruby += locked_channel_boost;
-						} else if max_channel_ind = 1 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_pearl_extra);
-							global.channelled_left_opp_pearl += locked_channel_boost;
-						} else if max_channel_ind = 2 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_onyx_extra);
-							global.channelled_left_opp_onyx += locked_channel_boost;
-						} else if max_channel_ind = 3 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_sapphire_extra);
-							global.channelled_left_opp_sapphire += locked_channel_boost;
-						} else if max_channel_ind = 4 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_emerald_extra);
-							global.channelled_left_opp_emerald += locked_channel_boost;
-						} else if max_channel_ind = 5 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_citrine_extra);
-							global.channelled_left_opp_citrine += locked_channel_boost;
-						} else if max_channel_ind = 6 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_opal_extra);
-							global.channelled_left_opp_opal += locked_channel_boost;
-						} else if max_channel_ind = 7 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_amethyst_extra);
-							global.channelled_left_opp_amethyst += locked_channel_boost;
-						}
-						layer_sequence_angle(channel_seq_1,-90);
-						layer_sequence_xscale(channel_seq_1,1.2);
-						layer_sequence_yscale(channel_seq_1,1.2);
-						var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
-						alarm[8] = 100;
-						locked_boosting = true;
-					} else if array_max(global.channelled_right_player) >= global.win_threshold  {
-						var max_channel = 0;
-						var max_channel_ind = 0;
-						for (var _i = 0; _i < array_length(global.channelled_left_player); _i++) {
-							if global.channelled_left_player[_i] >= max_channel {
-								max_channel = global.channelled_left_player[_i];
-								max_channel_ind = _i;
+							layer_sequence_angle(channel_seq_1,90);
+							layer_sequence_xscale(channel_seq_1,0.8);
+							layer_sequence_yscale(channel_seq_1,0.8);
+							var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
+							alarm[8] = 100;
+							locked_boosting = true;
+							left_player_boost_done = true;
+						} else if array_max(global.channelled_right_player) >= global.win_threshold && right_player_boost_done = false {
+							var max_channel = 0;
+							var max_channel_ind = 0;
+							for (var _i = 0; _i < array_length(global.channelled_left_player); _i++) {
+								if global.channelled_left_player[_i] >= max_channel {
+									max_channel = global.channelled_left_player[_i];
+									max_channel_ind = _i;
+								}
 							}
-						}
 				
-						if max_channel_ind = 0 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_ruby_extra);
-							global.channelled_left_player_ruby += locked_channel_boost;
-						} else if max_channel_ind = 1 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_pearl_extra);
-							global.channelled_left_player_pearl += locked_channel_boost;
-						} else if max_channel_ind = 2 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_onyx_extra);
-							global.channelled_left_player_onyx += locked_channel_boost;
-						} else if max_channel_ind = 3 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_sapphire_extra);
-							global.channelled_left_player_sapphire += locked_channel_boost;
-						} else if max_channel_ind = 4 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_emerald_extra);
-							global.channelled_left_player_emerald += locked_channel_boost;
-						} else if max_channel_ind = 5 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_citrine_extra);
-							global.channelled_left_player_citrine += locked_channel_boost;
-						} else if max_channel_ind = 6 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_opal_extra);
-							global.channelled_left_player_opal += locked_channel_boost;
-						} else if max_channel_ind = 7 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_amethyst_extra);
-							global.channelled_left_player_amethyst += locked_channel_boost;
-						}
-						layer_sequence_angle(channel_seq_2,-90);
-						layer_sequence_xscale(channel_seq_2,1.2);
-						layer_sequence_yscale(channel_seq_2,1.2);
-						var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
-						alarm[8] = 100;
-						locked_boosting = true;
-					} else if array_max(global.channelled_left_player) >= global.win_threshold  {
-						var max_channel = 0;
-						var max_channel_ind = 0;
-						for (var _i = 0; _i < array_length(global.channelled_right_player); _i++) {
-							if global.channelled_right_player[_i] >= max_channel {
-								max_channel = global.channelled_right_player[_i];
-								max_channel_ind = _i;
+							if max_channel_ind = 0 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_ruby_extra);
+								global.channelled_left_player_ruby += locked_channel_boost;
+							} else if max_channel_ind = 1 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_pearl_extra);
+								global.channelled_left_player_pearl += locked_channel_boost;
+							} else if max_channel_ind = 2 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_onyx_extra);
+								global.channelled_left_player_onyx += locked_channel_boost;
+							} else if max_channel_ind = 3 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_sapphire_extra);
+								global.channelled_left_player_sapphire += locked_channel_boost;
+							} else if max_channel_ind = 4 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_emerald_extra);
+								global.channelled_left_player_emerald += locked_channel_boost;
+							} else if max_channel_ind = 5 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_citrine_extra);
+								global.channelled_left_player_citrine += locked_channel_boost;
+							} else if max_channel_ind = 6 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_opal_extra);
+								global.channelled_left_player_opal += locked_channel_boost;
+							} else if max_channel_ind = 7 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_amethyst_extra);
+								global.channelled_left_player_amethyst += locked_channel_boost;
 							}
-						}
+							layer_sequence_angle(channel_seq_1,-90);
+							layer_sequence_xscale(channel_seq_1,0.8);
+							layer_sequence_yscale(channel_seq_1,0.8);
+							var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
+							alarm[8] = 100;
+							locked_boosting = true;
+							right_player_boost_done = true;
+						} else if array_max(global.channelled_right_opp) >= global.win_threshold && right_opp_boost_done = false {
+							var max_channel = 0;
+							var max_channel_ind = 0;
+							for (var _i = 0; _i < array_length(global.channelled_left_opp); _i++) {
+								if global.channelled_left_opp[_i] >= max_channel {
+									max_channel = global.channelled_left_opp[_i];
+									max_channel_ind = _i;
+								}
+							}
 				
-						if max_channel_ind = 0 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_ruby_extra);
-							global.channelled_right_player_ruby += locked_channel_boost;
-						} else if max_channel_ind = 1 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_pearl_extra);
-							global.channelled_right_player_pearl += locked_channel_boost;
-						} else if max_channel_ind = 2 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_onyx_extra);
-							global.channelled_right_player_onyx += locked_channel_boost;
-						} else if max_channel_ind = 3 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_sapphire_extra);
-							global.channelled_right_player_sapphire += locked_channel_boost;
-						} else if max_channel_ind = 4 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_emerald_extra);
-							global.channelled_right_player_emerald += locked_channel_boost;
-						} else if max_channel_ind = 5 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_citrine_extra);
-							global.channelled_right_player_citrine += locked_channel_boost;
-						} else if max_channel_ind = 6 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_opal_extra);
-							global.channelled_right_player_opal += locked_channel_boost;
-						} else if max_channel_ind = 7 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_amethyst_extra);
-							global.channelled_right_player_amethyst += locked_channel_boost;
+							if max_channel_ind = 0 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_ruby_extra);
+								global.channelled_left_opp_ruby += locked_channel_boost;
+							} else if max_channel_ind = 1 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_pearl_extra);
+								global.channelled_left_opp_pearl += locked_channel_boost;
+							} else if max_channel_ind = 2 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_onyx_extra);
+								global.channelled_left_opp_onyx += locked_channel_boost;
+							} else if max_channel_ind = 3 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_sapphire_extra);
+								global.channelled_left_opp_sapphire += locked_channel_boost;
+							} else if max_channel_ind = 4 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_emerald_extra);
+								global.channelled_left_opp_emerald += locked_channel_boost;
+							} else if max_channel_ind = 5 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_citrine_extra);
+								global.channelled_left_opp_citrine += locked_channel_boost;
+							} else if max_channel_ind = 6 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_opal_extra);
+								global.channelled_left_opp_opal += locked_channel_boost;
+							} else if max_channel_ind = 7 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_amethyst_extra);
+								global.channelled_left_opp_amethyst += locked_channel_boost;
+							}
+							layer_sequence_angle(channel_seq_2,-90);
+							layer_sequence_xscale(channel_seq_2,0.8);
+							layer_sequence_yscale(channel_seq_2,0.8);
+							var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
+							alarm[8] = 100;
+							locked_boosting = true;
+							right_opp_boost_done = true;
+						} else if array_max(global.channelled_left_opp) >= global.win_threshold && left_opp_boost_done = false {
+							var max_channel = 0;
+							var max_channel_ind = 0;
+							for (var _i = 0; _i < array_length(global.channelled_right_opp); _i++) {
+								if global.channelled_right_opp[_i] >= max_channel {
+									max_channel = global.channelled_right_opp[_i];
+									max_channel_ind = _i;
+								}
+							}
+				
+							if max_channel_ind = 0 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,105,seq_channel_ruby_extra);
+								global.channelled_right_opp_ruby += locked_channel_boost;
+							} else if max_channel_ind = 1 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,105,seq_channel_pearl_extra);
+								global.channelled_right_opp_pearl += locked_channel_boost;
+							} else if max_channel_ind = 2 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,105,seq_channel_onyx_extra);
+								global.channelled_right_opp_onyx += locked_channel_boost;
+							} else if max_channel_ind = 3 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,105,seq_channel_sapphire_extra);
+								global.channelled_right_opp_sapphire += locked_channel_boost;
+							} else if max_channel_ind = 4 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,105,seq_channel_emerald_extra);
+								global.channelled_right_opp_emerald += locked_channel_boost;
+							} else if max_channel_ind = 5 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,105,seq_channel_citrine_extra);
+								global.channelled_right_opp_citrine += locked_channel_boost;
+							} else if max_channel_ind = 6 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,105,seq_channel_opal_extra);
+								global.channelled_right_opp_opal += locked_channel_boost;
+							} else if max_channel_ind = 7 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,105,seq_channel_amethyst_extra);
+								global.channelled_right_opp_amethyst += locked_channel_boost;
+							}
+							layer_sequence_angle(channel_seq_2,90);
+							layer_sequence_xscale(channel_seq_2,0.8);
+							layer_sequence_yscale(channel_seq_2,0.8);
+							var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
+							alarm[8] = 100;
+							locked_boosting = true;
+							left_opp_boost_done = true;
+						} else {
+							alarm[9] = 1;
+							locked_boosting = true;
 						}
-						layer_sequence_angle(channel_seq_2,90);
-						layer_sequence_xscale(channel_seq_2,1.2);
-						layer_sequence_yscale(channel_seq_2,1.2);
-						var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
-						alarm[8] = 100;
-						locked_boosting = true;
-					} else {
-						alarm[8] = 1;
-						locked_boosting = true;
 					}
-				}
-			} 
-		}
-		else if global.priority = "opp" {
-			if (global.opp_locale_1 != noone) && (opp_1_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.opp_locale_1.x,global.opp_locale_1.y,0,global.opp_locale_1.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = true;
-				effect_inst.card_state = global.opp_locale_1;
-				opp_1_done = true;
-			} else if (global.player_locale_1 != noone) && (player_1_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.player_locale_1.x,global.player_locale_1.y,0,global.player_locale_1.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = false;
-				effect_inst.card_state = global.player_locale_1;
-				player_1_done = true;
-			} else if (global.player_locale_2 != noone) && (player_2_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.player_locale_2.x,global.player_locale_2.y,0,global.player_locale_2.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = false;
-				effect_inst.card_state = global.player_locale_2;
-				player_2_done = true;
-			} else if (global.opp_locale_2 != noone) && (opp_2_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.opp_locale_2.x,global.opp_locale_2.y,0,global.opp_locale_2.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = true;
-				effect_inst.card_state = global.opp_locale_2;
-				opp_2_done = true;
-			} else if (global.opp_locale_3 != noone) && (opp_3_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.opp_locale_3.x,global.opp_locale_3.y,0,global.opp_locale_3.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = true;
-				effect_inst.card_state = global.opp_locale_3;
-				opp_3_done = true;
-			} else if (global.player_locale_3 != noone) && (player_3_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.player_locale_3.x,global.player_locale_3.y,0,global.player_locale_3.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = false;
-				effect_inst.card_state = global.player_locale_3;
-				player_3_done = true;
-			} else if (global.player_locale_4 != noone) && (player_4_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.player_locale_4.x,global.player_locale_4.y,0,global.player_locale_4.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = false;
-				effect_inst.card_state = global.player_locale_4;
-				player_4_done = true;
-			} else if (global.opp_locale_4 != noone) && (opp_4_done = false) && (global.wait_for_effect = false) {
-				global.wait_for_effect = true;
-				var effect_inst = instance_create_depth(global.opp_locale_4.x,global.opp_locale_4.y,0,global.opp_locale_4.effect_function);
-				effect_inst.eff_type = "end_turn";
-				effect_inst.opp = true;
-				effect_inst.card_state = global.opp_locale_4;
-				opp_4_done = true;
-			} else if (global.wait_for_effect = false) {
-				//global.player_enabled = true;
-				if locked_boosting = false {
-					if array_max(global.channelled_left_player) >= global.win_threshold  {
-						var max_channel = 0;
-						var max_channel_ind = 0;
-						for (var _i = 0; _i < array_length(global.channelled_right_player); _i++) {
-							if global.channelled_right_player[_i] >= max_channel {
-								max_channel = global.channelled_right_player[_i];
-								max_channel_ind = _i;
+				} 
+			}
+			else if global.priority = "opp" {
+				if (global.opp_locale_1 != noone) && (opp_1_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.opp_locale_1.x,global.opp_locale_1.y,0,global.opp_locale_1.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = true;
+					effect_inst.card_state = global.opp_locale_1;
+					opp_1_done = true;
+				} else if (global.player_locale_1 != noone) && (player_1_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.player_locale_1.x,global.player_locale_1.y,0,global.player_locale_1.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = false;
+					effect_inst.card_state = global.player_locale_1;
+					player_1_done = true;
+				} else if (global.opp_locale_2 != noone) && (opp_2_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.opp_locale_2.x,global.opp_locale_2.y,0,global.opp_locale_2.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = true;
+					effect_inst.card_state = global.opp_locale_2;
+					opp_2_done = true;
+				} else if (global.player_locale_2 != noone) && (player_2_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.player_locale_2.x,global.player_locale_2.y,0,global.player_locale_2.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = false;
+					effect_inst.card_state = global.player_locale_2;
+					player_2_done = true;
+				} else if (global.opp_locale_3 != noone) && (opp_3_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.opp_locale_3.x,global.opp_locale_3.y,0,global.opp_locale_3.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = true;
+					effect_inst.card_state = global.opp_locale_3;
+					opp_3_done = true;
+				} else if (global.player_locale_3 != noone) && (player_3_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.player_locale_3.x,global.player_locale_3.y,0,global.player_locale_3.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = false;
+					effect_inst.card_state = global.player_locale_3;
+					player_3_done = true;
+				} else if (global.opp_locale_4 != noone) && (opp_4_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.opp_locale_4.x,global.opp_locale_4.y,0,global.opp_locale_4.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = true;
+					effect_inst.card_state = global.opp_locale_4;
+					opp_4_done = true;
+				} else if (global.player_locale_4 != noone) && (player_4_done = false) && (global.wait_for_effect = false) {
+					global.wait_for_effect = true;
+					var effect_inst = instance_create_depth(global.player_locale_4.x,global.player_locale_4.y,0,global.player_locale_4.effect_function);
+					effect_inst.eff_type = "end_turn";
+					effect_inst.opp = false;
+					effect_inst.card_state = global.player_locale_4;
+					player_4_done = true;
+				} else if (global.wait_for_effect = false) {
+					//global.player_enabled = true;
+					if locked_boosting = false {
+						if array_max(global.channelled_left_opp) >= global.win_threshold && left_opp_boost_done = false {
+							var max_channel = 0;
+							var max_channel_ind = 0;
+							for (var _i = 0; _i < array_length(global.channelled_right_opp); _i++) {
+								if global.channelled_right_opp[_i] >= max_channel {
+									max_channel = global.channelled_right_opp[_i];
+									max_channel_ind = _i;
+								}
 							}
-						}
 				
-						if max_channel_ind = 0 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_ruby_extra);
-							global.channelled_right_player_ruby += locked_channel_boost;
-						} else if max_channel_ind = 1 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_pearl_extra);
-							global.channelled_right_player_pearl += locked_channel_boost;
-						} else if max_channel_ind = 2 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_onyx_extra);
-							global.channelled_right_player_onyx += locked_channel_boost;
-						} else if max_channel_ind = 3 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_sapphire_extra);
-							global.channelled_right_player_sapphire += locked_channel_boost;
-						} else if max_channel_ind = 4 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_emerald_extra);
-							global.channelled_right_player_emerald += locked_channel_boost;
-						} else if max_channel_ind = 5 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_citrine_extra);
-							global.channelled_right_player_citrine += locked_channel_boost;
-						} else if max_channel_ind = 6 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_opal_extra);
-							global.channelled_right_player_opal += locked_channel_boost;
-						} else if max_channel_ind = 7 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_amethyst_extra);
-							global.channelled_right_player_amethyst += locked_channel_boost;
-						}
-						layer_sequence_angle(channel_seq_1,90);
-						layer_sequence_xscale(channel_seq_1,1.2);
-						layer_sequence_yscale(channel_seq_1,1.2);
-						var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
-						alarm[8] = 100;
-						locked_boosting = true;
-					} else if array_max(global.channelled_right_player) >= global.win_threshold  {
-						var max_channel = 0;
-						var max_channel_ind = 0;
-						for (var _i = 0; _i < array_length(global.channelled_left_player); _i++) {
-							if global.channelled_left_player[_i] >= max_channel {
-								max_channel = global.channelled_left_player[_i];
-								max_channel_ind = _i;
+							if max_channel_ind = 0 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,105,seq_channel_ruby_extra);
+								global.channelled_right_opp_ruby += locked_channel_boost;
+							} else if max_channel_ind = 1 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,105,seq_channel_pearl_extra);
+								global.channelled_right_opp_pearl += locked_channel_boost;
+							} else if max_channel_ind = 2 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,105,seq_channel_onyx_extra);
+								global.channelled_right_opp_onyx += locked_channel_boost;
+							} else if max_channel_ind = 3 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,105,seq_channel_sapphire_extra);
+								global.channelled_right_opp_sapphire += locked_channel_boost;
+							} else if max_channel_ind = 4 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,105,seq_channel_emerald_extra);
+								global.channelled_right_opp_emerald += locked_channel_boost;
+							} else if max_channel_ind = 5 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,105,seq_channel_citrine_extra);
+								global.channelled_right_opp_citrine += locked_channel_boost;
+							} else if max_channel_ind = 6 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,105,seq_channel_opal_extra);
+								global.channelled_right_opp_opal += locked_channel_boost;
+							} else if max_channel_ind = 7 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1520,105,seq_channel_amethyst_extra);
+								global.channelled_right_opp_amethyst += locked_channel_boost;
 							}
-						}
-				
-						if max_channel_ind = 0 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_ruby_extra);
-							global.channelled_left_player_ruby += locked_channel_boost;
-						} else if max_channel_ind = 1 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_pearl_extra);
-							global.channelled_left_player_pearl += locked_channel_boost;
-						} else if max_channel_ind = 2 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_onyx_extra);
-							global.channelled_left_player_onyx += locked_channel_boost;
-						} else if max_channel_ind = 3 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_sapphire_extra);
-							global.channelled_left_player_sapphire += locked_channel_boost;
-						} else if max_channel_ind = 4 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_emerald_extra);
-							global.channelled_left_player_emerald += locked_channel_boost;
-						} else if max_channel_ind = 5 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_citrine_extra);
-							global.channelled_left_player_citrine += locked_channel_boost;
-						} else if max_channel_ind = 6 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_opal_extra);
-							global.channelled_left_player_opal += locked_channel_boost;
-						} else if max_channel_ind = 7 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,1400,seq_channel_amethyst_extra);
-							global.channelled_left_player_amethyst += locked_channel_boost;
-						}
-						layer_sequence_angle(channel_seq_1,-90);
-						layer_sequence_xscale(channel_seq_1,1.2);
-						layer_sequence_yscale(channel_seq_1,1.2);
-						var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
-						alarm[8] = 100;
-						locked_boosting = true;
-					} else if array_max(global.channelled_right_opp) >= global.win_threshold  {
-						var max_channel = 0;
-						var max_channel_ind = 0;
-						for (var _i = 0; _i < array_length(global.channelled_left_opp); _i++) {
-							if global.channelled_left_opp[_i] >= max_channel {
-								max_channel = global.channelled_left_opp[_i];
-								max_channel_ind = _i;
+							layer_sequence_angle(channel_seq_1,90);
+							layer_sequence_xscale(channel_seq_1,0.8);
+							layer_sequence_yscale(channel_seq_1,0.8);
+							var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
+							alarm[8] = 100;
+							left_opp_boost_done = true;
+							locked_boosting = true;
+						} else if array_max(global.channelled_right_opp) >= global.win_threshold && right_opp_boost_done = false {
+							var max_channel = 0;
+							var max_channel_ind = 0;
+							for (var _i = 0; _i < array_length(global.channelled_left_opp); _i++) {
+								if global.channelled_left_opp[_i] >= max_channel {
+									max_channel = global.channelled_left_opp[_i];
+									max_channel_ind = _i;
+								}
 							}
-						}
 				
-						if max_channel_ind = 0 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_ruby_extra);
-							global.channelled_left_opp_ruby += locked_channel_boost;
-						} else if max_channel_ind = 1 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_pearl_extra);
-							global.channelled_left_opp_pearl += locked_channel_boost;
-						} else if max_channel_ind = 2 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_onyx_extra);
-							global.channelled_left_opp_onyx += locked_channel_boost;
-						} else if max_channel_ind = 3 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_sapphire_extra);
-							global.channelled_left_opp_sapphire += locked_channel_boost;
-						} else if max_channel_ind = 4 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_emerald_extra);
-							global.channelled_left_opp_emerald += locked_channel_boost;
-						} else if max_channel_ind = 5 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_citrine_extra);
-							global.channelled_left_opp_citrine += locked_channel_boost;
-						} else if max_channel_ind = 6 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_opal_extra);
-							global.channelled_left_opp_opal += locked_channel_boost;
-						} else if max_channel_ind = 7 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_amethyst_extra);
-							global.channelled_left_opp_amethyst += locked_channel_boost;
-						}
-						layer_sequence_angle(channel_seq_2,-90);
-						layer_sequence_xscale(channel_seq_2,1.2);
-						layer_sequence_yscale(channel_seq_2,1.2);
-						var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
-						alarm[8] = 100;
-						locked_boosting = true;
-					} else if array_max(global.channelled_left_opp) >= global.win_threshold  {
-						var max_channel = 0;
-						var max_channel_ind = 0;
-						for (var _i = 0; _i < array_length(global.channelled_right_opp); _i++) {
-							if global.channelled_right_opp[_i] >= max_channel {
-								max_channel = global.channelled_right_opp[_i];
-								max_channel_ind = _i;
+							if max_channel_ind = 0 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_ruby_extra);
+								global.channelled_left_opp_ruby += locked_channel_boost;
+							} else if max_channel_ind = 1 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_pearl_extra);
+								global.channelled_left_opp_pearl += locked_channel_boost;
+							} else if max_channel_ind = 2 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_onyx_extra);
+								global.channelled_left_opp_onyx += locked_channel_boost;
+							} else if max_channel_ind = 3 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_sapphire_extra);
+								global.channelled_left_opp_sapphire += locked_channel_boost;
+							} else if max_channel_ind = 4 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_emerald_extra);
+								global.channelled_left_opp_emerald += locked_channel_boost;
+							} else if max_channel_ind = 5 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_citrine_extra);
+								global.channelled_left_opp_citrine += locked_channel_boost;
+							} else if max_channel_ind = 6 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_opal_extra);
+								global.channelled_left_opp_opal += locked_channel_boost;
+							} else if max_channel_ind = 7 {
+								channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_amethyst_extra);
+								global.channelled_left_opp_amethyst += locked_channel_boost;
 							}
-						}
+							layer_sequence_angle(channel_seq_1,-90);
+							layer_sequence_xscale(channel_seq_1,0.8);
+							layer_sequence_yscale(channel_seq_1,0.8);
+							var seq_change_health_1 = scr_change_numbers(locked_channel_boost,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y);
+							alarm[8] = 100;
+							locked_boosting = true;
+							right_opp_boost_done = true;
+						} else if array_max(global.channelled_right_player) >= global.win_threshold && right_player_boost_done = false {
+							var max_channel = 0;
+							var max_channel_ind = 0;
+							for (var _i = 0; _i < array_length(global.channelled_left_player); _i++) {
+								if global.channelled_left_player[_i] >= max_channel {
+									max_channel = global.channelled_left_player[_i];
+									max_channel_ind = _i;
+								}
+							}
 				
-						if max_channel_ind = 0 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_ruby_extra);
-							global.channelled_right_opp_ruby += locked_channel_boost;
-						} else if max_channel_ind = 1 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_pearl_extra);
-							global.channelled_right_opp_pearl += locked_channel_boost;
-						} else if max_channel_ind = 2 {
-							channel_seq_2 = layer_sequence_create("effect_layer",1560,105,seq_channel_onyx_extra);
-							global.channelled_right_opp_onyx += locked_channel_boost;
-						} else if max_channel_ind = 3 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_sapphire_extra);
-							global.channelled_right_opp_sapphire += locked_channel_boost;
-						} else if max_channel_ind = 4 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_emerald_extra);
-							global.channelled_right_opp_emerald += locked_channel_boost;
-						} else if max_channel_ind = 5 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_citrine_extra);
-							global.channelled_right_opp_citrine += locked_channel_boost;
-						} else if max_channel_ind = 6 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_opal_extra);
-							global.channelled_right_opp_opal += locked_channel_boost;
-						} else if max_channel_ind = 7 {
-							channel_seq_1 = layer_sequence_create("effect_layer",1560,105,seq_channel_amethyst_extra);
-							global.channelled_right_opp_amethyst += locked_channel_boost;
+							if max_channel_ind = 0 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_ruby_extra);
+								global.channelled_left_player_ruby += locked_channel_boost;
+							} else if max_channel_ind = 1 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_pearl_extra);
+								global.channelled_left_player_pearl += locked_channel_boost;
+							} else if max_channel_ind = 2 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_onyx_extra);
+								global.channelled_left_player_onyx += locked_channel_boost;
+							} else if max_channel_ind = 3 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_sapphire_extra);
+								global.channelled_left_player_sapphire += locked_channel_boost;
+							} else if max_channel_ind = 4 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_emerald_extra);
+								global.channelled_left_player_emerald += locked_channel_boost;
+							} else if max_channel_ind = 5 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_citrine_extra);
+								global.channelled_left_player_citrine += locked_channel_boost;
+							} else if max_channel_ind = 6 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_opal_extra);
+								global.channelled_left_player_opal += locked_channel_boost;
+							} else if max_channel_ind = 7 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1560,1400,seq_channel_amethyst_extra);
+								global.channelled_left_player_amethyst += locked_channel_boost;
+							}
+							layer_sequence_angle(channel_seq_2,-90);
+							layer_sequence_xscale(channel_seq_2,0.8);
+							layer_sequence_yscale(channel_seq_2,0.8);
+							var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y);
+							alarm[8] = 100;
+							locked_boosting = true;
+							right_player_boost_done = true;
+						} else if array_max(global.channelled_left_player) >= global.win_threshold && left_player_boost_done = false {
+							var max_channel = 0;
+							var max_channel_ind = 0;
+							for (var _i = 0; _i < array_length(global.channelled_right_player); _i++) {
+								if global.channelled_right_player[_i] >= max_channel {
+									max_channel = global.channelled_right_player[_i];
+									max_channel_ind = _i;
+								}
+							}
+				
+							if max_channel_ind = 0 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,1400,seq_channel_ruby_extra);
+								global.channelled_right_player_ruby += locked_channel_boost;
+							} else if max_channel_ind = 1 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,1400,seq_channel_pearl_extra);
+								global.channelled_right_player_pearl += locked_channel_boost;
+							} else if max_channel_ind = 2 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,1400,seq_channel_onyx_extra);
+								global.channelled_right_player_onyx += locked_channel_boost;
+							} else if max_channel_ind = 3 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,1400,seq_channel_sapphire_extra);
+								global.channelled_right_player_sapphire += locked_channel_boost;
+							} else if max_channel_ind = 4 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,1400,seq_channel_emerald_extra);
+								global.channelled_right_player_emerald += locked_channel_boost;
+							} else if max_channel_ind = 5 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,1400,seq_channel_citrine_extra);
+								global.channelled_right_player_citrine += locked_channel_boost;
+							} else if max_channel_ind = 6 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,1400,seq_channel_opal_extra);
+								global.channelled_right_player_opal += locked_channel_boost;
+							} else if max_channel_ind = 7 {
+								channel_seq_2 = layer_sequence_create("effect_layer",1520,1400,seq_channel_amethyst_extra);
+								global.channelled_right_player_amethyst += locked_channel_boost;
+							}
+							layer_sequence_angle(channel_seq_2,90);
+							layer_sequence_xscale(channel_seq_2,0.8);
+							layer_sequence_yscale(channel_seq_2,0.8);
+							var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_right_player_loc_x,global.channelled_right_player_loc_y);
+							alarm[8] = 100;
+							locked_boosting = true;
+							left_player_boost_done = true;
+						} else {
+							alarm[9] = 1;
+							locked_boosting = true;
 						}
-						layer_sequence_angle(channel_seq_2,90);
-						layer_sequence_xscale(channel_seq_2,1.2);
-						layer_sequence_yscale(channel_seq_2,1.2);
-						var seq_change_health_2 = scr_change_numbers(locked_channel_boost,global.channelled_right_opp_loc_x,global.channelled_right_opp_loc_y);
-						alarm[8] = 100;
-						locked_boosting = true;
-					} else {
-						alarm[8] = 1;
-						locked_boosting = true;
 					}
 				}
 			}
 		}
 	}
 }
-

@@ -43,7 +43,7 @@ if big_mode = false {
 		}
 
 		if health_locale <= global.rarity_list[initial_rarity][initial_element][0][2][card_index]/2 && overwritten = false {
-			draw_sprite_ext(s_cracks,0,x,y,0.49,0.51,0,c_white,1);
+			draw_sprite_ext(s_cracks,0,x,y,0.49,0.505,0,c_white,1);
 			if crack_dust = false {
 				crack_sys = layer_sequence_create("effect_layer",x+112,y+184,seq_cracking);
 				crack_dust = true;

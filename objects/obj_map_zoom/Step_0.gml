@@ -2,21 +2,18 @@
 // You can write your code in this editor
 
 if button_1 = true {
-	//resize_scale = 0.5;
-	resize_scale = lerp(resize_scale,0.5,lerp_amount);
-} else if button_2 = true {
-	//resize_scale = 1;
 	resize_scale = lerp(resize_scale,1,lerp_amount);
-} else if button_3 = true {
-	//resize_scale = 2;
+	//resize_scale = lerp(resize_scale,0.5,lerp_amount);
+} else if button_2 = true {
 	resize_scale = lerp(resize_scale,2,lerp_amount);
-} else if button_4 = true {
-	//resize_scale = 4;
+} else if button_3 = true {
 	resize_scale = lerp(resize_scale,4,lerp_amount);
-} else if button_5 = true {
-	//resize_scale = 8;
+} else if button_4 = true {
 	resize_scale = lerp(resize_scale,1.859375*4,lerp_amount);
-}
+} 
+//else if button_5 = true {
+//	resize_scale = lerp(resize_scale,1.859375*4,lerp_amount);
+//}
 
 var c_x = camera_get_view_x(view_camera[1]);
 var c_y = camera_get_view_y(view_camera[1]);

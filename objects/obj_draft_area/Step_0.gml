@@ -190,40 +190,8 @@ if global.pvp_active = false or rarities_types_chosen = true {
 	
 	image_alpha = lerp(image_alpha, 1, 0.09);
 
-	if (summon_cards = true) && debug_test = true {
-		
-		global.drafting = true;
-		global.player_enabled = false;
-	
-		var card_inst = noone;
-	
-		var rarity = 2;
-		var element = 2;
-		var card_type = 0;
-		var card_index = 0;
-		var order = 0;
-	
-		card_inst_1 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
-	
-		var rarity = 2;
-		var element = 2;
-		var card_type = 0;
-		var card_index = 1;
-		var order = 1;
-		card_inst_2 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
-	
-		var rarity = 2;
-		var element = 2;
-		var card_type = 0;
-		var card_index = 2;
-		var order = 2;
-		card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
-	
-		summon_cards = false;
-	}
 
-
-	if (summon_cards = true) && debug_test = false {
+	if (summon_cards = true) {
 		if draft_count > 2 {
 			reroll_active = true;
 			global.rerolls_available += 1;
@@ -262,15 +230,6 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			element = element_locked_i;
 		} else {
 			element = scr_choose_element();
-			//while element = 5 or element = 6 or element = 7 {
-			//	element = scr_choose_element();
-			//}
-			//var debug_dist = [0,0,0,0,0,0,0,0];
-			//for (var _i = 0; _i < 10000; _i++) {
-			//	element = scr_choose_element();
-				//debug_dist[element] += 1;
-			//}
-			//show_debug_message(debug_dist);
 		}
 	
 		var card_index_dist = [0];
@@ -286,6 +245,40 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		}
 	
 		var order = 0;
+		
+		if global.tutorial = true {
+			if global.tutorial_step = 2 {
+				rarity = 0;
+				element = 4;
+				card_type = 0;
+				card_index = 2;
+			} else if global.tutorial_step = 44 {
+				rarity = 0;
+				element = 3;
+				card_type = 1;
+				card_index = 0;
+			} else if global.tutorial_step = 52 {
+				rarity = 0;
+				element = 3;
+				card_type = 0;
+				card_index = 0;
+			} else if global.tutorial_step = 82 {
+				rarity = 0;
+				element = 3;
+				card_type = 1;
+				card_index = 1;
+			} else if global.tutorial_step = 83 {
+				rarity = 0;
+				element = 3;
+				card_type = 0;
+				card_index = 0;
+			} else if global.tutorial_step = 84 {
+				rarity = 0;
+				element = 3;
+				card_type = 1;
+				card_index = 0;
+			}
+		}
 	
 		card_inst_1 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
@@ -314,6 +307,40 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		}
 	
 		var order = 1;
+		
+		if global.tutorial = true {
+			if global.tutorial_step = 2 {
+				rarity = 0;
+				element = 4;
+				card_type = 0;
+				card_index = 2;
+			} else if global.tutorial_step = 44 {
+				rarity = 0;
+				element = 3;
+				card_type = 1;
+				card_index = 0;
+			} else if global.tutorial_step = 52 {
+				rarity = 0;
+				element = 3;
+				card_type = 0;
+				card_index = 0;
+			} else if global.tutorial_step = 82 {
+				rarity = 0;
+				element = 3;
+				card_type = 1;
+				card_index = 1;
+			} else if global.tutorial_step = 83 {
+				rarity = 0;
+				element = 3;
+				card_type = 0;
+				card_index = 0;
+			} else if global.tutorial_step = 84 {
+				rarity = 0;
+				element = 3;
+				card_type = 1;
+				card_index = 0;
+			}
+		}
 	
 		card_inst_2 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
 	
@@ -343,25 +370,59 @@ if global.pvp_active = false or rarities_types_chosen = true {
 	
 		var order = 2;
 		
-		// debug
-		if draft_count = 3 {
-			rarity = 0;
-			element = 5;
-			card_type = 0;
-			card_index = 0;
-		} else if draft_count = 2 {
-			rarity = 0;
-			element = 6;
-			card_type = 0;
-			card_index = 0;
-		} else if draft_count = 1 {
-			rarity = 0;
-			element = 7;
-			card_type = 0;
-			card_index = 0;
+		if global.tutorial = true {
+			if global.tutorial_step = 2 {
+				rarity = 0;
+				element = 4;
+				card_type = 0;
+				card_index = 2;
+			} else if global.tutorial_step = 44 {
+				rarity = 0;
+				element = 3;
+				card_type = 1;
+				card_index = 0;
+			} else if global.tutorial_step = 52 {
+				rarity = 0;
+				element = 3;
+				card_type = 0;
+				card_index = 0;
+			} else if global.tutorial_step = 82 {
+				rarity = 0;
+				element = 3;
+				card_type = 1;
+				card_index = 1;
+			} else if global.tutorial_step = 83 {
+				rarity = 0;
+				element = 3;
+				card_type = 0;
+				card_index = 0;
+			} else if global.tutorial_step = 84 {
+				rarity = 0;
+				element = 3;
+				card_type = 1;
+				card_index = 0;
+			}
 		}
+		
+		//// debug
+		//if draft_count = 3 {
+		//	rarity = 0;
+		//	element = 0;
+		//	card_type = 0;
+		//	card_index = 0;
+		//} else if draft_count = 2 {
+		//	rarity = 2;
+		//	element = 1;
+		//	card_type = 1;
+		//	card_index = 0;
+		//} else if draft_count = 1 {
+		//	rarity = 0;
+		//	element = 7;
+		//	card_type = 1;
+		//	card_index = 0;
+		//}
 	
-		card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
+		card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst);
 	
 		//if card_type_locked = false {
 		//	array_push(global.opponent.hand_rarity,rarity);

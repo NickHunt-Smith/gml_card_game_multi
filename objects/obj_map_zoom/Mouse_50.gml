@@ -27,19 +27,27 @@ if global.story_active = false {
 			button_3 = true
 			button_4 = false
 			button_5 = false
-		} else if mouse_diff >= threshold_3 && mouse_diff < threshold_4 {
+		} else if mouse_diff >= threshold_3 {
 			button_1 = false
 			button_2 = false
 			button_3 = false
 			button_4 = true
 			button_5 = false
-		} else if mouse_diff >= threshold_4 {
-			button_1 = false
-			button_2 = false
-			button_3 = false
-			button_4 = false
-			button_5 = true
 		}
+		//} else if mouse_diff >= threshold_3 && mouse_diff < threshold_4 {
+		//	button_1 = false
+		//	button_2 = false
+		//	button_3 = false
+		//	button_4 = true
+		//	button_5 = false
+		//} 
+		//else if mouse_diff >= threshold_4 {
+		//	button_1 = false
+		//	button_2 = false
+		//	button_3 = false
+		//	button_4 = false
+		//	button_5 = true
+		//}
 	
 		var c_x = camera_get_view_x(view_camera[1]);
 		var c_y = camera_get_view_y(view_camera[1]);

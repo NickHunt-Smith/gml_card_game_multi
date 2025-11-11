@@ -3,6 +3,15 @@
 
 var _loaded = texturegroup_load("map");
 
+var file_id = file_text_open_read("story.json");
+var json_string = "";
+while (!file_text_eof(file_id)) {
+    json_string += file_text_read_string(file_id);
+    file_text_readln(file_id); // Read newline characters as well
+}
+file_text_close(file_id);
+global.story_json = json_parse(json_string);
+
 lerp_amount = 0.05
 resize_scale = 1
 x_start = 1696;
@@ -20,8 +29,8 @@ global.resizing = false;
 global.encounter_visible = false;
 global.story_active = false;
 
-button_1 = false
-button_2 = true
+button_1 = true
+button_2 = false
 button_3 = false
 button_4 = false
 button_5 = false

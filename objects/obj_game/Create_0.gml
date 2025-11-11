@@ -3,6 +3,7 @@
 var _loaded = texturegroup_load("Default");
 
 //audio_play_sound(snd_volcano,10,true);
+global.tutorial = false;
 
 randomise();
 
@@ -30,12 +31,11 @@ global.format_perspective = vertex_format_end();
 
 game_start = true;
 if global.pvp_active = false {
-	//if random(100) < 50 {
-	//	global.priority = "player";
-	//} else {
-	//	global.priority = "opp"
-	//}
-	global.priority = "player";
+	if random(100) < 50 or global.tutorial = true {
+		global.priority = "player";
+	} else {
+		global.priority = "opp"
+	}
 }
 global.no_pass_prio = false;
 global.opponent = noone;
@@ -62,11 +62,14 @@ global.destroy_effects = [];
 global.ignore_next_opp_locale = 0;
 global.rerolls_available = 0;
 global.turn_count = 10;
-global.win_threshold = 30;
+global.win_threshold = 4;
 global.lingering_active = false;
 global.next_scry_legendary = false;
 global.scrys_boosted = false;
 global.rerolls_used = 0;
+global.wait_for_tutorial_step = false;
+global.tutorial_step = 0;
+story_frame = noone;
 
 global.player_copying = false;
 global.opp_copying = false;
@@ -83,6 +86,11 @@ global.opp_locale_1 = noone;
 global.opp_locale_2 = noone;
 global.opp_locale_3 = noone;
 global.opp_locale_4 = noone;
+
+global.locale_highlight_left = noone;
+global.locale_highlight_left_middle = noone;
+global.locale_highlight_right_middle = noone;
+global.locale_highlight_right = noone;
 
 global.player_channel_1_ruby = 0;
 
