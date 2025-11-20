@@ -302,7 +302,466 @@
             "character_art": false,
             "character_name": false,
             "sound": false,
-            "text0": "The next two days pass in a blur."
+            "text0": "The next two days pass in a haze.",
+            "text1": "At first you look all through the village, trying to find any trace of where the shadow came from or where it might have gone. A slight orange trail still hangs in the air, barely visible, though it leads only up into the sky.",
+            "text2": "You waste away the hours sitting next to the stream where you spoke your last words to Eilira, staring blankly at nothing.",
+            "text3": "You can't help but feel slightly responsible. Sure she wanted to talk with you too, but she wouldn't have been there that late if the conversation hadn't been so intense. If you hadn't wanted to leave.",
+            "text4": "And why take her? Why not you, the one who wanted to leave anyway? The one who wanted to face danger, while she stays safe at home?",
+            "text5": "But perhaps worst of all is the reaction of the other villagers. There is a resignation from them towards the loss of Eilira that you can't understand. They act like she was Sphere-touched, a victim of random happenstance.",
+            "text6": "There's a clear perpetrator though, the Warlock. She's not actually dead as far as we know, only taken. Surely something can be done?",
+            "text7": "Your mother wept that night, but she was back to her work the next day like nothing had happened. She would soon be pestering you to help with her chores again, only now it would just be the two of you.",
+            "text8": "How could you leave her now? But how can you go on?",
+            "text9": "A commotion at the entrance to the trail breaks you out of your trance. You can hear Emery's gruff voice shouting angrily, and wander over.",
+            "text10": "Three strangers in grey coats stand together a few steps from the trail, facing down Emery. The older of the strangers stands his ground ahead of a tired-looking woman. The third stranger cannot be any older than 18 - his coat looks a size too big."
+        },
+        "precombat35": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_dravas",
+            "character_name": "?",
+            "sound": false,
+            "text0": "\"There's no need for this anger I assure you. We're only here to meet with the victim's family and friends, we'll be gone as soon as we're done.\""
+        },
+        "precombat36": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": "\"And I'm telling you we're all her friends, and we want you gone! We don't want any trouble, there's a reason we stay away from the likes of you! For all we know you brought the Warlock onto us!\""
+        },
+        "precombat37": {
+            "narrator": true,
+            "locale_art": "s_brindlevale_day",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "A couple of villagers shout their approval. The older stranger says a word to the woman, and they turn to go. But before they leave, he catches your eye, and after a moment's thought calls out to you."
+        },
+        "precombat38": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_dravas",
+            "character_name": "?",
+            "sound": false,
+            "text0": "\"Are you the brother? Would you speak with us for a moment?\""
+        },
+        "precombat39": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": "\"Come on Alden, don't listen to these Seekers!\" He practically spits as he says their name."
+        },
+        "precombat40": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "If they really are Seekers, they probably know more about what exactly happened to Eilira. You've been told that they're dangerous, but what harm can come from a conversation?"
+        },
+        "precombat41": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "You walk up to the Seeker as Emery scowls at you. \"Thank you for giving us a chance. My name is Dravas, this is Kusharn, and the young one's called Corrick.\"",
+            "text1": "\"I don't know what you've been told, but as Seekers we pursue the Warlock wherever he goes. Our ultimate goal is to bring down the Warlock, and end his constant abductions.\"",
+            "text2": "Emery scoffs in the background. Dravas ignores him, continuing his clearly well-rehearsed spiel. \"As a victim of one of these abductions, you know firsthand the pain that it can cause.\"",
+            "text3": "\"My job, along with Kusharn, is to recruit as many people as we can to help us in our cause. Would you be willing to join us?\""
+        },
+        "precombat42": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "You think about Dravas's proposal. This could be the way to get Eilira back! But it almost seems too good to be true. The Warlock is said to be all-powerful. What difference could you possibly make?"
+        },
+        "precombat43": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": "\"They're preying on your grief Alden, they're manipulating you!\""
+        },
+        "precombat44": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "Dravas sighs. \"Unfortunately, your leader speaks some truth. We are preying on your grief to some extent. People are much more likely to join us in the aftermath of an abduction, while hope is still alive.\"",
+            "text1": "\"Unlike some, I want my recruits to have a decent understanding of what they're getting into. The truth is, we're nowhere near challenging the Warlock, even collectively.\"",
+            "text2": "\"You most likely will never find your sister, and you most likely will die trying. It's up to you if you can live out your days in the acceptance that she's gone forever.\"",
+            "text3": "\"Me, Kusharn, Corrick, all of us Seekers have lost someone dear to us. We can't accept it. How about you?\""
+        },
+        "precombat45": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "You know your answer. \"I can't accept it.\""
+        },
+        "precombat46": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "A hint of a smile crosses Dravas' face, for only a moment. \"Very good. Best we leave now, grab your things.\""
+        },
+        "precombat47": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_emery_reed",
+            "character_name": "Emery",
+            "sound": false,
+            "text0": "Emery looks at you incredulously as you pass. \"You're abandoning us? You're abandoning Myrta? Now is when we need you most, in this time of crisis!\"",
+            "text1": "\"What good will it do to add another body to the pile? Think about it properly Alden, we... who will clear the trail?\""
+        },
+        "precombat48": {
+            "narrator": true,
+            "locale_art": "s_brindlevale_day",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You ignore him. Your mother is sweeping leaves out the front of your home. She doesn't turn around as you approach."
+        },
+        "precombat49": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"I'm leaving, Ma. I'm sorry, I have to try and find her.\""
+        },
+        "precombat50": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_myrta_quellow",
+            "character_name": "Myrta",
+            "sound": false,
+            "text0": "She keeps sweeping. \"You were leaving anyway. This just gives you a better reason than your own curiosity. Don't think I couldn't tell.\"",
+            "text1": "She leans on her broom, looking exhausted. \"It's okay Alden. I wish it was only you, but... well it hasn't ended up that way.\"",
+            "text2": "\"But just so you know, I can't accept it either. Not you or Eilira leaving, not even your Father.\"",
+            "text3": "She finally turns to you, tears glistening in her eyes. \"How do you think I coped all these years? I have to believe he's still out there. And just like with him, I know...\"",
+            "text4": "\"...one day, I know you'll come back.\""
+        },
+        "precombat51": {
+            "narrator": false,
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "All this time, she still waits for him? You lean down and hug your mother, your own tears seeping into her dusty shawl.",
+            "text1": "What else is there to do, but perpetuate the lie? \"I'll be back Ma. I promise. With Eilira too.\""
+        },
+        "precombat52": {
+            "narrator": "scene_transition",
+            "locale_art": "s_brindlevale_day",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": ""
+        },
+        "precombat53": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"This looks like as good a place as any.\" Dravas eyes Kusharn, who nods."
+        },
+        "precombat54": {
+            "narrator": true,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You've been following the Seekers along the familiar forest trail for an hour or so, largely in silence as you ruminate on your decision.",
+            "text1": "You drop your pack to the ground as Kusharn turns to you."
+        },
+        "precombat55": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_kusharn",
+            "character_name": "Kusharn",
+            "sound": false,
+            "text0": "\"So Alden, how much do you actually know about Synemancy from your years in the little village?\""
+        },
+        "precombat56": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "You're taken aback by the directness of the question. She hasn't actually spoken to you this whole time.\"Very little really.\"",
+            "text1": "\"It's a way to do magic right? No one in the village has any experience as far as I know.\""
+        },
+        "precombat57": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_kusharn",
+            "character_name": "Kusharn",
+            "sound": false,
+            "text0": "She doesn't hide her exasperation. \"Well you certainly won't last long. Dravas, time for you to do your whole routine, for what it's worth.\""
+        },
+        "precombat58": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Don't mind her. I won't lie though, I don't think I've taught anyone with literally no experience before.\"",
+            "text1": "\"Which elements are you closest to would you say? Emerald I'm assuming, what else?\""
+        },
+        "precombat59": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"Elements?\""
+        },
+        "precombat60": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Wow okay, you don't even know what the elements are? This is going to be a steep learning curve then. Maybe it will be an advantage to be starting from absolute scratch...?\"",
+            "text1": "He doesn't seem to be as confident as he was at first. \"Right, so there are 8 elements of magic that we know of, represented by the 8 crystals we use to channel them.\"",
+            "text2": "\"We have Emerald, the element of growth, life and vegetation. Something you should be very familiar with, growing up in a forest as you have done.\"",
+            "text3": "\"There's also Ruby, the element of fire and destruction. Most common in volcanic regions like Delgar.\"",
+            "text4": "\"Pearl is the element of solidarity, strongest in icy regions like Certona. Actually now I think of it, have you actually seen a world map before?\""
+        },
+        "precombat61": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"Uhhh...no.\""
+        },
+        "precombat62": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Okay that's fine, I'll show you later but for now these place names won't mean much.\"",
+            "text1": "\"So other elements, there's Opal which is the element of lightning and rare metals, strongest out in the plains and steppes near the city of Corcia.\"",
+            "text2": "\"Sapphire deals with water in all its forms, and unsurprisingly is spread throughout the world, though the coasts feel it most intensely.\"",
+            "text3": "\"Onyx is closely related to memory and death, and is one of the hardest elements to fully control. The Mist-Swept Highlands in the south are full of Onyx energy.\"",
+            "text4": "\"Citrine is a fairly rare element, concentrated mainly in the far reaches of the deserts to the north-east. Emptiness, wind and the passage of time are some of the themes of Citrine.\"",
+            "text5": "\"Finally there's Amethyst, the most human of all. Dreams, psychosis, the mind itself is the home of the Amethyst element, and its use is always intoxicating.\"",
+            "text6": "\"Those are the 8 elements of magic. So then Synemancy is the act of channelling the magic from those elements into oneself, and then harnessing that energy to perform magical actions.\"",
+            "text7": "\"There are only a few ingredients you need to perform Synemancy, making it incredibly easy. Almost everyone uses it, apart from your one village apparently.\"",
+            "text8": "\"All you need are a couple of these.\" Dravas holds out his hand, revealing a number of multicoloured crystals, each one attached to a simple twine necklace.",
+            "text9": "\"Each element has a corresponding crystal which enables you to perform Synemancy of that element, hence why we name those elements after the crystals.\"",
+            "text10": "\"If you have the correct crystal nearby, you can start doing a few spells of that element. Why don't you take an Emerald and...we're near the coast here...let's say a Sapphire to start with.\"",
+            "text11": "\"Hey Corrick! Come over here!\""
+        },
+        "precombat63": {
+            "narrator": true,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Corrick jumps up like he's been stung, and hurries to you both. He looks nervously at you. It's only now you notice a necklace with a pearl and an emerald tucked within his coat."
+        },
+        "precombat64": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "\"Yes Dravas?\""
+        },
+        "precombat65": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"You two are going to have a little duel. It'll be good practice for you Corrick, and the best way for Alden to learn is by doing.\""
+        },
+        "precombat66": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "He puts on a more determined expression. \"Ok then. Let's do it.\""
+        },
+        "precombat67": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Don't worry Alden, I'll explain as we go. Let's see what we're working with here.\""
+        },
+        "precombat68": {
+            "narrator": "combat_transition",
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": ""
+        },
+        "postcombat0": {
+            "narrator": true,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Blue-green energy flows from your outstretched hands towards the cowering Corrick. For a moment his pearlescent green barrier seems to divert the energy around him, before shattering into hundreds of tiny shards and winking out of existence.",
+            "text1": "You can just barely hear his sudden shriek over the sound of rustling leaves and crashing waves overlapping in your mind. You pull back your hands but your magic continues to stream towards him, engulfing him entirely.",
+            "text2": "It feels like several seconds before the onslaught finally begins to fade and you can make Corrick out amidst the flashes of blue and green sparking off his body. He has fallen to his knees, staring vacantly into the distance with a slightly open mouth.",
+            "text3": "You rush up to him, shocked at the violent power you just unleashed. Is he even alive after that? His eyes look strangely pale, and he doesn't react when you grab him by the shoulders and shout his name. The magic seems to have left no mark behind, no scorch or scratch."
+        },
+        "postcombat1": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Don't bother Alden, he'll be out for a few minutes but he'll be fine. You did very well, much better than I expected.\""
+        },
+        "postcombat2": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"He'll be fine? How?\" You keep shaking him, trying to get some kind of response. \"What did I do to him?\""
+        },
+        "postcombat3": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"This is what happens when you lose a Synematic duel, it's perfectly normal. You're fighting with your whole identity, your whole mind. When you lose a duel you're bound to lose something of yourself as well.\""
+        },
+        "postcombat4": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"How could this be normal? Wait- would this have been me if I lost?\""
+        },
+        "postcombat5": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Well yes. To be honest it was meant to be something of a lesson, for you to learn firsthand the danger you're committing yourself to. Everyone will lose a duel at some point, it's important to know how it feels.\""
+        },
+        "postcombat6": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"You don't think I've been through enough these last few days? You thought you needed to wipe my memory too? Make us hurt each other just to prove a point?\""
+        },
+        "postcombat7": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_kusharn",
+            "character_name": "Kusharn",
+            "sound": false,
+            "text0": "\"Enough!\" Kusharn had been quietly leaning against a nearby tree, but she stands up straight and stares you down.",
+            "text1": "\"This is the world we live in, boy! If you don't want to take part in it, go back to the sheltered life you've already got. You don't know how easy you've had it so far, or how much worse it can get.\"",
+            "text2": "\"If you're going to travel with us, then you'll need to face reality. We don't have time to baby you through your shock every time someone has a spot of amnesia, and we don't need more dead weight.\"",
+            "text3": "\"Synemancy is brutal. You better get comfortable with that fact very quickly, or go home to your fantasy world and wait for the Warlock to come back and shake some sense into you. Personally.\""
+        },
+        "postcombat8": {
+            "narrator": true,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Kusharn storms out of the clearing, continuing down the trail. Corrick's eyes track her as she goes, his expression looking more bewildered than empty at this point."
+        },
+        "postcombat9": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "Dravas clears his throat. \"She's not entirely wrong, unfortunately. And there is one more reality check that I will have to tell you.\"",
+            "text1": "\"After losing a duel, you're obviously in a state of temporary helplessness. Anyone can hurt you as much as they want. But perhaps worse, the amnesia can be made permanent.\"",
+            "text2": "\"Continue channeling power even after your opponent's barrier is down, and you can destroy their mind entirely. It's not something we do in the Seekers, but there are many people out there who will.\"",
+            "text3": "\"Most notably the Warlock himself. Nobody has yet emerged from his Tower with their minds intact.\"",
+            "text4": "Dravas gives you a wry smile. \"That should be the end of the bad news for now, hopefully. We should follow Kusharn once Corrick is back to normal. Assuming you still want to come?\""
+        },
+        "postcombat10": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "So many revelations. As terrified as you are, you can't help but feel excitement in equal quantity. How could you bury your head in the sand now?",
+            "text1": "Quietly, you say \"Yes, I'm still coming.\""
+        },
+        "postcombat11": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Very well. There is one benefit of our little duel beyond trying to just scare you. In fighting Corrick you will have gained some additional memories of his, the Pearl ones.\"",
+            "text1": "\"As we travel the world you'll gather new memories, but you can also gain new memories from other people that you duel like Corrick.\"",
+            "text2": "\"I have a few extra gifts for you. First of all, take this journal. Everyone has their own way of keeping track of their memories, but I find it best to write them down in a journal like this.\"",
+            "text3": "\"You should add any locales and spells you can think of from your own memories and your duel with Corrick as we travel. There's some coloured pencils attached to the spine.\"",
+            "text4": "\"And because I was so impressed by your duel with Corrick, take these as well.\" He hands over 6 more multicolored crystal necklaces, like the Emerald and Sapphire ones he gave you earlier.",
+            "text5": "\"Most people stick with just the two elements, but perhaps given your... unique introduction to Synemancy with no previous elemental alignment, you'll be able to use them all.\"",
+            "text6": "\"Well, let's get going.\" Dravas heads over to Corrick, who's looking around himself, still on his knees."
+        },
+        "postcombat12": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "\"Where... did I lose...?\""
+        },
+        "postcombat13": {
+            "narrator": false,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"You're safe, kid. Come with us, we're friends.\""
+        },
+        "postcombat14": {
+            "narrator": true,
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Corrick groggily gets to his feet, holding on to Dravas' arm. You put the new crystals around your neck and flip through the parchment pages of the empty journal.",
+            "text1": "You try to absorb as much of the environment around you as you can through your senses. The dappled light between the trees, the smell of grass and pollen, the whisper of the breeze through the forest.",
+            "text2": "You turn away and consign those feelings to memory, drawing in your journal as you walk."
+        },
+        "postcombat15": {
+            "narrator": "end_story_transition",
+            "locale_art": "s_sun_drenched_clearing_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": ""
         }
     }
 }

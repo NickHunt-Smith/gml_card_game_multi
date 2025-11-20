@@ -13,18 +13,22 @@ if rarities_types_chosen = false && only_draft_area = true {
 	if (global.pvp_active = true && global.is_server = true) or global.pvp_active = false or rarity_locked = true {
 		for (var _i = 0; _i < draft_count; _i++) {
 			var rarity = 0;
-			if global.turn_count < 1 {
-				var rarity_dist = [70,95,100,100,100];
-			} else if global.turn_count >= 1 && global.turn_count < 2 {
-				var rarity_dist = [50,80,95,100,100];
-			} else if global.turn_count >= 2 && global.turn_count < 4 {
-				var rarity_dist = [40,67,85,95,100];
-			} else if global.turn_count >= 4 && global.turn_count < 6 {
-				var rarity_dist = [32,55,73,90,100];
-			} else if global.turn_count >= 6 && global.turn_count < 8 {
-				var rarity_dist = [24,46,67,86,100];
-			} else if global.turn_count >= 8 {
-				var rarity_dist = [20,40,60,80,100];
+			if global.encounter_level = 0 {
+				var rarity_dist = [100,100,100,100,100];
+			} else if global.encounter_level = 4 {
+				if global.turn_count < 1 {
+					var rarity_dist = [70,95,100,100,100];
+				} else if global.turn_count >= 1 && global.turn_count < 2 {
+					var rarity_dist = [50,80,95,100,100];
+				} else if global.turn_count >= 2 && global.turn_count < 4 {
+					var rarity_dist = [40,67,85,95,100];
+				} else if global.turn_count >= 4 && global.turn_count < 6 {
+					var rarity_dist = [32,55,73,90,100];
+				} else if global.turn_count >= 6 && global.turn_count < 8 {
+					var rarity_dist = [24,46,67,86,100];
+				} else if global.turn_count >= 8 {
+					var rarity_dist = [20,40,60,80,100];
+				}
 			}
 		
 			var temp = random(100);
@@ -199,54 +203,12 @@ if global.pvp_active = false or rarities_types_chosen = true {
 		button_draw = true;
 	
 		var card_inst = noone;
-	
-		var rarity = 0;
-		if rarity_locked = true {
-			rarity = rarity_locked_i;
-		} else {
-			rarity = random_rarities[0];
-			array_delete(random_rarities,0,1);
-		}
-		
-		if global.next_scry_legendary = true {
-			global.next_scry_legendary = false;
-			rarity = 4;
-		}
-		
-		if global.scrys_boosted = true && rarity < 4 {
-			rarity += 1;
-		}
-	
-		var card_type = 0;
-		if card_type_locked = true {
-			card_type = card_type_locked_i;
-		} else {
-			card_type = random_card_types[0];
-			array_delete(random_card_types,0,1);
-		}
-	
-		var element = 0;
-		if element_locked = true {
-			element = element_locked_i;
-		} else {
-			element = scr_choose_element();
-		}
-	
-		var card_index_dist = [0];
-		for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
-			array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
-		}
-		var card_index = 0;
-		var temp = random(100);
-		for (var _i = 0; _i < array_length(card_index_dist); _i++) {
-			if temp >= card_index_dist[_i] && temp < card_index_dist[_i+1] {
-				card_index = _i;
-			}
-		}
-	
-		var order = 0;
 		
 		if global.tutorial = true {
+			var rarity = 0;
+			var element = 0;
+			var card_type = 0;
+			var card_index = 0;
 			if global.tutorial_step = 2 {
 				rarity = 0;
 				element = 4;
@@ -278,156 +240,145 @@ if global.pvp_active = false or rarities_types_chosen = true {
 				card_type = 1;
 				card_index = 0;
 			}
-		}
-	
-		card_inst_1 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
-	
-		var element = 0;
-		if element_locked = true {
-			element = element_locked_i;
+			
+			var order = 0;
+			card_inst_1 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst);
+			order = 1;
+			card_inst_2 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst);
+			order = 2;
+			card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst);
+			
 		} else {
-			element = scr_choose_element();
-			//while element = 5 or element = 6 or element = 7 {
-			//	element = scr_choose_element();
-			//}
-		}
 	
-		var card_index_dist = [0];
-		for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
-			array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
-		}
-		var card_index = 0;
-		while element = card_inst_1.element && card_index = card_inst_1.card_index {
-			temp = random(100);
+			var rarity = 0;
+			if rarity_locked = true {
+				rarity = rarity_locked_i;
+			} else {
+				rarity = random_rarities[0];
+				array_delete(random_rarities,0,1);
+			}
+		
+			if global.next_scry_legendary = true {
+				global.next_scry_legendary = false;
+				rarity = 4;
+			}
+		
+			if global.scrys_boosted = true && rarity < 4 {
+				rarity += 1;
+			}
+	
+			var card_type = 0;
+			if card_type_locked = true {
+				card_type = card_type_locked_i;
+			} else {
+				card_type = random_card_types[0];
+				array_delete(random_card_types,0,1);
+			}
+	
+			var element = 0;
+			if element_locked = true {
+				element = element_locked_i;
+			} else {
+				element = scr_choose_element();
+			}
+	
+			var card_index_dist = [0];
+			var card_index_avail = global.cards_avail_json[$ "element" + string(element)][$ "rarity" + string(rarity)][$ "card_type" + string(card_type)];
+			for (var _i = 0; _i < array_length(card_index_avail); _i++) {
+				array_push(card_index_dist,(_i+1)*100/array_length(card_index_avail));
+			}
+			//for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
+			//	array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
+			//}
+			var card_index = 0;
+			var temp = random(100);
 			for (var _i = 0; _i < array_length(card_index_dist); _i++) {
 				if temp >= card_index_dist[_i] && temp < card_index_dist[_i+1] {
-					card_index = _i;
+					card_index = card_index_avail[_i];
 				}
 			}
-		}
 	
-		var order = 1;
-		
-		if global.tutorial = true {
-			if global.tutorial_step = 2 {
-				rarity = 0;
-				element = 4;
-				card_type = 0;
-				card_index = 2;
-			} else if global.tutorial_step = 44 {
-				rarity = 0;
-				element = 3;
-				card_type = 1;
-				card_index = 0;
-			} else if global.tutorial_step = 52 {
-				rarity = 0;
-				element = 3;
-				card_type = 0;
-				card_index = 0;
-			} else if global.tutorial_step = 82 {
-				rarity = 0;
-				element = 3;
-				card_type = 1;
-				card_index = 1;
-			} else if global.tutorial_step = 83 {
-				rarity = 0;
-				element = 3;
-				card_type = 0;
-				card_index = 0;
-			} else if global.tutorial_step = 84 {
-				rarity = 0;
-				element = 3;
-				card_type = 1;
-				card_index = 0;
+			var order = 0;
+	
+			card_inst_1 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
+	
+			var element = 0;
+			if element_locked = true {
+				element = element_locked_i;
+			} else {
+				element = scr_choose_element();
 			}
-		}
 	
-		card_inst_2 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
-	
-		var element = 0;
-		if element_locked = true {
-			element = element_locked_i;
-		} else {
-			element = scr_choose_element();
-			//while element = 5 or element = 6 or element = 7 {
-			//	element = scr_choose_element();
+			var card_index_dist = [0];
+			var card_index_avail = global.cards_avail_json[$ "element" + string(element)][$ "rarity" + string(rarity)][$ "card_type" + string(card_type)];
+			for (var _i = 0; _i < array_length(card_index_avail); _i++) {
+				array_push(card_index_dist,(_i+1)*100/array_length(card_index_avail));
+			}
+			//for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
+			//	array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
 			//}
-		}
-	
-		var card_index_dist = [0];
-		for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
-			array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
-		}
-		var card_index = 0;
-		while (element = card_inst_1.element && card_index = card_inst_1.card_index) or (element = card_inst_2.element && card_index = card_inst_2.card_index){
-			temp = random(100);
+			var card_index = 0;
+			var temp = random(100);
 			for (var _i = 0; _i < array_length(card_index_dist); _i++) {
 				if temp >= card_index_dist[_i] && temp < card_index_dist[_i+1] {
-					card_index = _i;
+					card_index = card_index_avail[_i];
 				}
 			}
-		}
 	
-		var order = 2;
-		
-		if global.tutorial = true {
-			if global.tutorial_step = 2 {
-				rarity = 0;
-				element = 4;
-				card_type = 0;
-				card_index = 2;
-			} else if global.tutorial_step = 44 {
-				rarity = 0;
-				element = 3;
-				card_type = 1;
-				card_index = 0;
-			} else if global.tutorial_step = 52 {
-				rarity = 0;
-				element = 3;
-				card_type = 0;
-				card_index = 0;
-			} else if global.tutorial_step = 82 {
-				rarity = 0;
-				element = 3;
-				card_type = 1;
-				card_index = 1;
-			} else if global.tutorial_step = 83 {
-				rarity = 0;
-				element = 3;
-				card_type = 0;
-				card_index = 0;
-			} else if global.tutorial_step = 84 {
-				rarity = 0;
-				element = 3;
-				card_type = 1;
-				card_index = 0;
+			var order = 1;
+	
+			card_inst_2 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst)
+	
+			var element = 0;
+			if element_locked = true {
+				element = element_locked_i;
+			} else {
+				element = scr_choose_element();
 			}
-		}
+	
+			var card_index_dist = [0];
+			var card_index_avail = global.cards_avail_json[$ "element" + string(element)][$ "rarity" + string(rarity)][$ "card_type" + string(card_type)];
+			for (var _i = 0; _i < array_length(card_index_avail); _i++) {
+				array_push(card_index_dist,(_i+1)*100/array_length(card_index_avail));
+			}
+			//for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
+			//	array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
+			//}
+			var card_index = 0;
+			var temp = random(100);
+			for (var _i = 0; _i < array_length(card_index_dist); _i++) {
+				if temp >= card_index_dist[_i] && temp < card_index_dist[_i+1] {
+					card_index = card_index_avail[_i];
+				}
+			}
+	
+			var order = 2;
 		
-		//// debug
-		//if draft_count = 3 {
-		//	rarity = 0;
-		//	element = 0;
-		//	card_type = 0;
-		//	card_index = 0;
-		//} else if draft_count = 2 {
-		//	rarity = 2;
-		//	element = 1;
-		//	card_type = 1;
-		//	card_index = 0;
-		//} else if draft_count = 1 {
-		//	rarity = 0;
-		//	element = 7;
-		//	card_type = 1;
-		//	card_index = 0;
-		//}
+			//// debug
+			//if draft_count = 3 {
+			//	rarity = 0;
+			//	element = 0;
+			//	card_type = 0;
+			//	card_index = 0;
+			//} else if draft_count = 2 {
+			//	rarity = 2;
+			//	element = 1;
+			//	card_type = 1;
+			//	card_index = 0;
+			//} else if draft_count = 1 {
+			//	rarity = 0;
+			//	element = 7;
+			//	card_type = 1;
+			//	card_index = 0;
+			//}
 	
-		card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst);
+			card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst);
 	
-		//if card_type_locked = false {
-		//	array_push(global.opponent.hand_rarity,rarity);
-		//	array_push(global.opponent.hand_card_type,card_type);
-		//}
+			//if card_type_locked = false {
+			//	array_push(global.opponent.hand_rarity,rarity);
+			//	array_push(global.opponent.hand_card_type,card_type);
+			//}
+		}
 	
 		summon_cards = false;
 	}

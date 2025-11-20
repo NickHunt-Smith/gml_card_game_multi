@@ -378,25 +378,27 @@ function scr_choose_element(){
 			}
 		}
 	}
-		
-	var temp = random(100);
-	var element = 0;
-	if temp < probs[0] {
-		element = 0;
-	} else if temp >= probs[0] && temp < probs[1] {
-		element = 1;
-	} else if temp >= probs[1] && temp <= probs[2] {
-		element = 2;
-	} else if temp >= probs[2] && temp <= probs[3] {
-		element = 3;
-	} else if temp >= probs[3] && temp <= probs[4] {
-		element = 4;
-	} else if temp >= probs[4] && temp <= probs[5] {
-		element = 5;
-	} else if temp >= probs[5] && temp <= probs[6] {
-		element = 6;
-	} else if temp >= probs[6] && temp <= probs[7] {
-		element = 7;
+	
+	var element = 100;
+	while array_contains(global.elements_avail,element) = false {
+		var temp = random(100);
+		if temp < probs[0] {
+			element = 0;
+		} else if temp >= probs[0] && temp < probs[1] {
+			element = 1;
+		} else if temp >= probs[1] && temp <= probs[2] {
+			element = 2;
+		} else if temp >= probs[2] && temp <= probs[3] {
+			element = 3;
+		} else if temp >= probs[3] && temp <= probs[4] {
+			element = 4;
+		} else if temp >= probs[4] && temp <= probs[5] {
+			element = 5;
+		} else if temp >= probs[5] && temp <= probs[6] {
+			element = 6;
+		} else if temp >= probs[6] && temp <= probs[7] {
+			element = 7;
+		}
 	}
 	
 	return element

@@ -3,7 +3,6 @@
 var _loaded = texturegroup_load("Default");
 
 //audio_play_sound(snd_volcano,10,true);
-global.tutorial = false;
 
 randomise();
 
@@ -975,8 +974,8 @@ array_push(global.common_sapphire_locales_effect_list,obj_calm_ocean)
 // 2
 array_push(global.common_sapphire_locales_sprite_list,s_idyllic_beach)
 array_push(global.common_sapphire_locales_art_list,s_idyllic_beach_art)
-array_push(global.common_sapphire_locales_health_list,4)
-array_push(global.common_sapphire_locales_channel_list,0)
+array_push(global.common_sapphire_locales_health_list,1)
+array_push(global.common_sapphire_locales_channel_list,2)
 array_push(global.common_sapphire_locales_effect_list,obj_decrepit_chapel)
 
 // Uncommon sapphire locales
@@ -1387,7 +1386,7 @@ array_push(global.legendary_emerald_locales_effect_list,obj_burgeoning_seed)
 array_push(global.legendary_emerald_locales_sprite_list,s_path_of_vitality)
 array_push(global.legendary_emerald_locales_art_list,s_path_of_vitality_art)
 array_push(global.legendary_emerald_locales_health_list,7)
-array_push(global.legendary_emerald_locales_channel_list,0)
+array_push(global.legendary_emerald_locales_channel_list,1)
 array_push(global.legendary_emerald_locales_effect_list,obj_path_of_vitality)
 
 // 2

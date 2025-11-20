@@ -5,4 +5,4 @@ draw_sprite_ext(s_encounter_frame_frame,0,x,y,0.4,0.4,0,c_white,1);
 draw_sprite_ext(s_common_centred,0,x,y-140,0.13,0.13,0,c_white,1);
 
 draw_set_font(Empower_font);
-draw_text_transformed(x,y-110,name,0.4,0.4,0);
+draw_text_transformed(x,y-110,encounter_name,0.4,0.4,0);

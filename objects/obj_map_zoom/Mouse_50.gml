@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if global.story_active = false {
+if global.story_active = false && global.journal_active = false {
 	if abs(mouse_x - x) < x_origin*resize_scale && mouse_y - y > 0 && mouse_y - y < slider_height*resize_scale {
 
 		var mouse_diff = (mouse_y - y);

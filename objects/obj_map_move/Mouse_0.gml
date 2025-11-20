@@ -1,5 +1,5 @@
 
-if global.story_active = false {
+if global.story_active = false && global.journal_active = false {
 	var c_x = camera_get_view_x(view_camera[1]);
 	var c_y = camera_get_view_y(view_camera[1]);
 

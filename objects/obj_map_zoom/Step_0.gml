@@ -25,13 +25,25 @@ view_wport[1] = resize_scale*1280
 view_hport[1] = resize_scale*720
 camera_set_view_size(view_camera[1], view_wport[1], view_hport[1]);
 
-if resize_scale = 0.5 && resize_scale =1 && resize_scale =2 && resize_scale =4 && resize_scale=1.859375*4 {
+if resize_scale = 0.5 or resize_scale =1 or resize_scale =2 or resize_scale =4 or resize_scale=1.859375*4 {
+	if global.resizing = true {
+		global.reposition = false;
+	}
 	global.resizing = false;
 }
 
 if global.resizing = true {
 	camera_set_view_pos(view_camera[1],origin_x-0.5*view_wport[1],origin_y-0.5*view_hport[1]);
 }
+
+if global.reposition = true {
+	var new_x = lerp(c_x,origin_x-0.5*1280,lerp_amount);
+	var new_y = lerp(c_y,origin_y-0.5*720,lerp_amount);
+	camera_set_view_pos(view_camera[1],new_x,new_y);
+}
+
+c_x = camera_get_view_x(view_camera[1]);
+c_y = camera_get_view_y(view_camera[1]);
 
 if c_x < 0 {
 	camera_set_view_pos(view_camera[1],0,c_y);

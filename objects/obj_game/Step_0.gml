@@ -3,6 +3,28 @@
 
 if game_start = true && global.tutorial = false {
 	game_start = false;
+	
+	// Retrieve cards available
+	var file_id = file_text_open_read("cards_avail.json");
+	var json_string = "";
+	while (!file_text_eof(file_id)) {
+	    json_string += file_text_read_string(file_id);
+	    file_text_readln(file_id); // Read newline characters as well
+	}
+	file_text_close(file_id);
+	global.cards_avail_json = json_parse(json_string);
+	global.elements_avail = [];
+	for (var _i = 0; _i < 8; _i++) {
+		var cards_avail_element = global.cards_avail_json[$ "element" + string(_i)];
+		for (var _j = 0; _j < 5; _j++) {
+			var cards_avail_rarity = cards_avail_element[$ "rarity" + string(_j)];
+			if array_length(cards_avail_rarity[$ "card_type" + string(0)]) > 0 or array_length(cards_avail_rarity[$ "card_type" + string(1)]) > 0 {
+				array_push(global.elements_avail,_i);
+				break
+			}
+		}
+	}
+	
 	alarm[0] = 1;
 }
 

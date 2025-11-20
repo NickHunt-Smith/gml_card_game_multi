@@ -66,14 +66,18 @@ if global.tutorial = false or global.tutorial_step = 48 or global.tutorial_step 
 			}
 	
 			var card_index_dist = [0];
-			for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
-				array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
+			var card_index_avail = global.cards_avail_json[$ "element" + string(element)][$ "rarity" + string(rarity)][$ "card_type" + string(card_type)];
+			for (var _i = 0; _i < array_length(card_index_avail); _i++) {
+				array_push(card_index_dist,(_i+1)*100/array_length(card_index_avail));
 			}
+			//for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
+			//	array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
+			//}
 			var card_index = 0;
 			var temp = random(100);
 			for (var _i = 0; _i < array_length(card_index_dist); _i++) {
 				if temp >= card_index_dist[_i] && temp < card_index_dist[_i+1] {
-					card_index = _i;
+					card_index = card_index_avail[_i];
 				}
 			}
 	
@@ -96,16 +100,18 @@ if global.tutorial = false or global.tutorial_step = 48 or global.tutorial_step 
 			}
 	
 			var card_index_dist = [0];
-			for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
-				array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
+			var card_index_avail = global.cards_avail_json[$ "element" + string(element)][$ "rarity" + string(rarity)][$ "card_type" + string(card_type)];
+			for (var _i = 0; _i < array_length(card_index_avail); _i++) {
+				array_push(card_index_dist,(_i+1)*100/array_length(card_index_avail));
 			}
+			//for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
+			//	array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
+			//}
 			var card_index = 0;
-			while element = card_inst_1.element && card_index = card_inst_1.card_index {
-				temp = random(100);
-				for (var _i = 0; _i < array_length(card_index_dist); _i++) {
-					if temp >= card_index_dist[_i] && temp < card_index_dist[_i+1] {
-						card_index = _i;
-					}
+			var temp = random(100);
+			for (var _i = 0; _i < array_length(card_index_dist); _i++) {
+				if temp >= card_index_dist[_i] && temp < card_index_dist[_i+1] {
+					card_index = card_index_avail[_i];
 				}
 			}
 	
@@ -128,16 +134,18 @@ if global.tutorial = false or global.tutorial_step = 48 or global.tutorial_step 
 			}
 	
 			var card_index_dist = [0];
-			for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
-				array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
+			var card_index_avail = global.cards_avail_json[$ "element" + string(element)][$ "rarity" + string(rarity)][$ "card_type" + string(card_type)];
+			for (var _i = 0; _i < array_length(card_index_avail); _i++) {
+				array_push(card_index_dist,(_i+1)*100/array_length(card_index_avail));
 			}
+			//for (var _i = 0; _i < array_length(global.rarity_list[rarity][element][card_type][0]); _i++) {
+			//	array_push(card_index_dist,(_i+1)*100/array_length(global.rarity_list[rarity][element][card_type][0]))
+			//}
 			var card_index = 0;
-			while (element = card_inst_1.element && card_index = card_inst_1.card_index) or (element = card_inst_2.element && card_index = card_inst_2.card_index){
-				temp = random(100);
-				for (var _i = 0; _i < array_length(card_index_dist); _i++) {
-					if temp >= card_index_dist[_i] && temp < card_index_dist[_i+1] {
-						card_index = _i;
-					}
+			var temp = random(100);
+			for (var _i = 0; _i < array_length(card_index_dist); _i++) {
+				if temp >= card_index_dist[_i] && temp < card_index_dist[_i+1] {
+					card_index = card_index_avail[_i];
 				}
 			}
 	

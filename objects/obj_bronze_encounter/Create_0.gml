@@ -1,10 +1,9 @@
 hover_effect = noone;
 encounter_frame = noone;
 story_frame = noone;
-story_done = true;
-
-enemy = noone;
-rarity = 0;
-art = s_amethyst_obelisk_art;
-name = "tutorial"
-next_encounters = [];
+checked_if_active = false;
+checked_if_active_unlocks = false;
+unsepia_seq = noone;
+image_alpha = 0;
+highlight_next_encounters = false;
+next_encounter_iter = 0;

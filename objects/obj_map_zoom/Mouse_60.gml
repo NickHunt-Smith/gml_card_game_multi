@@ -1,5 +1,5 @@
 
-if global.story_active = false {
+if global.story_active = false && global.journal_active = false {
 	if button_2 = true {
 		button_1 = true
 		button_2 = false

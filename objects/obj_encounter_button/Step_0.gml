@@ -1,7 +1,11 @@
-
-if mouse_x > x-32 && mouse_x < x+32 && mouse_y > y-18 && mouse_y < y+18 {
+var resize_scale = view_wport[1]/1280;
+if mouse_x > x-52*resize_scale && mouse_x < x+52*resize_scale && mouse_y > y-27*resize_scale && mouse_y < y+27*resize_scale {
 	if hover_effect = noone {
-		hover_effect = part_system_create(Ps_duel_highlight);
+		if global.story_active = true {
+			hover_effect = part_system_create(Ps_duel_highlight_story);
+		} else {
+			hover_effect = part_system_create(Ps_duel_highlight);
+		}
 		part_system_position(hover_effect, x, y);
 		part_system_depth(hover_effect,depth+1);
 	}
