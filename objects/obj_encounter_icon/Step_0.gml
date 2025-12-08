@@ -15,16 +15,18 @@ if checked_if_active = false {
 	var progress_data = json_parse(json_string);
 	if progress_data[$ encounter_name][$ "precombat_story_done"] = true && progress_data[$ encounter_name][$ "defeated"] = true && progress_data[$ encounter_name][$ "postcombat_story_done"] = false {
 		story_frame = instance_create_layer(x,y,"story",obj_story_text);
-		global.story_active = true;
+		alarm[0] = 1;
 		story_frame.encounter_story = global.story_json[$ encounter_name];
 		story_frame.rarity = rarity;
 		story_frame.art = art;
+		story_frame.win_threshold = win_threshold;
 		story_frame.encounter_name = encounter_name;
 		story_frame.text_stage = "postcombat";
 		story_frame.card_unlocks_element = card_unlocks_element;
 		story_frame.card_unlocks_rarity = card_unlocks_rarity;
 		story_frame.card_unlocks_card_type = card_unlocks_card_type;
 		story_frame.card_unlocks_card_index = card_unlocks_card_index;
+		camera_set_view_pos(view_camera[1],x-0.5*view_wport[1],y-0.5*view_hport[1]);
 		
 		if hover_effect != noone {
 			part_system_destroy(hover_effect);
@@ -45,7 +47,7 @@ if instance_exists(story_frame) = false && highlight_next_encounters = true {
 	file_text_close(file_id);
 	var progress_data = json_parse(json_string);
 	
-	if progress_data[$ encounter_name][$ "next_encounters_unlocked"] = false {
+	if progress_data[$ encounter_name][$ "postcombat_story_done"] = true && progress_data[$ encounter_name][$ "next_encounters_unlocked"] = false {
 		if array_length(next_encounters) > next_encounter_iter {
 			for (var i = 0; i < instance_number(obj_bronze_encounter); ++i) {
 			    var _inst = instance_find(obj_bronze_encounter, i);

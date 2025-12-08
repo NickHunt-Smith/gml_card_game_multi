@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"OGG_Ethereal_STEM_Melodies",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":156.37498,
+  "exportDir":"",
   "name":"OGG_Ethereal_STEM_Melodies",
   "parent":{
     "name":"STEMS",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"OGG_Ethereal_STEM_Melodies.ogg",
-  "type":0,
   "volume":1.0,
 }

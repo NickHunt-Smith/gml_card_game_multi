@@ -2,9 +2,9 @@
 // You can write your code in this editor
 
 play_damage_1 = -2;
-strength_threshold = 2;
+strength_threshold = 3;
 
-eff_instructions_1 = "Deal 1 to locale twice";
+eff_instructions_1 = "Deal 2 to locale with 3+ strength";
 draw_instructions_1 = false;
 
 eff_type = "none";

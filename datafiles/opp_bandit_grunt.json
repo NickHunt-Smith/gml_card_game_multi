@@ -1,0 +1,48 @@
+{
+    "element0": 4,
+    "element1": 2,
+    "card0": {
+        "name": "Expanding Forest",
+        "rarity": 0,
+        "element": 4,
+        "card_type": 0,
+        "card_index": 1,
+        "target": "none"
+    },
+    "card1": {
+        "name": "Sun-Drenched Clearing",
+        "rarity": 0,
+        "element": 4,
+        "card_type": 0,
+        "card_index": 0,
+        "target": "none"
+    },"card2": {
+        "name": "Vine Wall",
+        "rarity": 0,
+        "element": 4,
+        "card_type": 1,
+        "card_index": 2,
+        "target": "fortify_any_small"
+    },"card3": {
+        "name": "Unexplored Cave",
+        "rarity": 0,
+        "element": 2,
+        "card_type": 0,
+        "card_index": 0,
+        "target": "none"
+    },"card4": {
+        "name": "Decrepit Chapel",
+        "rarity": 0,
+        "element": 2,
+        "card_type": 0,
+        "card_index": 2,
+        "target": "none"
+    },"card5": {
+        "name": "Backstab",
+        "rarity": 0,
+        "element": 2,
+        "card_type": 1,
+        "card_index": 1,
+        "target": "backstab"
+    }
+}

@@ -14,11 +14,15 @@ if game_start = true && global.tutorial = false {
 	file_text_close(file_id);
 	global.cards_avail_json = json_parse(json_string);
 	global.elements_avail = [];
+	global.rarity_avail = [];
 	for (var _i = 0; _i < 8; _i++) {
 		var cards_avail_element = global.cards_avail_json[$ "element" + string(_i)];
 		for (var _j = 0; _j < 5; _j++) {
 			var cards_avail_rarity = cards_avail_element[$ "rarity" + string(_j)];
 			if array_length(cards_avail_rarity[$ "card_type" + string(0)]) > 0 or array_length(cards_avail_rarity[$ "card_type" + string(1)]) > 0 {
+				if array_contains(global.rarity_avail,_j) = false {
+					array_push(global.rarity_avail,_j);
+				}
 				array_push(global.elements_avail,_i);
 				break
 			}
@@ -34,7 +38,7 @@ for (var _i = 0; _i < array_length(global.cards_in_hand); _i++) {
 
 ///////////////////////////////////////////////////////////////////////////////////
 // Tutorial
-if global.wait_for_tutorial_step = false && global.tutorial = true {
+if global.wait_for_tutorial_step = false && global.tutorial = true && game_start = true {
 	if global.tutorial_step = 0 {
 		global.player = instance_create_depth(0,0,0,obj_player);
 		global.opponent = instance_create_depth(0,0,0,obj_opponent_tutorial);
@@ -52,6 +56,7 @@ if global.wait_for_tutorial_step = false && global.tutorial = true {
 		draft_inst.debug_test = false;
 		draft_inst.extra_opp_card = false;
 		draft_inst.reroll_active = true;
+		draft_inst.new_turn = true;
 		global.rerolls_available += 1;
 	
 		story_frame = instance_create_depth(477,140,-1400,obj_story_text_tutorial);
@@ -235,6 +240,7 @@ if global.wait_for_tutorial_step = false && global.tutorial = true {
 		draft_inst.debug_test = false;
 		draft_inst.extra_opp_card = false;
 		draft_inst.reroll_active = true;
+		draft_inst.new_turn = true;
 		global.rerolls_available += 1;
 		alarm[1] = 120;
 	} else if global.tutorial_step = 45 {
@@ -396,6 +402,7 @@ if global.wait_for_tutorial_step = false && global.tutorial = true {
 		draft_inst.debug_test = false;
 		draft_inst.extra_opp_card = false;
 		draft_inst.reroll_active = true;
+		draft_inst.new_turn = true;
 		global.rerolls_available += 1;
 	} else if global.tutorial_step = 83 {
 		draft_inst = instance_create_depth(1510,400,-800,obj_draft_area);

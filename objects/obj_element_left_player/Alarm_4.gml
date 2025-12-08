@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//var _loaded = texturegroup_unload("Default");
+instance_create_layer(1522,750,"transition",obj_transition_exit_game);
+
+alarm[10] = 200;
 
 // save win if pve
 if global.pvp_active = false {
@@ -19,7 +21,4 @@ if global.pvp_active = false {
 	file_id = file_text_open_write("progress.json");
 	file_text_write_string(file_id, modified_json_string);
 	file_text_close(file_id);
-	room_goto(Map);
-} else {
-	room_goto(Menu);
 }

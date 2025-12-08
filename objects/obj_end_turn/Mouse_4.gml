@@ -6,9 +6,11 @@ if global.tutorial = false or global.tutorial_step = 25 or global.tutorial_step 
 		if global.opponent.passed = true {
 			global.player_enabled = false;
 			global.wait_for_effect = false;
-			global.end_turn_active = true;
 			global.opponent.passed = false;
 			global.priority = "opp";
+			global.phase = "combat";
+			combat_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_combat_phase);
+			alarm[10] = 100; 
 		} else {
 			if global.tutorial = true {
 				global.tutorial_step += 1;

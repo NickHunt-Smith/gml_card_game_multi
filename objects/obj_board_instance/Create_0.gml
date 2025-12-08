@@ -4,6 +4,9 @@ y_surface = 930;
 portal_x = 346; // 410 or 346
 portal_y = 316; // 375 or 316
 board_scale = 0.8439; // 1.02 or 0.8439
+max_channel = 0;
+max_channel_ind = 0;
+tied = false;
 
 surface = -1;
 radius_1 = 0;

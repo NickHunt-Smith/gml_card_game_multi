@@ -23,7 +23,9 @@ if global.tutorial_step = 26 {
 	global.priority = "player";
 	global.player_enabled = false;
 	global.wait_for_effect = false;
-	global.end_turn_active = true;
+	global.phase = "combat";
+	combat_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_combat_phase);
+	alarm[10] = 100; 
 	global.player.passed = false;
 	deciding = false;
 }
@@ -66,7 +68,9 @@ if global.tutorial_step = 74 {
 	global.priority = "player";
 	global.player_enabled = false;
 	global.wait_for_effect = false;
-	global.end_turn_active = true;
+	global.phase = "combat";
+	combat_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_combat_phase);
+	alarm[10] = 100; 
 	global.player.passed = false;
 	deciding = false;
 }
@@ -99,7 +103,9 @@ if global.tutorial_step = 100 {
 	global.priority = "player";
 	global.player_enabled = false;
 	global.wait_for_effect = false;
-	global.end_turn_active = true;
+	global.phase = "combat";
+	combat_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_combat_phase);
+	alarm[10] = 100; 
 	global.player.passed = false;
 	deciding = false;
 }

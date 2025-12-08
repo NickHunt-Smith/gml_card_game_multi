@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"s_slider_full",
   "bboxMode":0,
   "bbox_bottom":77,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4adbd136-d6a8-43d1-984e-fc871d3d5e3c","name":"4adbd136-d6a8-43d1-984e-fc871d3d5e3c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4adbd136-d6a8-43d1-984e-fc871d3d5e3c","name":"4adbd136-d6a8-43d1-984e-fc871d3d5e3c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,

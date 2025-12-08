@@ -1,7 +1,5 @@
 /// @description Database
 
-var _loaded = texturegroup_load("Default");
-
 //audio_play_sound(snd_volcano,10,true);
 
 randomise();
@@ -28,7 +26,8 @@ vertex_format_add_position();
 vertex_format_add_normal();
 global.format_perspective = vertex_format_end();
 
-game_start = true;
+alarm[5] = 700;
+game_start = false;
 if global.pvp_active = false {
 	if random(100) < 50 or global.tutorial = true {
 		global.priority = "player";
@@ -61,11 +60,11 @@ global.destroy_effects = [];
 global.ignore_next_opp_locale = 0;
 global.rerolls_available = 0;
 global.turn_count = 10;
-global.win_threshold = 4;
 global.lingering_active = false;
 global.next_scry_legendary = false;
 global.scrys_boosted = false;
 global.rerolls_used = 0;
+global.phase = "scry";
 global.wait_for_tutorial_step = false;
 global.tutorial_step = 0;
 story_frame = noone;

@@ -10,4 +10,6 @@ if seq_change_health_2 != noone {
 	seq_change_health_2 = noone;
 }
 
-combat_ended = true;
+global.phase = "end";
+end_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_end_phase);
+alarm[11] = 100;

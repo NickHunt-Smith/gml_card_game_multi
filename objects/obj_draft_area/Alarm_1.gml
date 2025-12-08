@@ -107,6 +107,10 @@ if global.pvp_active = false {
 		shooting_stars = noone;
 	}
 	emit_destroy = false;
+	if new_turn = true {
+		global.phase = "action";
+		action_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_action_phase);
+	}
 	alarm[0] = 100;
 	if switch_priority = true {
 		global.priority = "opp";
@@ -144,6 +148,10 @@ if global.pvp_active = false {
 			alarm[1] = 1;
 		} else {
 			global.drafting = false;
+			if new_turn = true {
+				global.phase = "action";
+				action_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_action_phase);
+			}
 			alarm[0] = 100;
 			if switch_priority = true {
 				global.priority = "opp";

@@ -38,7 +38,9 @@ if global.priority = "opp" && global.drafting = false && global.resolve_stack = 
 							global.priority = "player";
 							global.player_enabled = false;
 							global.wait_for_effect = false;
-							global.end_turn_active = true;
+							global.phase = "combat";
+							combat_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_combat_phase);
+							alarm[10] = 100; 
 							global.player.passed = false;
 						} else {
 							global.opponent.passed = true;

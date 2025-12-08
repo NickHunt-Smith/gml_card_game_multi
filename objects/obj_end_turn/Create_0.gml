@@ -25,6 +25,8 @@ seq_change_health_1 = noone;
 seq_change_health_2 = noone;
 channel_seq_1 = noone;
 channel_seq_2 = noone;
+combat_phase_seq = noone;
+end_phase_seq = noone;
 
 player_1_done = false;
 player_2_done = false;

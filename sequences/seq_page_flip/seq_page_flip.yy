@@ -26,8 +26,8 @@
   },
   "name":"seq_page_flip",
   "parent":{
-    "name":"Sequences",
-    "path":"folders/Sequences.yy",
+    "name":"seq_map",
+    "path":"folders/Sequences/seq_map.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

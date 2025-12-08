@@ -26,8 +26,8 @@
   },
   "name":"seq_overwrite",
   "parent":{
-    "name":"Sequences",
-    "path":"folders/Sequences.yy",
+    "name":"seq_general_in_game",
+    "path":"folders/Sequences/seq_general_in_game.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

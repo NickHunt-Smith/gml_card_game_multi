@@ -136,10 +136,9 @@ if array_length(hand_rarity) = 0 or (global.stack_active = true && array_max(han
 			target_2 = targets[1];
 			target_3 = targets[2];
 		
-			// As long as there are good targets, play card
 			if target_1 = "pass" or target_2 = "pass" or target_3 = "pass" {
 				pass = true;
-				show_debug_message("pass bad targets")
+				show_debug_message("pass bad targets");
 			} else {
 				if card_type = 1 {
 					alarm[3] = 65;
@@ -309,8 +308,10 @@ if pass = true {
 			global.priority = "player";
 			global.player_enabled = false;
 			global.wait_for_effect = false;
-			global.end_turn_active = true;
 			global.player.passed = false;
+			global.phase = "combat";
+			combat_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_combat_phase);
+			alarm[10] = 100; 
 		} else {
 			global.opponent.passed = true;
 			global.priority = "player";

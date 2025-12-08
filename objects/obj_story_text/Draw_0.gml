@@ -27,8 +27,10 @@ if zoomed_in = true {
 			chars_revealed = 0;
 			text = curr_scene[$ struct_var_name];
 			if narrator = false {
+				draw_set_font(Empower_font_story_character);
 				text = string_wrap(text, text_width_character);
 			} else {
+				draw_set_font(Empower_font_story);
 				text = string_wrap(text, text_width_narrator);
 			}
 			text_rolling = true;
@@ -129,6 +131,8 @@ if zoomed_in = true {
 		duel_button = instance_create_depth(x+85,y+183,depth-2,obj_encounter_button);
 		duel_button.rarity = rarity;
 		duel_button.encounter_name = encounter_name;
+		duel_button.win_threshold = win_threshold;
+		duel_button.art = art;
 	
 		// save story done
 		var file_id = file_text_open_read("progress.json");
@@ -150,21 +154,33 @@ if zoomed_in = true {
 	if narrator = "end_story_transition" {
 		var c_x = camera_get_view_x(view_camera[1]);
 		var c_y = camera_get_view_y(view_camera[1]);
-		if unlock_sys = noone {
-			unlock_sys = part_system_create(Ps_unlock_common);
-			part_system_position(unlock_sys, c_x + 0.5*view_wport[1], c_y + 0.55*view_hport[1]);
-			part_system_depth(unlock_sys,depth-1);
-		}
-		if unlock_seq = noone && unlock_seq_done = false {
-			unlock_seq = layer_sequence_create("cards_on_journal",c_x + 0.5*view_wport[1],c_y + 0.55*view_hport[1],seq_unlock_common);
-			alarm[1] = 80;
+		if card_unlocks_rarity[card_unlocks_iter] = 0 {
+			if unlock_sys = noone {
+				unlock_sys = part_system_create(Ps_unlock_common);
+				part_system_position(unlock_sys, c_x + 0.5*view_wport[1], c_y + 0.55*view_hport[1]);
+				part_system_depth(unlock_sys,depth-1);
+			}
+			if unlock_seq = noone && unlock_seq_done = false {
+				unlock_seq = layer_sequence_create("cards_on_journal",c_x + 0.5*view_wport[1],c_y + 0.55*view_hport[1],seq_unlock_common);
+				alarm[1] = 80;
+			}
+		} else if card_unlocks_rarity[card_unlocks_iter] = 1 {
+			if unlock_sys = noone {
+				unlock_sys = part_system_create(Ps_unlock_uncommon);
+				part_system_position(unlock_sys, c_x + 0.5*view_wport[1], c_y + 0.55*view_hport[1]);
+				part_system_depth(unlock_sys,depth-1);
+			}
+			if unlock_seq = noone && unlock_seq_done = false {
+				unlock_seq = layer_sequence_create("cards_on_journal",c_x + 0.5*view_wport[1],c_y + 0.55*view_hport[1],seq_unlock_uncommon);
+				alarm[1] = 80;
+			}
 		}
 		if unlock_card = noone {
 			object_set_sprite(obj_card_journal_card,global.rarity_list[card_unlocks_rarity[card_unlocks_iter]][card_unlocks_element[card_unlocks_iter]][card_unlocks_card_type[card_unlocks_iter]][0][card_unlocks_card_index[card_unlocks_iter]]);
 			unlock_card = instance_create_depth(c_x + 0.5*view_wport[1], c_y + 0.55*view_hport[1],depth-2,obj_card_journal_card);
 			var resize_scale = view_wport[1]/1280;
-			image_xscale = 0.65*resize_scale;
-			image_yscale = 0.65*resize_scale;
+			unlock_card.image_xscale = 0.65*resize_scale;
+			unlock_card.image_yscale = 0.65*resize_scale;
 		}
 		
 		draw_set_font(Empower_font);

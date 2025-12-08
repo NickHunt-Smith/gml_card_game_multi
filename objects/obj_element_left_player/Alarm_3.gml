@@ -12,5 +12,7 @@ if win_sys_2 != noone {
 
 fade_out = true;
 
-alarm[4] = 200;
+win_seq = layer_sequence_create("above_cards",1520,750,seq_victory);
+
+alarm[4] = 150;
 

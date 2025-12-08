@@ -34,7 +34,7 @@ for (var _i = 0; _i < array_length(global.channelled_left_opp); _i++) {
 }
 
 draw_set_font(Empower_font)
-global.channelled_left_opp_loc_x = x+284;
+global.channelled_left_opp_loc_x = x-58;
 global.channelled_left_opp_loc_y = y + 134
 var channel_print = max_channel;
 if max_channel > global.win_threshold {
@@ -96,3 +96,7 @@ if (moused = false) && (tooltip_created = true){
 	}
 	tooltip_created = false;
 }
+
+draw_sprite_ext(s_banner,0,global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y+45,0.118,0.118,0,c_white,1);
+draw_set_colour(c_maroon);
+draw_text_ext_transformed(global.channelled_left_opp_loc_x,global.channelled_left_opp_loc_y+34,string(global.win_threshold) + " Needed",1,1000,0.4,0.4,1);

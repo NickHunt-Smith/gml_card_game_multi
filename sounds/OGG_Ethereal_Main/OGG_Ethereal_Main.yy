@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"OGG_Ethereal_Main",
   "audioGroupId":{
     "name":"music_group",
     "path":"audiogroups/music_group",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":156.0,
+  "exportDir":"",
   "name":"OGG_Ethereal_Main",
   "parent":{
     "name":"OGG",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"OGG_Ethereal_Main.ogg",
-  "type":0,
   "volume":1.0,
 }

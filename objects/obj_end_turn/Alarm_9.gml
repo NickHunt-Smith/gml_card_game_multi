@@ -19,6 +19,7 @@ if global.end_game_trigger = false {
 		var draft_inst = instance_create_depth(1510,400,-800,obj_draft_area);
 		draft_inst.draft_count = 3;
 		draft_inst.extra_opp_card = false;
+		draft_inst.new_turn = true;
 	}
 	global.wait_for_effect = true;
 	global.end_turn_active = false;

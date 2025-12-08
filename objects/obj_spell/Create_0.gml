@@ -8,6 +8,8 @@ grabbable = true;
 // This is used to set the scale of the border draw.
 image_xscale = 0.5;
 image_yscale = 0.5;
+image_scale_unhovered = 0.5;
+image_scale_hovered = 0.7;
 image_alpha = 0;
 big_mode = false;
 draft_mode = true;

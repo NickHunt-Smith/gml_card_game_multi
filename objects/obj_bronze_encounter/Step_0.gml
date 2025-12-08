@@ -19,12 +19,14 @@ if checked_if_active = false {
 		story_frame.encounter_story = global.story_json[$ encounter_name];
 		story_frame.rarity = rarity;
 		story_frame.art = art;
+		story_frame.win_threshold = win_threshold;
 		story_frame.encounter_name = encounter_name;
 		story_frame.text_stage = "postcombat";
 		story_frame.card_unlocks_element = card_unlocks_element;
 		story_frame.card_unlocks_rarity = card_unlocks_rarity;
 		story_frame.card_unlocks_card_type = card_unlocks_card_type;
 		story_frame.card_unlocks_card_index = card_unlocks_card_index;
+		camera_set_view_pos(view_camera[1],x-0.5*view_wport[1],y-0.5*view_hport[1]);
 		
 		if hover_effect != noone {
 			part_system_destroy(hover_effect);
@@ -47,6 +49,8 @@ if checked_if_active_unlocks = false && instance_exists(story_frame) = false {
 	if progress_data[$ encounter_name][$ "precombat_story_done"] = true && progress_data[$ encounter_name][$ "defeated"] = true && progress_data[$ encounter_name][$ "postcombat_story_done"] = true && progress_data[$ encounter_name][$ "next_encounters_unlocked"] = false {
 		unsepia_seq = layer_sequence_create("story",x,y,seq_unsepia);
 		alarm[0] = 85;
+	} else {
+		highlight_next_encounters = true;
 	}
 	
 	checked_if_active_unlocks = true;	
@@ -105,6 +109,8 @@ if checked_if_active_unlocks = true && highlight_next_encounters = true {
 			file_text_close(file_id);
 			global.story_active = false;
 		}
+	} else {
+		sprite_index = s_brindlevale;
 	}
 	
 	highlight_next_encounters = false;

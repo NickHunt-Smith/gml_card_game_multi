@@ -5,5 +5,5 @@ checked_if_active = false;
 checked_if_active_unlocks = false;
 unsepia_seq = noone;
 image_alpha = 0;
-highlight_next_encounters = false;
+highlight_next_encounters = true;
 next_encounter_iter = 0;

@@ -1,15 +1,17 @@
 {
-  "$GMSound":"",
+  "$GMSound":"v2",
   "%Name":"OGG_Hopeful_STEM_Drums",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "bitRate":128,
+  "channelFormat":0,
   "compression":0,
+  "compressionQuality":4,
   "conversionMode":0,
   "duration":194.5946,
+  "exportDir":"",
   "name":"OGG_Hopeful_STEM_Drums",
   "parent":{
     "name":"STEMS",
@@ -20,6 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"OGG_Hopeful_STEM_Drums.ogg",
-  "type":0,
   "volume":1.0,
 }

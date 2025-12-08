@@ -3,3 +3,4 @@
 
 channel_arr = [];
 opp = false;
+x_offset_element = 55;

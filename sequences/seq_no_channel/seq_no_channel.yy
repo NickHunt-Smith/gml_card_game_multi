@@ -34,8 +34,8 @@
   },
   "name":"seq_no_channel",
   "parent":{
-    "name":"Sequences",
-    "path":"folders/Sequences.yy",
+    "name":"seq_general_in_game",
+    "path":"folders/Sequences/seq_general_in_game.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,
@@ -51,7 +51,7 @@
   "tracks":[
     {"$GMTextTrack":"","%Name":"Empower_font","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-              "0":{"$AssetTextKeyframe":"","Alignment":0,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"Empower_font","path":"fonts/Empower_font/Empower_font.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"NO CHANNEL!","Wrap":true,},
+              "0":{"$AssetTextKeyframe":"v1","Alignment":0,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"Empower_font","path":"fonts/Empower_font/Empower_font.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"NO CHANNEL!","Wrap":true,},
             },"Disabled":false,"id":"15f5218e-1409-4493-a07b-a4721d0310ef","IsCreationKey":false,"Key":0.0,"Length":60.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"Empower_font","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4294106952,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[

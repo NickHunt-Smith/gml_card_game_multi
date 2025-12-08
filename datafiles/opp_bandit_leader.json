@@ -1,0 +1,48 @@
+{
+    "element0": 6,
+    "element1": 2,
+    "card0": {
+        "name": "Silver Prairie",
+        "rarity": 0,
+        "element": 6,
+        "card_type": 0,
+        "card_index": 2,
+        "target": "none"
+    },
+    "card1": {
+        "name": "Thunderbolt",
+        "rarity": 1,
+        "element": 6,
+        "card_type": 1,
+        "card_index": 2,
+        "target": "damage_any_big"
+    },"card2": {
+        "name": "Amphramute",
+        "rarity": 0,
+        "element": 6,
+        "card_type": 1,
+        "card_index": 1,
+        "target": "amphramute"
+    },"card3": {
+        "name": "Unexplored Cave",
+        "rarity": 0,
+        "element": 2,
+        "card_type": 0,
+        "card_index": 0,
+        "target": "none"
+    },"card4": {
+        "name": "Wasteland",
+        "rarity": 1,
+        "element": 2,
+        "card_type": 0,
+        "card_index": 2,
+        "target": "none"
+    },"card5": {
+        "name": "Backstab",
+        "rarity": 0,
+        "element": 2,
+        "card_type": 1,
+        "card_index": 1,
+        "target": "backstab"
+    }
+}

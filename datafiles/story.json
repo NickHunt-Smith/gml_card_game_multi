@@ -763,5 +763,354 @@
             "sound": false,
             "text0": ""
         }
+    },
+    "bandit_grunt": {
+        "precombat0": {
+            "narrator": true,
+            "locale_art": "s_branching_trails_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You eventually catch up to Kusharn, who doesn't bother acknowledging your presence. You continue as a group along the trail in awkward silence for over an hour, before Corrick slows down to talk to you at the back of the group."
+        },
+        "precombat1": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "Corrick whispers, eyes fixed on Dravas ahead, \"No hard feelings, okay? If you've really never seen a duel before I'm sure it must have been bizarre to blast all that magic at me.\""
+        },
+        "precombat2": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"Absolutely it was bizarre! Are you okay? I really didn't mean to do any of that...\""
+        },
+        "precombat3": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "He waves away your concern. \"I'm fine, it's happened before. Never a pleasant feeling, but you get through. Besides, I would've had to do the same to you. It's my fault for losing to a complete novice in the first place.\""
+        },
+        "precombat4": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"Is this normal with these two? This...awkwardness?\""
+        },
+        "precombat5": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "\"Your guess is as good as mine. I've only been with them for a few weeks. I had someone...taken, just like you. She was a friend, from my hometown on the steppe near Corcia.\"",
+            "text1": "\"I've just been trying to survive. They've told me to stay out of the fights so far, but at some point I need to hold my own. Our duel doesn't give me much hope to be honest.\"",
+            "text2": "He takes his eyes off Dravas ahead for a moment and shoots you a scared glance. \"I'm glad you're here. Maybe between the two of us we can learn the basics without getting ourselves killed.\""
+        },
+        "precombat6": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"Well I'm certainly relieved it's not just me with those two. Pretty sure Kusharn hates my guts already. How come they're getting into so many of these fights?\""
+        },
+        "precombat7": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "His body shivers. \"That's just what it means to travel. Synemancers constantly on the prowl, out to get you. You know how it is. Or, well, maybe you don't.\"",
+            "text1": "\"People seem to have a problem with them just for being Seekers. I never really understood why, and right now they're the only ones trying to get back our people.\"",
+            "text2": "\"We have to work with them. That's the only option.\" Corrick puts on a determined face, but his wavering voice tells you he's second-guessing himself every moment."
+        },
+        "precombat8": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"Where are we actually going once we're out of the forest? Do they have a plan?\""
+        },
+        "precombat9": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "\"Last I heard, the plan was just to follow the Warlock's windwalking trail. Since the trail ended near your village, I'm not sure what we're doing next. Might as well ask.\""
+        },
+        "precombat10": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "You catch up to Dravas, and Corrick repeats your question to him. Dravas responds, \"We're headed to lake Cael, there's a town called Caelkirk there. We passed it with Corrick a few days ago.\"",
+            "text1": "\"We've got a few Seeker friends there, hopefully they know where the Warlock went. And we can palm you both off to someone while we keep following the trail.\""
+        },
+        "precombat11": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "\"Oh.\" Corrick sounds disappointed. \"What will we do with these new people?\""
+        },
+        "precombat12": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"It depends. They'll have to teach you a lot more Synemnacy before transferring you anywhere, could be months. Since you don't have much skill yet, they might make you administrate-\""
+        },
+        "precombat13": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_kusharn",
+            "character_name": "Kusharn",
+            "sound": false,
+            "text0": "\"Look out!!\" Kusharn suddenly stops and holds out her hands, a fiery volcano appearing before her and shrouding her in a red bubble."
+        },
+        "precombat14": {
+            "narrator": true,
+            "locale_art": "s_branching_trails_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Black smoke drifts across the trail. Dravas creates a light blue barrier of his own just moments before a shadowy knife flies from the trees, smashing against it and sending blue sparks into the air.",
+            "text1": "More knives deflect off Kusharn's barrier, as she lights a ring of flames around herself, illuminating the surrounding forest with an orange glow. You can make out multiple dark figures amidst the smoke."
+        },
+        "precombat15": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "Dravas shouts at you both, \"Quick! Get your barriers up! There's too many bandits for us to handle, you'll have to fight them too!\""
+        },
+        "precombat16": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_bandit_grunt",
+            "character_name": "Bandit",
+            "sound": false,
+            "text0": "One of the bandits focuses their attention on you, knife in hand and smoke billowing behind them. You think back to the duel with Corrick, trying to call on your memories to defend yourself..."
+        },
+        "precombat17": {
+            "narrator": "combat_transition",
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_bandit_grunt",
+            "character_name": "Bandit",
+            "sound": false,
+            "text0": ""
+        },
+        "postcombat0": {
+            "narrator": true,
+            "locale_art": "s_branching_trails_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You release your built-up magic at the bandit's barrier, which dissapates into curling grey mist. You let out a gasp of relief as the bandit falls, only now allowing your mind to absorb some of the chaos around you.",
+            "text1": "An occasional blast of fire flashes in the distance as Kusharn flings spell after spell at a labouring shadowy figure. Dravas hides behind a wall of water as another bandit sends shadow-fuelled knives towards him.",
+            "text2": "You take a moment to try and calm yourself. The fight with the bandit feels like it left a stain on your mind, memories of shadow and pain. Perhaps the onyx crystal Dravas gave you will be useful now?"
+        },
+        "postcombat1": {
+            "narrator": "end_story_transition",
+            "locale_art": "s_branching_trails_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": ""
+        }
+    },
+    "bandit_leader": {
+        "precombat0": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_corrick",
+            "character_name": "Corrick",
+            "sound": false,
+            "text0": "You hear a shout from behind you. \"No, please! Don't do it!\"  Corrick frantically summons a vine from the forest floor, twisting it out towards the bandit he is fighting."
+        },
+        "precombat1": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_bandit_leader",
+            "character_name": "Bandit",
+            "sound": false,
+            "text0": "The bandit grabs the vine midair, and it withers and decays in his hand. A second later and a stream of lightning bursts from his other hand, striking right at Corrick's neck.",
+            "text1": "Is that it? Did Corrick lose? The lightning continues to flow, with black energy curling around the airborne arcs to envelop Corrick entirely.",
+            "text2": "Corrick is silent as his pearlescent barrier once again shatters, sparks and shadows flashing off his body. Just like with you, he'll fall to his knees and be helpless, memoryless for a time.",
+            "text3": "Maybe you can fight the bandit while he's down, Kusharn might be able to win and help you too, he'll recover again. But something's off...",
+            "text4": "The magic doesn't stop flowing. The air crackles as the electricity strikes young Corrick again, and again. You stopped well before this, surely? And the man responsible for this suffering, his eyes-",
+            "text5": "His eyes are calm. Serene, even. He's done this before, perhaps many times. They're not the eyes of a killer, revelling in the thrill of the hunt. He's just doing what he needs to.",
+            "text6": "Finally the umbral sparks begin to fade, the bandit lowering his hands slowly. Corrick lies face-first amidst the overgrowth, which immediately starts wrapping its tendrils around him.",
+            "text7": "You stare in horror as the bandit turns to face you, an occasional spark flashing around his now-golden glove. The others are still fighting - this duel will be up to you."
+        },
+        "precombat2": {
+            "narrator": "combat_transition",
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_bandit_leader",
+            "character_name": "Bandit",
+            "sound": false,
+            "text0": ""
+        },
+        "postcombat0": {
+            "narrator": true,
+            "locale_art": "s_branching_trails_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "The bandit's Synematic barrier explodes outward in a burst of sparks, your magic blowing away the surrounding smoke. You see his expression change to one of utter shock as he realizes his defeat, calmness replaced by terror.",
+            "text1": "As your magic sweeps over him, you feel your anger build. These bandits ambushed you, meaning to reduce you all to mindless husks. Perhaps Corrick will never recover. It would be so easy to do the same to this heartless thief-"
+        },
+        "postcombat1": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "You feel a hand on your shoulder, and a quiet voice in your ear. \"Well done Alden. That's enough now. You can let go.\""
+        },
+        "postcombat2": {
+            "narrator": true,
+            "locale_art": "s_branching_trails_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "You turn slightly, and can see Kusharn hovering over Corrick, peeling vegetation off his unmoving body. The other bandits are nowhere to be seen. Did she kill them? Or did they run away?",
+            "text1": "Either way, the battle seems to be over. You lower your hands, and the energy dissipates. The bandit will be spared.",
+            "text2": "Exhaustion overtakes you. Your entire being feels drained from the mental effort of those duels back to back. You stumble, and Dravas catches you before you fall."
+        },
+        "postcombat3": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"Woah, woah. You're okay, you're safe. Kusharn chased the others away. It's tiring I know, but you'll get used to it.\"",
+            "text1": "\"Those bandits were serious trouble, they even gave Kusharn and I a decent fight. Honestly that second one you fought was probably the strongest of the lot.\"",
+            "text2": "\"By rights you should be like Corrick right now, I assumed we'd lose you both. Very impressive given that you didn't even know what Synemancy was a few hours ago.\"",
+            "text3": "\"I've got bigger plans for you than just ditching you at Caelkirk. We're going to travel, get you as many powerful memories as we can.\"",
+            "text4": "\"Maybe after long enough, you'll even stand a chance against-\""
+        },
+        "postcombat4": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_kusharn",
+            "character_name": "Kusharn",
+            "sound": false,
+            "text0": "Kusharn chuckles behind you. \"Getting ahead of yourself again Dravas? The last of your little apprentices couldn't even cross the Valley of Thorns!\""
+        },
+        "postcombat5": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"This is what we have to do, Kusharn! You know as well as I do that none of us can really challenge him. We have to find someone with real talent.\""
+        },
+        "postcombat6": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_kusharn",
+            "character_name": "Kusharn",
+            "sound": false,
+            "text0": "\"We'll see about that. Not everyone is so pessimistic about their own chances as you are.\""
+        },
+        "postcombat7": {
+            "narrator": true,
+            "locale_art": "s_branching_trails_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "She lifts Corrick's torso upright, dirt falling from his face. His eyes are wide open, and so pale the iris is barely visible. But he does seem to be breathing."
+        },
+        "postcombat8": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_kusharn",
+            "character_name": "Kusharn",
+            "sound": false,
+            "text0": "Kusharn sighs. \"What a waste. Barely old enough to have an identity, let alone to lose it.\""
+        },
+        "postcombat9": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "\"So he's really...\""
+        },
+        "postcombat10": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_kusharn",
+            "character_name": "Kusharn",
+            "sound": false,
+            "text0": "\"Gone? Yes. He'll live, but he'll have to start over. Decide who he wants to be, from scratch. The Seekers don't take full amnesiacs like this, but we'll try to find him somewhere he can at least survive.\""
+        },
+        "postcomba11": {
+            "narrator": true,
+            "locale_art": "s_branching_trails_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "Corrick stays silent, staring at nothing as Kusharn and Dravas drag him to rest on a nearby tree."
+        },
+        "postcombat12": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "\"We'll stay here for the night. He'll at least be able to speak and walk by morning, and then he'll have an endless stream of questions for us.\""
+        },
+        "postcomba13": {
+            "narrator": true,
+            "locale_art": "s_branching_trails_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": "The monster that caused this groggily gets to his feet. Kusharn strides towards the bandit, a small ball of fire spinning above her hand. The bandit takes a step backward, then turns to run. She lets him go.",
+            "text1": "You look down sadly at Corrick. This was exactly what he was terrified of, and in the end you couldn't help him.",
+            "text2": "Small leaves extend from the tree and start to wrap around his neck. He doesn't even react.",
+            "text3": "You can't protect Corrick now. But at least you can protect this new man, who knows nothing of the chaos of this world."
+        },
+        "postcombat14": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_alden_quellow",
+            "character_name": "Alden",
+            "sound": false,
+            "text0": "You get out your shears. \"I'll sit with him. Get rid of the overgrowth. Answer his questions as best I can.\""
+        },
+        "postcombat15": {
+            "narrator": false,
+            "locale_art": "s_branching_trails_art",
+            "character_art": "char_dravas",
+            "character_name": "Dravas",
+            "sound": false,
+            "text0": "Dravas nods. \"Very well. Get some sleep at some point if you possibly can, this journey of ours is only just beginning. And there will be more casualties than this, believe me.\""
+        },
+        "postcombat16": {
+            "narrator": "end_story_transition",
+            "locale_art": "s_branching_trails_art",
+            "character_art": false,
+            "character_name": false,
+            "sound": false,
+            "text0": ""
+        }
     }
 }

@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 image_alpha = 0;
+rarity_alpha = 0;
 emit_destroy = true;
 draft_count = 0;
 summon_cards = true;
@@ -16,12 +17,15 @@ x_memory_2 = 0;
 x_memory_3 = 0;
 global.draft_area_visible = true;
 only_draft_area = false;
+new_turn = false;
 
 summon_whirlpool_1 = noone;
 summon_whirlpool_2 = noone;
 summon_whirlpool_3 = noone;
 sparkle_rain = noone;
 shooting_stars = noone;
+scry_sequence = noone;
+rarity_current = 4;
 
 card_inst_1 = noone;
 card_inst_2 = noone;

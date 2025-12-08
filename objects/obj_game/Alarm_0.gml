@@ -10,12 +10,8 @@ if global.pvp_active = true {
 		draft_inst.draft_count = 3;
 		draft_inst.debug_test = false;
 		draft_inst.extra_opp_card = false;
-		
-		if global.pvp_active = true {
-			global.opponent = instance_create_depth(0,0,0,obj_opponent_pvp);
-		} else {
-			global.opponent = instance_create_depth(0,0,0,obj_opponent);
-		}
+		draft_inst.new_turn = true;
+		global.opponent = instance_create_depth(0,0,0,obj_opponent_pvp);
 		global.player = instance_create_depth(0,0,0,obj_player);
 		var opp_hand_manager = instance_create_depth(0,0,0,obj_opp_hand_manager);
 	}
@@ -24,12 +20,8 @@ if global.pvp_active = true {
 	draft_inst.draft_count = 3;
 	draft_inst.debug_test = false;
 	draft_inst.extra_opp_card = false;
-	
-	if global.pvp_active = true {
-		global.opponent = instance_create_depth(0,0,0,obj_opponent_pvp);
-	} else {
-		global.opponent = instance_create_depth(0,0,0,obj_opponent);
-	}
+	draft_inst.new_turn = true;
+	global.opponent = instance_create_depth(0,0,0,obj_opponent);
 	global.player = instance_create_depth(0,0,0,obj_player);
 	var opp_hand_manager = instance_create_depth(0,0,0,obj_opp_hand_manager);
 }

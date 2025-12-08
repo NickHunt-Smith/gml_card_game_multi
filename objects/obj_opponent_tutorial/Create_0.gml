@@ -18,6 +18,7 @@ depth = -1000;
 
 play_scale = 1;
 play_element_seq = noone;
+combat_phase_seq = noone;
 sprite_gap = 0;
 initial_draw=true;
 locale_lane_y = 301;

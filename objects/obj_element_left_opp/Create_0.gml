@@ -17,6 +17,7 @@ max_channel = 0;
 max_channel_ind_current = 1000;
 max_channel_ind_draw = 1000;
 max_element_seq = noone;
+lose_seq = noone;
 
 channelled_sys = noone;
 depth = -800;

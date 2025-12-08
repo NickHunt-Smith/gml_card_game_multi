@@ -27,6 +27,7 @@ if global.story_active = false && global.journal_active = false {
 		story_frame.encounter_story = global.story_json[$ encounter_name];
 		story_frame.rarity = rarity;
 		story_frame.art = art;
+		story_frame.win_threshold = win_threshold;
 		story_frame.encounter_name = encounter_name;
 		story_frame.text_stage = "precombat";
 		
@@ -41,7 +42,9 @@ if global.story_active = false && global.journal_active = false {
 		encounter_frame = instance_create_depth(x,y-180,depth-1,obj_encounter_frame);
 		encounter_frame.rarity = rarity;
 		encounter_frame.art = art;
+		encounter_frame.win_threshold = win_threshold;
 		encounter_frame.encounter_name = encounter_name;
+		encounter_frame.encounter_title = encounter_title;
 		global.encounter_visible = true;
 	
 		if hover_effect != noone {

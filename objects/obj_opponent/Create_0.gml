@@ -61,9 +61,6 @@ overwriting = false;
 hand_rarity = [];
 hand_card_type = [];
 
-element_1 = 4;
-element_2 = 1;
-
 common_locales = 0;
 uncommon_locales = 0;
 rare_locales = 0;
@@ -89,40 +86,25 @@ deck_card_type = [];
 deck_card_index = [];
 deck_target = [];
 
-// Emerald
-// Expanding Forest
-array_push(deck_rarity,0);
-array_push(deck_element,4);
-array_push(deck_card_type,0);
-array_push(deck_card_index,1);
-array_push(deck_target,"none");
+var file_id = file_text_open_read("opp_" + global.encounter_name + ".json");
+var json_string = "";
+while (!file_text_eof(file_id)) {
+	json_string += file_text_read_string(file_id);
+	file_text_readln(file_id); // Read newline characters as well
+}
+file_text_close(file_id);
+var progress_data = json_parse(json_string);
 
-// Sun-drenched Clearing
-array_push(deck_rarity,0);
-array_push(deck_element,4);
-array_push(deck_card_type,0);
-array_push(deck_card_index,0);
-array_push(deck_target,"none");
+element_1 = progress_data[$ "element0"];
+element_2 = progress_data[$ "element1"];
 
-// Vine Wall
-array_push(deck_rarity,0);
-array_push(deck_element,4);
-array_push(deck_card_type,1);
-array_push(deck_card_index,2);
-array_push(deck_target,"fortify_any_small");
-
-// Pearl
-// Defrosting Forest
-array_push(deck_rarity,0);
-array_push(deck_element,1);
-array_push(deck_card_type,0);
-array_push(deck_card_index,1);
-array_push(deck_target,"none");
-
-// Icebound River
-array_push(deck_rarity,0);
-array_push(deck_element,1);
-array_push(deck_card_type,0);
-array_push(deck_card_index,0);
-array_push(deck_target,"none");
-
+var card_iter = 0;
+while variable_struct_exists(progress_data,"card" + string(card_iter)) {
+	var card_attrs = progress_data[$ "card" + string(card_iter)];
+	array_push(deck_rarity,card_attrs[$ "rarity"]);
+	array_push(deck_element,card_attrs[$ "element"]);
+	array_push(deck_card_type,card_attrs[$ "card_type"]);
+	array_push(deck_card_index,card_attrs[$ "card_index"]);
+	array_push(deck_target,card_attrs[$ "target"]);
+	card_iter += 1;
+}

@@ -6,28 +6,51 @@ if global.drafting = false && only_draft_area = false {
 	global.drafting = true;
 	global.player_enabled = false;
 	only_draft_area = true;
+	if new_turn = true {
+		global.phase = "scry";
+		scry_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_scry_phase);
+		alarm[3] = 100;
+	}
 }
 
-if rarities_types_chosen = false && only_draft_area = true {
+if rarities_types_chosen = false && only_draft_area = true && scry_phase_seq = noone {
 	
 	if (global.pvp_active = true && global.is_server = true) or global.pvp_active = false or rarity_locked = true {
 		for (var _i = 0; _i < draft_count; _i++) {
 			var rarity = 0;
 			if global.encounter_level = 0 {
 				var rarity_dist = [100,100,100,100,100];
+			} else if global.encounter_level = 1 {
+				if global.turn_count < 1 {
+					var rarity_dist = [95,100,100,100,100];
+				} else if global.turn_count >= 1 && global.turn_count < 2 {
+					var rarity_dist = [80,100,100,100,100];
+				} else if global.turn_count >= 2 && global.turn_count < 4 {
+					var rarity_dist = [65,100,100,100,100];
+				} else if global.turn_count >= 4 {
+					var rarity_dist = [50,100,100,100,100];
+				}
 			} else if global.encounter_level = 4 {
 				if global.turn_count < 1 {
-					var rarity_dist = [70,95,100,100,100];
+					var rarity_dist = [90,100,100,100,100];
 				} else if global.turn_count >= 1 && global.turn_count < 2 {
-					var rarity_dist = [50,80,95,100,100];
-				} else if global.turn_count >= 2 && global.turn_count < 4 {
-					var rarity_dist = [40,67,85,95,100];
-				} else if global.turn_count >= 4 && global.turn_count < 6 {
-					var rarity_dist = [32,55,73,90,100];
-				} else if global.turn_count >= 6 && global.turn_count < 8 {
-					var rarity_dist = [24,46,67,86,100];
-				} else if global.turn_count >= 8 {
-					var rarity_dist = [20,40,60,80,100];
+					var rarity_dist = [75,95,100,100,100];
+				} else if global.turn_count >= 2 && global.turn_count < 3 {
+					var rarity_dist = [55,85,100,100,100];
+				} else if global.turn_count >= 3 && global.turn_count < 4 {
+					var rarity_dist = [45,78,98,100,100];
+				} else if global.turn_count >= 4 && global.turn_count < 5 {
+					var rarity_dist = [30,70,95,100,100];
+				} else if global.turn_count >= 5 && global.turn_count < 6 {
+					var rarity_dist = [19,49,89,99,100];
+				} else if global.turn_count >= 6 && global.turn_count < 7 {
+					var rarity_dist = [17,41,73,97,100];
+				} else if global.turn_count >= 7 && global.turn_count < 8 {
+					var rarity_dist = [15,33,58,88,100];
+				} else if global.turn_count >= 8 && global.turn_count < 9 {
+					var rarity_dist = [5,15,35,75,100];
+				} else if global.turn_count >= 9 {
+					var rarity_dist = [1,3,15,65,100];
 				}
 			}
 		
@@ -118,8 +141,8 @@ if rarities_types_chosen = false && only_draft_area = true {
 			buffer_delete(_b)
 		}
 		
-		var sound_inst = audio_play_sound(snd_draft,10,false);
-
+		//var sound_inst = audio_play_sound(snd_draft,10,false);
+		
 		summon_whirlpool_1 = part_system_create(Ps_Portal_Spiral_Blue);
 		part_system_position(summon_whirlpool_1, 1150, 290);
 		part_system_depth(summon_whirlpool_1,-900);
@@ -136,9 +159,6 @@ if rarities_types_chosen = false && only_draft_area = true {
 		part_system_position(sparkle_rain, 1520, 5);
 		part_system_depth(sparkle_rain,-900);
 
-		shooting_stars = part_system_create(Ps_Shooting_Stars);
-		part_system_position(shooting_stars, 1520, 250);
-		part_system_depth(shooting_stars,-900);
 	} else if (global.pvp_active = true && global.is_server = false) && rarity_locked = false {
 		if steam_net_packet_receive() {
 			var inbuf = buffer_create(16,buffer_grow,1)
@@ -159,7 +179,7 @@ if rarities_types_chosen = false && only_draft_area = true {
 					}
 					rarities_types_chosen = true;
 					
-					var sound_inst = audio_play_sound(snd_draft,10,false);
+					//var sound_inst = audio_play_sound(snd_draft,10,false);
 
 					summon_whirlpool_1 = part_system_create(Ps_Portal_Spiral_Blue);
 					part_system_position(summon_whirlpool_1, 1150, 290);
@@ -177,9 +197,6 @@ if rarities_types_chosen = false && only_draft_area = true {
 					part_system_position(sparkle_rain, 1520, 5);
 					part_system_depth(sparkle_rain,-900);
 
-					shooting_stars = part_system_create(Ps_Shooting_Stars);
-					part_system_position(shooting_stars, 1520, 250);
-					part_system_depth(shooting_stars,-900);
 					break
 				default:
 					show_debug_message("Unknown packet received draft")
@@ -190,7 +207,7 @@ if rarities_types_chosen = false && only_draft_area = true {
 	}
 }
 	
-if global.pvp_active = false or rarities_types_chosen = true {
+if (global.pvp_active = false or rarities_types_chosen = true) && scry_phase_seq = noone {
 	
 	image_alpha = lerp(image_alpha, 1, 0.09);
 
@@ -266,6 +283,81 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			if global.scrys_boosted = true && rarity < 4 {
 				rarity += 1;
 			}
+			
+			var rarity_opp = rarity;
+			while array_contains(global.rarity_avail,rarity) = false {
+				rarity -= 1;
+			}
+			
+			if rarity = 0 {
+				if scry_sequence != noone {
+					layer_sequence_destroy(scry_sequence);
+					scry_sequence = noone;
+				}
+				scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_common);
+				if shooting_stars != noone {
+					part_system_destroy(shooting_stars);
+					shooting_stars = noone;
+				}
+				shooting_stars = part_system_create(Ps_Shooting_Stars_common);
+				part_system_position(shooting_stars, 1520, 200);
+				part_system_depth(shooting_stars,-900);
+			} else if rarity = 1 {
+				if scry_sequence != noone {
+					layer_sequence_destroy(scry_sequence);
+					scry_sequence = noone;
+				}
+				scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_uncommon);
+				if shooting_stars != noone {
+					part_system_destroy(shooting_stars);
+					shooting_stars = noone;
+				}
+				shooting_stars = part_system_create(Ps_Shooting_Stars_uncommon);
+				part_system_position(shooting_stars, 1520, 200);
+				part_system_depth(shooting_stars,-900);
+			} else if rarity = 2 {
+				if scry_sequence != noone {
+					layer_sequence_destroy(scry_sequence);
+					scry_sequence = noone;
+				}
+				scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_rare);
+				if shooting_stars != noone {
+					part_system_destroy(shooting_stars);
+					shooting_stars = noone;
+				}
+				shooting_stars = part_system_create(Ps_Shooting_Stars_rare);
+				part_system_position(shooting_stars, 1520, 200);
+				part_system_depth(shooting_stars,-900);
+			} else if rarity = 3 {
+				if scry_sequence != noone {
+					layer_sequence_destroy(scry_sequence);
+					scry_sequence = noone;
+				}
+				scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_mythic);
+				if shooting_stars != noone {
+					part_system_destroy(shooting_stars);
+					shooting_stars = noone;
+				}
+				shooting_stars = part_system_create(Ps_Shooting_Stars_mythic);
+				part_system_position(shooting_stars, 1520, 200);
+				part_system_depth(shooting_stars,-900);
+			} else if rarity = 4 {
+				if scry_sequence != noone {
+					layer_sequence_destroy(scry_sequence);
+					scry_sequence = noone;
+				}
+				scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_legendary);
+				if shooting_stars != noone {
+					part_system_destroy(shooting_stars);
+					shooting_stars = noone;
+				}
+				shooting_stars = part_system_create(Ps_Shooting_Stars_legendary);
+				part_system_position(shooting_stars, 1520, 200);
+				part_system_depth(shooting_stars,-900);
+			}
+			rarity_current = rarity;
+			rarity_alpha = 0;
+			alarm[2] = 150;
 	
 			var card_type = 0;
 			if card_type_locked = true {
@@ -375,7 +467,7 @@ if global.pvp_active = false or rarities_types_chosen = true {
 			card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst);
 	
 			//if card_type_locked = false {
-			//	array_push(global.opponent.hand_rarity,rarity);
+			//	array_push(global.opponent.hand_rarity,rarity_opp);
 			//	array_push(global.opponent.hand_card_type,card_type);
 			//}
 		}

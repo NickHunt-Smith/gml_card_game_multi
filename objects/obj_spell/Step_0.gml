@@ -6,8 +6,8 @@ if (big_mode = false) {
 	
 		if (array_length(global.cards_in_hand) = 0) {
 			moused = true;
-			image_xscale = lerp(image_xscale,1,0.3);
-			image_yscale = lerp(image_yscale,1,0.3);
+			image_xscale = lerp(image_xscale,image_scale_hovered,0.3);
+			image_yscale = lerp(image_yscale,image_scale_hovered,0.3);
 		} else if (obj_mouse_manager.grabbed_card = noone) {
 		
 			var moused_set = true;
@@ -16,8 +16,8 @@ if (big_mode = false) {
 					if (array_length(global.cards_in_hand) = 1) {
 						depth = -1001;
 						moused = true;
-						image_xscale = lerp(image_xscale,1,0.3);
-						image_yscale = lerp(image_yscale,1,0.3);
+						image_xscale = lerp(image_xscale,image_scale_hovered,0.3);
+						image_yscale = lerp(image_yscale,image_scale_hovered,0.3);
 					}
 					continue
 				} else {
@@ -28,8 +28,8 @@ if (big_mode = false) {
 					} else {
 						depth = -1001;
 						moused = true;
-						image_xscale = lerp(image_xscale,1,0.3);
-						image_yscale = lerp(image_yscale,1,0.3);
+						image_xscale = lerp(image_xscale,image_scale_hovered,0.3);
+						image_yscale = lerp(image_yscale,image_scale_hovered,0.3);
 					}
 				}
 			}
@@ -44,8 +44,8 @@ if (big_mode = false) {
 	if (moused = false) && (obj_mouse_manager.grabbed_card = noone) && playing = false
 	{
 	depth = -1000;
-	image_xscale = lerp(image_xscale,0.5,0.3);
-	image_yscale = lerp(image_yscale,0.5,0.3);
+	image_xscale = lerp(image_xscale,image_scale_unhovered,0.3);
+	image_yscale = lerp(image_yscale,image_scale_unhovered,0.3);
 	}
 	
 	if (obj_mouse_manager.grabbed_card = noone) && (draft_mode = false) && playing = false {

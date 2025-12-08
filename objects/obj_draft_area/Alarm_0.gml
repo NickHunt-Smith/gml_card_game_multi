@@ -17,4 +17,16 @@ if sparkle_rain != noone {
 	part_system_destroy(sparkle_rain);
 	sparkle_rain = noone;
 }
+if shooting_stars != noone {
+	part_system_destroy(shooting_stars);
+	shooting_stars = noone;
+}
+if scry_sequence != noone {
+	layer_sequence_destroy(scry_sequence);
+	scry_sequence = noone;
+}
+if action_phase_seq != noone {
+	layer_sequence_destroy(action_phase_seq);
+	action_phase_seq = noone;
+}
 instance_destroy();

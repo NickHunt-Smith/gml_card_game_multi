@@ -39,6 +39,8 @@ if global.player_locale_4 != noone && global.opp_locale_4 != noone {
 		seq_change_health_2 = scr_change_numbers(-global.player_locale_4.channel,global.opp_locale_4.x+global.health_offset_x,global.opp_locale_4.y + 328);
 		global.opp_locale_4.health_locale -= global.player_locale_4.channel;
 	}
+	alarm[7] = 80;
+} else {
+	alarm[7] = 1;
 }
 
-alarm[7] = 80;

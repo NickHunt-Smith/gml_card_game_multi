@@ -34,11 +34,13 @@ if global.tutorial = false or global.tutorial_step = 9 or global.tutorial_step =
 			if (moused = true) {
 				if global.tutorial = false {
 					draft_mode = false;
+					image_scale_hovered = 1;
 					array_push(global.cards_in_hand,self);
 				} else {
 					if global.tutorial_step = 11 or global.tutorial_step = 53 or global.tutorial_step = 83 {
 						global.tutorial_step += 1;
 						global.wait_for_tutorial_step = false;
+						image_scale_hovered = 1;
 						draft_mode = false;
 						array_push(global.cards_in_hand,self);
 					}
@@ -53,8 +55,8 @@ if global.tutorial = false or global.tutorial_step = 9 or global.tutorial_step =
 			}
 			x = x_start;
 			y = y_start;
-			image_xscale = 0.5;
-			image_yscale = 0.5;
+			image_xscale = image_scale_unhovered;
+			image_yscale = image_scale_unhovered;
 			depth = -1000;
 		} else {
 			if big_mode = true {

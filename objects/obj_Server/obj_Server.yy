@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"multiplayer",
-    "path":"folders/Objects/multiplayer.yy",
+    "path":"folders/Objects/menu/multiplayer.yy",
   },
   "parentObjectId":null,
   "persistent":false,

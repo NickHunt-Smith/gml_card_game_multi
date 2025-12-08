@@ -31,6 +31,56 @@
 //	}
 //}
 
+// Left player
+max_channel = 0;
+max_channel_ind = 0;
+tied = false;
+if position = "left_player" {
+	for (var _i = 0; _i < array_length(global.channelled_left_player); _i++) {
+		if global.channelled_left_player[_i] = max_channel {
+			tied = true;
+		}
+		if global.channelled_left_player[_i] > max_channel {
+			max_channel = global.channelled_left_player[_i];
+			max_channel_ind = _i;
+			tied = false;
+		}
+	}
+} else if position = "right_player" {
+	for (var _i = 0; _i < array_length(global.channelled_right_player); _i++) {
+		if global.channelled_right_player[_i] = max_channel {
+			tied = true;
+		}
+		if global.channelled_right_player[_i] > max_channel {
+			max_channel = global.channelled_right_player[_i];
+			max_channel_ind = _i;
+			tied = false;
+		}
+	}
+} else if position = "left_opp" {
+	for (var _i = 0; _i < array_length(global.channelled_left_opp); _i++) {
+		if global.channelled_left_opp[_i] = max_channel {
+			tied = true;
+		}
+		if global.channelled_left_opp[_i] > max_channel {
+			max_channel = global.channelled_left_opp[_i];
+			max_channel_ind = _i;
+			tied = false;
+		}
+	}
+} else if position = "right_opp" {
+	for (var _i = 0; _i < array_length(global.channelled_right_opp); _i++) {
+		if global.channelled_right_opp[_i] = max_channel {
+			tied = true;
+		}
+		if global.channelled_right_opp[_i] > max_channel {
+			max_channel = global.channelled_right_opp[_i];
+			max_channel_ind = _i;
+			tied = false;
+		}
+	}
+}
+
 for (var _i = 0; _i < array_length(ruby_clicks); _i++) {
 	if layer_sequence_is_finished(ruby_clicks[_i]) = true {
 		layer_sequence_destroy(ruby_clicks[_i]);

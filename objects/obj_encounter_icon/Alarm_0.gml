@@ -1,0 +1,1 @@
+global.story_active = true;

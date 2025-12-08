@@ -492,6 +492,39 @@ function scr_choose_targets(target_type){
 			chosen_target = "pass";
 		}
 		targets = [chosen_target,noone,noone];
+	} else if target_type = "backstab" {
+		if threat_1 != noone && threat_1.health_locale >= 3 {
+			chosen_target = threat_1;
+		} else if threat_2 != noone && threat_2.health_locale >= 3 {
+			chosen_target = threat_3;
+		} else {
+			chosen_target = "pass";
+		}
+		targets = [chosen_target,noone,noone];
+	} else if target_type = "amphramute" {
+		if asset_1 != noone && asset_1.element = 6 && asset_1.rarity != 4 {
+			chosen_target = asset_1;
+		} else if asset_2 != noone && asset_2.element = 6 && asset_2.rarity != 4 {
+			chosen_target = asset_2;
+		} else if global.opp_locale_1 != noone && global.opp_locale_1.element = 6 && global.opp_locale_1.rarity != 4 {
+			chosen_target = global.opp_locale_1;
+		} else if global.opp_locale_2 != noone && global.opp_locale_2.element = 6 && global.opp_locale_2.rarity != 4 {
+			chosen_target = global.opp_locale_2;
+		} else if global.opp_locale_3 != noone && global.opp_locale_3.element = 6 && global.opp_locale_3.rarity != 4 {
+			chosen_target = global.opp_locale_3;
+		} else if global.opp_locale_4 != noone && global.opp_locale_4.element = 6 && global.opp_locale_4.rarity != 4 {
+			chosen_target = global.opp_locale_4;
+		} else {
+			var rand = random(100);
+			if rand < 10 {
+				chosen_target = asset_1;
+			} else if rand > 10 && rand < 13 {
+				chosen_target = asset_2;
+			} else {
+				chosen_target = "pass";
+			}
+		}
+		targets = [chosen_target,noone,noone];
 	}
 		
 	return targets

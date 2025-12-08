@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"s_mythic_centred",
   "bboxMode":0,
   "bbox_bottom":270,
@@ -12,7 +12,7 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f0383cb8-c508-45e1-b51b-fd3a6b6dc50b","name":"f0383cb8-c508-45e1-b51b-fd3a6b6dc50b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f0383cb8-c508-45e1-b51b-fd3a6b6dc50b","name":"f0383cb8-c508-45e1-b51b-fd3a6b6dc50b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
