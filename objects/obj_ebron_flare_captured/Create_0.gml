@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-channel = 4;
+channel = 6;
 
 eff_type = "none";
+
+keywords = ["surge"];
 
 card_state = noone;
 

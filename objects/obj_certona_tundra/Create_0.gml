@@ -7,6 +7,8 @@ boosting = false;
 
 eff_type = "none";
 
+keywords = ["freeze"];
+
 card_state = noone;
 
 eff_done = false;

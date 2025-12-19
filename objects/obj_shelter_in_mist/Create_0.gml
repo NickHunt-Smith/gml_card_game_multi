@@ -8,6 +8,8 @@ bonus_channel_1 = 1;
 
 eff_type = "none";
 
+keywords = ["illusory"];
+
 card_state = noone;
 
 eff_done = false;

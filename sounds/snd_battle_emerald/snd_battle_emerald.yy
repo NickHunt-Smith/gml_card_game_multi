@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_battle_emerald",
+  "audioGroupId":{
+    "name":"music_group",
+    "path":"audiogroups/music_group",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":448.0,
+  "exportDir":"",
+  "name":"snd_battle_emerald",
+  "parent":{
+    "name":"themes",
+    "path":"folders/Sounds/themes.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_battle_emerald.wav",
+  "volume":1.0,
+}

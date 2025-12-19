@@ -14,6 +14,8 @@ draw_instructions_2 = false;
 
 eff_type = "none";
 
+keywords = ["nullify","surge"];
+
 card_state = noone;
 
 eff_done = false;

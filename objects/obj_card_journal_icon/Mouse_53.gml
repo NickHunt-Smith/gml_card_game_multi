@@ -15,4 +15,5 @@ if mouse_x > c_x + 0.05*view_wport[1] - 0.5*resize_scale*sprite_width && mouse_x
 			global.journal_active = false;
 		}
 	}
+	audio_play_sound(snd_small_click,10,false);
 }

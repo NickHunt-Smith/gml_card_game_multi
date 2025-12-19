@@ -5,6 +5,8 @@ channel = -2;
 
 eff_type = "none";
 
+keywords = ["consume"];
+
 card_state = noone;
 
 eff_done = false;

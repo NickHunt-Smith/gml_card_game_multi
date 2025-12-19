@@ -16,6 +16,13 @@ if zoomed_in = true {
 				character_art = asset_get_index(curr_scene.character_art);
 				character_name = curr_scene.character_name;
 			}
+			if curr_scene.sound != false {
+				if curr_scene.sound = "noone" {
+					global.music_controller.music_curr = noone
+				} else {
+					global.music_controller.music_curr = asset_get_index(curr_scene.sound);
+				}
+			}
 			scene_playing = true;
 			_scene += 1;
 		} 	

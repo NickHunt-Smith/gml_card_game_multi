@@ -14,4 +14,4 @@ draw_sprite_ext(s_zoom_slider_button,0,x+2*0.3*volume_percent*sprite_width,y+2*0
 
 draw_set_font(viking_font);
 draw_set_colour(c_black);
-draw_text_ext_transformed(x-65*2,y+7*2,"Volume",0,1000,2*0.65,2*0.65,0);
+draw_text_ext_transformed(x-65*2,y+7*2,"SFX Volume",0,1000,2*0.55,2*0.55,0);

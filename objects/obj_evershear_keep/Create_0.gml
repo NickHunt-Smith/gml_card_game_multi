@@ -6,6 +6,8 @@ channel_boost = 2;
 
 eff_type = "none";
 
+keywords = ["clash","dominate"];
+
 card_state = noone;
 
 eff_done = false;

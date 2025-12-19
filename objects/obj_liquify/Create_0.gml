@@ -8,6 +8,8 @@ draw_instructions_1 = false;
 
 eff_type = "none";
 
+keywords = ["consume","surge"];
+
 card_state = noone;
 
 eff_done = false;

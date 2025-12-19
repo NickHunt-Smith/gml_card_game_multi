@@ -26,7 +26,7 @@ vertex_format_add_position();
 vertex_format_add_normal();
 global.format_perspective = vertex_format_end();
 
-alarm[5] = 700;
+alarm[5] = 350;
 game_start = false;
 if global.pvp_active = false {
 	if random(100) < 50 or global.tutorial = true {

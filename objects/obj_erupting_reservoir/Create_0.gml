@@ -11,6 +11,8 @@ destroyed_locale_position = "left_player";
 
 eff_type = "none";
 
+keywords = ["flood"];
+
 card_state = noone;
 
 eff_done = false;

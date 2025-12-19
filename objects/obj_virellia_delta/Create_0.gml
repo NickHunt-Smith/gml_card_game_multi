@@ -6,6 +6,8 @@ flood_strength_boost = 1;
 
 eff_type = "none";
 
+keywords = ["flood"];
+
 card_state = noone;
 
 eff_done = false;

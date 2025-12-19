@@ -1,7 +1,20 @@
-if global.story_active = true {
-	draw_sprite_ext(sprite_index,0,x,y,0.08,0.08,0,c_white,1);
+
+
+
+if sprite_index = s_settings_button {
+	sprite_index = clamp(sprite_index + 0.005,0,1);
+	draw_sprite_ext(sprite_index,0,x,y,0.12,0.12,0,c_white,1);
+	draw_set_font(Empower_font_story_character)
+	draw_set_halign(fa_center)
+	draw_set_valign(fa_middle)
+
+	draw_text_colour(x,y, "Skip",c_white,c_white,c_white,c_white,image_alpha);
 } else {
-	draw_sprite_ext(sprite_index,0,x,y,0.05,0.05,0,c_white,1);
+	if global.story_active = true {
+		draw_sprite_ext(sprite_index,0,x,y,0.08,0.08,0,c_white,1);
+	} else {
+		draw_sprite_ext(sprite_index,0,x,y,0.05,0.05,0,c_white,1);
+	}
 }
 
 if waiting_for_load = true {

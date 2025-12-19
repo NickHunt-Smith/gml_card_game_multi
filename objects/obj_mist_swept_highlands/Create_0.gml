@@ -4,6 +4,8 @@
 channel_bonus = 1;
 eff_type = "none";
 
+keywords = ["illusory"];
+
 card_state = noone;
 
 eff_done = false;

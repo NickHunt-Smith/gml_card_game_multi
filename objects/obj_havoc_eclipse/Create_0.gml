@@ -9,6 +9,8 @@ card_index = 0;
 
 eff_type = "none";
 
+keywords = ["consume"];
+
 card_state = noone;
 
 eff_done = false;

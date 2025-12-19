@@ -10,6 +10,8 @@ draw_instructions_2 = false;
 
 eff_type = "none";
 
+keywords = ["clash"];
+
 card_state = noone;
 
 eff_done = false;

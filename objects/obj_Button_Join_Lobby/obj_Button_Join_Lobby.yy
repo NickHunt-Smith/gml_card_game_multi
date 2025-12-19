@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Button",
-    "path":"sprites/spr_Button/spr_Button.yy",
+    "name":"s_settings_button",
+    "path":"sprites/s_settings_button/s_settings_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

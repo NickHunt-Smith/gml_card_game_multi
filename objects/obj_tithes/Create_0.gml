@@ -9,6 +9,8 @@ draw_instructions_2 = false;
 
 eff_type = "none";
 
+keywords = ["drain"];
+
 card_state = noone;
 
 eff_done = false;

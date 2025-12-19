@@ -11,8 +11,8 @@ draw_sprite_ext(sprite_index,0,x,y,0.3*resize_scale,0.3*resize_scale,0,c_white,1
 
 draw_sprite_part_ext(sprite_index,0,0,0,sprite_width*volume_percent,sprite_height,x,y,0.3*resize_scale,0.3*resize_scale,c_maroon,1);
 
-draw_sprite_ext(s_zoom_slider_button,0,x+0.3*volume_percent*sprite_width*resize_scale,y+0.3*0.5*sprite_height*resize_scale,1,1,0,c_white,1);
+draw_sprite_ext(s_zoom_slider_button,0,x+0.3*volume_percent*sprite_width*resize_scale,y+0.3*0.5*sprite_height*resize_scale,resize_scale,resize_scale,0,c_white,1);
 
 draw_set_font(viking_font);
 draw_set_colour(c_black);
-draw_text_ext_transformed(x-65*resize_scale,y+7,"Volume",0,1000,0.65*resize_scale,0.65*resize_scale,0);
+draw_text_ext_transformed(x-65*resize_scale,y+7,"SFX Volume",0,1000,0.55*resize_scale,0.55*resize_scale,0);

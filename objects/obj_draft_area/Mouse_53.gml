@@ -21,6 +21,7 @@ if global.tutorial = false or global.tutorial_step = 48 or global.tutorial_step 
 			card_inst_2.x = -1000;
 			card_inst_3.x = -1000;
 			global.draft_area_visible = false;
+			audio_play_sound(snd_small_click,10,false);
 		} else if view_opp = true and (mouse_x < 1527 + 48 and mouse_x > 1527 - 48) and (mouse_y < 753 + 48 and mouse_y > 753 - 48) {
 			if global.tutorial_step = 49 {
 				global.tutorial_step += 1;
@@ -38,11 +39,13 @@ if global.tutorial = false or global.tutorial_step = 48 or global.tutorial_step 
 			card_inst_2.x = x_memory_2;
 			card_inst_3.x = x_memory_3;
 			global.draft_area_visible = true;
+			audio_play_sound(snd_small_click,10,false);
 		}
 	}
 	
 	if global.tutorial_step != 48 && global.tutorial_step != 49 {
 		if sqrt(sqr(mouse_x-2136) + sqr(mouse_y-753)) < 70 && reroll_active = true && global.rerolls_available > 0 {
+			audio_play_sound(snd_small_click,10,false);
 			global.rerolls_available -= 1;
 			global.rerolls_used += 1;
 	

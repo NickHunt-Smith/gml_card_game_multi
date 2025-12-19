@@ -92,6 +92,18 @@ if big_mode = false {
 		draw_text_colour(1520,720+50+590,tooltip_string,c_maroon,c_maroon,c_maroon,c_maroon,1);
 	}
 	
+	if variable_instance_exists(effect_function,"keywords") {
+		var keyword_string = "";
+		for (var _i = 0; _i < array_length(effect_function.keywords); _i++) {
+			keyword_string += global.keyword_descriptors[$ effect_function.keywords[_i]] + "\n";
+		}
+		draw_set_font(Empower_font);
+		keyword_string = string_wrap(keyword_string, 700);
+		var keyword_height = string_height(keyword_string);
+		draw_sprite_ext(s_opp_cards_tooltip,0,2450-400,720-200*keyword_height/350,1,keyword_height/350,0,c_white,0.7);
+		draw_text_colour(2450,720,keyword_string,c_maroon,c_maroon,c_maroon,c_maroon,1);
+	}
+	
 	var _mouse_x = mouse_x - x;
 	var _mouse_y = mouse_y - y;
 

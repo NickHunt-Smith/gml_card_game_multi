@@ -12,4 +12,5 @@ if mouse_x > c_x + 0.95*view_wport[0] - sprite_width && mouse_x < c_x + 0.95*vie
 		}
 		global.disable_buttons = false;
 	}
+	audio_play_sound(snd_small_click,10,false);
 }

@@ -11,15 +11,23 @@
             "text2": "\"I can only keep trying. If there is someone out there and I don't get to them first, this world will soon disappear...\""
         },
         "precombat1": {
+            "narrator": "scene_transition",
+            "locale_art": false,
+            "character_art": "char_mystery",
+            "character_name": "?",
+            "sound": "noone",
+            "text0": ""
+        },
+        "precombat2": {
             "narrator": true,
             "locale_art": "s_leafy_village_art",
             "character_art": false,
             "character_name": false,
-            "sound": false,
+            "sound": "snd_woodlands",
             "text0": "You shield your eyes from the orange light of the fading twilight sun as you round the last bend of the forest trail, scythe resting on your shoulder. A familiar scattering of leaf-covered houses greets you, your home village of Brindlevale.",
             "text1": "Your fellow villagers are slowly turning in for the night, hacking away the last of the surrounding overgrowth and taking their belongings inside."
         },
-        "precombat2": {
+        "precombat3": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_emery_reed",
@@ -28,7 +36,7 @@
             "text0": "Emery, the village leader, heaves a pile of dead vegetation away from his house. He nods at you as you pass.",
             "text1": "\"Any issues out there today Alden?\""
         },
-        "precombat3": {
+        "precombat4": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_alden_quellow",
@@ -36,7 +44,7 @@
             "sound": false,
             "text0": "\"Looking pretty clear at the moment, don't think we'll need another burn-off for a couple of days. Not that there's been much traffic recently anyway.\""
         },
-        "precombat4": {
+        "precombat5": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_emery_reed",
@@ -45,7 +53,7 @@
             "text0": "Emery's eyes narrow. \"Still an important job, we've got to keep some connection to the outside world.\"",
             "text1": "\"You'll be the one clearing a new trail if it gets fully overgrown.\""
         },
-        "precombat5": {
+        "precombat6": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_alden_quellow",
@@ -53,7 +61,7 @@
             "sound": false,
             "text0": "\"I know, I know.\" You wave him away and continue through the village towards home."
         },
-        "precombat6": {
+        "precombat7": {
             "narrator": true,
             "locale_art": "s_leafy_village_art",
             "character_art": false,
@@ -61,7 +69,7 @@
             "sound": false,
             "text0": "You stride up to your home, which looks as well-kept as ever. Your mother Myrta prides herself on always having kept this house intact from the surrounding forest, though it's a lot easier when it's right in the centre."
         },
-        "precombat7": {
+        "precombat8": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_eilira_quellow",
@@ -70,7 +78,7 @@
             "text0": "Your sister Eilira is examining the wooden facade closely, cutting off any remaining stems from the day with a pair of shears. As you approach she gives you a knowing look and gestures towards the nearby stream.",
             "text1": "You nod back, then slowly lean your scythe against the wall, holding your breath. There's a slight metallic sound as you take your hand away, and Eilira shakes her head. Sure enough, you hear rustling from inside a moment later. "
         },
-        "precombat8": {
+        "precombat9": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_myrta_quellow",
@@ -78,7 +86,7 @@
             "sound": false,
             "text0": "You hear your mother's muffled voice. \"Alden is that you? There's an almighty mess out the back I need some help with!\""
         },
-        "precombat9": {
+        "precombat10": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_alden_quellow",
@@ -86,7 +94,7 @@
             "sound": false,
             "text0": "With a sigh, you call back. \"Yes Ma, I'll be there in a minute. Emery wanted me to move the last of his overgrowth, shouldn't be too long.\""
         },
-        "precombat10": {
+        "precombat11": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_myrta_quellow",
@@ -94,7 +102,7 @@
             "sound": false,
             "text0": "Your mother mutters a few words that don't sound entirely like a no. You give Eilira a thumbs up, and she follows you away from the house."
         },
-        "precombat11": {
+        "precombat12": {
             "narrator": true,
             "locale_art": "s_leafy_village_art",
             "character_art": false,
@@ -104,7 +112,7 @@
             "text1": "It's unusual for any of the villagers to be out this late, but you and Eilira rarely get the time to talk freely amongst all the daily work. Certainly not with your mother around.",
             "text2": "You settle on a mound of leaves near the stream, the soft rush of water barely audible. The forest remains silent."
         },
-        "precombat12": {
+        "precombat13": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_eilira_quellow",
@@ -112,7 +120,7 @@
             "sound": false,
             "text0": "\"She was particularly bossy today. I barely got a moment to myself.\""
         },
-        "precombat13": {
+        "precombat14": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_alden_quellow",
@@ -120,7 +128,7 @@
             "sound": false,
             "text0": "\"Care to trade? That scythe gets pretty heavy after swinging it around all day.\""
         },
-        "precombat14": {
+        "precombat15": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_eilira_quellow",
@@ -128,7 +136,7 @@
             "sound": false,
             "text0": "\"I would if I could pick it up in the first place! At least you get to see more in a day than just the sides of the house. \""
         },
-        "precombat15": {
+        "precombat16": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_alden_quellow",
@@ -136,7 +144,7 @@
             "sound": false,
             "text0": "\"True, there was a nice tree I saw at one point. Completely different from all the trees here, you're really missing out.\""
         },
-        "precombat16": {
+        "precombat17": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_eilira_quellow",
@@ -144,7 +152,7 @@
             "sound": false,
             "text0": "You can barely see her in the dark, but you can sense her rolling her eyes. A few moments of silence pass, then she quietly pipes up. \"Are you still thinking seriously of leaving?\""
         },
-        "precombat17": {
+        "precombat18": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_alden_quellow",
@@ -154,7 +162,7 @@
             "text1": "\"The stories we've heard, Eilira! They're meant to scare us, but I can't help but want to see it for myself. Waterfalls floating in the sky, a city covered in lightning, fields of pumping lava and sandstorms that could tear the Omnitree to sawdust!\"",
             "text2": "\"Our lives right now are just about survival really. There has to be more to it, doesn't there?\""
         },
-        "precombat18": {
+        "precombat19": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_eilira_quellow",
@@ -163,7 +171,7 @@
             "text0": "You hear Eilira shifting uncomfortably. \"You know it's not that simple. Those places you're describing, they're alien, chaotic, out of control.\"",
             "text1": "\"It's not even safe here, not really. You can't forget what happened to Father-\""
         },
-        "precombat19": {
+        "precombat20": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_alden_quellow",
@@ -174,7 +182,7 @@
             "text2": "\"I know the dangers and I'm willing to take those risks, but I don't want to leave you both constantly wondering if I'm dead in the middle of nowhere.\"",
             "text3": "\"I'm sorry, but I think you're going to have to live with that uncertainty.\""
         },
-        "precombat20": {
+        "precombat21": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_eilira_quellow",
@@ -184,7 +192,7 @@
             "text1": "\"You have to promise to come back when you can. Periodically, like every few months. Something specific, so that we know if you're not back then...\"",
             "text2": "She trails off, her voice catching in her throat."
         },
-        "precombat21": {
+        "precombat22": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_alden_quellow",
@@ -193,7 +201,7 @@
             "text0": "You reach around her shoulder as she leans in against you. You hear her sniff, holding back tears. You say \"I promise.\"",
             "text1": "It's not a promise you have any idea if you can keep. Perhaps it would be better for you not to return, for them to have some certainty in their lives."
         },
-        "precombat22": {
+        "precombat23": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_eilira_quellow",
@@ -201,7 +209,7 @@
             "sound": false,
             "text0": "She pulls away and stands up. \"We should head back, Ma will start worrying. Assuming you're not planning to leave now?\""
         },
-        "precombat23": {
+        "precombat24": {
             "narrator": false,
             "locale_art": "s_leafy_village_art",
             "character_art": "char_alden_quellow",
@@ -209,7 +217,7 @@
             "sound": false,
             "text0": "\"No I'll need a few days at least to gather some supplies and tools. Ideally without anyone noticing.\""
         },
-        "precombat24": {
+        "precombat25": {
             "narrator": true,
             "locale_art": "s_leafy_village_art",
             "character_art": false,
@@ -219,19 +227,19 @@
             "text1": "You start to notice a slight breeze as you near the centre of the village. Odd, the trees usually shield all but the strongest wind...",
             "text2": "The breeze builds suddenly to a strong gust, pushing you backwards. Eilira looks at you, clearly alarmed and confused."
         },
-        "precombat25": {
+        "precombat26": {
             "narrator": true,
             "locale_art": "s_warlock_abduct",
             "character_art": false,
             "character_name": false,
-            "sound": false,
+            "sound": "snd_danger_warlock",
             "text0": "A dark shadow suddenly sweeps between you, a formless mass propelled by the wind. Orange sparks trail behind the shadow as it passes you, seeming to circle for a moment around your sister before violently jerking her away.",
             "text1": "You cannot even hear Eilira's scream over the rushing air as she flies away from you, a look of terror on her face. In an instant she accelerates upwards, pulled up into the sky.",
             "text2": "The wind begins to fade, and the calm quiet of the forest returns, leaves falling slowly to the ground around you. You stare dumbfounded at the empty space where Eilira stood only a few seconds ago.",
             "text3": "You don't feel fear, or even a need to chase after her. Just a numb confusion, standing there for what seems like an eternity.",
             "text4": "Emery appears before you, knife in hand, looking around in all directions."
         },
-        "precombat26": {
+        "precombat27": {
             "narrator": false,
             "locale_art": "s_warlock_abduct",
             "character_art": "char_emery_reed",
@@ -239,7 +247,7 @@
             "sound": false,
             "text0": "\"What was that? What happened?\""
         },
-        "precombat27": {
+        "precombat28": {
             "narrator": false,
             "locale_art": "s_warlock_abduct",
             "character_art": "char_alden_quellow",
@@ -247,7 +255,7 @@
             "sound": false,
             "text0": "You continue to stare, unable to find the words. \"I don't... Eilira, she...\""
         },
-        "precombat28": {
+        "precombat29": {
             "narrator": false,
             "locale_art": "s_warlock_abduct",
             "character_art": "char_emery_reed",
@@ -255,7 +263,7 @@
             "sound": false,
             "text0": "\"Where'd she go?\""
         },
-        "precombat29": {
+        "precombat30": {
             "narrator": false,
             "locale_art": "s_warlock_abduct",
             "character_art": "char_alden_quellow",
@@ -263,7 +271,7 @@
             "sound": false,
             "text0": "\"I think she's just... I think she's gone...\""
         },
-        "precombat30": {
+        "precombat31": {
             "narrator": false,
             "locale_art": "s_warlock_abduct",
             "character_art": "char_emery_reed",
@@ -271,7 +279,7 @@
             "sound": false,
             "text0": "\"Gone where? Alden, get a grip! Where did Eilira go?\""
         },
-        "precombat31": {
+        "precombat32": {
             "narrator": false,
             "locale_art": "s_warlock_abduct",
             "character_art": "char_alden_quellow",
@@ -279,7 +287,7 @@
             "sound": false,
             "text0": "You picture your sister, dragged out into the night. \"There was a shadow, it... took her, somehow...\""
         },
-        "precombat32": {
+        "precombat33": {
             "narrator": false,
             "locale_art": "s_warlock_abduct",
             "character_art": "char_emery_reed",
@@ -288,20 +296,20 @@
             "text0": "Emery's face becomes grave. Other villagers are approaching, warily looking around. \"A shadow? Not the... was there a flash of orange too?\"",
             "text1": "You nod, your brain starting to face reality. You know what this means. Emery hangs his head, despondent. \"I'm so sorry Alden. There's nothing we can do, that was the Warlock.\""
         },
-        "precombat33": {
+        "precombat34": {
             "narrator": "scene_transition",
             "locale_art": "s_warlock_abduct",
             "character_art": "char_emery_reed",
             "character_name": "Emery",
-            "sound": false,
+            "sound": "noone",
             "text0": ""
         },
-        "precombat34": {
+        "precombat35": {
             "narrator": true,
             "locale_art": "s_brindlevale_day",
             "character_art": false,
             "character_name": false,
-            "sound": false,
+            "sound": "snd_woodlands",
             "text0": "The next two days pass in a haze.",
             "text1": "At first you look all through the village, trying to find any trace of where the shadow came from or where it might have gone. A slight orange trail still hangs in the air, barely visible, though it leads only up into the sky.",
             "text2": "You waste away the hours sitting next to the stream where you spoke your last words to Eilira, staring blankly at nothing.",
@@ -314,7 +322,7 @@
             "text9": "A commotion at the entrance to the trail breaks you out of your trance. You can hear Emery's gruff voice shouting angrily, and wander over.",
             "text10": "Three strangers in grey coats stand together a few steps from the trail, facing down Emery. The older of the strangers stands his ground ahead of a tired-looking woman. The third stranger cannot be any older than 18 - his coat looks a size too big."
         },
-        "precombat35": {
+        "precombat36": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_dravas",
@@ -322,7 +330,7 @@
             "sound": false,
             "text0": "\"There's no need for this anger I assure you. We're only here to meet with the victim's family and friends, we'll be gone as soon as we're done.\""
         },
-        "precombat36": {
+        "precombat37": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_emery_reed",
@@ -330,7 +338,7 @@
             "sound": false,
             "text0": "\"And I'm telling you we're all her friends, and we want you gone! We don't want any trouble, there's a reason we stay away from the likes of you! For all we know you brought the Warlock onto us!\""
         },
-        "precombat37": {
+        "precombat38": {
             "narrator": true,
             "locale_art": "s_brindlevale_day",
             "character_art": false,
@@ -338,7 +346,7 @@
             "sound": false,
             "text0": "A couple of villagers shout their approval. The older stranger says a word to the woman, and they turn to go. But before they leave, he catches your eye, and after a moment's thought calls out to you."
         },
-        "precombat38": {
+        "precombat39": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_dravas",
@@ -346,7 +354,7 @@
             "sound": false,
             "text0": "\"Are you the brother? Would you speak with us for a moment?\""
         },
-        "precombat39": {
+        "precombat40": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_emery_reed",
@@ -354,7 +362,7 @@
             "sound": false,
             "text0": "\"Come on Alden, don't listen to these Seekers!\" He practically spits as he says their name."
         },
-        "precombat40": {
+        "precombat41": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_alden_quellow",
@@ -362,7 +370,7 @@
             "sound": false,
             "text0": "If they really are Seekers, they probably know more about what exactly happened to Eilira. You've been told that they're dangerous, but what harm can come from a conversation?"
         },
-        "precombat41": {
+        "precombat42": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_dravas",
@@ -373,7 +381,7 @@
             "text2": "Emery scoffs in the background. Dravas ignores him, continuing his clearly well-rehearsed spiel. \"As a victim of one of these abductions, you know firsthand the pain that it can cause.\"",
             "text3": "\"My job, along with Kusharn, is to recruit as many people as we can to help us in our cause. Would you be willing to join us?\""
         },
-        "precombat42": {
+        "precombat43": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_alden_quellow",
@@ -381,7 +389,7 @@
             "sound": false,
             "text0": "You think about Dravas's proposal. This could be the way to get Eilira back! But it almost seems too good to be true. The Warlock is said to be all-powerful. What difference could you possibly make?"
         },
-        "precombat43": {
+        "precombat44": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_emery_reed",
@@ -389,7 +397,7 @@
             "sound": false,
             "text0": "\"They're preying on your grief Alden, they're manipulating you!\""
         },
-        "precombat44": {
+        "precombat45": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_dravas",
@@ -400,7 +408,7 @@
             "text2": "\"You most likely will never find your sister, and you most likely will die trying. It's up to you if you can live out your days in the acceptance that she's gone forever.\"",
             "text3": "\"Me, Kusharn, Corrick, all of us Seekers have lost someone dear to us. We can't accept it. How about you?\""
         },
-        "precombat45": {
+        "precombat46": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_alden_quellow",
@@ -408,7 +416,7 @@
             "sound": false,
             "text0": "You know your answer. \"I can't accept it.\""
         },
-        "precombat46": {
+        "precombat47": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_dravas",
@@ -416,7 +424,7 @@
             "sound": false,
             "text0": "A hint of a smile crosses Dravas' face, for only a moment. \"Very good. Best we leave now, grab your things.\""
         },
-        "precombat47": {
+        "precombat48": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_emery_reed",
@@ -425,7 +433,7 @@
             "text0": "Emery looks at you incredulously as you pass. \"You're abandoning us? You're abandoning Myrta? Now is when we need you most, in this time of crisis!\"",
             "text1": "\"What good will it do to add another body to the pile? Think about it properly Alden, we... who will clear the trail?\""
         },
-        "precombat48": {
+        "precombat49": {
             "narrator": true,
             "locale_art": "s_brindlevale_day",
             "character_art": false,
@@ -433,7 +441,7 @@
             "sound": false,
             "text0": "You ignore him. Your mother is sweeping leaves out the front of your home. She doesn't turn around as you approach."
         },
-        "precombat49": {
+        "precombat50": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_alden_quellow",
@@ -441,7 +449,7 @@
             "sound": false,
             "text0": "\"I'm leaving, Ma. I'm sorry, I have to try and find her.\""
         },
-        "precombat50": {
+        "precombat51": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_myrta_quellow",
@@ -453,7 +461,7 @@
             "text3": "She finally turns to you, tears glistening in her eyes. \"How do you think I coped all these years? I have to believe he's still out there. And just like with him, I know...\"",
             "text4": "\"...one day, I know you'll come back.\""
         },
-        "precombat51": {
+        "precombat52": {
             "narrator": false,
             "locale_art": "s_brindlevale_day",
             "character_art": "char_alden_quellow",
@@ -462,15 +470,15 @@
             "text0": "All this time, she still waits for him? You lean down and hug your mother, your own tears seeping into her dusty shawl.",
             "text1": "What else is there to do, but perpetuate the lie? \"I'll be back Ma. I promise. With Eilira too.\""
         },
-        "precombat52": {
+        "precombat53": {
             "narrator": "scene_transition",
             "locale_art": "s_brindlevale_day",
             "character_art": "char_alden_quellow",
             "character_name": "Alden",
-            "sound": false,
+            "sound": "noone",
             "text0": ""
         },
-        "precombat53": {
+        "precombat54": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_dravas",
@@ -478,7 +486,7 @@
             "sound": false,
             "text0": "\"This looks like as good a place as any.\" Dravas eyes Kusharn, who nods."
         },
-        "precombat54": {
+        "precombat55": {
             "narrator": true,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": false,
@@ -487,7 +495,7 @@
             "text0": "You've been following the Seekers along the familiar forest trail for an hour or so, largely in silence as you ruminate on your decision.",
             "text1": "You drop your pack to the ground as Kusharn turns to you."
         },
-        "precombat55": {
+        "precombat56": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_kusharn",
@@ -495,7 +503,7 @@
             "sound": false,
             "text0": "\"So Alden, how much do you actually know about Synemancy from your years in the little village?\""
         },
-        "precombat56": {
+        "precombat57": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_alden_quellow",
@@ -504,7 +512,7 @@
             "text0": "You're taken aback by the directness of the question. She hasn't actually spoken to you this whole time.\"Very little really.\"",
             "text1": "\"It's a way to do magic right? No one in the village has any experience as far as I know.\""
         },
-        "precombat57": {
+        "precombat58": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_kusharn",
@@ -512,7 +520,7 @@
             "sound": false,
             "text0": "She doesn't hide her exasperation. \"Well you certainly won't last long. Dravas, time for you to do your whole routine, for what it's worth.\""
         },
-        "precombat58": {
+        "precombat59": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_dravas",
@@ -521,7 +529,7 @@
             "text0": "\"Don't mind her. I won't lie though, I don't think I've taught anyone with literally no experience before.\"",
             "text1": "\"Which elements are you closest to would you say? Emerald I'm assuming, what else?\""
         },
-        "precombat59": {
+        "precombat60": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_alden_quellow",
@@ -529,7 +537,7 @@
             "sound": false,
             "text0": "\"Elements?\""
         },
-        "precombat60": {
+        "precombat61": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_dravas",
@@ -541,7 +549,7 @@
             "text3": "\"There's also Ruby, the element of fire and destruction. Most common in volcanic regions like Delgar.\"",
             "text4": "\"Pearl is the element of solidarity, strongest in icy regions like Certona. Actually now I think of it, have you actually seen a world map before?\""
         },
-        "precombat61": {
+        "precombat62": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_alden_quellow",
@@ -549,7 +557,7 @@
             "sound": false,
             "text0": "\"Uhhh...no.\""
         },
-        "precombat62": {
+        "precombat63": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_dravas",
@@ -568,7 +576,7 @@
             "text10": "\"If you have the correct crystal nearby, you can start doing a few spells of that element. Why don't you take an Emerald and...we're near the coast here...let's say a Sapphire to start with.\"",
             "text11": "\"Hey Corrick! Come over here!\""
         },
-        "precombat63": {
+        "precombat64": {
             "narrator": true,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": false,
@@ -576,7 +584,7 @@
             "sound": false,
             "text0": "Corrick jumps up like he's been stung, and hurries to you both. He looks nervously at you. It's only now you notice a necklace with a pearl and an emerald tucked within his coat."
         },
-        "precombat64": {
+        "precombat65": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_corrick",
@@ -584,7 +592,7 @@
             "sound": false,
             "text0": "\"Yes Dravas?\""
         },
-        "precombat65": {
+        "precombat66": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_dravas",
@@ -592,7 +600,7 @@
             "sound": false,
             "text0": "\"You two are going to have a little duel. It'll be good practice for you Corrick, and the best way for Alden to learn is by doing.\""
         },
-        "precombat66": {
+        "precombat67": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_corrick",
@@ -600,7 +608,7 @@
             "sound": false,
             "text0": "He puts on a more determined expression. \"Ok then. Let's do it.\""
         },
-        "precombat67": {
+        "precombat68": {
             "narrator": false,
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_dravas",
@@ -608,12 +616,12 @@
             "sound": false,
             "text0": "\"Don't worry Alden, I'll explain as we go. Let's see what we're working with here.\""
         },
-        "precombat68": {
+        "precombat69": {
             "narrator": "combat_transition",
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": "char_dravas",
             "character_name": "Dravas",
-            "sound": false,
+            "sound": "noone",
             "text0": ""
         },
         "postcombat0": {
@@ -621,7 +629,7 @@
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": false,
             "character_name": false,
-            "sound": false,
+            "sound": "snd_woodlands",
             "text0": "Blue-green energy flows from your outstretched hands towards the cowering Corrick. For a moment his pearlescent green barrier seems to divert the energy around him, before shattering into hundreds of tiny shards and winking out of existence.",
             "text1": "You can just barely hear his sudden shriek over the sound of rustling leaves and crashing waves overlapping in your mind. You pull back your hands but your magic continues to stream towards him, engulfing him entirely.",
             "text2": "It feels like several seconds before the onslaught finally begins to fade and you can make Corrick out amidst the flashes of blue and green sparking off his body. He has fallen to his knees, staring vacantly into the distance with a slightly open mouth.",
@@ -760,7 +768,7 @@
             "locale_art": "s_sun_drenched_clearing_art",
             "character_art": false,
             "character_name": false,
-            "sound": false,
+            "sound": "noone",
             "text0": ""
         }
     },
@@ -770,7 +778,7 @@
             "locale_art": "s_branching_trails_art",
             "character_art": false,
             "character_name": false,
-            "sound": false,
+            "sound": "snd_woodlands",
             "text0": "You eventually catch up to Kusharn, who doesn't bother acknowledging your presence. You continue as a group along the trail in awkward silence for over an hour, before Corrick slows down to talk to you at the back of the group."
         },
         "precombat1": {
@@ -787,7 +795,7 @@
             "character_art": "char_alden_quellow",
             "character_name": "Alden",
             "sound": false,
-            "text0": "\"Absolutely it was bizarre! Are you okay? I really didn't mean to do any of that...\""
+            "text0": "\"No question it was bizarre! Are you okay? I really didn't mean to do any of that...\""
         },
         "precombat3": {
             "narrator": false,
@@ -879,7 +887,7 @@
             "locale_art": "s_branching_trails_art",
             "character_art": "char_kusharn",
             "character_name": "Kusharn",
-            "sound": false,
+            "sound": "snd_danger_ambush",
             "text0": "\"Look out!!\" Kusharn suddenly stops and holds out her hands, a fiery volcano appearing before her and shrouding her in a red bubble."
         },
         "precombat14": {
@@ -912,7 +920,7 @@
             "locale_art": "s_branching_trails_art",
             "character_art": "char_bandit_grunt",
             "character_name": "Bandit",
-            "sound": false,
+            "sound": "noone",
             "text0": ""
         },
         "postcombat0": {
@@ -920,7 +928,7 @@
             "locale_art": "s_branching_trails_art",
             "character_art": false,
             "character_name": false,
-            "sound": false,
+            "sound": "snd_danger_ambush",
             "text0": "You release your built-up magic at the bandit's barrier, which dissapates into curling grey mist. You let out a gasp of relief as the bandit falls, only now allowing your mind to absorb some of the chaos around you.",
             "text1": "An occasional blast of fire flashes in the distance as Kusharn flings spell after spell at a labouring shadowy figure. Dravas hides behind a wall of water as another bandit sends shadow-fuelled knives towards him.",
             "text2": "You take a moment to try and calm yourself. The fight with the bandit feels like it left a stain on your mind, memories of shadow and pain. Perhaps the onyx crystal Dravas gave you will be useful now?"
@@ -930,7 +938,7 @@
             "locale_art": "s_branching_trails_art",
             "character_art": false,
             "character_name": false,
-            "sound": false,
+            "sound": "noone",
             "text0": ""
         }
     },
@@ -940,7 +948,7 @@
             "locale_art": "s_branching_trails_art",
             "character_art": "char_corrick",
             "character_name": "Corrick",
-            "sound": false,
+            "sound": "snd_danger_ambush",
             "text0": "You hear a shout from behind you. \"No, please! Don't do it!\"  Corrick frantically summons a vine from the forest floor, twisting it out towards the bandit he is fighting."
         },
         "precombat1": {
@@ -963,7 +971,7 @@
             "locale_art": "s_branching_trails_art",
             "character_art": "char_bandit_leader",
             "character_name": "Bandit",
-            "sound": false,
+            "sound": "noone",
             "text0": ""
         },
         "postcombat0": {
@@ -971,7 +979,7 @@
             "locale_art": "s_branching_trails_art",
             "character_art": false,
             "character_name": false,
-            "sound": false,
+            "sound": "snd_danger_ambush",
             "text0": "The bandit's Synematic barrier explodes outward in a burst of sparks, your magic blowing away the surrounding smoke. You see his expression change to one of utter shock as he realizes his defeat, calmness replaced by terror.",
             "text1": "As your magic sweeps over him, you feel your anger build. These bandits ambushed you, meaning to reduce you all to mindless husks. Perhaps Corrick will never recover. It would be so easy to do the same to this heartless thief-"
         },
@@ -980,7 +988,7 @@
             "locale_art": "s_branching_trails_art",
             "character_art": "char_dravas",
             "character_name": "Dravas",
-            "sound": false,
+            "sound": "snd_woodlands",
             "text0": "You feel a hand on your shoulder, and a quiet voice in your ear. \"Well done Alden. That's enough now. You can let go.\""
         },
         "postcombat2": {
@@ -1109,7 +1117,7 @@
             "locale_art": "s_branching_trails_art",
             "character_art": false,
             "character_name": false,
-            "sound": false,
+            "sound": "noone",
             "text0": ""
         }
     }

@@ -6,6 +6,8 @@ channel_surge = 2;
 
 eff_type = "none";
 
+keywords = ["void","surge"];
+
 card_state = noone;
 
 eff_done = false;

@@ -11,6 +11,7 @@ if global.tutorial = false or global.tutorial_step = 25 or global.tutorial_step 
 			global.phase = "combat";
 			combat_phase_seq = layer_sequence_create("effect_layer",1522,754,seq_combat_phase);
 			alarm[10] = 100; 
+			audio_play_sound(snd_end_turn,10,false);
 		} else {
 			if global.tutorial = true {
 				global.tutorial_step += 1;
@@ -19,6 +20,7 @@ if global.tutorial = false or global.tutorial_step = 25 or global.tutorial_step 
 			global.player.passed = true;
 			global.priority = "opp";
 			global.player_enabled = false;
+			audio_play_sound(snd_end_turn,10,false);
 		}
 	
 		if global.pvp_active = true {

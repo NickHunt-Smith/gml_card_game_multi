@@ -1,6 +1,19 @@
 
 if big_mode = true {
 	draw_sprite_ext(s_spell_background,0,x,y,10,10,0,c_black,0.6);
+	
+	if variable_instance_exists(effect_function,"keywords") {
+		var keyword_string = "";
+		for (var _i = 0; _i < array_length(effect_function.keywords); _i++) {
+			keyword_string += global.keyword_descriptors[$ effect_function.keywords[_i]] + "\n";
+		}
+		draw_set_font(Empower_font);
+		keyword_string = string_wrap(keyword_string, 700);
+		var keyword_height = string_height(keyword_string);
+		var resize_scale = view_wport[1]/1280;
+		draw_sprite_ext(s_opp_cards_tooltip,0,x+resize_scale*430-resize_scale*200,y-resize_scale*100*keyword_height/350,0.5*resize_scale,0.5*resize_scale*keyword_height/350,0,c_white,0.7);
+		draw_text_transformed_colour(x + resize_scale*430,y,keyword_string,0.5*resize_scale,0.5*resize_scale,0,c_maroon,c_maroon,c_maroon,c_maroon,1);
+	}
 }
 
 if moused = false {

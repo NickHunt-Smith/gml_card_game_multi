@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_danger_warlock",
+  "audioGroupId":{
+    "name":"music_group",
+    "path":"audiogroups/music_group",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":80.0,
+  "exportDir":"",
+  "name":"snd_danger_warlock",
+  "parent":{
+    "name":"story_vibes",
+    "path":"folders/Sounds/story_vibes.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_danger_warlock.wav",
+  "volume":1.0,
+}

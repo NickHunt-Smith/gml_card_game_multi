@@ -7,6 +7,8 @@ player_strongest_locale = noone;
 
 eff_type = "none";
 
+keywords = ["dominate"];
+
 card_state = noone;
 
 eff_done = false;

@@ -3,6 +3,7 @@
 
 if game_start = true && global.tutorial = false {
 	game_start = false;
+	global.music_controller.music_curr = snd_battle_emerald;
 	
 	// Retrieve cards available
 	var file_id = file_text_open_read("cards_avail.json");
@@ -40,6 +41,7 @@ for (var _i = 0; _i < array_length(global.cards_in_hand); _i++) {
 // Tutorial
 if global.wait_for_tutorial_step = false && global.tutorial = true && game_start = true {
 	if global.tutorial_step = 0 {
+		global.music_controller.music_curr = snd_battle_emerald;
 		global.player = instance_create_depth(0,0,0,obj_player);
 		global.opponent = instance_create_depth(0,0,0,obj_opponent_tutorial);
 		var opp_hand_manager = instance_create_depth(0,0,0,obj_opp_hand_manager);

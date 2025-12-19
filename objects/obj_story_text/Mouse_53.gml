@@ -4,6 +4,7 @@ if text_rolling = true && narrator != "scene_transition" && alpha_story_frame = 
 		chars_revealed = string_length(text); 
 	} else {
 		text_rolling = false;
+		audio_play_sound(snd_quick_click,10,false);
 	}
 }
 

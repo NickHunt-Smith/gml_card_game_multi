@@ -2,6 +2,7 @@ var resize_scale = view_wport[1]/1280;
 if mouse_x > x-52*resize_scale && mouse_x < x+52*resize_scale && mouse_y > y-27*resize_scale && mouse_y < y+27*resize_scale {
 	
 	if waiting_for_load = false {
+		audio_play_sound(snd_big_click,10,false);
 		global.story_active = true;
 		waiting_for_load = true;
 		depth = depth - 1000;

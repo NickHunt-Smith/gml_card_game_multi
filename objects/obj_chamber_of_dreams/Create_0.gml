@@ -3,6 +3,8 @@
 
 eff_type = "none";
 
+keywords = ["surge","consume"];
+
 card_state = noone;
 
 eff_done = false;

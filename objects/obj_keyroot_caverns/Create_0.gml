@@ -3,6 +3,8 @@
 
 eff_type = "none";
 
+keywords = ["shielded","illusory"];
+
 card_state = noone;
 
 eff_done = false;

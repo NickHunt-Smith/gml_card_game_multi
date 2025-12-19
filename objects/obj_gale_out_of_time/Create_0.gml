@@ -5,6 +5,8 @@ restore_amount = 1;
 
 eff_type = "none";
 
+keywords = ["void"];
+
 card_state = noone;
 
 eff_done = false;

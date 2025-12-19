@@ -66,7 +66,7 @@ if checked_if_active_unlocks = true && highlight_next_encounters = true {
 	file_text_close(file_id);
 	var progress_data = json_parse(json_string);
 	
-	if progress_data[$ encounter_name][$ "next_encounters_unlocked"] = false {
+	if progress_data[$ encounter_name][$ "postcombat_story_done"] = true && progress_data[$ encounter_name][$ "next_encounters_unlocked"] = false {
 		if array_length(next_encounters) > next_encounter_iter {
 			for (var i = 0; i < instance_number(obj_bronze_encounter); ++i) {
 			    var _inst = instance_find(obj_bronze_encounter, i);
@@ -109,7 +109,9 @@ if checked_if_active_unlocks = true && highlight_next_encounters = true {
 			file_text_close(file_id);
 			global.story_active = false;
 		}
-	} else {
+	} 
+	
+	if progress_data[$ encounter_name][$ "next_encounters_unlocked"] = true {
 		sprite_index = s_brindlevale;
 	}
 	

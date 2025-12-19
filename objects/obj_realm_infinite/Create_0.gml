@@ -12,6 +12,8 @@ just_created = false;
 
 eff_type = "none";
 
+keywords = ["surge"];
+
 card_state = noone;
 
 eff_done = false;

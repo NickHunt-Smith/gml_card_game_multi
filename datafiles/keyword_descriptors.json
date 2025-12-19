@@ -1,0 +1,17 @@
+{
+    "surge": "Surge: Immediately Channel mana of the stated Surge amount and element to both of your crystals.",
+    "damaged": "Damaged: A locale is damaged if its current Strength is less than its original Strength depicted on the card.",
+    "clash": "Clash: Two locales deal damage to each other equal to their respective Channel values.",
+    "freeze": "Freeze: Reduce the Channel of a locale to zero until the end of the turn. Any changes in Channel it receives while Frozen will carry over to when it unfreezes.",
+    "shielded": "Shielded: The next time a locale would receive damage, the damage is prevented and the locale loses Shielded.",
+    "dominate": "Dominate: A locale deals damage to another locale equal to its Channel. Unlike Clash, the receiver does not deal damage back.",
+    "nullify": "Nullify: Target spell is negated and removed from the spell chain.",
+    "drain": "Drain: A locale is dealt damage equal to the Drain amount, with the draining locale receiving Strength equal to the amount Drained.",
+    "illusory": "Illusory: After a locale is destroyed, it returns to the field with 1 Strength and loses Illusory.",
+    "rebuild": "Rebuild: Return a destroyed locale to the field.",
+    "flood": "Flood: If the target Flood location is empty or contains a non-Ocean locale, a Calm Ocean locale is placed there. If the location contains an Ocean already, it gains +1 Channel and +1 Strength.",
+    "void": "Void: Reduce your opponent's Channeled mana of each element in both crystals by the Void amount. Channeled mana cannot go below zero.",
+    "rarity_upgrade": "Rarity Upgrade: Increase the Rarity of a locale by 1 level, from Common to Uncommon to Rare to Mythic to Legendary. ",
+    "consume": "Consume: Reduce your Channeled mana for your leading element in both crystals by the Consume amount. Channeled mana cannot go below zero.",
+    "restore": "Restore: A locale's Channel and Strength are set equal to its original Channel and Strength depicted on the card."
+}

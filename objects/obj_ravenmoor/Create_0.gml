@@ -11,6 +11,8 @@ drain_amount = 2;
 
 eff_type = "none";
 
+keywords = ["drain"];
+
 card_state = noone;
 
 eff_done = false;

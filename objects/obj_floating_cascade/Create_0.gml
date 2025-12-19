@@ -10,6 +10,8 @@ draw_instructions = false;
 
 eff_type = "none";
 
+keywords = ["flood"];
+
 card_state = noone;
 
 eff_done = false;

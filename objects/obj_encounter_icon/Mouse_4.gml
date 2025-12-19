@@ -30,6 +30,8 @@ if global.story_active = false && global.journal_active = false {
 		story_frame.win_threshold = win_threshold;
 		story_frame.encounter_name = encounter_name;
 		story_frame.text_stage = "precombat";
+		global.music_controller.music_curr = noone;
+		audio_play_sound(snd_big_click,10,false);
 		
 		if hover_effect != noone {
 			part_system_destroy(hover_effect);
@@ -46,6 +48,7 @@ if global.story_active = false && global.journal_active = false {
 		encounter_frame.encounter_name = encounter_name;
 		encounter_frame.encounter_title = encounter_title;
 		global.encounter_visible = true;
+		audio_play_sound(snd_small_click,10,false);
 	
 		if hover_effect != noone {
 			part_system_destroy(hover_effect);

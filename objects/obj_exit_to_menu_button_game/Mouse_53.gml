@@ -7,5 +7,7 @@ if mouse_x > x-2*100 && mouse_x < x+2*100 && mouse_y > y-2*34 && mouse_y < y+2*3
 		layer_sequence_xscale(portal_seq_1,0.5);
 		layer_sequence_yscale(portal_seq_1,0.5);
 		alarm[0] = 100;
+		global.music_controller.music_curr = noone;
+		audio_play_sound(snd_small_click,10,false);
 	}
 }

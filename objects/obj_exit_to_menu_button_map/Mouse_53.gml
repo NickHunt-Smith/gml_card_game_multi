@@ -25,5 +25,6 @@ if mouse_x > x-100*resize_scale && mouse_x < x+100*resize_scale && mouse_y > y-3
 		layer_sequence_xscale(portal_seq_1,0.5);
 		layer_sequence_yscale(portal_seq_1,0.5);
 		alarm[0] = 100;
+		audio_play_sound(snd_small_click,10,false);
 	}
 }

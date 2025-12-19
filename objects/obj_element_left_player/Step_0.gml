@@ -5,6 +5,7 @@ if array_max(global.channelled_right_player) >= global.win_threshold && array_ma
 	global.player_enabled = false;
 	global.end_game_trigger = true;
 	
+	global.music_controller.music_curr = noone;
 	alarm[1] = 60;
 }
 

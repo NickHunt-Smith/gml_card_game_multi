@@ -8,6 +8,8 @@ draw_instructions_1 = false;
 
 eff_type = "none";
 
+keywords = ["rarity_upgrade"];
+
 card_state = noone;
 
 eff_done = false;

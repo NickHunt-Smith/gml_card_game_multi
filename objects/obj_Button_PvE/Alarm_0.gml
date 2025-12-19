@@ -9,5 +9,5 @@ player_portrait.player_portrait = true;
 enemy_portrait = instance_create_depth(0.65*view_wport,0.5*view_hport,depth-2,obj_portrait);
 enemy_portrait.player_portrait = false;
 
-texturegroup_load("Default");
-alarm[1] = 200;
+//texturegroup_load("Default");
+alarm[1] = 80;

@@ -26,6 +26,8 @@ y_hand_hover = 1520;
 y_hand_unhover = 1640;
 position = "hand";
 discard_eff = noone;
+effect_function = noone;
+created_eff = noone;
 
 yrotation = 0;
 xrotation = 0;

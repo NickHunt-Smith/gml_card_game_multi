@@ -12,16 +12,21 @@ portal_x = 0.5*view_wport[0];
 portal_y = 0.5*view_hport[0];
 waiting_for_load = false;
 portal_seq_1 = noone;
-
-// Inherit the parent event
-event_inherited();
+image_alpha = 0;
+alpha_increasing = false;
+trigger_alpha = false;
+selected = false;
+disabled = false;
+textColor = c_white;
 
 selectAction = function() {
 	if waiting_for_load = false {
 		global.disable_buttons = true;
 		waiting_for_load = true;
-		depth = depth - 1;
-		portal_seq_1 = layer_sequence_create("above_buttons",x_surface + portal_x, y_surface + portal_y,seq_portal);
+		depth = layer_get_depth("settings");
+		portal_seq_1 = layer_sequence_create("settings",x_surface + portal_x, y_surface + portal_y,seq_portal);
 		alarm[0] = 100;
+		global.music_controller.music_curr = noone;
+		audio_play_sound(snd_small_click,10,false);
 	}
 }

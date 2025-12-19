@@ -1,5 +1,6 @@
 
 if big_mode = true {
+	global.big_mode = false;
 	alarm[5] = 1;
 	big_mode = false;
 	var resize_scale = view_wport[1]/1280;

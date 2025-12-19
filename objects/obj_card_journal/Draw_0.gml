@@ -129,6 +129,12 @@ if card_locale_1 = noone {
 		card_locale_1 = instance_create_layer(x-252*resize_scale,y-90*resize_scale,"cards_on_journal",obj_card_journal_card);
 		card_locale_1.x_start = x-252*resize_scale;
 		card_locale_1.y_start = y-90*resize_scale;
+		var effect_function = global.rarity_list[rarity][element][0][4][0]
+		//effect_function = global.rarity_list[rarity][element][1][2][0]
+		var effect_inst = instance_create_depth(card_locale_1.x,card_locale_1.y,0,effect_function);
+		effect_inst.eff_type = "dummy";
+		card_locale_1.created_eff = effect_inst
+		card_locale_1.effect_function = effect_function;
 	} else {
 		object_set_sprite(obj_card_journal_card,opp_card_backs_locales[rarity]);
 		card_locale_1 = instance_create_layer(x-252*resize_scale,y-90*resize_scale,"cards_on_journal",obj_card_journal_card);

@@ -7,6 +7,8 @@ draw_instructions_2 = false;
 
 eff_type = "none";
 
+keywords = ["rebuild"];
+
 card_state = noone;
 
 eff_done = false;

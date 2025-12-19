@@ -1,178 +1,178 @@
 {
     "element0": {
         "rarity0": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity1": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity2": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity3": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity4": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         }
     },
     "element1": {
         "rarity0": {
-            "card_type0": [0],
-            "card_type1": [1]
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity1": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity2": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity3": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity4": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         }
     },
     "element2": {
         "rarity0": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity1": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity2": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity3": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity4": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         }
     },
     "element3": {
         "rarity0": {
-            "card_type0": [0],
-            "card_type1": [0,1]
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity1": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity2": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity3": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity4": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         }
     },
     "element4": {
         "rarity0": {
-            "card_type0": [0,2],
-            "card_type1": [2]
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity1": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity2": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity3": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity4": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         }
     },
     "element5": {
         "rarity0": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity1": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity2": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity3": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity4": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         }
     },
     "element6": {
         "rarity0": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity1": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity2": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity3": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity4": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         }
     },
     "element7": {
         "rarity0": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity1": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity2": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity3": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         },
         "rarity4": {
-            "card_type0": [],
-            "card_type1": []
+            "card_type0": [0,1,2],
+            "card_type1": [0,1,2]
         }
     }
 }
