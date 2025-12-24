@@ -9,7 +9,7 @@ if game_start = true && global.tutorial = false {
 	if global.pvp_active = true {
 		file_id = file_text_open_read("all_cards.json");
 	} else {
-		var file_id = file_text_open_read("cards_avail.json");
+		file_id = file_text_open_read("cards_avail.json");
 	}
 	var json_string = "";
 	while (!file_text_eof(file_id)) {
