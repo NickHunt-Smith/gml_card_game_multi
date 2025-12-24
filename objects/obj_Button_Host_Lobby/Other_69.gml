@@ -16,6 +16,7 @@ if listening = true {
 				steam_lobby_set_data("isGameMakerTest","true");
 				steam_lobby_set_data("Creator",steam_get_persona_name());
 			}
+			break
 
 		default:
 			show_debug_message("error " + async_load[?"event_type"])
