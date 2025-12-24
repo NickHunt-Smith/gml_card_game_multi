@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+lobby_joined = false;
+
 selectAction = function() {
 	if global.server = noone {
 		text = "Waiting...";

@@ -25,7 +25,7 @@ switch(async_load[?"event_type"]) {
 				buffer_delete(_b)
 				global.pvp_active = true
 				global.is_server = true
-				alarm[0] = 400
+				alarm[0] = 100
 			}
 		}
 		break

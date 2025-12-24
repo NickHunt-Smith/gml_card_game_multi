@@ -11,7 +11,7 @@ switch(async_load[?"event_type"]) {
 				var _ins = instance_create_depth(x,bbox_top + 40 + 80*_i,depth-20,obj_Lobby_Item,	{
 					lobby_index : _i,
 					lobby_id : steam_lobby_list_get_lobby_id(_i),
-					lobby_creator : steam_lobby_get_data(_i,"Creator")
+					lobby_creator : steam_get_user_persona_name_sync(steam_lobby_list_get_lobby_owner_id(_i))
 				})
 				array_push(lobbyList,_ins);
 			}

@@ -4,6 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-image_xscale = 10
-image_yscale = 5
+image_xscale = 3;
+image_yscale = 1;
+image_alpha = 1;
 joined = false;
