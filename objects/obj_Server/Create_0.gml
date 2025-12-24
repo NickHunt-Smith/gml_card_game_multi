@@ -16,3 +16,5 @@ portal_x = 0.5*view_wport[0];
 portal_y = 0.5*view_hport[0];
 waiting_for_load = false;
 portal_seq_1 = noone;
+player_portrait = noone;
+enemy_portrait = noone;

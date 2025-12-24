@@ -4,10 +4,11 @@
 // Inherit the parent event
 event_inherited();
 
-lobby_joined = false;
+listening = false;
 
 selectAction = function() {
 	if global.server = noone {
+		listening = true;
 		text = "Waiting...";
 		global.server = instance_create_depth(0,0,0,obj_Server);
 		created = steam_lobby_create(steam_lobby_type_public,2);

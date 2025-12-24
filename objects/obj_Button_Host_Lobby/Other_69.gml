@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if lobby_joined = false {
+if listening = true {
 	switch(async_load[?"event_type"]) {
 		case "lobby_created": 
 			show_debug_message("Lobby Created" + string(steam_lobby_get_lobby_id()));
@@ -10,7 +10,7 @@ if lobby_joined = false {
 			break
 	
 		case "lobby_joined":
-			lobby_joined = true;
+			listening = false;
 			if (steam_lobby_is_owner())
 			{
 				steam_lobby_set_data("isGameMakerTest","true");
