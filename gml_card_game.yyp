@@ -356,6 +356,7 @@
     {"link":"io.gamemaker.sdfshaders-1.0.0","name":"io.gamemaker.sdfshaders-1.0.0","path":"io.gamemaker.sdfshaders-1.0.0.yyp",},
   ],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"all_cards.json","CopyToMask":-1,"filePath":"datafiles","name":"all_cards.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"cards_avail.json","CopyToMask":-1,"filePath":"datafiles","name":"cards_avail.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"GMEXT-Steamworks.html","CopyToMask":-1,"filePath":"datafiles","name":"GMEXT-Steamworks.html","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"keyword_descriptors.json","CopyToMask":-1,"filePath":"datafiles","name":"keyword_descriptors.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},

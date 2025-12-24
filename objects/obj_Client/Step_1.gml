@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if waiting_to_start = true {
-	while(steam_net_packet_receive()) {
+	if(steam_net_packet_receive()) {
 		var _sender = steam_net_packet_get_sender_id()
 		steam_net_packet_get_data(inbuf)
 		buffer_seek(inbuf,buffer_seek_start,0)
@@ -19,7 +19,7 @@ if waiting_to_start = true {
 					global.priority = "player"
 				}
 				waiting_to_start = false;
-				alarm[0] = 1;
+				alarm[0] = 100;
 				global.pvp_active = true
 				break
 			
