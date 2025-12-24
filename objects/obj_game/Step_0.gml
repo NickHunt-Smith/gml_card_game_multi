@@ -6,11 +6,12 @@ if game_start = true && global.tutorial = false {
 	global.music_controller.music_curr = snd_battle_emerald;
 	
 	var file_id = "";
-	if global.pvp_active = true {
-		file_id = file_text_open_read("all_cards.json");
-	} else {
-		file_id = file_text_open_read("cards_avail.json");
-	}
+	file_id = file_text_open_read("all_cards.json");
+	//if global.pvp_active = true {
+	//	file_id = file_text_open_read("all_cards.json");
+	//} else {
+	//	file_id = file_text_open_read("cards_avail.json");
+	//}
 	var json_string = "";
 	while (!file_text_eof(file_id)) {
 	    json_string += file_text_read_string(file_id);
@@ -25,11 +26,19 @@ if game_start = true && global.tutorial = false {
 		for (var _j = 0; _j < 5; _j++) {
 			var cards_avail_rarity = cards_avail_element[$ "rarity" + string(_j)];
 			if array_length(cards_avail_rarity[$ "card_type" + string(0)]) > 0 or array_length(cards_avail_rarity[$ "card_type" + string(1)]) > 0 {
+				array_push(global.elements_avail,_i);
+				break
+			}
+		}
+	}
+	for (var _i = 0; _i < 8; _i++) {
+		var cards_avail_element = global.cards_avail_json[$ "element" + string(_i)];
+		for (var _j = 0; _j < 5; _j++) {
+			var cards_avail_rarity = cards_avail_element[$ "rarity" + string(_j)];
+			if array_length(cards_avail_rarity[$ "card_type" + string(0)]) > 0 or array_length(cards_avail_rarity[$ "card_type" + string(1)]) > 0 {
 				if array_contains(global.rarity_avail,_j) = false {
 					array_push(global.rarity_avail,_j);
 				}
-				array_push(global.elements_avail,_i);
-				break
 			}
 		}
 	}
