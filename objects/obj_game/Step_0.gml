@@ -6,7 +6,7 @@ if game_start = true && global.tutorial = false {
 	global.music_controller.music_curr = snd_battle_emerald;
 	
 	var file_id = "";
-	if pvp_active = true {
+	if global.pvp_active = true {
 		file_id = file_text_open_read("all_cards.json");
 	} else {
 		var file_id = file_text_open_read("cards_avail.json");
