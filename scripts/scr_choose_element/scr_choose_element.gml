@@ -380,6 +380,7 @@ function scr_choose_element(){
 	}
 	
 	var element = 100;
+	global.element_dist = probs;
 	while array_contains(global.elements_avail,element) = false {
 		var temp = random(100);
 		if temp < probs[0] {

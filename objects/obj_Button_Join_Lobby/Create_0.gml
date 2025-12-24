@@ -4,12 +4,14 @@
 // Inherit the parent event
 event_inherited();
 
-selectAction = function() {
-	// Disable other buttons
-	for (var _i = 0; _i < 5; _i++){
-		var _inst = instance_find(obj_Button,_i)
-		if _inst != noone then _inst.disabled = true;
+selectAction = function() {		
+	if global.lobby_list = noone {
+		global.lobby_list = instance_create_depth(x,y-400,layer_get_depth("buttons"),obj_Lobby_List)
 	}
-		
-	var lobby_list = instance_create_depth(416,208,-10,obj_Lobby_List)
+	if global.client != noone {
+		instance_destroy(global.client);
+	}
+	if global.server != noone {
+		instance_destroy(global.server);
+	}
 }

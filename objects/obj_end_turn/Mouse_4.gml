@@ -35,6 +35,7 @@ if global.tutorial = false or global.tutorial_step = 25 or global.tutorial_step 
 	}
 	
 	if global.targeting = true && global.big_mode = false {
+		audio_play_sound(snd_end_turn,10,false);
 		global.source_target.target = self;
 	}
 
@@ -60,5 +61,6 @@ if global.tutorial = false or global.tutorial_step = 25 or global.tutorial_step 
 		} else {
 			global.resolve_stack = true;
 		}
+		audio_play_sound(snd_end_turn,10,false);
 	}
 }

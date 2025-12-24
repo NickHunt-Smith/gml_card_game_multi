@@ -1,3 +1,5 @@
+draw_sprite_ext(s_opp_cards_tooltip,0,x-70,y-30,0.72,0.25,0,c_white,0.7);
+
 draw_set_font(Empower_font)
 if global.phase = "scry" {
 	draw_text_ext_transformed_colour(x,y,"SCRY",0,100,0.7,0.7,0,c_aqua,c_aqua,c_aqua,c_aqua,1);

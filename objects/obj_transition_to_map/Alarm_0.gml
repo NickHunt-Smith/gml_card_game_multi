@@ -3,6 +3,8 @@ if portal_seq_1 != noone {
 	portal_seq_1 = noone;
 }
 
-global.music_controller.music_curr = snd_map_music;
+if global.story_active = false {
+	global.music_controller.music_curr = snd_map_music;
+}
 
 instance_destroy();

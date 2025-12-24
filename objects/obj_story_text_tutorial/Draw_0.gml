@@ -39,7 +39,7 @@ if arrow = true {
 		angle_to_target += 180;
 	}
 	var distance_to_target = sqrt(sqr(target_x - arrow_x_offset) + sqr(arrow_y_offset - target_y));
-	draw_sprite_ext(s_target_arrow_panel,0,arrow_x_offset,arrow_y_offset,distance_to_target/1454,distance_to_target/1454,angle_to_target,c_white,1);
+	draw_sprite_ext(s_target_arrow,0,arrow_x_offset,arrow_y_offset,distance_to_target/1454,distance_to_target/1454,angle_to_target,c_white,1);
 }
 	
 if character_art != false {

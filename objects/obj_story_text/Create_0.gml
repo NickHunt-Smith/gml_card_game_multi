@@ -19,6 +19,7 @@ _text = 0;
 scene_playing = false;
 text_rolling = false;
 duel_button = noone;
+skip_button = noone;
 enemy = noone;
 unlock_sys = noone;
 unlock_card = noone;
@@ -42,3 +43,5 @@ if global.reposition = true {
 } else {
 	zoomed_in = true;
 }
+
+alarm[2] = 30;

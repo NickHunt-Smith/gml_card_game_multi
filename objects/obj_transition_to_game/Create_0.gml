@@ -1,7 +1,11 @@
 
 surface = -1;
 board_scale = 3.1;
-background_angle = global.background_angle;
+if global.pvp_active = true {
+	background_angle = 0;
+} else {
+	background_angle = global.background_angle;
+}
 max_radius = 3000;
 radius_1 = 1733;
 x_surface = 0;

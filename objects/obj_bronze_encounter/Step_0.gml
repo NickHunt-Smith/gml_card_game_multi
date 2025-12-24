@@ -69,7 +69,7 @@ if checked_if_active_unlocks = true && highlight_next_encounters = true {
 	if progress_data[$ encounter_name][$ "postcombat_story_done"] = true && progress_data[$ encounter_name][$ "next_encounters_unlocked"] = false {
 		if array_length(next_encounters) > next_encounter_iter {
 			for (var i = 0; i < instance_number(obj_bronze_encounter); ++i) {
-			    var _inst = instance_find(obj_bronze_encounter, i);
+				var _inst = instance_find(obj_bronze_encounter, i);
 				if _inst.encounter_name = next_encounters[next_encounter_iter] {
 					_inst.unlocked = true;
 					progress_data[$ _inst.encounter_name][$ "unlocked"] = true;
@@ -80,12 +80,11 @@ if checked_if_active_unlocks = true && highlight_next_encounters = true {
 					global.zoom_inst.origin_x = _inst.x;
 					global.zoom_inst.origin_y = _inst.y;
 					global.reposition = true;
-					next_encounter_iter+= 1;
 					alarm[1] = 150;
 				}
 			}
 			for (var i = 0; i < instance_number(obj_encounter_icon); ++i) {
-			    var _inst = instance_find(obj_encounter_icon, i);
+				var _inst = instance_find(obj_encounter_icon, i);
 				if _inst.encounter_name = next_encounters[next_encounter_iter] {
 					_inst.unlocked = true;
 					progress_data[$ _inst.encounter_name][$ "unlocked"] = true;
@@ -96,10 +95,10 @@ if checked_if_active_unlocks = true && highlight_next_encounters = true {
 					global.zoom_inst.origin_x = _inst.x;
 					global.zoom_inst.origin_y = _inst.y;
 					global.reposition = true;
-					next_encounter_iter+= 1;
 					alarm[1] = 150;
 				}
 			}
+			next_encounter_iter += 1;
 		} else {
 			progress_data[$ encounter_name][$ "next_encounters_unlocked"] = true;
 	
@@ -107,7 +106,6 @@ if checked_if_active_unlocks = true && highlight_next_encounters = true {
 			file_id = file_text_open_write("progress.json");
 			file_text_write_string(file_id, modified_json_string);
 			file_text_close(file_id);
-			global.story_active = false;
 		}
 	} 
 	

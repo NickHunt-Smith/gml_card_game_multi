@@ -20,6 +20,16 @@ disabled = false;
 textColor = c_white;
 
 selectAction = function() {
+	if global.server != noone {
+		instance_destroy(global.server);
+	}
+	if global.client != noone {
+		instance_destroy(global.client);
+	}
+	if global.lobby_list != noone {
+		instance_destroy(global.lobby_list);
+	}
+	
 	if waiting_for_load = false {
 		global.disable_buttons = true;
 		waiting_for_load = true;

@@ -9,6 +9,11 @@ if text_rolling = true && narrator != "scene_transition" && alpha_story_frame = 
 }
 
 if narrator = "end_story_transition" && global.big_mode = false {
+	global.music_controller.music_curr = noone;
+	if skip_button != noone {
+		instance_destroy(skip_button);
+		skip_button = noone;
+	}
 	if unlock_sys != noone {
 		part_system_destroy(unlock_sys);
 		unlock_sys = noone;
@@ -59,5 +64,7 @@ if narrator = "end_story_transition" && global.big_mode = false {
 		file_text_close(file_id);
 		
 		instance_destroy();
+		global.story_active = false;
+		global.music_controller.music_curr = snd_map_music;
 	}
 }

@@ -1,9 +1,8 @@
 
 if zoomed_in = true {
 	if scene_playing = false {
-		var struct_var_name = text_stage + string(_scene);
-		if variable_struct_exists(encounter_story,struct_var_name) {
-			curr_scene = encounter_story[$ struct_var_name];
+		if variable_struct_exists(encounter_story,text_stage) && array_length(encounter_story[$ text_stage]) > _scene {
+			curr_scene = encounter_story[$ text_stage][_scene];
 			narrator = curr_scene.narrator;
 			if curr_scene.locale_art = false {
 				locale_art = false;
@@ -181,7 +180,7 @@ if zoomed_in = true {
 				unlock_seq = layer_sequence_create("cards_on_journal",c_x + 0.5*view_wport[1],c_y + 0.55*view_hport[1],seq_unlock_uncommon);
 				alarm[1] = 80;
 			}
-		}
+		} 
 		if unlock_card = noone {
 			object_set_sprite(obj_card_journal_card,global.rarity_list[card_unlocks_rarity[card_unlocks_iter]][card_unlocks_element[card_unlocks_iter]][card_unlocks_card_type[card_unlocks_iter]][0][card_unlocks_card_index[card_unlocks_iter]]);
 			unlock_card = instance_create_depth(c_x + 0.5*view_wport[1], c_y + 0.55*view_hport[1],depth-2,obj_card_journal_card);

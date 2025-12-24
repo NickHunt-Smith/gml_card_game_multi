@@ -26,6 +26,7 @@ sparkle_rain = noone;
 shooting_stars = noone;
 scry_sequence = noone;
 scry_phase_seq = noone;
+action_phase_seq = noone;
 rarity_current = 4;
 
 card_inst_1 = noone;

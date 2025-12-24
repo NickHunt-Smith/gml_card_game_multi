@@ -4,32 +4,52 @@
 if global.pvp_active = false {
 	if extra_opp_card = true {
 		var rarity = 0;
-		if global.turn_count < 1 {
-			var rarity_dist = [70,95,100,100,100];
-		} else if global.turn_count >= 1 && global.turn_count < 2 {
-			var rarity_dist = [50,80,95,100,100];
-		} else if global.turn_count >= 2 && global.turn_count < 3 {
-			var rarity_dist = [45,73,88,98,100];
-		} else if global.turn_count >= 3 && global.turn_count < 4 {
-			var rarity_dist = [40,67,85,95,100];
-		} else if global.turn_count >= 4 && global.turn_count < 6 {
-			var rarity_dist = [32,55,73,90,100];
-		} else if global.turn_count >= 6 && global.turn_count < 8 {
-			var rarity_dist = [24,46,67,86,100];
-		} else if global.turn_count >= 8 {
-			var rarity_dist = [20,40,60,80,100];
+		if global.encounter_level = 0 {
+			global.rarity_dist = [100,100,100,100,100];
+		} else if global.encounter_level = 1 {
+			if global.turn_count < 1 {
+				global.rarity_dist = [95,100,100,100,100];
+			} else if global.turn_count >= 1 && global.turn_count < 2 {
+				global.rarity_dist = [80,100,100,100,100];
+			} else if global.turn_count >= 2 && global.turn_count < 4 {
+				global.rarity_dist = [65,100,100,100,100];
+			} else if global.turn_count >= 4 {
+				global.rarity_dist = [50,100,100,100,100];
+			}
+		} else if global.encounter_level = 4 {
+			if global.turn_count < 1 {
+				global.rarity_dist = [90,100,100,100,100];
+			} else if global.turn_count >= 1 && global.turn_count < 2 {
+				global.rarity_dist = [75,95,100,100,100];
+			} else if global.turn_count >= 2 && global.turn_count < 3 {
+				global.rarity_dist = [55,85,100,100,100];
+			} else if global.turn_count >= 3 && global.turn_count < 4 {
+				global.rarity_dist = [45,78,98,100,100];
+			} else if global.turn_count >= 4 && global.turn_count < 5 {
+				global.rarity_dist = [30,70,95,100,100];
+			} else if global.turn_count >= 5 && global.turn_count < 6 {
+				global.rarity_dist = [19,49,89,99,100];
+			} else if global.turn_count >= 6 && global.turn_count < 7 {
+				global.rarity_dist = [17,41,73,97,100];
+			} else if global.turn_count >= 7 && global.turn_count < 8 {
+				global.rarity_dist = [15,33,58,88,100];
+			} else if global.turn_count >= 8 && global.turn_count < 9 {
+				global.rarity_dist = [5,15,35,75,100];
+			} else if global.turn_count >= 9 {
+				global.rarity_dist = [1,3,15,65,100];
+			}
 		}
 		
 		var temp = random(100);
-		if temp < rarity_dist[0] {
+		if temp < global.rarity_dist[0] {
 			rarity = 0;
-		} else if temp >= rarity_dist[0] && temp < rarity_dist[1] {
+		} else if temp >= global.rarity_dist[0] && temp < global.rarity_dist[1] {
 			rarity = 1;
-		} else if temp >= rarity_dist[1] && temp < rarity_dist[2] {
+		} else if temp >= global.rarity_dist[1] && temp < global.rarity_dist[2] {
 			rarity = 2;
-		} else if temp >= rarity_dist[2] && temp < rarity_dist[3] {
+		} else if temp >= global.rarity_dist[2] && temp < global.rarity_dist[3] {
 			rarity = 3;
-		} else if temp >= rarity_dist[3] && temp <= rarity_dist[4] {
+		} else if temp >= global.rarity_dist[3] && temp <= global.rarity_dist[4] {
 			rarity = 4;
 		}
 	

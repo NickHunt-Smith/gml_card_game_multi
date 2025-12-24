@@ -5,6 +5,15 @@
 event_inherited();
 
 selectAction = function() {
-	global.server = instance_create_depth(0,0,0,obj_Server);
-	created = steam_lobby_create(steam_lobby_type_public,2);
+	if global.server = noone {
+		text = "Waiting...";
+		global.server = instance_create_depth(0,0,0,obj_Server);
+		created = steam_lobby_create(steam_lobby_type_public,2);
+	}
+	if global.client != noone {
+		instance_destroy(global.client);
+	}
+	if global.lobby_list != noone {
+		instance_destroy(global.lobby_list);
+	}
 }
