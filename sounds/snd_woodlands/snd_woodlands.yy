@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":40.58034,
+  "duration":120.0,
   "exportDir":"",
   "name":"snd_woodlands",
   "parent":{

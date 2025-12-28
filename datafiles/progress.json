@@ -1,14 +1,14 @@
 {
     "tutorial": {
         "unlocked": true,
-        "precombat_story_done": true,
-        "defeated": true,
-        "postcombat_story_done": true,
-        "next_encounters_unlocked": true
+        "precombat_story_done": false,
+        "defeated": false,
+        "postcombat_story_done": false,
+        "next_encounters_unlocked": false
     },
     "bandit_grunt": {
-        "unlocked": true,
-        "precombat_story_done": true,
+        "unlocked": false,
+        "precombat_story_done": false,
         "defeated": false,
         "postcombat_story_done": false,
         "next_encounters_unlocked": false

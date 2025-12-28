@@ -15,8 +15,8 @@ global.win_threshold = 30;
 menuItems = [];
 selectedItem = 0;
 do_transition_portal = true;
-//cursor_sprite = s_cursor_icon;
-//window_set_cursor(cr_none);
+cursor_sprite = s_cursor_icon;
+window_set_cursor(cr_none);
 
 //Gather Buttons
 for (var _i = 0; _i < 5; _i++){

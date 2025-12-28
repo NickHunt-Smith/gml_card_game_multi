@@ -1,3 +1,3 @@
-global.skip_intro = true;
+global.skip_intro = false;
 
 texturegroup_load("Default");
