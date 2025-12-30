@@ -1,12 +1,12 @@
 /// @description Fill circle with element, if channelling
 // You can write your code in this editor
 
-if global.end_game_trigger = true && array_max(global.channelled_right_player) >= global.win_threshold {
-	if power_swirling != noone { 
-		part_system_depth(power_swirling,-1050);
-	}
-	depth = -1050;
-}
+//if global.end_game_trigger = true && array_max(global.channelled_right_player) >= global.win_threshold {
+//	//if power_swirling != noone { 
+//	//	part_system_depth(power_swirling,-1050);
+//	//}
+//	depth = -1050;
+//}
 
 global.channelled_right_player = [global.channelled_right_player_ruby,global.channelled_right_player_pearl,global.channelled_right_player_onyx,global.channelled_right_player_sapphire,global.channelled_right_player_emerald,global.channelled_right_player_citrine,global.channelled_right_player_opal,global.channelled_right_player_amethyst];
 max_channel = 0;
@@ -30,9 +30,7 @@ var channel_print = max_channel;
 if max_channel > global.win_threshold {
 	channel_print = global.win_threshold;
 }
-if global.end_game_trigger = false {
-	draw_text_colour(global.channelled_right_player_loc_x,global.channelled_right_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)
-}
+draw_text_colour(global.channelled_right_player_loc_x,global.channelled_right_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)
 
 
 if max_channel_ind != max_channel_ind_current && max_channel > 0 && max_element_seq = noone {

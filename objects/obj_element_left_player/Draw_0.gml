@@ -2,16 +2,10 @@
 // You can write your code in this editor
 
 if global.end_game_trigger = true && array_max(global.channelled_left_player) >= global.win_threshold && fade_out = false {
-	part_system_depth(power_swirling,-1050);
-	depth = -1050;
+	//part_system_depth(power_swirling,-1050);
+	//depth = -1050;
 	draw_sprite_ext(s_spell_background,0,1520,720,5,5,0,c_black,alpha);
 	alpha = clamp(alpha + 0.005,0,0.5);
-}
-
-if fade_out = true {
-	depth = -1050;
-	draw_sprite_ext(s_spell_background,0,1520,720,5,5,0,c_black,alpha);
-	alpha = clamp(alpha + 0.005,0.5,1);
 }
 
 global.channelled_left_player = [global.channelled_left_player_ruby,global.channelled_left_player_pearl,global.channelled_left_player_onyx,global.channelled_left_player_sapphire,global.channelled_left_player_emerald,global.channelled_left_player_citrine,global.channelled_left_player_opal,global.channelled_left_player_amethyst];
@@ -36,9 +30,7 @@ var channel_print = max_channel;
 if max_channel > global.win_threshold {
 	channel_print = global.win_threshold;
 }
-if global.end_game_trigger = false {
-	draw_text_colour(global.channelled_left_player_loc_x,global.channelled_left_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)
-}
+draw_text_colour(global.channelled_left_player_loc_x,global.channelled_left_player_loc_y,channel_print,c_maroon,c_maroon,c_maroon,c_maroon,1)
 
 if max_channel_ind != max_channel_ind_current && max_channel > 0 && max_element_seq = noone {
 	max_channel_ind_current = max_channel_ind;
@@ -96,3 +88,9 @@ if (moused = false) && (tooltip_created = true){
 draw_sprite_ext(s_banner,0,global.channelled_left_player_loc_x,global.channelled_left_player_loc_y+45,0.118,0.118,0,c_white,1);
 draw_set_colour(c_maroon);
 draw_text_ext_transformed(global.channelled_left_player_loc_x,global.channelled_left_player_loc_y+34,string(global.win_threshold) + " Needed",1,1000,0.4,0.4,1);
+
+if fade_out = true {
+	depth = -1050;
+	draw_sprite_ext(s_spell_background,0,1520,720,5,5,0,c_black,alpha);
+	alpha = clamp(alpha + 0.005,0.5,1);
+}
