@@ -47,7 +47,7 @@ if discard_variant = false {
 				skip_target_1 = true;
 			}
 		} else {
-			if target_1 != "hand" {
+			if target_1 != "hand" or target_2 = noone or target_2.position = "end_turn" {
 				skip_target_1 = true;
 			}
 		}
