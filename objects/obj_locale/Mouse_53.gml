@@ -74,18 +74,10 @@ if global.tutorial = false or global.tutorial_step = 9 or global.tutorial_step =
 			depth = -1000;
 		}
 	}
-
-	if global.targeting_hand = true && moused = true && global.big_mode = false && discarding = false {
+	
+	if global.targeting_hand = true && moused = true && global.big_mode = false {
 		if (global.source_target.allowed_target_opp = true && opp = true) or (global.source_target.allowed_target_player = true && opp = false) {
 			global.source_target.target = self;
 		}
-	
-		discarding = true;
-		if global.source_target.card_state.element = 7 {
-			discard_seq = layer_sequence_create("above_cards",x,y,seq_discard);
-		} else if global.source_target.card_state.element = 6 {
-			discard_seq = layer_sequence_create("above_cards",x,y,seq_discard_opal);
-		}
-		alarm[3] = 20;
 	}
 }

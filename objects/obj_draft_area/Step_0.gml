@@ -466,14 +466,14 @@ if (global.pvp_active = false or rarities_types_chosen = true) && scry_phase_seq
 		
 			// debug
 			if draft_count = 3 {
-				rarity = 2;
-				element = 2;
-				card_type = 1;
-				card_index = 2;
-			} else if draft_count = 2 {
 				rarity = 1;
-				element = 0;
+				element = 3;
 				card_type = 1;
+				card_index = 1;
+			} else if draft_count = 2 {
+				rarity = 0;
+				element = 3;
+				card_type = 0;
 				card_index = 1;
 			} else if draft_count = 1 {
 				rarity = 1;
