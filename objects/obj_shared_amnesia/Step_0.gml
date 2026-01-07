@@ -71,6 +71,7 @@ if discard_variant = false {
 			global.player_enabled = false;
 			wait = true;
 			global.source_target = self;
+			allowed_target_opp = true;
 		}
 		if target != noone && first_targeted = true {
 			target_2 = target;
@@ -94,11 +95,11 @@ if discard_variant = false {
 					var _b = buffer_create(1,buffer_grow,1)
 					buffer_write(_b,buffer_u8,NETWORK_PACKETS.OPP_PLAYED_SPELL)
 					var card_details = string(card_state.card_type) + "," + string(card_state.rarity) + "," + string(card_state.element) + "," + string(card_state.card_index) 
-					//if target_1 = noone {
-					card_details = card_details + ",noone";
-					//} else {
-					//	card_details = card_details + "," + string(target_1.position);
-					//}
+					if target_1 = noone {
+						card_details = card_details + ",noone";
+					} else {
+						card_details = card_details + "," + string(target_1.position);
+					}
 					if target_2 = noone {
 						card_details = card_details + ",noone";
 					} else {
