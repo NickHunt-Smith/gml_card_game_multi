@@ -59,3 +59,12 @@ if (big_mode = false) {
 }
 
 image_alpha = lerp(image_alpha, 1, 0.04);
+
+if global.big_mode = false && discarding = true && discard_seq = noone {
+	if global.source_target.card_state.element = 7 {
+		discard_seq = layer_sequence_create("above_cards",x,y,seq_discard);
+	} else if global.source_target.card_state.element = 6 {
+		discard_seq = layer_sequence_create("above_cards",x,y,seq_discard_opal);
+	}
+	alarm[3] = 20;
+}
