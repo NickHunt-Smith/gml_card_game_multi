@@ -1357,6 +1357,7 @@
     {"id":{"name":"snd_armour_rustle","path":"sounds/snd_armour_rustle/snd_armour_rustle.yy",},},
     {"id":{"name":"snd_avalanche","path":"sounds/snd_avalanche/snd_avalanche.yy",},},
     {"id":{"name":"snd_battle_emerald","path":"sounds/snd_battle_emerald/snd_battle_emerald.yy",},},
+    {"id":{"name":"snd_battle_sapphire","path":"sounds/snd_battle_sapphire/snd_battle_sapphire.yy",},},
     {"id":{"name":"snd_big_click","path":"sounds/snd_big_click/snd_big_click.yy",},},
     {"id":{"name":"snd_big_stab","path":"sounds/snd_big_stab/snd_big_stab.yy",},},
     {"id":{"name":"snd_bike_crash","path":"sounds/snd_bike_crash/snd_bike_crash.yy",},},

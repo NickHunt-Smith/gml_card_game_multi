@@ -61,7 +61,7 @@ global.rarity_dist = [100,100,100,100,100];
 global.element_dist = [12.5,25,37.5,50,62.5,75,87.5,100];
 global.ignore_next_opp_locale = 0;
 global.rerolls_available = 0;
-global.turn_count = 10;
+global.turn_count = 0;
 global.lingering_active = false;
 global.next_scry_legendary = false;
 global.scrys_boosted = false;
@@ -1581,7 +1581,7 @@ array_push(global.uncommon_citrine_locales_effect_list,obj_howling_tunnels)
 array_push(global.uncommon_citrine_locales_sprite_list,s_inhospitable_valley)
 array_push(global.uncommon_citrine_locales_art_list,s_inhospitable_valley_art)
 array_push(global.uncommon_citrine_locales_health_list,2)
-array_push(global.uncommon_citrine_locales_channel_list,3)
+array_push(global.uncommon_citrine_locales_channel_list,2)
 array_push(global.uncommon_citrine_locales_effect_list,obj_inhospitable_valley)
 
 // Rare citrine locales

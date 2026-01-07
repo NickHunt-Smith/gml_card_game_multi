@@ -3,15 +3,16 @@
 
 if game_start = true && global.tutorial = false {
 	game_start = false;
-	global.music_controller.music_curr = snd_battle_emerald;
 	
 	var file_id = "";
-	file_id = file_text_open_read("all_cards.json");
-	//if global.pvp_active = true {
-	//	file_id = file_text_open_read("all_cards.json");
-	//} else {
-	//	file_id = file_text_open_read("cards_avail.json");
-	//}
+	//file_id = file_text_open_read("all_cards.json");
+	if global.pvp_active = true {
+		file_id = file_text_open_read("all_cards.json");
+		global.music_controller.music_curr = snd_battle_sapphire;
+	} else {
+		file_id = file_text_open_read("cards_avail.json");
+		global.music_controller.music_curr = snd_battle_emerald;
+	}
 	var json_string = "";
 	while (!file_text_eof(file_id)) {
 	    json_string += file_text_read_string(file_id);

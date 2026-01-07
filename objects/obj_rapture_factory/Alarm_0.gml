@@ -4,8 +4,6 @@
 layer_sequence_destroy(channel_seq);
 layer_sequence_destroy(seq_change_health);
 
-show_debug_message(global.cards_in_hand)
-
 if (opp = true && array_length(global.cards_in_hand_opp) = 0) or (opp = false && array_length(global.cards_in_hand) = 0) {
 
 	fortify_seq = layer_sequence_create("effect_layer",card_state.x+112,card_state.y+230,seq_fortify)

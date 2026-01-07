@@ -216,7 +216,7 @@
                 "character_art": "char_alden_quellow",
                 "character_name": "Alden",
                 "sound": false,
-                "text0": "\"No I'll need a few days at least to gather some supplies and tools. Ideally without anyone noticing.\""
+                "text0": "\"No, I'll need a few days at least to gather some supplies and tools. Ideally without anyone noticing.\""
             },
             {
                 "narrator": true,
@@ -294,8 +294,23 @@
                 "character_art": "char_emery_reed",
                 "character_name": "Emery",
                 "sound": false,
-                "text0": "Emery's face becomes grave. Other villagers are approaching, warily looking around. \"A shadow? Not the... was there a flash of orange too?\"",
-                "text1": "You nod, your brain starting to face reality. You know what this means. Emery hangs his head, despondent. \"I'm so sorry Alden. There's nothing we can do, that was the Warlock.\""
+                "text0": "Emery's face becomes grave. Other villagers are approaching, looking around warily. \"A shadow? Not the... was there a flash of orange too?\""
+            },
+            {
+                "narrator": false,
+                "locale_art": "s_warlock_abduct",
+                "character_art": "char_alden_quellow",
+                "character_name": "Alden",
+                "sound": false,
+                "text0": "You nod, your brain starting to face reality. You know what this means. "
+            },
+            {
+                "narrator": false,
+                "locale_art": "s_warlock_abduct",
+                "character_art": "char_emery_reed",
+                "character_name": "Emery",
+                "sound": false,
+                "text0": "Emery hangs his head, despondent. \"I'm so sorry Alden. There's nothing we can do, that was the Warlock.\""
             },
             {
                 "narrator": "scene_transition",
@@ -312,13 +327,13 @@
                 "character_name": false,
                 "sound": "snd_woodlands",
                 "text0": "The next two days pass in a haze.",
-                "text1": "At first you look all through the village, trying to find any trace of where the shadow came from or where it might have gone. A slight orange trail still hangs in the air, barely visible, though it leads only up into the sky.",
+                "text1": "At first you look all through the village, trying to find any trace of where the shadow came from, or where it might have gone. A slight orange trail still hangs in the air, barely visible, though it leads only up into the sky.",
                 "text2": "You waste away the hours sitting next to the stream where you spoke your last words to Eilira, staring blankly at nothing.",
                 "text3": "You can't help but feel slightly responsible. Sure she wanted to talk with you too, but she wouldn't have been there that late if the conversation hadn't been so intense. If you hadn't wanted to leave.",
                 "text4": "And why take her? Why not you, the one who wanted to leave anyway? The one who wanted to face danger, while she stays safe at home?",
                 "text5": "But perhaps worst of all is the reaction of the other villagers. There is a resignation from them towards the loss of Eilira that you can't understand. They act like she was Sphere-touched, a victim of random happenstance.",
                 "text6": "There's a clear perpetrator though, the Warlock. She's not actually dead as far as we know, only taken. Surely something can be done?",
-                "text7": "Your mother wept that night, but she was back to her work the next day like nothing had happened. She would soon be pestering you to help with her chores again, only now it would just be the two of you.",
+                "text7": "Your mother wept that night, but she was back to her work the next day like nothing had happened.",
                 "text8": "How could you leave her now? But how can you go on?",
                 "text9": "A commotion at the entrance to the trail breaks you out of your trance. You can hear Emery's gruff voice shouting angrily, and wander over.",
                 "text10": "Three strangers in grey coats stand together a few steps from the trail, facing down Emery. The older of the strangers stands his ground ahead of a tired-looking woman. The third stranger cannot be any older than 18 - his coat looks a size too big."
@@ -379,7 +394,7 @@
                 "sound": false,
                 "text0": "You walk up to the Seeker as Emery scowls at you. \"Thank you for giving us a chance. My name is Dravas, this is Kusharn, and the young one's called Corrick.\"",
                 "text1": "\"I don't know what you've been told, but as Seekers we pursue the Warlock wherever he goes. Our ultimate goal is to bring down the Warlock, and end his constant abductions.\"",
-                "text2": "Emery scoffs in the background. Dravas ignores him, continuing his clearly well-rehearsed spiel. \"As a victim of one of these abductions, you know firsthand the pain that it can cause.\"",
+                "text2": "Emery scoffs in the background. Dravas ignores him, continuing his clearly well-rehearsed spiel. \"You know firsthand the pain that these abductions can cause.\"",
                 "text3": "\"My job, along with Kusharn, is to recruit as many people as we can to help us in our cause. Would you be willing to join us?\""
             },
             {
@@ -528,54 +543,11 @@
                 "character_name": "Dravas",
                 "sound": false,
                 "text0": "\"Don't mind her. I won't lie though, I don't think I've taught anyone with literally no experience before.\"",
-                "text1": "\"Which elements are you closest to would you say? Emerald I'm assuming, what else?\""
-            },
-            {
-                "narrator": false,
-                "locale_art": "s_sun_drenched_clearing_art",
-                "character_art": "char_alden_quellow",
-                "character_name": "Alden",
-                "sound": false,
-                "text0": "\"Elements?\""
-            },
-            {
-                "narrator": false,
-                "locale_art": "s_sun_drenched_clearing_art",
-                "character_art": "char_dravas",
-                "character_name": "Dravas",
-                "sound": false,
-                "text0": "\"Wow okay, you don't even know what the elements are? This is going to be a steep learning curve then. Maybe it will be an advantage to be starting from absolute scratch...?\"",
-                "text1": "He doesn't seem to be as confident as he was at first. \"Right, so there are 8 elements of magic that we know of, represented by the 8 crystals we use to channel them.\"",
-                "text2": "\"We have Emerald, the element of growth, life and vegetation. Something you should be very familiar with, growing up in a forest as you have done.\"",
-                "text3": "\"There's also Ruby, the element of fire and destruction. Most common in volcanic regions like Delgar.\"",
-                "text4": "\"Pearl is the element of solidarity, strongest in icy regions like Certona. Actually now I think of it, have you actually seen a world map before?\""
-            },
-            {
-                "narrator": false,
-                "locale_art": "s_sun_drenched_clearing_art",
-                "character_art": "char_alden_quellow",
-                "character_name": "Alden",
-                "sound": false,
-                "text0": "\"Uhhh...no.\""
-            },
-            {
-                "narrator": false,
-                "locale_art": "s_sun_drenched_clearing_art",
-                "character_art": "char_dravas",
-                "character_name": "Dravas",
-                "sound": false,
-                "text0": "\"Okay that's fine, I'll show you later but for now these place names won't mean much.\"",
-                "text1": "\"So other elements, there's Opal which is the element of lightning and rare metals, strongest out in the plains and steppes near the city of Corcia.\"",
-                "text2": "\"Sapphire deals with water in all its forms, and unsurprisingly is spread throughout the world, though the coasts feel it most intensely.\"",
-                "text3": "\"Onyx is closely related to memory and death, and is one of the hardest elements to fully control. The Mist-Swept Highlands in the south are full of Onyx energy.\"",
-                "text4": "\"Citrine is a fairly rare element, concentrated mainly in the far reaches of the deserts to the north-east. Emptiness, wind and the passage of time are some of the themes of Citrine.\"",
-                "text5": "\"Finally there's Amethyst, the most human of all. Dreams, psychosis, the mind itself is the home of the Amethyst element, and its use is always intoxicating.\"",
-                "text6": "\"Those are the 8 elements of magic. So then Synemancy is the act of channelling the magic from those elements into oneself, and then harnessing that energy to perform magical actions.\"",
-                "text7": "\"There are only a few ingredients you need to perform Synemancy, making it incredibly easy. Almost everyone uses it, apart from your one village apparently.\"",
-                "text8": "\"All you need are a couple of these.\" Dravas holds out his hand, revealing a number of multicoloured crystals, each one attached to a simple twine necklace.",
-                "text9": "\"Each element has a corresponding crystal which enables you to perform Synemancy of that element, hence why we name those elements after the crystals.\"",
-                "text10": "\"If you have the correct crystal nearby, you can start doing a few spells of that element. Why don't you take an Emerald and...we're near the coast here...let's say a Sapphire to start with.\"",
-                "text11": "\"Hey Corrick! Come over here!\""
+                "text1": "\"There are only a few ingredients you need to perform Synemancy, making it incredibly easy. Almost everyone uses it, apart from your one village apparently.\"",
+                "text2": "\"All you need are a couple of these.\" Dravas holds out his hand, revealing a number of multicoloured crystals, each one attached to a simple twine necklace.",
+                "text3": "\"Each element of magic has a corresponding crystal which enables you to perform Synemancy of that element.\"",
+                "text4": "\"If you have the correct crystal nearby, you can start doing a few spells of that element. Why don't you take an Emerald and...we're near the coast here...let's say a Sapphire to start with.\"",
+                "text5": "\"Hey Corrick! Come over here!\""
             },
             {
                 "narrator": true,

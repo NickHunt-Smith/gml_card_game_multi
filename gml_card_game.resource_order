@@ -1186,6 +1186,7 @@
     {"name":"snd_armour_rustle","order":5,"path":"sounds/snd_armour_rustle/snd_armour_rustle.yy",},
     {"name":"snd_avalanche","order":7,"path":"sounds/snd_avalanche/snd_avalanche.yy",},
     {"name":"snd_battle_emerald","order":2,"path":"sounds/snd_battle_emerald/snd_battle_emerald.yy",},
+    {"name":"snd_battle_sapphire","order":4,"path":"sounds/snd_battle_sapphire/snd_battle_sapphire.yy",},
     {"name":"snd_big_click","order":1,"path":"sounds/snd_big_click/snd_big_click.yy",},
     {"name":"snd_big_stab","order":8,"path":"sounds/snd_big_stab/snd_big_stab.yy",},
     {"name":"snd_bike_crash","order":7,"path":"sounds/snd_bike_crash/snd_bike_crash.yy",},
