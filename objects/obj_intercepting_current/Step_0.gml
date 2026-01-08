@@ -23,8 +23,9 @@ if (eff_type = "play") && (wait = false) {
 }
 
 if wait_stack = true {
-	if instance_exists(target_1) = false or target_1.position = "end_turn" or target_1.element != 3 or target_1.rarity != 0 or target_1.card_index != 1 {
-		skip_target_1 = true;
+	skip_target_1 = true
+	if instance_exists(target_1) = true && target_1.position != "end_turn" && target_1.element = 3 && ((target_1.rarity = 0 && target_1.card_index = 1) or (target_1.rarity = 4 && target_1.card_index = 0) or (target_1.rarity = 2 && target_1.card_index = 0)) {
+		skip_target_1 = false;
 	}
 	alarm[3] = 10;
 	wait_stack = false;
