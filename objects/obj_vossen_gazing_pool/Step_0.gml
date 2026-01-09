@@ -97,7 +97,6 @@ if eff_type = "lingering" {
 			copy.effect_function_inst.discard_variant = true;
 		}
 		array_push(memory_stack,copy);
-		show_debug_message(global.spell_stack)
 	}
 }
 
