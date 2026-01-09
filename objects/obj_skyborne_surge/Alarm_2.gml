@@ -4,6 +4,30 @@
 
 if target_1.is_empty = true {
 	var effect_arr = scr_play_locale(opp,target_1.position,0,3,1,noone,noone,noone,false,true);
+	for (var _i = 0; _i < array_length(global.spell_stack); _i++) {
+		if global.spell_stack[_i].order_in_stack != card_state.order_in_stack {
+			if global.spell_stack[_i].target_1 != noone {
+				if global.spell_stack[_i].target_1.position = target_1.position {
+					global.spell_stack[_i].target_1 = effect_arr[0];
+					global.spell_stack[_i].effect_function_inst.target_1 = effect_arr[0];
+				}
+			}
+		
+			if global.spell_stack[_i].target_2 != noone {
+				if global.spell_stack[_i].target_2.position = target_1.position {
+					global.spell_stack[_i].target_2 = effect_arr[0];
+					global.spell_stack[_i].effect_function_inst.target_2 = effect_arr[0];
+				}
+			}
+		
+			if global.spell_stack[_i].target_3 != noone {
+				if global.spell_stack[_i].target_3.position = target_1.position {
+					global.spell_stack[_i].target_3 = effect_arr[0];
+					global.spell_stack[_i].effect_function_inst.target_3 = effect_arr[0];
+				} 
+			}
+		}
+	}
 	target_1 = effect_arr[0];
 	if target_empty != noone {
 		instance_destroy(target_empty);

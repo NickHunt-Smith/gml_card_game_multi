@@ -57,7 +57,11 @@ if (eff_type = "end_turn") && (wait = false) {
 	
 		wait = true;
 		
-		waves_seq = layer_sequence_create("effect_layer",1523,681,seq_waves_many);
+		if opp = false {
+			waves_seq = layer_sequence_create("effect_layer",1523,681,seq_waves_many);
+		} else {
+			waves_seq = layer_sequence_create("effect_layer",1523,1224,seq_waves_many);
+		}
 		alarm[4] = 90;
 	}
 	

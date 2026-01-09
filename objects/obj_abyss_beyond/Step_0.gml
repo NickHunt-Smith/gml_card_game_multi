@@ -113,7 +113,7 @@ if (eff_type = "end_turn") && (wait = false) {
 		
 		var seqs = scr_channel_element(card_state);
 		channel_seq = seqs[0];
-		seq_change_health = seqs[1];
+		seq_change_health_channel = seqs[1];
 		
 		if card_state.frozen = true {
 			card_state.frozen = false;

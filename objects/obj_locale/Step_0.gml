@@ -12,29 +12,21 @@ if (big_mode = false) {
 		
 			var moused_set = true;
 			for (var _i = 0; _i < array_length(global.cards_in_hand); _i++) {
-				if _i = order_in_hand {
-					if (array_length(global.cards_in_hand) = 1) {
-						depth = -1001;
-						moused = true;
-						image_xscale = lerp(image_xscale,image_scale_hovered,0.3);
-						image_yscale = lerp(image_yscale,image_scale_hovered,0.3);
-					}
-					continue
-				} else {
-					var distance_to_this = sqrt(sqr(mouse_x - x) + sqr(mouse_y - y));
-					var distance_to_that = sqrt(sqr(mouse_x - global.cards_in_hand[_i].x) + sqr(mouse_y - global.cards_in_hand[_i].y));
+				if _i != order_in_hand {
+					var distance_to_this = abs(mouse_x - x);
+					var distance_to_that = abs(mouse_x - global.cards_in_hand[_i].x);
 					if (distance_to_this > distance_to_that) {
 						moused_set = false;
-					} else {
-						depth = -1001;
-						moused = true;
-						image_xscale = lerp(image_xscale,image_scale_hovered,0.3);
-						image_yscale = lerp(image_yscale,image_scale_hovered,0.3);
-					}
+					} 
 				}
 			}
 			if moused_set = false {
 				moused = false;
+			} else {
+				depth = -1001;
+				moused = true;
+				image_xscale = lerp(image_xscale,image_scale_hovered,0.3);
+				image_yscale = lerp(image_yscale,image_scale_hovered,0.3);
 			}
 		} 
 	} else {
@@ -51,7 +43,11 @@ if (big_mode = false) {
 	if (obj_mouse_manager.grabbed_card = noone) && (draft_mode = false) && overwriting = false && playing = false  {
 		x = lerp(x, 1520 + 180*(order_in_hand) -90*(array_length(global.cards_in_hand) - 1), lerp_amount);
 		if mouse_y > 1400 {
-			y = lerp(y,y_hand_hover,lerp_amount);
+			if moused = true {
+				y = lerp(y,y_hand_hover_big,lerp_amount);
+			} else {
+				y = lerp(y,y_hand_hover_small,lerp_amount);
+			}
 		} else {
 			y = lerp(y,y_hand_unhover,lerp_amount);
 		}

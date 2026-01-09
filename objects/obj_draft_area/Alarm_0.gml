@@ -17,7 +17,7 @@ if sparkle_rain != noone {
 	part_system_destroy(sparkle_rain);
 	sparkle_rain = noone;
 }
-if shooting_stars != noone {
+if shooting_stars != noone && global.cheap_mode = false {
 	part_system_destroy(shooting_stars);
 	shooting_stars = noone;
 }

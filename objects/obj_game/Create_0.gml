@@ -469,7 +469,7 @@ array_push(global.rare_pearl_locales_effect_list,obj_heart_labyrinth)
 array_push(global.rare_pearl_locales_sprite_list,s_mt_kushana)
 array_push(global.rare_pearl_locales_art_list,s_mt_kushana_art)
 array_push(global.rare_pearl_locales_health_list,7)
-array_push(global.rare_pearl_locales_channel_list,4)
+array_push(global.rare_pearl_locales_channel_list,3)
 array_push(global.rare_pearl_locales_effect_list,obj_mt_kushana)
 
 // 2
@@ -1323,7 +1323,7 @@ array_push(global.rare_emerald_locales_effect_list,obj_vine_choked_crevice)
 array_push(global.rare_emerald_locales_sprite_list,s_hazy_woods)
 array_push(global.rare_emerald_locales_art_list,s_hazy_woods_art)
 array_push(global.rare_emerald_locales_health_list,5)
-array_push(global.rare_emerald_locales_channel_list,5)
+array_push(global.rare_emerald_locales_channel_list,4)
 array_push(global.rare_emerald_locales_effect_list,obj_hazy_woods)
 
 // 2

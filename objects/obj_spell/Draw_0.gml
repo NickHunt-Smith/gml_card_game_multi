@@ -2,7 +2,7 @@
 // If the player is mousing over this card, make it moused.
 if (global.player_enabled = true) {
 	
-	if (moused) && (obj_mouse_manager.grabbed_card = self) {
+	if (moused) && (obj_mouse_manager.grabbed_card = self) && global.cheap_mode = false {
 		if (y < 1200) && (x > 1000) && (x < 2050) && (play_area_active = false) {
 			play_area_highlight = part_system_create(Ps_Magic_lights_Shimmer_2);
 			part_system_position(play_area_highlight,1522,480);

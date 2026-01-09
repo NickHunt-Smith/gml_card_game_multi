@@ -122,9 +122,11 @@ if global.pvp_active = false {
 		part_emitter_destroy_all(sparkle_rain);
 		sparkle_rain = noone;
 	}
-	if shooting_stars != noone {
-		part_system_destroy(shooting_stars);
-		shooting_stars = noone;
+	if global.cheap_mode = false {
+		if shooting_stars != noone {
+			part_system_destroy(shooting_stars);
+			shooting_stars = noone;
+		}
 	}
 	emit_destroy = false;
 	if new_turn = true {
@@ -157,9 +159,11 @@ if global.pvp_active = false {
 			part_emitter_destroy_all(sparkle_rain);
 			sparkle_rain = noone;
 		}
-		if shooting_stars != noone {
-			part_system_destroy(shooting_stars);
-			shooting_stars = noone;
+		if global.cheap_mode = false {
+			if shooting_stars != noone {
+				part_system_destroy(shooting_stars);
+				shooting_stars = noone;
+			}
 		}
 		emit_destroy = false;
 	}

@@ -237,7 +237,7 @@ if (health_locale <= 0) && (destroy_dust = false) {
 		}
 		
 		if illusory_sys != noone {
-			destroy_sys = layer_sequence_create("effect_layer",x+112,y+184,seq_locale_destroyed);
+			destroy_sys = layer_sequence_create("effect_layer",x+112,y+178,seq_locale_destroyed);
 			part_system_destroy(illusory_sys);
 			alarm[3] = 90;
 			illusory_sys = noone;

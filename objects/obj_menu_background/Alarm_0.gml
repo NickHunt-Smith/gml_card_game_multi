@@ -8,7 +8,7 @@ if title_reveal_sys != noone {
 	}
 }
 
-if title_sys = noone {
+if title_sys = noone && global.cheap_mode = false {
 	title_sys = part_system_create(Ps_title);
 	part_system_position(title_sys, 0.5*view_wport[0], 0.5*view_hport[0]);
 	part_system_depth(title_sys,layer_get_depth("buttons"));

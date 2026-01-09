@@ -24,5 +24,6 @@ opp = false;
 channel_seq = noone;
 seq_change_health =noone;
 channel_up_seq = noone;
+seq_change_health_channel =noone;
 
 depth = -900;

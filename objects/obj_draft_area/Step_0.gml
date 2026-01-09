@@ -264,13 +264,15 @@ if (global.pvp_active = false or rarities_types_chosen = true) && scry_phase_seq
 				scry_sequence = noone;
 			}
 			scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_common);
-			if shooting_stars != noone {
-				part_system_destroy(shooting_stars);
-				shooting_stars = noone;
+			if global.cheap_mode = false {
+				if shooting_stars != noone {
+					part_system_destroy(shooting_stars);
+					shooting_stars = noone;
+				}
+				shooting_stars = part_system_create(Ps_Shooting_Stars_common);
+				part_system_position(shooting_stars, 1520, 200);
+				part_system_depth(shooting_stars,-900);
 			}
-			shooting_stars = part_system_create(Ps_Shooting_Stars_common);
-			part_system_position(shooting_stars, 1520, 200);
-			part_system_depth(shooting_stars,-900);
 			alarm[2] = 150;
 			
 			var order = 0;
@@ -313,65 +315,75 @@ if (global.pvp_active = false or rarities_types_chosen = true) && scry_phase_seq
 					scry_sequence = noone;
 				}
 				scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_common);
-				if shooting_stars != noone {
-					part_system_destroy(shooting_stars);
-					shooting_stars = noone;
+				if global.cheap_mode = false {
+					if shooting_stars != noone {
+						part_system_destroy(shooting_stars);
+						shooting_stars = noone;
+					}
+					shooting_stars = part_system_create(Ps_Shooting_Stars_common);
+					part_system_position(shooting_stars, 1520, 200);
+					part_system_depth(shooting_stars,-900);
 				}
-				shooting_stars = part_system_create(Ps_Shooting_Stars_common);
-				part_system_position(shooting_stars, 1520, 200);
-				part_system_depth(shooting_stars,-900);
 			} else if rarity = 1 {
 				if scry_sequence != noone {
 					layer_sequence_destroy(scry_sequence);
 					scry_sequence = noone;
 				}
 				scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_uncommon);
-				if shooting_stars != noone {
-					part_system_destroy(shooting_stars);
-					shooting_stars = noone;
+				if global.cheap_mode = false {
+					if shooting_stars != noone {
+						part_system_destroy(shooting_stars);
+						shooting_stars = noone;
+					}
+					shooting_stars = part_system_create(Ps_Shooting_Stars_uncommon);
+					part_system_position(shooting_stars, 1520, 200);
+					part_system_depth(shooting_stars,-900);
 				}
-				shooting_stars = part_system_create(Ps_Shooting_Stars_uncommon);
-				part_system_position(shooting_stars, 1520, 200);
-				part_system_depth(shooting_stars,-900);
 			} else if rarity = 2 {
 				if scry_sequence != noone {
 					layer_sequence_destroy(scry_sequence);
 					scry_sequence = noone;
 				}
 				scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_rare);
-				if shooting_stars != noone {
-					part_system_destroy(shooting_stars);
-					shooting_stars = noone;
+				if global.cheap_mode = false {
+					if shooting_stars != noone {
+						part_system_destroy(shooting_stars);
+						shooting_stars = noone;
+					}
+					shooting_stars = part_system_create(Ps_Shooting_Stars_rare);
+					part_system_position(shooting_stars, 1520, 200);
+					part_system_depth(shooting_stars,-900);
 				}
-				shooting_stars = part_system_create(Ps_Shooting_Stars_rare);
-				part_system_position(shooting_stars, 1520, 200);
-				part_system_depth(shooting_stars,-900);
 			} else if rarity = 3 {
 				if scry_sequence != noone {
 					layer_sequence_destroy(scry_sequence);
 					scry_sequence = noone;
 				}
 				scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_mythic);
-				if shooting_stars != noone {
-					part_system_destroy(shooting_stars);
-					shooting_stars = noone;
+				if global.cheap_mode = false {
+					if shooting_stars != noone {
+						part_system_destroy(shooting_stars);
+						shooting_stars = noone;
+					}
+					shooting_stars = part_system_create(Ps_Shooting_Stars_mythic);
+					part_system_position(shooting_stars, 1520, 200);
+					part_system_depth(shooting_stars,-900);
 				}
-				shooting_stars = part_system_create(Ps_Shooting_Stars_mythic);
-				part_system_position(shooting_stars, 1520, 200);
-				part_system_depth(shooting_stars,-900);
 			} else if rarity = 4 {
 				if scry_sequence != noone {
 					layer_sequence_destroy(scry_sequence);
 					scry_sequence = noone;
 				}
 				scry_sequence = layer_sequence_create("above_cards",x+15,y+140,seq_scry_legendary);
-				if shooting_stars != noone {
-					part_system_destroy(shooting_stars);
-					shooting_stars = noone;
+				if global.cheap_mode = false {
+					if shooting_stars != noone {
+						part_system_destroy(shooting_stars);
+						shooting_stars = noone;
+					}
+					shooting_stars = part_system_create(Ps_Shooting_Stars_legendary);
+					part_system_position(shooting_stars, 1520, 200);
+					part_system_depth(shooting_stars,-900);
 				}
-				shooting_stars = part_system_create(Ps_Shooting_Stars_legendary);
-				part_system_position(shooting_stars, 1520, 200);
-				part_system_depth(shooting_stars,-900);
 			}
 			rarity_current = rarity;
 			rarity_alpha = 0;
@@ -464,29 +476,29 @@ if (global.pvp_active = false or rarities_types_chosen = true) && scry_phase_seq
 	
 			var order = 2;
 		
-			//// debug
-			//if draft_count = 3 {
-			//	rarity = 1;
-			//	element = 3;
-			//	card_type = 1;
-			//	card_index = 1;
-			//} else if draft_count = 2 {
-			//	rarity = 0;
-			//	element = 3;
-			//	card_type = 0;
-			//	card_index = 1;
-			//} else if draft_count = 1 {
-			//	rarity = 1;
-			//	element = 7;
-			//	card_type = 1;
-			//	card_index = 0;
-			//}
+			// debug
+			if draft_count = 3 {
+				rarity = 1;
+				element = 3;
+				card_type = 1;
+				card_index = 1;
+			} else if draft_count = 2 {
+				rarity = 3;
+				element = 6;
+				card_type = 0;
+				card_index = 2;
+			} else if draft_count = 1 {
+				rarity = 4;
+				element = 2;
+				card_type = 0;
+				card_index = 0;
+			}
 	
 			card_inst_3 = scr_scry_card(rarity,element,card_type,card_index,order,card_inst);
 	
 			if card_type_locked = false {
-				array_push(global.opponent.hand_rarity,rarity_opp);
-				//array_push(global.opponent.hand_rarity,rarity);
+				//array_push(global.opponent.hand_rarity,rarity_opp);
+				array_push(global.opponent.hand_rarity,rarity); // this one for debug
 				array_push(global.opponent.hand_card_type,card_type);
 			}
 		}
