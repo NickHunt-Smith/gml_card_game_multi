@@ -10,6 +10,7 @@ if opp = false {
 	card_inst.x = card_state.x;
 	card_inst.y = card_state.y;
 	card_inst.image_alpha = 1;
+	card_inst.image_scale_hovered = 1;
 	array_push(global.cards_in_hand,card_inst);
 
 	if array_length(global.cards_in_hand) < array_length(global.cards_in_hand_opp) {

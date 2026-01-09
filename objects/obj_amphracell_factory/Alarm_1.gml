@@ -9,6 +9,7 @@ card_inst.draft_mode = false;
 card_inst.x = card_state.x+112;
 card_inst.y = card_state.y+184;
 card_inst.image_alpha = 1;
+card_inst.image_scale_hovered = 1;
 array_push(global.cards_in_hand,card_inst);
 
 eff_done = true;
