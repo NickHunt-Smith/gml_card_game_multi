@@ -15,7 +15,9 @@ if global.player_enabled = true {
 		draw_text_ext_transformed(x,y-38,"End",0,100,0.7,0.7,0);
 		draw_text_ext_transformed(x,y-8,"Turn",0,100,0.7,0.7,0);
 	} else {
-		if global.stack_active = true && instance_exists(global.spell_stack[array_length(global.spell_stack)-1]) && global.spell_stack[array_length(global.spell_stack)-1].opp = true {
+		show_debug_message(global.spell_stack)
+		show_debug_message(array_length(global.spell_stack))
+		if global.stack_active = true && array_length(global.spell_stack) > 0 && instance_exists(global.spell_stack[array_length(global.spell_stack)-1]) && global.spell_stack[array_length(global.spell_stack)-1].opp = true {
 			draw_set_font(Empower_font)
 			draw_text_ext_transformed(x,y-15,"Resolve",0,100,0.5,0.5,0);
 		} else {
